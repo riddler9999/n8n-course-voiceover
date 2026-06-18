@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>n8n Course Voiceover Generator</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Pyidaungsu", "Myanmar Text", sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding: 24px;
+  }
+  .container { max-width: 1100px; margin: 0 auto; }
+  header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding: 24px;
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 16px;
+    border: 1px solid #334155;
+  }
+  h1 {
+    font-size: 28px;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+  .subtitle { color: #94a3b8; font-size: 14px; }
+  .panel {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+  }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  @media (max-width: 720px) { .row { grid-template-columns: 1fr; } }
+  label {
+    display: block;
+    font-size: 13px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  select, textarea, input {
+    width: 100%;
+    padding: 12px 14px;
+    background: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    color: #f1f5f9;
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.2s;
+  }
+  select:focus, textarea:focus, input:focus {
+    outline: none;
+    border-color: #38bdf8;
+  }
+  textarea {
+    min-height: 380px;
+    resize: vertical;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  .btn-group { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+    font-family: inherit;
+  }
+  button:active { transform: scale(0.97); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-primary { background: linear-gradient(135deg, #38bdf8, #2563eb); color: white; }
+  .btn-success { background: linear-gradient(135deg, #10b981, #059669); color: white; }
+  .btn-secondary { background: #334155; color: #e2e8f0; }
+  .status {
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-top: 12px;
+    font-size: 14px;
+    display: none;
+  }
+  .status.show { display: block; }
+  .status.info { background: rgba(56, 189, 248, 0.15); border: 1px solid #38bdf8; color: #7dd3fc; }
+  .status.success { background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #6ee7b7; }
+  .status.error { background: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #fca5a5; }
+  .loader {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  audio { width: 100%; margin-top: 12px; }
+  .download-link {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #10b981;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+  .download-link:hover { background: #059669; }
+  .meta { font-size: 12px; color: #94a3b8; margin-top: 8px; }
+  .webhook-config {
+    background: #0f172a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #94a3b8;
+  }
+  .webhook-config input { font-family: monospace; font-size: 12px; padding: 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>n8n Course Voiceover Generator</h1>
+    <div class="subtitle">Gemini 3.1 Flash Lite + TTS Charon · Burmese</div>
+  </header>
+
+  <div class="panel">
+    <label>Webhook URL</label>
+    <div class="webhook-config">
+      <input type="text" id="webhookUrl" value="https://n8n.srv1695682.hstgr.cloud/webhook/n8n-course-voiceover" />
+      <div class="meta">n8n Production Webhook</div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label>Lesson ရွေးပါ</label>
+        <select id="lessonSelect"></select>
+      </div>
+      <div>
+        <label>Style / Persona</label>
+        <select id="styleSelect">
+          <option value="calm">Calm (default narrator)</option>
+          <option value="technical">Technical (professional instructor)</option>
+          <option value="excited">Excited (demo energy)</option>
+          <option value="warning">Warning (caution tone)</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn-primary" id="genScriptBtn">Generate Script</button>
+      <button class="btn-secondary" id="clearBtn">Clear</button>
+    </div>
+    <div class="status" id="scriptStatus"></div>
+  </div>
+
+  <div class="panel">
+    <label>Voiceover Script (edit လို့ရတယ်)</label>
+    <textarea id="scriptText" placeholder="Generate Script နှိပ်ပါ..."></textarea>
+    <div class="meta" id="scriptMeta"></div>
+
+    <div class="btn-group">
+      <button class="btn-success" id="genAudioBtn" disabled>Confirm and Generate Audio</button>
+    </div>
+    <div class="status" id="audioStatus"></div>
+
+    <div id="audioPlayer" style="display:none; margin-top: 20px;">
+      <audio controls id="audioElement"></audio>
+      <a class="download-link" id="downloadLink" download>Download WAV</a>
+      <div class="meta" id="audioMeta"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const COURSE = [
+  { id: 1, title: "n8n ဆိုတာဘာလဲ", duration: 8, module: "Module 1 — Foundations" },
+  { id: 2, title: "Dashboard Interface Overview", duration: 10, module: "Module 1 — Foundations" },
+  { id: 3, title: "Workflow ဆိုတာဘာလဲ", duration: 8, module: "Module 1 — Foundations" },
+  { id: 4, title: "Node Architecture Logic", duration: 15, module: "Module 1 — Foundations" },
+  { id: 5, title: "Trigger Node vs Action Node", duration: 15, module: "Module 1 — Foundations" },
+  { id: 6, title: "Webhook Logic", duration: 18, module: "Module 2 — Core Components" },
+  { id: 7, title: "Manual Trigger", duration: 8, module: "Module 2 — Core Components" },
+  { id: 8, title: "Credentials Management", duration: 15, module: "Module 2 — Core Components" },
+  { id: 9, title: "Expressions and Variables", duration: 20, module: "Module 2 — Core Components" },
+  { id: 10, title: "JSON Basics for n8n", duration: 25, module: "Module 2 — Core Components" },
+  { id: 11, title: "Data Flow Fundamentals", duration: 20, module: "Module 2 — Core Components" },
+  { id: 12, title: "Set Node", duration: 15, module: "Module 2 — Core Components" },
+  { id: 13, title: "IF Node", duration: 15, module: "Module 2 — Core Components" },
+  { id: 14, title: "Switch Node", duration: 15, module: "Module 2 — Core Components" },
+  { id: 15, title: "HTTP Request Node", duration: 25, module: "Module 3 — Integration" },
+  { id: 16, title: "OpenAI Integration", duration: 25, module: "Module 3 — Integration" },
+  { id: 17, title: "Telegram Bot Workflow", duration: 30, module: "Module 3 — Integration" },
+  { id: 18, title: "Google Sheets Integration", duration: 30, module: "Module 3 — Integration" },
+  { id: 19, title: "AI Chatbot Workflow", duration: 35, module: "Module 4 — AI Automation" },
+  { id: 20, title: "Lead Collection Automation", duration: 35, module: "Module 4 — AI Automation" },
+  { id: 21, title: "E-commerce Order Workflow", duration: 40, module: "Module 4 — AI Automation" },
+  { id: 22, title: "Error Handling", duration: 20, module: "Module 5 — Production" },
+  { id: 23, title: "Production Workflow Structure", duration: 25, module: "Module 5 — Production" },
+  { id: 24, title: "Real Client Project Build", duration: 45, module: "Module 5 — Production" },
+];
+
+const sel = document.getElementById('lessonSelect');
+let currentModule = '';
+COURSE.forEach(l => {
+  if (l.module !== currentModule) {
+    currentModule = l.module;
+    const og = document.createElement('optgroup');
+    og.label = l.module;
+    sel.appendChild(og);
+  }
+  const opt = document.createElement('option');
+  opt.value = l.id;
+  opt.textContent = `Lesson ${l.id} — ${l.title} (${l.duration} min)`;
+  sel.lastChild.appendChild ? sel.lastChild.appendChild(opt) : sel.appendChild(opt);
+});
+
+const $ = id => document.getElementById(id);
+const setStatus = (el, type, msg, loading = false) => {
+  el.className = `status show ${type}`;
+  el.innerHTML = (loading ? '<span class="loader"></span>' : '') + msg;
+};
+const clearStatus = el => { el.className = 'status'; el.innerHTML = ''; };
+
+function getSelectedLesson() {
+  const id = parseInt(sel.value, 10);
+  return COURSE.find(l => l.id === id);
+}
+
+$('genScriptBtn').addEventListener('click', async () => {
+  const lesson = getSelectedLesson();
+  const style = $('styleSelect').value;
+  const webhookUrl = $('webhookUrl').value.trim();
+
+  if (!webhookUrl) return setStatus($('scriptStatus'), 'error', 'Webhook URL လိုတယ်');
+
+  $('genScriptBtn').disabled = true;
+  $('genAudioBtn').disabled = true;
+  $('scriptText').value = '';
+  $('audioPlayer').style.display = 'none';
+  clearStatus($('audioStatus'));
+  setStatus($('scriptStatus'), 'info', `Generating Lesson ${lesson.id} script... (Gemini 3.1 Flash Lite)`, true);
+
+  try {
+    const res = await fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        action: 'script',
+        lesson_id: lesson.id,
+        lesson_title: lesson.title,
+        duration: lesson.duration,
+        style: style,
+      }),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`);
+    const data = await res.json();
+    if (data.status !== 'success') throw new Error(data.message || 'Generation failed');
+
+    $('scriptText').value = data.script;
+    $('scriptMeta').textContent = `Lesson ${data.lesson_id} · ${data.lesson_title} · target ${data.duration} min · ${data.script.length} chars`;
+    $('genAudioBtn').disabled = false;
+    setStatus($('scriptStatus'), 'success', 'Script generated. ပြင်စရာရှိရင် ပြင်ပြီး Confirm and Generate Audio နှိပ်ပါ');
+  } catch (err) {
+    setStatus($('scriptStatus'), 'error', `Error: ${err.message}`);
+  } finally {
+    $('genScriptBtn').disabled = false;
+  }
+});
+
+$('genAudioBtn').addEventListener('click', async () => {
+  const lesson = getSelectedLesson();
+  const style = $('styleSelect').value;
+  const script = $('scriptText').value.trim();
+  const webhookUrl = $('webhookUrl').value.trim();
+
+  if (!script) return setStatus($('audioStatus'), 'error', 'Script မရှိ');
+
+  $('genAudioBtn').disabled = true;
+  $('genScriptBtn').disabled = true;
+  $('audioPlayer').style.display = 'none';
+  setStatus($('audioStatus'), 'info', 'Generating audio (Gemini TTS Charon) + uploading to GitHub...', true);
+
+  try {
+    const res = await fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        action: 'audio',
+        lesson_id: lesson.id,
+        lesson_title: lesson.title,
+        duration: lesson.duration,
+        style: style,
+        script: script,
+      }),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`);
+    const data = await res.json();
+    if (data.status !== 'success') throw new Error(data.message || 'Audio generation failed');
+
+    $('audioElement').src = data.download_url;
+    $('downloadLink').href = data.download_url;
+    $('downloadLink').download = `lesson_${data.lesson_id}.wav`;
+    $('audioPlayer').style.display = 'block';
+    $('audioMeta').innerHTML = `<strong>${data.path}</strong> · ${(data.size_bytes / 1024).toFixed(1)} KB · <a href="${data.github_url}" target="_blank" style="color:#7dd3fc">View on GitHub</a>`;
+    setStatus($('audioStatus'), 'success', 'Audio ready. Play / Download လို့ရပြီ');
+  } catch (err) {
+    setStatus($('audioStatus'), 'error', `Error: ${err.message}`);
+  } finally {
+    $('genAudioBtn').disabled = false;
+    $('genScriptBtn').disabled = false;
+  }
+});
+
+$('clearBtn').addEventListener('click', () => {
+  $('scriptText').value = '';
+  $('scriptMeta').textContent = '';
+  $('audioPlayer').style.display = 'none';
+  clearStatus($('scriptStatus'));
+  clearStatus($('audioStatus'));
+  $('genAudioBtn').disabled = true;
+});
+</script>
+</body>
+</html>
