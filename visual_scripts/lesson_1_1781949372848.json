@@ -1,0 +1,86 @@
+{
+  "lesson_title": "N8N Node for Automation Logs",
+  "duration": 147.96,
+  "transcript": [
+    {
+      "start": 0,
+      "end": 1.62,
+      "text": " Who are we?"
+    },
+    {
+      "start": 1.74,
+      "end": 4.76,
+      "text": " I'm looking for a N8N node"
+    },
+    {
+      "start": 4.76,
+      "end": 8.02,
+      "text": " that can be used to create automation logs"
+    },
+    {
+      "start": 8.62,
+      "end": 9.18,
+      "text": " and implement it."
+    },
+    {
+      "start": 10.16,
+      "end": 13.38,
+      "text": " This is what I'm looking for."
+    },
+    {
+      "start": 13.38,
+      "end": 15.96,
+      "text": " N8N is a node for workflow automation."
+    },
+    {
+      "start": 17.04,
+      "end": 18.12,
+      "text": " In this case,"
+    },
+    {
+      "start": 18.4,
+      "end": 19.6,
+      "text": " I'll need an application"
+    },
+    {
+      "start": 20.12,
+      "end": 20.48,
+      "text": " that can be used to create"
+    },
+    {
+      "start": 20.48,
+      "end": 22.12,
+      "text": " a lot of data from scratch."
+    },
+    {
+      "start": 25.04,
+      "end": 27.04,
+      "text": " I'm looking for a canvas node"
+    },
+    {
+      "start": 27.04,
+      "end": 34.1,
+      "text": "在這裏面的Drag and Drop visual interface 與相關的Apps 都在裏面進行自動的自動化。"
+    },
+    {
+      "start": 35.36,
+      "end": 41.42,
+      "text": "因此,在這裏面的電源電源上, 也在這裏面的Node 電源上進行自動化。"
+    },
+    {
+      "start": 42.84,
+      "end": 49.38,
+      "text": "N8N的SAPI 和M8D 都在這裏面進行自動化。"
+    },
+    {
+      "start": 50.28,
+      "end": 53.7,
+      "text": "在這裏面的電源上, 也在這裏面進行自動化。"
+    },
+    {
+      "start": 144.32,
+      "end": 147.38,
+      "text": "在這裏面的Node 電源上, 也在這裏面的Node 電源上, 也在這裏面進行自動化。"
+    }
+  ]
+}
