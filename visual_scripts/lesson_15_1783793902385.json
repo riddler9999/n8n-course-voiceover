@@ -1,0 +1,437 @@
+{
+  "title": "App Event Triggers",
+  "audio_file": "audio.wav",
+  "audio_duration": 67.4,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 7.4,
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာတော့ n8n ရဲ့ အသက်သွေးကြော လို့ ပြော လို့ ရတဲ့ app event trigger အကြောင်း ကို လက်တွေ့ကျကျ လေ့လာသွား မှာ ပါ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "dolly",
+        "from": 1,
+        "to": 1.08,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "spring",
+      "transition": "fade",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.25,
+        "noise": 0.04,
+        "saturate": 1.15,
+        "contrast": 1.05
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 7.4,
+      "end": 13.6,
+      "caption": "ကျွန်တော်တို့ automation တစ်ခု တည်ဆောက် တော့ မယ် ဆိုရင် ဘယ် အချိန် မှာ စတင် မလဲ ဆိုတာ က အရေးအကြီးဆုံး ပါ ပဲ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "zoom",
+        "from": 1,
+        "to": 1.12,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "slide",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.2,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.2,
+        "noise": 0.03,
+        "saturate": 1.1,
+        "contrast": 1.03
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 13.6,
+      "end": 19.2,
+      "caption": "App event trigger ဆိုတာ က တော့ ပြင်ပ application တစ်ခုခု မှာ အပြောင်းအလဲ တစ်ခုခု ဖြစ်လိုက်တာ နဲ့",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "pan",
+        "from": 1,
+        "to": 1,
+        "x": -30,
+        "y": 0
+      },
+      "easing": "linear",
+      "transition": "wipe",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.4,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.2,
+        "bloom": 0.18,
+        "noise": 0.02,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 19.2,
+      "end": 25,
+      "caption": "ဥပမာ Google Sheet မှာ row အသစ် တိုးလိုက်တာ မျိုး၊ ဒါမှမဟုတ် Shopify မှာ order အသစ် ဝင်လာတာ မျိုး။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "zoom",
+        "from": 1,
+        "to": 1.1,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "fade",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.28,
+        "bloom": 0.22,
+        "noise": 0.04,
+        "saturate": 1.12,
+        "contrast": 1.04
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 25,
+      "end": 29.2,
+      "caption": "ကျွန်တော်တို့ ရဲ့ workflow ကို အလိုအလျောက် နိုးထလာအောင် လုပ်ပေးတဲ့ စနစ် ပဲ ဖြစ်ပါတယ်။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "pan",
+        "from": 1,
+        "to": 1,
+        "x": 30,
+        "y": 0
+      },
+      "easing": "linear",
+      "transition": "slide",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.2,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.2,
+        "bloom": 0.15,
+        "noise": 0.03,
+        "saturate": 1.05,
+        "contrast": 1
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 29.2,
+      "end": 39.8,
+      "caption": "လက်တွေ့ မှာ ဆိုရင် sales team တစ်ခု အတွက် ဝယ်ယူမှု အသစ် ဝင်လာ တိုင်း Slack မှာ notification ပို့ပေးတဲ့ automation မှာ ဆိုရင် ဒီ app event trigger က အဓိက မာန်နိုင် မှာ ပဲ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "zoom",
+        "from": 1,
+        "to": 1.15,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "wipe",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.4,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.23,
+        "noise": 0.05,
+        "saturate": 1.13,
+        "contrast": 1.06
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 39.8,
+      "end": 48.2,
+      "caption": "n8n မှာ ရှိတဲ့ webhook node တွေ ဒါမှမဟုတ် သက်ဆိုင်ရာ app integration node တွေ ကို အသုံးပြု ပြီး real-time အချက်အလက် တွေ ကို ချက်ချင်း ရယူနိုင်ပါတယ်။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": true,
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "n8n_webhook_slack_workflow",
+          "path": "assets/n8n_webhook_slack_workflow.png",
+          "reason": "Capture n8n canvas with a 'Webhook' node (HTTP Trigger) connected to a 'Slack' node (Post Message). The Webhook node should be configured with 'GET/POST' method, and the Slack node should have a basic 'Text' message field visible (can be empty). Canvas should be centered on these two nodes, node panel closed on the right. Default light theme."
+        }
+      ],
+      "camera": {
+        "move": "static",
+        "from": 1,
+        "to": 1,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "fade",
+      "layers": {
+        "bg": true,
+        "particles": false,
+        "lightRays": false,
+        "grid": true
+      },
+      "shadow": true,
+      "parallax": 0.2,
+      "focus": {
+        "highlight": [
+          20,
+          30,
+          60,
+          40
+        ]
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.2,
+        "bloom": 0.15,
+        "noise": 0.02,
+        "saturate": 1,
+        "contrast": 1
+      },
+      "motionBlur": false
+    },
+    {
+      "start": 48.2,
+      "end": 52.6,
+      "caption": "အရေးကြီးတာ က တော့ trigger တိုင်း က efficiency နဲ့ တိုက်ရိုက် သက်ဆိုင်ပါတယ်။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "zoom",
+        "from": 1,
+        "to": 1.1,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "slide",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.2,
+        "noise": 0.03,
+        "saturate": 1.1,
+        "contrast": 1.03
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 52.6,
+      "end": 58.8,
+      "caption": "ဒါကြောင့် နောက် သင်ခန်းစာ မှာ တော့ webhook ကို ဘယ်လို လုံခြုံ စိတ်ချစွာ config လုပ် မလဲ ဆိုတာ ကို ဆက်လက် လေ့လာသွားကြ မယ်။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "pan",
+        "from": 1,
+        "to": 1,
+        "x": -40,
+        "y": 0
+      },
+      "easing": "linear",
+      "transition": "wipe",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.4,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.2,
+        "bloom": 0.18,
+        "noise": 0.02,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 58.8,
+      "end": 65.2,
+      "caption": "အခု app event trigger ကို နားလည်ထားတာ က ရှေ့ဆက်မယ့် complex automation တွေ အတွက် အခြေခံ အုတ်မြစ် တစ်ခု ပါ ပဲ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "zoom",
+        "from": 1,
+        "to": 1.12,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "fade",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.28,
+        "bloom": 0.22,
+        "noise": 0.04,
+        "saturate": 1.12,
+        "contrast": 1.04
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 65.2,
+      "end": 67.4,
+      "caption": "ကဲ နောက် သင်ခန်းစာ မှာ ဆက်တွေ့ကြရအောင်။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "dolly",
+        "from": 1,
+        "to": 1.08,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "spring",
+      "transition": "slide",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.25,
+        "noise": 0.04,
+        "saturate": 1.15,
+        "contrast": 1.05
+      },
+      "motionBlur": true
+    }
+  ]
+}
