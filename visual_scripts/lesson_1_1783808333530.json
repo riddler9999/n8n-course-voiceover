@@ -1,0 +1,317 @@
+{
+  "title": "Lesson",
+  "audio_file": "audio.wav",
+  "audio_duration": 60.3,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 1.5,
+      "type": "intro",
+      "caption": "အားလုံး ပဲ မင်္ဂလာ ပါ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "မင်္ဂလာ ပါ"
+      ],
+      "bg": "linear-gradient(135deg, #1a1a2e, #16213e)"
+    },
+    {
+      "start": 1.5,
+      "end": 5.7,
+      "type": "intro",
+      "caption": "n8n Master Club ရဲ့ ပထမဆုံး သင်ခန်းစာ ကို ကြိုဆို ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "n8n Master Club",
+        "ပထမဆုံး သင်ခန်းစာ"
+      ],
+      "icons": [
+        {
+          "name": "✨",
+          "label": "Welcome",
+          "x": 50,
+          "y": 70,
+          "color": "linear-gradient(135deg,#8a4fe0,#3b6fe0)"
+        }
+      ]
+    },
+    {
+      "start": 5.7,
+      "end": 11.8,
+      "type": "concept",
+      "caption": "ကျွန်တော် က တော့ ဒီ သင်တန်း မှာ သင်တန်းဆရာ နဲ့ သင် တို့ ရဲ့ mentor အဖြစ် လမ်းပြပေးမယ့် သူ ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "kinetic": [
+        "သင်တန်းဆရာ",
+        "သင် တို့ ရဲ့ mentor"
+      ],
+      "icons": [
+        {
+          "name": "👨‍🏫",
+          "label": "Mentor",
+          "x": 30,
+          "y": 50,
+          "color": "#3b6fe0"
+        },
+        {
+          "name": "🧭",
+          "label": "Guide",
+          "x": 70,
+          "y": 50,
+          "color": "#8a4fe0"
+        }
+      ]
+    },
+    {
+      "start": 11.8,
+      "end": 16,
+      "type": "concept",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ ကျွန်တော် တို့ ဘာကြောင့် n8n ကို ရွေးချယ်သင့် သလဲ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "kinetic": [
+        "ဘာကြောင့် n8n?",
+        "ရွေးချယ်သင့် သလဲ?"
+      ],
+      "icons": [
+        {
+          "name": "❓",
+          "label": "Why",
+          "x": 50,
+          "y": 50,
+          "color": "#ffc107"
+        }
+      ]
+    },
+    {
+      "start": 16,
+      "end": 21.3,
+      "type": "concept",
+      "caption": "အလိုအလျောက် စနစ် ဆိုတာ ဘာလဲ ဆိုတာ ကို အခြေခံ က စ ပြီး နားလည်အောင် အတူတူ လေ့လာကြ မှာ ပါ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "kinetic": [
+        "အလိုအလျောက် စနစ်",
+        "အခြေခံ က စ ပြီး"
+      ],
+      "icons": [
+        {
+          "name": "⚙️",
+          "label": "System",
+          "x": 30,
+          "y": 45,
+          "color": "#f44336"
+        },
+        {
+          "name": "📚",
+          "label": "Learn",
+          "x": 70,
+          "y": 55,
+          "color": "#2196f3"
+        }
+      ]
+    },
+    {
+      "start": 21.3,
+      "end": 30.5,
+      "type": "concept",
+      "caption": "လက်တွေ့ မှာ automation ဆိုတာ ရိုးရိုးရှင်းရှင်း ပြောရ ရင် လူ တွေ ပုံမှန် လုပ်နေကြ ထပ်ခါ တလဲလဲ အလုပ် တွေ ကို software တွေ ဆီ လွှဲပေးလိုက်တာ ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "kinetic": [
+        "Automation ဆိုတာ",
+        "ထပ်ခါ တလဲလဲ အလုပ်",
+        "Software တွေ ဆီ လွှဲပေး"
+      ],
+      "icons": [
+        {
+          "name": "🔄",
+          "label": "Repetitive",
+          "x": 25,
+          "y": 40,
+          "color": "#4caf50"
+        },
+        {
+          "name": "💻",
+          "label": "Software",
+          "x": 75,
+          "y": 60,
+          "color": "#9c27b0"
+        }
+      ]
+    },
+    {
+      "start": 30.5,
+      "end": 38.5,
+      "type": "concept",
+      "caption": "ဥပမာ email ပို့တာ၊ data တွေ ရွှေ့တာ၊ ဒါမှမဟုတ် AI ကို သုံး ပြီး customer တွေ ရဲ့ မေးခွန်း တွေ ကို ဖြေခိုင်းတာ မျိုး ပေါ့။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "icons": [
+        {
+          "name": "✉️",
+          "label": "Email",
+          "x": 20,
+          "y": 50,
+          "color": "#e91e63"
+        },
+        {
+          "name": "🗄️",
+          "label": "Data",
+          "x": 50,
+          "y": 50,
+          "color": "#00bcd4"
+        },
+        {
+          "name": "🤖",
+          "label": "AI",
+          "x": 80,
+          "y": 50,
+          "color": "#ff9800"
+        }
+      ]
+    },
+    {
+      "start": 38.5,
+      "end": 48.5,
+      "type": "concept",
+      "caption": "n8n ဟာ တခြား tools တွေ နဲ့ မတူ ဘဲ ဘာကြောင့် ပိုကောင်းရတာ လဲ ဆိုရင် သူ က workflow base ဖြစ်တဲ့ အတွက် ကျွန်တော် တို့ စိတ်ကြိုက် logic တွေ ကို အသေးစိတ် တည်ဆောက်နိုင် လို့ ပါ ပဲ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "kinetic": [
+        "Workflow Base",
+        "စိတ်ကြိုက် Logic",
+        "အသေးစိတ် တည်ဆောက်"
+      ],
+      "icons": [
+        {
+          "name": "🔗",
+          "label": "Workflow",
+          "x": 30,
+          "y": 50,
+          "color": "#3b6fe0"
+        },
+        {
+          "name": "🧠",
+          "label": "Logic",
+          "x": 70,
+          "y": 50,
+          "color": "#8a4fe0"
+        }
+      ]
+    },
+    {
+      "start": 48.5,
+      "end": 55.5,
+      "type": "concept",
+      "caption": "ဒီ သင်တန်း မှာ တော့ အခြေခံ က နေ စ ပြီး AI agent တွေ အထိ ဘယ်လို ဖန်တီး မလဲ ဆိုတာ ကို လက်တွေ့ လုပ်ပြသွား မှာ ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "kinetic": [
+        "အခြေခံ က နေ",
+        "AI Agent တွေ အထိ",
+        "လက်တွေ့ လုပ်ပြ"
+      ],
+      "icons": [
+        {
+          "name": "🚀",
+          "label": "Journey",
+          "x": 25,
+          "y": 50,
+          "color": "#00e676"
+        },
+        {
+          "name": "🤖",
+          "label": "AI Agents",
+          "x": 75,
+          "y": 50,
+          "color": "#ff1744"
+        }
+      ]
+    },
+    {
+      "start": 55.5,
+      "end": 60.3,
+      "type": "outro",
+      "caption": "ဒါဆိုရင် နောက် သင်ခန်းစာ မှာ n8n ရဲ့ interface ကို အသေးစိတ် လေ့လာကြည့်ရအောင်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "နောက် သင်ခန်းစာ",
+        "n8n Interface",
+        "လေ့လာကြည့်ရအောင်"
+      ],
+      "icons": [
+        {
+          "name": "👋",
+          "label": "See you",
+          "x": 50,
+          "y": 70,
+          "color": "linear-gradient(135deg,#3b6fe0,#8a4fe0)"
+        }
+      ]
+    }
+  ]
+}
