@@ -1,0 +1,425 @@
+{
+  "title": "Lesson",
+  "audio_file": "audio.wav",
+  "audio_duration": 125,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 8.5,
+      "type": "concept",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ N8N မှာ အခြေခံ အကျဆုံး ဖြစ် ပေမယ့် အရေးအပါဆုံး ဖြစ် တဲ့ manual trigger အကြောင်း ကို ဆွေးနွေးပေးသွား မှာ ပါ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "saturate": 1.15,
+        "contrast": 1.08
+      },
+      "kinetic": [
+        "N8N Master Club",
+        "Manual Trigger (အခြေခံ)",
+        "အရေးအပါဆုံး"
+      ],
+      "bg": "linear-gradient(45deg, #1a1a2e, #16213e, #0f3460)"
+    },
+    {
+      "start": 8.5,
+      "end": 15.8,
+      "type": "concept",
+      "caption": "ကျွန်တော် တို့ အလိုအလျောက် စနစ် တစ်ခု ကို တည်ဆောက် တော့ မယ် ဆိုရင် အဲ့ဒီ စနစ် ကို ဘယ် အချိန် မှာ စတင် မလဲ ဆိုတာ ကို သတ်မှတ်ပေးရ ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⚙️",
+          "label": "System",
+          "x": 25,
+          "y": 50,
+          "color": "#8a4fe0"
+        },
+        {
+          "name": "⏰",
+          "label": "When to Start?",
+          "x": 75,
+          "y": 50,
+          "color": "#3b6fe0"
+        }
+      ]
+    },
+    {
+      "start": 15.8,
+      "end": 26,
+      "type": "screen_demo",
+      "caption": "Manual trigger ဆိုတာ က တော့ ကျွန်တော် တို့ ကိုယ်တိုင် N8N editor ထဲ မှာ execute workflow ဆိုတဲ့ ခလုတ် ကို နှိပ်လိုက်တဲ့ အခါ မှာ မှ စတင် အလုပ်လုပ် တဲ့ trigger အမျိုးအစား ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — My Workflow",
+      "ui": [
+        {
+          "kind": "button",
+          "label": "Add first step...",
+          "x": 45,
+          "y": 50,
+          "w": 10,
+          "h": 5
+        },
+        {
+          "kind": "button",
+          "label": "Execute Workflow",
+          "x": 80,
+          "y": 5,
+          "w": 10,
+          "h": 4,
+          "color": "#4CAF50"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 48,
+          "y": 52,
+          "zoom": 1.4,
+          "click": true
+        },
+        {
+          "x": 85,
+          "y": 7,
+          "zoom": 1.6,
+          "click": true
+        },
+        {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "start": 26,
+      "end": 35,
+      "type": "concept",
+      "caption": "ဒါ က ဘာကြောင့် လိုအပ်တာ လဲ ဆိုတော့ လက်တွေ့ မှာ workflow တစ်ခု ကို တည်ဆောက် ပြီး တဲ့ အခါ သူ က မှန်ကန်စွာ အလုပ်လုပ် မလုပ် ကို စမ်းသပ် ဖို့ testing လိုအပ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🛠️",
+          "label": "Build Workflow",
+          "x": 30,
+          "y": 40,
+          "color": "#f0b400"
+        },
+        {
+          "name": "🧪",
+          "label": "Testing",
+          "x": 70,
+          "y": 60,
+          "color": "#00bcd4"
+        }
+      ]
+    },
+    {
+      "start": 35,
+      "end": 44.8,
+      "type": "concept",
+      "caption": "ကျွန်တော် တို့ အနေနဲ့ workflow တစ်ခုလုံး ကို တကယ် production ပတ်ဝန်းကျင် မှာ မတင်ခင် မှာ အမှားအယွင်း ရှိ မရှိ ဒီ manual trigger နဲ့ ပဲ အရင်ဆုံး စမ်းသပ် လေ့ ရှိကြ တာ ပါ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🚀",
+          "label": "Production",
+          "x": 25,
+          "y": 50,
+          "color": "#ff5722"
+        },
+        {
+          "name": "🛡️",
+          "label": "No Errors",
+          "x": 75,
+          "y": 50,
+          "color": "#4CAF50"
+        }
+      ]
+    },
+    {
+      "start": 44.8,
+      "end": 51,
+      "type": "concept",
+      "caption": "ဥပမာ အနေနဲ့ ပြောရ ရင် ကျွန်တော် တို့ ဟာ ဖောက်သည် တွေ ဆီ ကို email ပို့မယ့် စနစ် တစ်ခု ကို ရေးဆွဲထား တယ် ဆိုပါစို့။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "📧",
+          "label": "Email System",
+          "x": 30,
+          "y": 50,
+          "color": "#2196F3"
+        },
+        {
+          "name": "👥",
+          "label": "Customers",
+          "x": 70,
+          "y": 50,
+          "color": "#9C27B0"
+        }
+      ]
+    },
+    {
+      "start": 51,
+      "end": 59.8,
+      "type": "screen_demo",
+      "caption": "အဲ့ဒီ email တွေ အလိုအလျောက် မပို့ခင် မှာ ကျွန်တော် တို့ ဟာ manual trigger ကို သုံး ပြီး workflow တစ်ခုလုံး ရဲ့ data စီစဉ်ပုံ ကို အရင်ဆုံး စစ်ဆေးရ ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — Email Workflow",
+      "ui": [
+        {
+          "kind": "node",
+          "label": "Manual Trigger",
+          "x": 20,
+          "y": 50,
+          "w": 15,
+          "h": 8,
+          "color": "#3b6fe0"
+        },
+        {
+          "kind": "node",
+          "label": "Send Email",
+          "x": 60,
+          "y": 50,
+          "w": 15,
+          "h": 8,
+          "color": "#f0b400"
+        },
+        {
+          "kind": "connector",
+          "x": 35,
+          "y": 54,
+          "w": 25,
+          "h": 0,
+          "color": "#777"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 27,
+          "y": 54,
+          "zoom": 1.6
+        },
+        {
+          "x": 67,
+          "y": 54,
+          "zoom": 1.6
+        },
+        {
+          "x": 48,
+          "y": 54,
+          "zoom": 1.2
+        },
+        {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "start": 59.8,
+      "end": 108.8,
+      "type": "screen_demo",
+      "caption": "အရေးကြီး တာ က N8N မှာ manual trigger ကို သုံးတဲ့ အခါ ကျွန်တော် တို့ ဟာ ကြိုက်သလောက် အကြိမ်ကြိမ် စမ်းသပ် နိုင် ပြီး data တွေ ကို တစ်ဆင့်ချင်း စီ လိုက်ကြည့် နိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — Workflow Testing",
+      "ui": [
+        {
+          "kind": "node",
+          "label": "Manual Trigger",
+          "x": 15,
+          "y": 50,
+          "w": 15,
+          "h": 8,
+          "color": "#3b6fe0"
+        },
+        {
+          "kind": "node",
+          "label": "Set",
+          "x": 40,
+          "y": 50,
+          "w": 10,
+          "h": 8,
+          "color": "#8a4fe0"
+        },
+        {
+          "kind": "connector",
+          "x": 30,
+          "y": 54,
+          "w": 10,
+          "h": 0,
+          "color": "#777"
+        },
+        {
+          "kind": "panel",
+          "label": "Fields",
+          "x": 55,
+          "y": 15,
+          "w": 40,
+          "h": 70,
+          "color": "#333"
+        },
+        {
+          "kind": "button",
+          "label": "Execute Node",
+          "x": 80,
+          "y": 10,
+          "w": 12,
+          "h": 5,
+          "color": "#4CAF50"
+        },
+        {
+          "kind": "input",
+          "label": "Mode",
+          "x": 60,
+          "y": 20,
+          "w": 30,
+          "h": 5
+        },
+        {
+          "kind": "text",
+          "label": "Drag input fields",
+          "x": 70,
+          "y": 45,
+          "fontSize": 16,
+          "color": "#aaa"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 22,
+          "y": 54,
+          "zoom": 1.4,
+          "click": true
+        },
+        {
+          "x": 45,
+          "y": 54,
+          "zoom": 1.6,
+          "click": true
+        },
+        {
+          "x": 86,
+          "y": 12,
+          "zoom": 1.8,
+          "click": true
+        },
+        {
+          "x": 70,
+          "y": 45,
+          "zoom": 1.6
+        },
+        {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "start": 108.8,
+      "end": 114,
+      "type": "concept",
+      "caption": "ဒါ ဟာ automation engineer တစ်ယောက် အတွက် အမှား နည်းအောင် ပြင်ဆင်ရ တဲ့ အကောင်းဆုံး နည်းလမ်း ပဲ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🤖",
+          "label": "Automation Engineer",
+          "x": 30,
+          "y": 50,
+          "color": "#00C853"
+        },
+        {
+          "name": "✅",
+          "label": "Minimize Errors",
+          "x": 70,
+          "y": 50,
+          "color": "#FFD600"
+        }
+      ]
+    },
+    {
+      "start": 114,
+      "end": 125,
+      "type": "outro",
+      "caption": "ကဲ အခု ဆိုရင် manual trigger ရဲ့ သဘောသဘာဝ ကို နားလည်သွား ပြီ ဆိုတော့ နောက် သင်ခန်းစာ မှာ တော့ အချိန် နဲ့ အမျှ အလိုအလျောက် လည်ပတ်ပေးမယ့် schedule trigger အကြောင်း ကို ဆက်လက် လေ့လာကြည့်ရအောင်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "saturate": 1.15,
+        "contrast": 1.08
+      },
+      "kinetic": [
+        "Manual Trigger (နားလည်ပြီ)",
+        "နောက်သင်ခန်းစာ:",
+        "Schedule Trigger"
+      ],
+      "bg": "linear-gradient(135deg, #0f3460, #16213e, #1a1a2e)"
+    }
+  ]
+}
