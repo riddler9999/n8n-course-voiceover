@@ -1,0 +1,373 @@
+{
+  "title": "Manual Trigger in n8n",
+  "audio_file": "audio.wav",
+  "audio_duration": 75,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 10.5,
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ n8n မှာ အခြေခံ အကျဆုံး ဖြစ် ပေမယ့် လက်တွေ့ အလုပ်လုပ်တဲ့ နေရာ မှာ မရှိမဖြစ် လိုအပ် တဲ့ manual trigger အကြောင်း ကို ဆွေးနွေးပေးသွား မှာ ဖြစ် ပါ တယ် ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "dolly",
+        "from": 1,
+        "to": 1.08,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "spring",
+      "transition": "fade",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "noise": 0.04,
+        "saturate": 1.15,
+        "contrast": 1.05
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 10.5,
+      "end": 23.5,
+      "caption": "ကျွန်တော် တို့ automation တစ်ခု တည်ဆောက် တော့ မယ် ဆိုရင် အမြဲတမ်း webhook တွေ schedule တွေ တင် မဟုတ် ဘဲ ကိုယ်တိုင် test လုပ် ဖို့ ဒါမှမဟုတ် လိုအပ်တဲ့ အချိန် မှ သာ ခလုတ် နှိပ် ပြီး run ချင်တဲ့ အခါမျိုး တွေ ရှိတတ် ပါ တယ် ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "zoom",
+        "from": 1,
+        "to": 1.12,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "slide",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.2,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "noise": 0.03,
+        "saturate": 1.1,
+        "contrast": 1.03
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 23.5,
+      "end": 28,
+      "caption": "အဲ့ဒီ အခါမျိုး မှာ manual trigger က အဓိက စာလိုက် ဖြစ်လာတာ ပါ ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "pan",
+        "from": 1,
+        "to": 1,
+        "x": -30,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "wipe",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.4,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "noise": 0.02,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 28,
+      "end": 37.5,
+      "caption": "လက်တွေ့ မှာ ဆိုရင် workflow တစ်ခု ကို အပြီးသတ် မရေးဆွဲခင် node တစ်ခုချင်း စီ ရဲ့ output က ဘယ်လို ထွက် မလဲ ဆိုတာ ကို ကျွန်တော် တို့ စမ်းသပ်လေ့ ရှိ ပါ တယ် ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": true,
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "manual_trigger_and_node_for_testing",
+          "path": "assets/manual_trigger_and_node_for_testing.png",
+          "reason": "n8n canvas with a 'Manual Trigger' node (named 'Start') connected to a 'NoOp' node (named 'Test Node'). The workflow is not yet run. Canvas centered, node panel closed. Light theme."
+        }
+      ],
+      "camera": {
+        "move": "static",
+        "from": 1,
+        "to": 1,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "linear",
+      "transition": "fade",
+      "layers": {
+        "bg": true,
+        "particles": false,
+        "lightRays": false,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.2,
+        "bloom": 0.15,
+        "noise": 0.02,
+        "saturate": 1.05,
+        "contrast": 1
+      },
+      "motionBlur": false
+    },
+    {
+      "start": 37.5,
+      "end": 42.5,
+      "caption": "အဲ့ဒီ အချိန် မှာ manual trigger ကို သုံး ပြီး execution ကို ကိုယ်တိုင် ထိန်းချုပ်လိုက်တာ ပါ ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": true,
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "manual_trigger_execute_workflow",
+          "path": "assets/manual_trigger_execute_workflow.png",
+          "reason": "n8n canvas showing only the 'Manual Trigger' node (named 'Start'). The 'Execute Workflow' button should be clearly visible and ready to be clicked. Canvas centered, node panel closed. Light theme. A pointer should indicate the 'Execute Workflow' button."
+        }
+      ],
+      "camera": {
+        "move": "static",
+        "from": 1,
+        "to": 1,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "linear",
+      "transition": "slide",
+      "layers": {
+        "bg": true,
+        "particles": false,
+        "lightRays": false,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": {
+        "x": 50,
+        "y": 75
+      },
+      "grade": {
+        "vignette": 0.2,
+        "bloom": 0.15,
+        "noise": 0.02,
+        "saturate": 1.05,
+        "contrast": 1
+      },
+      "motionBlur": false
+    },
+    {
+      "start": 42.5,
+      "end": 55.5,
+      "caption": "ဥပမာ customer database ကို Google Sheets က နေ ဆွဲထုတ် ပြီး AI နဲ့ စမ်းစစ်မယ့် workflow တစ်ခု ဆောက် မယ် ဆိုရင် တစ်ခါတည်း auto run မထား ဘဲ manual trigger နဲ့ စမ်း ပြီး data တွေ မှန် မမှန် အရင် စစ်ဆေးတာ မျိုး ပေါ့ ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": true,
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "manual_trigger_google_sheets_ai_workflow",
+          "path": "assets/manual_trigger_google_sheets_ai_workflow.png",
+          "reason": "n8n canvas showing a workflow with three connected nodes: 'Manual Trigger' (named 'Start'), 'Google Sheets' (named 'Get Customer Data'), and a generic 'AI' node (e.g., 'OpenAI' or a custom HTTP Request node labeled 'AI Analysis'). All nodes are connected sequentially. Canvas centered, node panel closed. Light theme."
+        }
+      ],
+      "camera": {
+        "move": "static",
+        "from": 1,
+        "to": 1,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "linear",
+      "transition": "wipe",
+      "layers": {
+        "bg": true,
+        "particles": false,
+        "lightRays": false,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.2,
+        "bloom": 0.15,
+        "noise": 0.02,
+        "saturate": 1.05,
+        "contrast": 1
+      },
+      "motionBlur": false
+    },
+    {
+      "start": 55.5,
+      "end": 61.5,
+      "caption": "Automation engineer တစ်ယောက် အနေနဲ့ ဒီ trigger ကို ကောင်းကောင်း သုံးတတ် ဖို့ က အရေးကြီး ပါ တယ် ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "zoom",
+        "from": 1,
+        "to": 1.1,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "fade",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.25,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.28,
+        "bloom": 0.19,
+        "noise": 0.03,
+        "saturate": 1.09,
+        "contrast": 1.02
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 61.5,
+      "end": 67.5,
+      "caption": "ဘာလို့ လဲ ဆိုတော့ ဒါဟာ ကျွန်တော် တို့ ရဲ့ workflow တွေ ကို debug လုပ်တဲ့ နေရာ မှာ အဓိက လက်နက် ဖြစ် လို့ ပါပဲ ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "pan",
+        "from": 1,
+        "to": 1,
+        "x": 40,
+        "y": 0
+      },
+      "easing": "easeOut",
+      "transition": "slide",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.35,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.17,
+        "noise": 0.025,
+        "saturate": 1.07,
+        "contrast": 1.01
+      },
+      "motionBlur": true
+    },
+    {
+      "start": 67.5,
+      "end": 75,
+      "caption": "နောက် သင်ခန်းစာ မှာ တော့ ကျွန်တော် တို့ webhook trigger အကြောင်း ကို ဆက်လက် လေ့လာ ပြီး data တွေ ဘယ်လို အဝင်ခံရ မလဲ ဆိုတာ ကို လက်တွေ့ လုပ်ဆောင်ကြည့်ရအောင် ။",
+      "caption_mode": "word",
+      "code": null,
+      "screenshot": false,
+      "assets_needed": [],
+      "camera": {
+        "move": "dolly",
+        "from": 1,
+        "to": 1.08,
+        "x": 0,
+        "y": 0
+      },
+      "easing": "spring",
+      "transition": "fade",
+      "layers": {
+        "bg": true,
+        "particles": true,
+        "lightRays": true,
+        "grid": false
+      },
+      "shadow": true,
+      "parallax": 0.3,
+      "focus": {
+        "highlight": null
+      },
+      "pointer": null,
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "noise": 0.04,
+        "saturate": 1.15,
+        "contrast": 1.05
+      },
+      "motionBlur": true
+    }
+  ]
+}
