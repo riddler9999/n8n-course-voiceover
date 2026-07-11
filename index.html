@@ -147,6 +147,18 @@
         <input type="text" id="v_audio" placeholder="auto-fill from Tab 2, or paste raw .wav URL">
       </div>
     </div>
+    <div id="screenshotRefBox" style="margin:14px 0;padding:16px;border:1px solid #263050;border-radius:12px;background:rgba(20,26,42,.5)">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+        <label style="font-size:13px;letter-spacing:.08em;color:#9fb3d4;text-transform:uppercase">Reference Screenshots <span id="shotCount" style="color:#4d9bff">(0)</span></label>
+        <div style="display:flex;gap:8px">
+          <button type="button" id="addShotUrlBtn" class="secondary" style="padding:8px 14px;font-size:13px">+ URL</button>
+          <label class="secondary" style="padding:8px 14px;font-size:13px;cursor:pointer">+ Upload
+            <input type="file" id="shotFileInput" accept="image/*" multiple style="display:none"></label>
+        </div>
+      </div>
+      <p style="margin:0 0 10px;font-size:12px;color:#6f82a4">n8n canvas / browser / terminal ပြရမယ့် scene တွေအတွက် screenshot ထည့်ပါ။ Gemini က ဒါကို ကြည့်ပြီး UI ကို code နဲ့ recreate လုပ်မယ် (မူရင်းပုံ မပြပါ)။ Hint ထည့်ရင် ပိုတိကျတယ်။</p>
+      <div id="shotList" style="display:flex;flex-direction:column;gap:8px"></div>
+    </div>
     <div class="actions-row">
       <button id="genVisualBtn" class="magenta">Generate Visual Script</button>
       <button class="secondary" id="useLastAudioBtn">Use Tab 2 audio URL</button>
@@ -281,6 +293,43 @@ $('useLastAudioBtn').addEventListener('click', () => {
   else alert('Generate audio in Tab 2 first');
 });
 
+// ===== Screenshot reference manager (Tab 3) =====
+window.__screenshots = window.__screenshots || [];
+(function(){
+  function render(){
+    var list=$('shotList'); if(!list) return;
+    $('shotCount').textContent='('+window.__screenshots.length+')';
+    list.innerHTML='';
+    window.__screenshots.forEach(function(s,i){
+      var row=document.createElement('div');
+      row.style.cssText='display:flex;align-items:center;gap:8px;background:#0f1524;border:1px solid #232c44;border-radius:8px;padding:8px';
+      var thumb=s.base64?s.base64:s.url;
+      row.innerHTML='<img src="'+(thumb||'')+'" style="width:52px;height:34px;object-fit:cover;border-radius:5px;background:#111" onerror="this.style.opacity=.2">'+
+        '<span style="flex:1;font-size:12px;color:#9fb3d4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+(s.url||s.name||'uploaded image')+'</span>'+
+        '<input placeholder="hint (scene about…)" value="'+(s.hint||'')+'" data-i="'+i+'" class="shotHint" style="width:170px;font-size:12px;padding:5px 8px;background:#0b0f1a;border:1px solid #2a3350;border-radius:6px;color:#cfe0ff">'+
+        '<button data-i="'+i+'" class="shotDel" style="border:none;background:#3a2130;color:#ff8a9c;border-radius:6px;padding:5px 9px;cursor:pointer">✕</button>';
+      list.appendChild(row);
+    });
+    list.querySelectorAll('.shotDel').forEach(function(b){b.onclick=function(){window.__screenshots.splice(+b.dataset.i,1);render();};});
+    list.querySelectorAll('.shotHint').forEach(function(inp){inp.oninput=function(){window.__screenshots[+inp.dataset.i].hint=inp.value;};});
+  }
+  var urlBtn=$('addShotUrlBtn');
+  if(urlBtn) urlBtn.onclick=function(){
+    var u=prompt('Screenshot image URL (GitHub raw .png/.jpg):');
+    if(u&&/^https?:\/\//.test(u.trim())){window.__screenshots.push({url:u.trim(),hint:''});render();}
+  };
+  var fileInput=$('shotFileInput');
+  if(fileInput) fileInput.onchange=function(e){
+    Array.from(e.target.files||[]).forEach(function(f){
+      var r=new FileReader();
+      r.onload=function(){window.__screenshots.push({base64:r.result,name:f.name,hint:''});render();};
+      r.readAsDataURL(f);
+    });
+    e.target.value='';
+  };
+  render();
+})();
+
 $('genVisualBtn').addEventListener('click', async () => {
   const btn = $('genVisualBtn'); btn.disabled = true;
   const audio_url = $('v_audio').value.trim();
@@ -290,21 +339,17 @@ $('genVisualBtn').addEventListener('click', async () => {
     const data = await postWebhook({
       action: 'visual_script',
       lesson_id: parseInt($('v_lid').value, 10),
-      audio_url
+      audio_url,
+      screenshots: window.__screenshots || []
     });
     const vs = data.visual_script || {};
     $('visualJson').value = JSON.stringify(vs, null, 2);
     const nScenes = (vs.scenes||[]).length;
-    $('visualMeta').innerHTML = `<strong>${nScenes} scenes</strong> · ${vs.composition?.durationInSeconds||'?'}s · <a href="${data.github_html_url||'#'}" target="_blank">GitHub</a>`;
+    const dur = vs.audio_duration || vs.composition?.durationInSeconds || '?';
+    $('visualMeta').innerHTML = `<strong>${nScenes} scenes</strong> · ${dur}s · <a href="${data.github_html_url||'#'}" target="_blank">GitHub</a>`;
     setStatus($('visualStatus'), 'success', `Generated ${nScenes} scenes. Review & edit, then go to Tab 4.`);
     // auto-copy to render tab
     $('r_visual').value = $('visualJson').value;
-    // collect unique assets needed
-    const allAssets = {};
-    (vs.scenes||[]).forEach(s => (s.assets_needed||[]).forEach(a => { allAssets[a.name||a.kind] = a; }));
-    (vs.global_assets||[]).forEach(a => { allAssets[a.name||a.kind] = a; });
-    assets = Object.values(allAssets).map(a => ({ name: a.name||'asset', kind: a.kind||'icon', url: '' }));
-    renderAssets();
   } catch(e){ setStatus($('visualStatus'), 'error', e.message); }
   finally { btn.disabled = false; }
 });
