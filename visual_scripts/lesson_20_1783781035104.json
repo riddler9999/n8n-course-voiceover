@@ -1,0 +1,1313 @@
+{
+  "composition": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationInSeconds": 347.16
+  },
+  "audio_file": "audio.wav",
+  "scenes": [
+    {
+      "id": "scene_1",
+      "start": 0,
+      "end": 10.9,
+      "type": "intro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ ကျွန်တော် တို့ automation engineer တစ်ယောက် အနေနဲ့ မဖြစ်မနေ သိထားရမယ့် အရေးကြီးဆုံး trigger တစ်ခု ဖြစ် တဲ့ form submission အကြောင်း ကို အသေးစိတ် လေ့လာသွား မှာ ပါ။",
+      "description": "Introduce the topic of form submission as a crucial trigger for automation engineers.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Form Submission",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 80
+        },
+        {
+          "text": "Automation Engineer",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_2",
+      "start": 10.9,
+      "end": 18.8,
+      "type": "concept",
+      "caption": "လက်တွေ့ လုပ်ငန်းခွင် မှာ ဆိုရင် ကျွန်တော် တို့ ဆီ ကို အချက်အလက် တွေ ရောက်လာ ဖို့ အတွက် အကောင်းဆုံး နဲ့ အမြန်ဆုံး နည်းလမ်း က form တွေ ပဲ ဖြစ် ပါ တယ်။",
+      "description": "Explain forms as the best way to receive data in real-world scenarios.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Forms",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Data Collection",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_3",
+      "start": 18.8,
+      "end": 29.2,
+      "type": "concept",
+      "caption": "ဒါပေမဲ့ ဒီ form တွေ ကို ဘယ်လိုမျိုး N8N ထဲ ကို အလိုအလျောက် ဆွဲယူ ပြီး လုပ်ငန်းစဉ် တစ်ခုလုံး ကို အလုပ်လုပ်စေ မလဲ ဆိုတာ က တော့ engineer တစ်ယောက် ရဲ့ skill ပေါ် မှာ မူတည်နေ ပါ တယ်။",
+      "description": "Highlight the skill needed to integrate forms into n8n workflows.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "N8N Integration",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Engineer Skill",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_4",
+      "start": 29.2,
+      "end": 33.8,
+      "type": "concept",
+      "caption": "အရင်ဆုံး ကျွန်တော် တို့ နားလည်ထားရ မှာ က form submission ဆိုတာ ဘာလဲ ပေါ့။",
+      "description": "Define what form submission is.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "What is Form Submission?",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_5",
+      "start": 33.8,
+      "end": 46.6,
+      "type": "concept",
+      "caption": "ရိုးရိုးရှင်းရှင်း ပြောရ ရင် အသုံးပြုသူ တစ်ယောက် က ကိုယ့် ရဲ့ website၊ ဒါမှမဟုတ် landing page မှာ ရှိ တဲ့ contact form၊ survey form၊ ဒါမှမဟုတ် order form တစ်ခုခု ကို ဖြည့် ပြီး submit နှိပ်လိုက် တဲ့ အခါ မှာ ဖြစ်ပေါ်လာ တဲ့ event တစ်ခု ပါ။",
+      "description": "Elaborate on form submission as an event triggered by user interaction on a website/landing page.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "User Submits Form",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Event Trigger",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_6",
+      "start": 46.6,
+      "end": 52.5,
+      "type": "concept",
+      "caption": "ဒီ event ကို N8N က နေ ဖမ်းယူ ပြီး တာ နဲ့ ကျွန်တော် တို့ က နောက်ကွယ် မှာ အလုပ် တွေ အများကြီး လုပ်ပေး လို့ ရသွား ပြီ။",
+      "description": "Explain how n8n captures this event to automate backend tasks.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "N8N Captures Event",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Automate Tasks",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_7",
+      "start": 52.5,
+      "end": 61.5,
+      "type": "concept",
+      "caption": "ဥပမာ customer ဆီ ကို auto reply ပို့ တာ၊ Google Sheets ထဲ မှာ data သိမ်း တာ၊ ဒါမှမဟုတ် AI agent ကို အလုပ်ခိုင်း ပြီး အဖြေ ပြန်ပေး တာမျိုး တွေ ပေါ့။",
+      "description": "Provide examples of automated tasks (auto-reply, save to Google Sheets, AI response).",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Auto Reply",
+          "position": "top-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Save Data",
+          "position": "top-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "AI Agent",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_8",
+      "start": 61.5,
+      "end": 64.8,
+      "type": "concept",
+      "caption": "လက်တွေ့ မှာ ကျွန်တော် တို့ အသုံး အများဆုံး နည်းလမ်း သုံး ခု ရှိ ပါ တယ်။",
+      "description": "Introduce three common methods for form submission.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "3 Methods",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_9",
+      "start": 64.8,
+      "end": 69,
+      "type": "concept",
+      "caption": "ပထမ တစ်ခု က တော့ N8N ရဲ့ webhook node ကို တိုက်ရိုက် အသုံးပြု တာ ပါ။",
+      "description": "First method: using n8n's webhook node directly.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "1. N8N Webhook Node",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_10",
+      "start": 69,
+      "end": 76,
+      "type": "concept",
+      "caption": "ဒုတိယ တစ်ခု က တော့ Typeform, Google Forms သို့မဟုတ် Tally လိုမျိုး third-party form builder တွေ ကို trigger အနေနဲ့ ချိတ်ဆက် တာ ပါ။",
+      "description": "Second method: integrating third-party form builders (Typeform, Google Forms, Tally).",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "2. Third-Party Forms",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_11",
+      "start": 76,
+      "end": 82.8,
+      "type": "concept",
+      "caption": "တတိယ တစ်ခု က တော့ WordPress ဒါမှမဟုတ် custom website တွေ က နေ API က နေ တစ်ဆင့် data ကို push လုပ် တာမျိုး ပါ။",
+      "description": "Third method: pushing data via API from WordPress or custom websites.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "3. API Push (WordPress/Custom)",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_12",
+      "start": 82.8,
+      "end": 86.8,
+      "type": "concept",
+      "caption": "Webhook node တစ်ကြောင်း ပြောရ ရင် ဒါ ဟာ N8N ရဲ့ အသက်သွေးကြော ပဲ။",
+      "description": "Emphasize the importance of the webhook node as n8n's lifeline.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Webhook: N8N's Lifeline",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_13",
+      "start": 86.8,
+      "end": 93.7,
+      "type": "concept",
+      "caption": "ကျွန်တော် တို့ က webhook URL တစ်ခု ကို ဖန်တီးလိုက် တာ နဲ့ အင်တာနက် ပေါ် က ဘယ် နေရာ က မဆို data ပို့ လို့ ရ ပါ ပြီ။",
+      "description": "Explain that a webhook URL allows data reception from anywhere on the internet.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Webhook URL",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Receive Data Anywhere",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_14",
+      "start": 93.7,
+      "end": 100.5,
+      "type": "concept",
+      "caption": "အရေးကြီး တာ က webhook node မှာ method အမျိုးအစား တွေ ဖြစ် တဲ့ get နဲ့ post ကို ကွဲပြားအောင် သိထား ဖို့ ပါ။",
+      "description": "Highlight the importance of understanding GET vs. POST methods for webhooks.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "GET vs. POST",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_15",
+      "start": 100.5,
+      "end": 105,
+      "type": "concept",
+      "caption": "Form submission တွေ အတွက် ဆိုရင် တော့ ကျွန်တော် တို့ က post method ကို ပဲ အဓိက သုံးလေ့ ရှိ ပါ တယ်။",
+      "description": "State that POST method is primarily used for form submissions.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Form Submission = POST",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_16",
+      "start": 105,
+      "end": 110.8,
+      "type": "concept",
+      "caption": "ဘာလို့ လဲ ဆိုတော့ post က data တွေ ကို body ထဲ မှာ လုံခြုံစွာ နဲ့ အများကြီး သယ်ဆောင်လာနိုင် လို့ ပါ။",
+      "description": "Explain why POST is preferred (securely carries large amounts of data in the body).",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "POST: Secure Data in Body",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_17",
+      "start": 110.8,
+      "end": 114.5,
+      "type": "concept",
+      "caption": "အခု ကျွန်တော် တို့ လက်တွေ့ business example တစ်ခု ကို ကြည့်ရအောင်။",
+      "description": "Introduce a practical business example.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Business Example",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_18",
+      "start": 114.5,
+      "end": 120,
+      "type": "concept",
+      "caption": "ဥပမာ အနေနဲ့ သင် ဟာ digital marketing agency တစ်ခု အတွက် automation ဆောက်ပေးနေ တယ် ဆိုပါစို့။",
+      "description": "Set up the scenario: building automation for a digital marketing agency.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Digital Marketing Agency",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_19",
+      "start": 120,
+      "end": 124,
+      "type": "concept",
+      "caption": "client ရဲ့ website မှာ free consultation တောင်းဆို တဲ့ form ရှိ တယ်။",
+      "description": "Client has a free consultation form on their website.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Free Consultation Form",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_20",
+      "start": 124,
+      "end": 128,
+      "type": "concept",
+      "caption": "အဲ့ဒီ form ဖြည့်လိုက် တာ နဲ့ အလိုအလျောက် ဖြစ်သွားသင့် တဲ့ flow ကို စဉ်းစားကြည့် ပါ။",
+      "description": "Envision the automated flow after form submission.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Automated Flow",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_21",
+      "start": 128,
+      "end": 133,
+      "type": "canvas_demo",
+      "caption": "တစ်၊ form ဖြည့်လိုက် တာ နဲ့ N8N က webhook က နေ data လက်ခံ ရ ရှိ မယ်။",
+      "description": "Step 1: N8N receives data via webhook after form submission.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "webhook_waiting",
+          "path": "assets/webhook_waiting.png",
+          "reason": "n8n canvas, a single 'Webhook' trigger node (HTTP Request) on the canvas, showing its 'Waiting for webhook call...' state. Node panel closed. Canvas centered on the node."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "1. Receive Data (Webhook)",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_22",
+      "start": 133,
+      "end": 140,
+      "type": "canvas_demo",
+      "caption": "နှစ်၊ အဲ့ဒီ data ကို OpenAI သို့မဟုတ် Anthropic ဆီ ပို့ ပြီး client ရဲ့ လိုအပ်ချက် ကို ခွဲခြမ်း စိတ်ဖြာခိုင်း မယ်။",
+      "description": "Step 2: Send data to OpenAI/Anthropic for client requirement analysis.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "webhook_to_ai",
+          "path": "assets/webhook_to_ai.png",
+          "reason": "n8n canvas, 'Webhook' trigger node connected to an 'OpenAI' node (e.g., Chat Completions). The OpenAI node should be configured with a basic prompt to analyze client needs. Node panel for OpenAI node open, showing basic configuration. Canvas zoomed to show both nodes and connection."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "2. Analyze with AI",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_23",
+      "start": 140,
+      "end": 144.8,
+      "type": "canvas_demo",
+      "caption": "သုံး၊ ပြီး ရင် ထွက်လာ တဲ့ အဖြေ ကို CRM ထဲ မှာ အလိုအလျောက် မှတ်တမ်း တင် မယ်။",
+      "description": "Step 3: Automatically record the AI's response in a CRM.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "ai_to_crm",
+          "path": "assets/ai_to_crm.png",
+          "reason": "n8n canvas, 'OpenAI' node connected to a generic 'CRM' node (e.g., 'HubSpot' or 'Salesforce' if available, otherwise a placeholder 'HTTP Request' node labeled 'CRM Update'). The CRM node should show some basic configuration for creating a record. Node panel for CRM node open. Canvas zoomed to show AI and CRM nodes."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "3. Record in CRM",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_24",
+      "start": 144.8,
+      "end": 151.5,
+      "type": "canvas_demo",
+      "caption": "လေး၊ နောက်ဆုံး အနေနဲ့ sales အဖွဲ့ ကို Slack ဒါမှမဟုတ် email က နေ တစ်ဆင့် notification ပို့ပေး မယ်။",
+      "description": "Step 4: Send notification to the sales team via Slack or email.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "crm_to_slack_email",
+          "path": "assets/crm_to_slack_email.png",
+          "reason": "n8n canvas, 'CRM' node connected to a 'Slack' node (or 'Email Send' node). The Slack node should show basic message configuration. Node panel for Slack node open. Canvas zoomed to show CRM and Slack/Email nodes."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "4. Notify Sales (Slack/Email)",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_25",
+      "start": 151.5,
+      "end": 156.5,
+      "type": "concept",
+      "caption": "ဒီ အဆင့် အားလုံး က form submit လုပ်လိုက် တဲ့ အချိန် က စ ပြီး စက္ကန့်ပိုင်း အတွင်း မှာ ပြီး သွား မှာ ပါ။",
+      "description": "Emphasize that the entire process completes in seconds.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Instant Automation",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_26",
+      "start": 156.5,
+      "end": 159.5,
+      "type": "concept",
+      "caption": "ဒါ ဟာ automation engineer တစ်ယောက် ရဲ့ တန်ဖိုး ပဲ။",
+      "description": "Highlight the value of an automation engineer.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Engineer's Value",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_27",
+      "start": 159.5,
+      "end": 164.8,
+      "type": "concept",
+      "caption": "N8N မှာ form submission ကို ကိုင်တွယ် တဲ့ အခါ မှာ ကျွန်တော် တို့ အမြဲ သတိထားရမယ့် အချက် တစ်ခု ရှိ တယ်။",
+      "description": "Introduce a crucial point to remember when handling form submissions in n8n.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Important Consideration",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_28",
+      "start": 164.8,
+      "end": 167.5,
+      "type": "concept",
+      "caption": "အဲ့ဒါ က တော့ data sanitization ပါ။",
+      "description": "The point is data sanitization.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Data Sanitization",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_29",
+      "start": 167.5,
+      "end": 170.8,
+      "type": "concept",
+      "caption": "Form က နေ ဝင်လာ တဲ့ data တွေ က အမြဲတမ်း သန့်ရှင်း နေ မှာ မဟုတ် ဘူး။",
+      "description": "Explain that incoming form data may not always be clean.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Unclean Data",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_30",
+      "start": 170.8,
+      "end": 173.5,
+      "type": "concept",
+      "caption": "တစ်ခါတလေ ကျ ရင် spam တွေ ပါလာနိုင် တယ်။",
+      "description": "Mention the possibility of spam data.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Spam Data",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_31",
+      "start": 173.5,
+      "end": 181.5,
+      "type": "canvas_demo",
+      "caption": "ဒါကြောင့် webhook node ရဲ့ နောက် မှာ filter node သို့မဟုတ် validation လုပ် တဲ့ logic ကို ထည့်ထား ဖို့ အလွန် အရေးကြီး ပါ တယ်။",
+      "description": "Emphasize adding a filter node or validation logic after the webhook node.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "webhook_to_filter",
+          "path": "assets/webhook_to_filter.png",
+          "reason": "n8n canvas, 'Webhook' trigger node connected to a 'Filter' node. The Filter node panel should be open, showing a basic condition (e.g., 'item.name exists'). Canvas zoomed to show both nodes and connection."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Filter Node",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Validation Logic",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_32",
+      "start": 181.5,
+      "end": 187.5,
+      "type": "concept",
+      "caption": "အထူးသဖြင့် AI နဲ့ ချိတ်ဆက်ထား မယ် ဆိုရင် input ကို စစ်ထုတ် တာ က မဖြစ်မနေ လုပ်ရမယ့် အလုပ် ပါ။",
+      "description": "Stress that input filtering is mandatory, especially when integrating with AI.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "AI Integration",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Mandatory Filtering",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_33",
+      "start": 187.5,
+      "end": 191,
+      "type": "concept",
+      "caption": "နောက် တစ်ခု က တော့ webhook authentication ပါ။",
+      "description": "Introduce webhook authentication.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Webhook Authentication",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_34",
+      "start": 191,
+      "end": 198.5,
+      "type": "concept",
+      "caption": "တချို့သော form တွေ က နေ data ဝင်လာ တဲ့ အခါ မှာ လုံခြုံရေး အရ header မှာ key သို့မဟုတ် token တွေ ပါလာတတ် တယ်။",
+      "description": "Explain that some forms send security keys/tokens in headers.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Security Keys/Tokens",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Headers",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_35",
+      "start": 198.5,
+      "end": 203.8,
+      "type": "canvas_demo",
+      "caption": "N8N ရဲ့ webhook node မှာ authentication setting ကို သေချာ ပြင်ဆင်ထား ဖို့ လို ပါ တယ်။",
+      "description": "Show how to configure authentication settings in the n8n webhook node.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "webhook_auth_settings",
+          "path": "assets/webhook_auth_settings.png",
+          "reason": "n8n canvas, a 'Webhook' trigger node. The node panel is open, scrolled down to the 'Authentication' section. The 'Authentication' dropdown should be expanded, showing options like 'Header Auth', 'Query Parameter Auth', etc. No specific values need to be filled, just show the options."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Webhook Authentication Settings",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_36",
+      "start": 203.8,
+      "end": 208.8,
+      "type": "concept",
+      "caption": "ဒါမှ သာ မလိုလား အပ် တဲ့ သူ တွေ က ကိုယ့် ရဲ့ workflow ကို မွှေနှောက် လို့ မရ မှာ ပါ။",
+      "description": "Explain that authentication prevents unauthorized access to workflows.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Prevent Unauthorized Access",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_37",
+      "start": 208.8,
+      "end": 218.5,
+      "type": "concept",
+      "caption": "ကျွန်တော် တို့ အနေနဲ့ N8N ရဲ့ trigger node တွေ ထဲ မှာ form trigger ဆိုတာမျိုး ရှိ ပေမယ့် engineer အဆင့် မှာ တော့ webhook ကို သုံး တာ က ပို ပြီး flexible ဖြစ် ပါ တယ်။",
+      "description": "Compare n8n's dedicated 'Form Trigger' with the 'Webhook' node, favoring webhook for flexibility at an engineer level.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Webhook vs. Form Trigger",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "More Flexible",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_38",
+      "start": 218.5,
+      "end": 222.5,
+      "type": "concept",
+      "caption": "ဘာ လဲ ဆိုတော့ webhook က ဘယ် platform နဲ့ မဆို ချိတ် လို့ ရ တယ်။",
+      "description": "Reason for webhook's flexibility: it can connect to any platform.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Connects to Any Platform",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_39",
+      "start": 222.5,
+      "end": 226.5,
+      "type": "concept",
+      "caption": "ကိုယ်ပိုင် form ရေးထား ရင် ထဲ က webhook endpoint ကို ခေါ်လိုက်ရုံ ပါ ပဲ။",
+      "description": "If using a custom form, simply call the webhook endpoint.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Custom Forms",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Call Webhook Endpoint",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_40",
+      "start": 226.5,
+      "end": 229,
+      "type": "concept",
+      "caption": "နောက် ပြီး response node ကို လည်း မမေ့ ပါ နဲ့။",
+      "description": "Introduce the importance of the response node.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Don't Forget Response Node",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_41",
+      "start": 229,
+      "end": 239,
+      "type": "canvas_demo",
+      "caption": "Form ဖြည့် ပြီး တဲ့ အခါ အသုံးပြုသူ ကို အောင်မြင်စွာ ပေးပို့ ပြီး ပါ ပြီ ဆိုတဲ့ message ပြ ဖို့ အတွက် webhook ရဲ့ respond to webhook ဆိုတဲ့ အင်္ဂါရပ် ကို သုံးရ မှာ ပဲ။",
+      "description": "Explain using the 'Respond to Webhook' feature to show a success message to the user after form submission.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "webhook_respond_to_webhook",
+          "path": "assets/webhook_respond_to_webhook.png",
+          "reason": "n8n canvas, a 'Webhook' trigger node. The node panel is open, scrolled down to the 'Respond to Webhook' section. The 'Respond to Webhook' toggle should be ON, and a simple JSON response like '{ \"status\": \"success\", \"message\": \"Form submitted successfully!\" }' should be visible in the 'Response Body' field."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Respond to Webhook",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Success Message",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_42",
+      "start": 239,
+      "end": 243.5,
+      "type": "concept",
+      "caption": "ဒါမှ သာ အသုံးပြုသူ အတွက် အဆင်ပြေ တဲ့ user experience တစ်ခု ကို ပေးနိုင် မှာ ပါ။",
+      "description": "Explain that this provides a good user experience.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Good User Experience",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_43",
+      "start": 243.5,
+      "end": 247,
+      "type": "concept",
+      "caption": "ကဲ ဒီ နေရာ မှာ ကျွန်တော် တို့ ရပ် ပြီး ပြန်ဆန်းစစ်ကြည့်ရအောင်။",
+      "description": "Pause and review.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Review",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_44",
+      "start": 247,
+      "end": 252,
+      "type": "concept",
+      "caption": "Form submission trigger တစ်ခု ကို တည်ဆောက် တော့ မယ် ဆိုရင် အဆင့် သုံးဆင့် ကို အမြဲ မှတ်ထား ပါ။",
+      "description": "Introduce three key steps for building a form submission trigger.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "3 Steps for Form Trigger",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_45",
+      "start": 252,
+      "end": 256.5,
+      "type": "canvas_demo",
+      "caption": "ပထမ အဆင့် webhook URL ကို endpoint အနေနဲ့ သတ်မှတ် ပါ။",
+      "description": "Step 1: Define the webhook URL as the endpoint.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "webhook_url_endpoint",
+          "path": "assets/webhook_url_endpoint.png",
+          "reason": "n8n canvas, a 'Webhook' trigger node. The node panel is open, clearly showing the 'Webhook URL' field with a generated URL. Canvas centered on the node."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "1. Define Webhook URL",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_46",
+      "start": 256.5,
+      "end": 260.5,
+      "type": "canvas_demo",
+      "caption": "ဒုတိယ အဆင့် form က လာ တဲ့ data structure ကို map လုပ် ပါ။",
+      "description": "Step 2: Map the incoming data structure from the form.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "map_data_structure",
+          "path": "assets/map_data_structure.png",
+          "reason": "n8n canvas, a 'Webhook' trigger node that has received some test data. The 'Output Data' panel of the Webhook node should be open, showing the JSON structure of the received form data (e.g., { 'name': 'John Doe', 'email': 'john@example.com' }). Canvas centered on the node."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "2. Map Data Structure",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_47",
+      "start": 260.5,
+      "end": 264,
+      "type": "canvas_demo",
+      "caption": "တတိယ အဆင့် error handling နဲ့ validation ကို ထည့်သွင်း ပါ။",
+      "description": "Step 3: Implement error handling and validation.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "error_handling_validation",
+          "path": "assets/error_handling_validation.png",
+          "reason": "n8n canvas, a 'Webhook' trigger node connected to a 'Filter' node, which then branches to a 'Continue On Error' node or an 'IF' node with a 'No' path leading to an 'Error Trigger' node. The Filter node should show a validation condition. Canvas zoomed to show these nodes and connections."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "3. Error Handling & Validation",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_48",
+      "start": 264,
+      "end": 272,
+      "type": "concept",
+      "caption": "ဒီ အဆင့် သုံးဆင့် သာ ကျွမ်းကျင်သွား ရင် သင် ဟာ ဘယ် form မျိုး ကို မဆို N8N နဲ့ ချိတ်ဆက်နိုင် တဲ့ engineer တစ်ယောက် ဖြစ်လာ ပါ ပြီ။",
+      "description": "Conclude that mastering these three steps makes one proficient in connecting any form to n8n.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Master These 3 Steps",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "N8N Form Engineer",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_49",
+      "start": 272,
+      "end": 281,
+      "type": "concept",
+      "caption": "ကျွန်တော် တို့ နောက်ပိုင်း သင်ခန်းစာ တွေ မှာ တော့ ဒီ trigger တွေ ကို အခြေခံ ပြီး ဘယ်လိုမျိုး multi-step AI agent တွေ ဆောက် မလဲ ဆိုတာ ကို လက်တွေ့ တည်ဆောက်ပြသွား မှာ ပါ။",
+      "description": "Tease future lessons on building multi-step AI agents based on these triggers.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Future Lessons: AI Agents",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_50",
+      "start": 281,
+      "end": 284.5,
+      "type": "concept",
+      "caption": "ဒီနေ့ သင်ခန်းစာ က တော့ အခြေခံ အုတ်မြစ် ပါ ပဲ။",
+      "description": "State that today's lesson is foundational.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Foundational Lesson",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_51",
+      "start": 284.5,
+      "end": 294.5,
+      "type": "canvas_demo",
+      "caption": "သင်ခန်းစာ အပြီး မှာ N8N ထဲ ကို webhook node တစ်ခု ဆွဲထည့် ပြီး တော့ Postman ဒါမှမဟုတ် အခြား tool တစ်ခုခု က နေ data ပို့ကြည့် တဲ့ အထိ လက်တွေ့ စမ်းသပ်ကြည့် ဖို့ တိုက်တွန်းချင် ပါ တယ်။",
+      "description": "Encourage hands-on practice: add a webhook node and send data from Postman or another tool.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "webhook_postman_test",
+          "path": "assets/webhook_postman_test.png",
+          "reason": "n8n canvas with a single 'Webhook' trigger node. A Postman (or similar API client) window is open, showing a POST request configured to send sample JSON data to the n8n webhook URL. The Postman window should clearly show the URL and the 'Send' button. The n8n canvas should show the webhook node in 'Waiting for webhook call...' state or with recent data received."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Practice: Webhook + Postman",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_52",
+      "start": 294.5,
+      "end": 299,
+      "type": "concept",
+      "caption": "ဒါမှ သာ လက်တွေ့ မှာ ကြုံတွေ့ရမယ့် ပြဿနာ တွေ ကို သင် နားလည်လာ မှာ ပါ။",
+      "description": "Explain that practice helps understand real-world problems.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Understand Real-World Problems",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_53",
+      "start": 299,
+      "end": 305,
+      "type": "concept",
+      "caption": "နောက် တစ်ခန်း မှာ တော့ ကျွန်တော် တို့ schedule trigger ဒါမှမဟုတ် cron job တွေ အကြောင်း ဆက်လက် လေ့လာသွား မှာ ပါ။",
+      "description": "Introduce the next topic: schedule triggers or cron jobs.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Next Lesson: Schedule Trigger / Cron Job",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_54",
+      "start": 305,
+      "end": 311.5,
+      "type": "concept",
+      "caption": "ဒါ က တော့ real-time မဟုတ် ဘဲ အချိန် သတ်မှတ် ပြီး အလုပ်လုပ် တဲ့ automation တွေ အတွက် အလွန် အရေးပါ တဲ့ အပိုင်း ဖြစ် ပါ တယ်။",
+      "description": "Explain the importance of scheduled automation for non-real-time tasks.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Scheduled Automation",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Non-Real-time Tasks",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_55",
+      "start": 311.5,
+      "end": 320.5,
+      "type": "concept",
+      "caption": "Form submission က နေ ဝင်လာ တဲ့ data တွေ ကို တစ်နာရီ တစ်ခါ ဒါမှမဟုတ် တစ်ရက် တစ်ခါ စုစည်း ပြီး လုပ်ဆောင်ရမယ့် အလုပ်မျိုး တွေ အတွက် scheduling ကို သုံးရတာ ပါ။",
+      "description": "Give examples of using scheduling for tasks like aggregating form submission data hourly or daily.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Aggregate Data (Hourly/Daily)",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_56",
+      "start": 320.5,
+      "end": 328.8,
+      "type": "concept",
+      "caption": "အခု လေ့လာခဲ့ တဲ့ form submission trigger နဲ့ scheduling trigger ကို ပေါင်းစပ်လိုက် ရင် သင် ဟာ အင်မတန် အစွမ်းထက် တဲ့ workflow တွေ ကို ဖန်တီးနိုင် တော့ မှာ ပါ။",
+      "description": "Highlight the power of combining form submission and scheduling triggers.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Combine Triggers",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Powerful Workflows",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_57",
+      "start": 328.8,
+      "end": 333,
+      "type": "outro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ အတွက် မေးခွန်း တွေ ရှိရင် community group မှာ မေးမြန်းနိုင် ပါ တယ်။",
+      "description": "Encourage questions in the community group.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Questions? Community Group",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_58",
+      "start": 333,
+      "end": 335.5,
+      "type": "outro",
+      "caption": "Automation ဆိုတာ စာဖတ်ရုံ နဲ့ မရ ပါ ဘူး။",
+      "description": "Emphasize that automation requires more than just reading.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Automation: Not Just Reading",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_59",
+      "start": 335.5,
+      "end": 341.5,
+      "type": "outro",
+      "caption": "ကိုယ်တိုင် လက်တွေ့ ဆွဲကြည့် မှ သာ အမှား တွေ က နေ သင်ခန်းစာ ယူ ပြီး ပို တော် တဲ့ engineer တစ်ယောက် ဖြစ်လာ မှာ ပါ။",
+      "description": "Stress the importance of hands-on practice and learning from mistakes to become a better engineer.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Practice & Learn",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Become a Better Engineer",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_60",
+      "start": 341.5,
+      "end": 343.5,
+      "type": "outro",
+      "caption": "ကျွန်တော် တို့ နောက် သင်ခန်းစာ မှာ ပြန်တွေ့ ပါ မယ်။",
+      "description": "See you in the next lesson.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "See You Next Lesson!",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_61",
+      "start": 343.5,
+      "end": 347.16,
+      "type": "outro",
+      "caption": "အားလုံး ပဲ ပျော်ရွှင်စွာ automation ဆောက်နိုင်ကြပါစေ ခင်ဗျာ။",
+      "description": "Wish everyone happy automation building.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Happy Automation Building!",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    }
+  ],
+  "global_assets": []
+}
