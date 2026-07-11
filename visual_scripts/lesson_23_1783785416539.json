@@ -1,0 +1,806 @@
+{
+  "composition": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationInSeconds": 208.5
+  },
+  "audio_file": "audio.wav",
+  "scenes": [
+    {
+      "id": "scene_1",
+      "start": 0,
+      "end": 9,
+      "type": "intro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ ကျွန်တော် တို့ N8N Master Club ရဲ့ အရေးအကြီးဆုံး အပိုင်း တစ်ခု ဖြစ် တဲ့ AI agents တွေ အကြောင်း ကို နည်းနည်းနနဲ လေ့လာသွား မှာ ပါ။",
+      "description": "Introduction to the lesson about AI agents in N8N Master Club.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "AI Agents",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "N8N Master Club",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_2",
+      "start": 9,
+      "end": 16.5,
+      "type": "concept",
+      "caption": "အရင် သင်ခန်းစာ တွေ မှာ ကျွန်တော် တို့ က node တစ်ခုချင်း စီ ကို စနစ်တကျ ချိတ်ဆက် ပြီး automation တွေ တည်ဆောက်ခဲ့ကြ တယ်။",
+      "description": "Recalling previous lessons about connecting nodes for automation.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Automation",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        },
+        {
+          "text": "Nodes",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_3",
+      "start": 16.5,
+      "end": 20,
+      "type": "concept",
+      "caption": "ဒါပေမဲ့ AI agent ဆိုတာ က တော့ ဒီ ထက် ပို ပြီး ထက်မြက် ပါ တယ်။",
+      "description": "Introducing AI agents as more intelligent than traditional automations.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "AI Agent",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_4",
+      "start": 20,
+      "end": 29.5,
+      "type": "concept",
+      "caption": "သူ က တကယ့် ကို ကိုယ်စားလှယ် တစ်ယောက် လိုမျိုး သူ့ ဘာသာ သူ စဉ်းစား မယ်၊ ဆုံးဖြတ် မယ်၊ လိုအပ် တဲ့ tools တွေ ကို ရွေးချယ် သုံးစွဲ ပြီး အလုပ် ပြီးမြောက်အောင် လုပ်ဆောင်ပေး မှာ ပါ။",
+      "description": "Explaining AI agents' ability to reason, decide, and use tools autonomously.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Reason",
+          "position": "top-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 56
+        },
+        {
+          "text": "Decide",
+          "position": "top-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 56
+        },
+        {
+          "text": "Use Tools",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 56
+        }
+      ]
+    },
+    {
+      "id": "scene_5",
+      "start": 29.5,
+      "end": 34.5,
+      "type": "concept",
+      "caption": "အရင်ဆုံး ကျွန်တော် တို့ နားလည်ထားရ မှာ က AI agent ဆိုတာ ဘာလဲ ဆိုတာ ပါ။",
+      "description": "Posing the question: What is an AI agent?",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "What is an AI Agent?",
+          "position": "center",
+          "animation": "typewriter",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_6",
+      "start": 34.5,
+      "end": 42.5,
+      "type": "concept",
+      "caption": "ရိုးရိုး LLM chatbot တစ်ခု နဲ့ agent တစ်ခု နဲ့ ဘာကွာ လဲ ဆိုရင် chatbot က သူ သိထား တဲ့ အချက်အလက် ကို ပဲ ပြန်ဖြေပေးနိုင်တာ ပါ။",
+      "description": "Differentiating between a simple LLM chatbot and an AI agent. Chatbot only retrieves known information.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "LLM Chatbot",
+          "position": "top-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 56
+        },
+        {
+          "text": "AI Agent",
+          "position": "top-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 56
+        }
+      ]
+    },
+    {
+      "id": "scene_7",
+      "start": 42.5,
+      "end": 51.5,
+      "type": "concept",
+      "caption": "ဒါပေမဲ့ AI agent က တော့ ပန်းတိုင် goal တစ်ခု ကို ပေးလိုက်တာ နဲ့ အဲ့ဒီ ပန်းတိုင် ရောက် ဖို့ ဘာ တွေ လုပ်ရ မလဲ ဆိုတာ ကို သူ့ ဘာသာ သူ အဆင့်ဆင့် စဉ်းစား ပြီး လုပ်ဆောင်သွားတာ ပါ။",
+      "description": "Explaining that an AI agent, given a goal, plans and executes steps to achieve it.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Goal-Oriented",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 56
+        },
+        {
+          "text": "Step-by-step Reasoning",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 56
+        }
+      ]
+    },
+    {
+      "id": "scene_8",
+      "start": 51.5,
+      "end": 60.5,
+      "type": "canvas_demo",
+      "caption": "ဥပမာ ဒီနေ့ ဝင်လာ တဲ့ customer email တွေ ကို စစ်ဆေး ပြီး လိုအပ် ရင် CRM ထဲ မှာ data သွင်း ပါ၊ ပြီး ရင် customer ကို ပြန်စာ ပို့ပေး ပါ လို့ ညွှန်ကြားလိုက် ရင်",
+      "description": "Example scenario: processing customer emails, updating CRM, and replying. This implies an n8n workflow.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "ai_agent_customer_email_workflow_initial",
+          "path": "assets/ai_agent_customer_email_workflow_initial.png",
+          "reason": "n8n canvas, showing an 'AI Agent' node connected to an 'Email' node (for incoming emails) and an 'HTTP Request' node named 'CRM Update'. The 'AI Agent' node should be the central orchestrator. Node panel should be closed. Canvas centered on the AI Agent node."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Customer Email Workflow",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_9",
+      "start": 60.5,
+      "end": 67,
+      "type": "canvas_demo",
+      "caption": "agent က email ကို ဖတ် မယ်၊ ဘယ်သူ့ ကို ပို့ရ မလဲ ခွဲခြား မယ်၊ CRM တို့ ကို သုံး ပြီး update လုပ် မယ်။",
+      "description": "Detailing the agent's actions: reading email, identifying recipient, updating CRM.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "ai_agent_customer_email_workflow_highlight_read_update",
+          "path": "assets/ai_agent_customer_email_workflow_highlight_read_update.png",
+          "reason": "n8n canvas, same workflow as 'ai_agent_customer_email_workflow_initial', but with a subtle highlight (e.g., a glow or box) around the 'Email' node (for incoming) and the 'CRM Update' node, indicating their use. Node panel closed. Canvas centered on the AI Agent node."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Read Email",
+          "position": "top-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Update CRM",
+          "position": "top-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_10",
+      "start": 67,
+      "end": 70.5,
+      "type": "canvas_demo",
+      "caption": "နောက်ဆုံး မှာ email node ကို သုံး ပြီး reply ပြန်ပေး ပါလိမ့် မယ်။",
+      "description": "The agent uses an email node to send a reply.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "ai_agent_customer_email_workflow_highlight_reply",
+          "path": "assets/ai_agent_customer_email_workflow_highlight_reply.png",
+          "reason": "n8n canvas, 'ai_agent_customer_email_workflow_initial' but with an additional 'Email' node (for sending replies) connected from the 'AI Agent' node. Highlight the 'Email' node for sending. Node panel closed. Canvas centered on the AI Agent node."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Send Reply Email",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_11",
+      "start": 70.5,
+      "end": 73,
+      "type": "concept",
+      "caption": "ဒီ နေရာ မှာ အရေးကြီး တာ က reasoning ပါ။",
+      "description": "Emphasizing the importance of reasoning for AI agents.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Reasoning",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_12",
+      "start": 73,
+      "end": 78,
+      "type": "concept",
+      "caption": "AI agent တစ် ကောင် မှာ brain အနေနဲ့ LLM ရှိ မယ်၊ ပြီး တော့ သူ သုံး ဖို့ tools တွေ ရှိ မယ်။",
+      "description": "Explaining the components of an AI agent: LLM (brain) and tools.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "LLM (Brain)",
+          "position": "top-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 56
+        },
+        {
+          "text": "Tools",
+          "position": "top-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 56
+        }
+      ]
+    },
+    {
+      "id": "scene_13",
+      "start": 78,
+      "end": 82,
+      "type": "concept",
+      "caption": "ဒီ tools တွေ က တော့ ကျွန်တော် တို့ ရဲ့ N8N workflow ထဲ က nodes တွေ ပါ ပဲ။",
+      "description": "Clarifying that the 'tools' are n8n nodes.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "N8N Nodes = Tools",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_14",
+      "start": 82,
+      "end": 86.5,
+      "type": "concept",
+      "caption": "Google Sheets, Slack, email, ဒါမှမဟုတ် custom API တွေ ပေါ့။",
+      "description": "Giving examples of nodes that can act as tools.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Google Sheets",
+          "position": "top-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Slack",
+          "position": "top-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Email",
+          "position": "bottom-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Custom API",
+          "position": "bottom-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_15",
+      "start": 86.5,
+      "end": 92.5,
+      "type": "concept",
+      "caption": "agent က သူ့ ရှေ့ မှာ ရှိ တဲ့ ပြဿနာ ကို ကြည့် ပြီး ဘယ် tool ကို သုံး ရင် အကောင်းဆုံး ဖြစ် မလဲ ဆိုတာ ကို သူ့ ဘာသာ သူ ဆုံးဖြတ် ပါ တယ်။",
+      "description": "The agent decides which tool to use based on the problem.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Tool Selection",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_16",
+      "start": 92.5,
+      "end": 95.5,
+      "type": "concept",
+      "caption": "ဒါ ကို React pattern လို့ ခေါ် ပါ တယ်။",
+      "description": "Introducing the 'React pattern'.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "React Pattern",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_17",
+      "start": 95.5,
+      "end": 104,
+      "type": "concept",
+      "caption": "ဆိုလိုတာ က reason စဉ်းစား မယ်၊ act လုပ်ဆောင် မယ် ဆိုတဲ့ သံသရာ ကို သူ အလုပ် ပြီး တဲ့ အထိ လည်ပတ်နေတာ ပါ။",
+      "description": "Explaining the React pattern: Reason -> Act loop until the task is complete.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Reason -> Act Loop",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_18",
+      "start": 104,
+      "end": 107.5,
+      "type": "concept",
+      "caption": "လက်တွေ့ မှာ ကျွန်တော် တို့ ဘယ်လို နေရာ တွေ မှာ သုံး မလဲ။",
+      "description": "Transitioning to real-world applications.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Real-world Applications",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_19",
+      "start": 107.5,
+      "end": 110.5,
+      "type": "concept",
+      "caption": "ဥပမာ e-commerce စီးပွားရေး လုပ်ငန်း တစ်ခု မှာ ဆိုပါစို့။",
+      "description": "Setting up an e-commerce example.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "E-commerce Example",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_20",
+      "start": 110.5,
+      "end": 120.5,
+      "type": "canvas_demo",
+      "caption": "ပစ္စည်း ရောက် မလာ လို့ စိတ်ဆိုးနေ တဲ့ customer ဆီ က message ဝင်လာ ရင် AI agent က အရင်ဆုံး order tracking API ကို သုံး ပြီး ပစ္စည်း ဘယ်ရောက်နေ လဲ စစ် မယ်။",
+      "description": "E-commerce scenario: customer message about missing item, agent uses order tracking API.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "ai_agent_ecommerce_order_tracking",
+          "path": "assets/ai_agent_ecommerce_order_tracking.png",
+          "reason": "n8n canvas, showing a 'Webhook' node (trigger) connected to an 'AI Agent' node, which is then connected to an 'HTTP Request' node named 'Order Tracking API'. Node panel closed. Canvas centered on the AI Agent node."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Order Tracking API",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_21",
+      "start": 120.5,
+      "end": 126.5,
+      "type": "canvas_demo",
+      "caption": "ပြီး ရင် အဲ့ဒီ အချက်အလက် ကို ယူ ပြီး customer ကို တောင်းပန် တဲ့ စာ ကို ကိုယ်ပိုင် ဟန် နဲ့ ရေးသား မယ်။",
+      "description": "Agent takes tracking info and drafts an apology message.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "ai_agent_ecommerce_generate_apology",
+          "path": "assets/ai_agent_ecommerce_generate_apology.png",
+          "reason": "n8n canvas, same workflow as 'ai_agent_ecommerce_order_tracking', but with a subtle highlight on the 'AI Agent' node, implying it's processing information and generating text. Node panel closed. Canvas centered on the AI Agent node."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Generate Apology",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_22",
+      "start": 126.5,
+      "end": 134.5,
+      "type": "canvas_demo",
+      "caption": "အကယ်၍ ပစ္စည်း က ပျောက်ဆုံးနေ တယ် လို့ သိရ ရင် တော့ human in the loop စနစ် နဲ့ customer support အဖွဲ့အစည်း ကို အကြောင်းကြားစာ ပို့ပေး ပါလိမ့် မယ်။",
+      "description": "If item is lost, agent notifies customer support (human in the loop).",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "ai_agent_ecommerce_notify_support",
+          "path": "assets/ai_agent_ecommerce_notify_support.png",
+          "reason": "n8n canvas, 'ai_agent_ecommerce_order_tracking' workflow, but with an additional 'Slack' node (or 'Email' node) connected from the 'AI Agent' node, labeled 'Notify Customer Support'. Highlight this new node. Node panel closed. Canvas centered on the AI Agent node."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Human in the Loop",
+          "position": "top-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Notify Support",
+          "position": "top-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_23",
+      "start": 134.5,
+      "end": 141,
+      "type": "concept",
+      "caption": "ဒီ အလုပ် တွေ အားလုံး ကို ကျွန်တော် တို့ က တစ်ဆင့်ချင်း စီ ထိုင် ရေးနေစရာ မလို တော့ ဘဲ agent ကို တာဝန် ပေးထားလိုက်ရုံ ပါ ပဲ။",
+      "description": "Summarizing the benefit: agents handle complex tasks without step-by-step programming.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Delegate to Agent",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_24",
+      "start": 141,
+      "end": 147.5,
+      "type": "canvas_demo",
+      "caption": "N8N မှာ AI agent ကို တည်ဆောက် ဖို့ ကျွန်တော် တို့ အဓိက သုံးရ မှာ က AI agent node ပါ။",
+      "description": "Introducing the 'AI Agent' node in n8n.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "n8n_ai_agent_node_panel_open",
+          "path": "assets/n8n_ai_agent_node_panel_open.png",
+          "reason": "n8n canvas, a single 'AI Agent' node placed on the canvas. The node panel on the right should be open, displaying the 'AI Agent' node's configuration options. The node itself should be centered. Default light theme."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "AI Agent Node",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_25",
+      "start": 147.5,
+      "end": 153.5,
+      "type": "canvas_demo",
+      "caption": "အဲ့ဒီ node ထဲ မှာ ကျွန်တော် တို့ က model တစ်ခု ကို ရွေးပေးရ မယ်၊ ပြီး တော့ memory chat memory ကို ထည့်ပေးရ မယ်။",
+      "description": "Configuring the AI Agent node: selecting a model and adding chat memory.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "n8n_ai_agent_model_memory_config",
+          "path": "assets/n8n_ai_agent_model_memory_config.png",
+          "reason": "n8n canvas, 'AI Agent' node selected, node panel open. The 'Model' dropdown should be visible (e.g., showing 'OpenAI' selected). The 'Memory' section should also be visible, perhaps with 'Chat Memory' selected. Highlight these two sections."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Model Selection",
+          "position": "top-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Chat Memory",
+          "position": "top-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_26",
+      "start": 153.5,
+      "end": 157.5,
+      "type": "concept",
+      "caption": "ဒါ မှ သူ က အရင် ပြောခဲ့ တဲ့ စကား တွေ ကို မှတ်မိနေ မှာ ပါ။",
+      "description": "Explaining the purpose of chat memory: remembering past conversations.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Remember Context",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_27",
+      "start": 157.5,
+      "end": 162,
+      "type": "canvas_demo",
+      "caption": "ပြီး ရင် tools အပိုင်း မှာ ကျွန်တော် တို့ အသုံးပြုမယ့် nodes တွေ ကို ချိတ်ဆက်ပေးရုံ ပါ ပဲ။",
+      "description": "Connecting other nodes as tools to the AI Agent node.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "n8n_ai_agent_tools_section",
+          "path": "assets/n8n_ai_agent_tools_section.png",
+          "reason": "n8n canvas, 'AI Agent' node selected, node panel open. The 'Tools' section should be visible, showing how to add or connect other nodes as tools (e.g., a 'Google Sheets' node and an 'Email' node are linked as tools). Highlight the 'Tools' section."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Connect Tools",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_28",
+      "start": 162,
+      "end": 166,
+      "type": "concept",
+      "caption": "ကျွန်တော် အမြဲ ပြော သလို ပဲ အရေးကြီး တာ က tool description ပါ။",
+      "description": "Emphasizing the importance of clear tool descriptions.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Tool Description",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_29",
+      "start": 166,
+      "end": 174.5,
+      "type": "canvas_demo",
+      "caption": "tool တစ်ခုချင်း စီ ရဲ့ description ကို တိကျ အောင် ရေးပေး မှ သာ agent က ဘယ် အချိန် မှာ ဘယ် tool ကို သုံးရ မလဲ ဆိုတာ မှန်မှန်ကန်ကန် ဆုံးဖြတ်နိုင် မှာ ပါ။",
+      "description": "Explaining that accurate tool descriptions enable the agent to make correct tool selection decisions.",
+      "assets_needed": [
+        {
+          "kind": "screenshot",
+          "name": "n8n_ai_agent_tool_description_field",
+          "path": "assets/n8n_ai_agent_tool_description_field.png",
+          "reason": "n8n canvas, 'AI Agent' node selected, node panel open. Within the 'Tools' section, one of the connected tools (e.g., a 'Google Sheets' node) is expanded, and its 'Description' field is visible and filled with a clear, concise description of what the tool does (e.g., 'This tool can read and write data to Google Sheets.'). Highlight the 'Description' field."
+        }
+      ],
+      "text_overlays": [
+        {
+          "text": "Precise Descriptions",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_30",
+      "start": 174.5,
+      "end": 183,
+      "type": "outro",
+      "caption": "အခု ကျွန်တော် တို့ ဒီ agent တွေ အကြောင်း နားလည်သွား ပြီ ဆိုတော့ နောက် သင်ခန်းစာ မှာ တော့ တကယ့် ကို ရှုပ်ထွေး တဲ့ multi-agent system တွေ အကြောင်း ကို ဆက်လက် လေ့လာသွား မှာ ပါ။",
+      "description": "Transitioning to the next lesson: multi-agent systems.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Multi-Agent Systems",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_31",
+      "start": 183,
+      "end": 191.5,
+      "type": "outro",
+      "caption": "တစ်ကောင်တည်း ထက် agent နှစ် ကောင် သုံး ကောင် ပူးပေါင်း ပြီး အလုပ်လုပ် တဲ့ အခါ ဘယ်လောက် ထိ ထိရောက်သွား မလဲ ဆိုတာ ကို လက်တွေ့ workflow တွေ နဲ့ အတူ ပြသပေးသွား ပါ မယ်။",
+      "description": "Highlighting the power of collaborative multi-agent workflows.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Collaborative Agents",
+          "position": "top",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Practical Workflows",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 48
+        }
+      ]
+    },
+    {
+      "id": "scene_32",
+      "start": 191.5,
+      "end": 197.5,
+      "type": "outro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ ပြောသွား တဲ့ agent ရဲ့ အခြေခံ သဘောတရား တွေ ကို သေချာ နားလည်အောင် ပြန်ကြည့်ထားပေး ပါ။",
+      "description": "Encouraging review of the basic concepts of AI agents.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Review Basic Concepts",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    },
+    {
+      "id": "scene_33",
+      "start": 197.5,
+      "end": 206.5,
+      "type": "outro",
+      "caption": "အထူးသဖြင့် tool selection နဲ့ reasoning လုပ်ပုံ လုပ်နည်း ကို နားလည်သွား ရင် သင် ဟာ automation နယ်ပယ် မှာ အဆင့်မြင့် တဲ့ အနေအထား တစ်ခု ကို ရောက်ရှိသွား ပြီ လို့ ဆိုနိုင် ပါ တယ်။",
+      "description": "Emphasizing the importance of understanding tool selection and reasoning for advanced automation.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "Tool Selection",
+          "position": "top-left",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Reasoning",
+          "position": "top-right",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 48
+        },
+        {
+          "text": "Advanced Automation",
+          "position": "bottom",
+          "animation": "slideUp",
+          "color": "#e6f7ff",
+          "font_size": 56
+        }
+      ]
+    },
+    {
+      "id": "scene_34",
+      "start": 206.5,
+      "end": 208.5,
+      "type": "outro",
+      "caption": "နောက် သင်ခန်းစာ မှာ ဆက်တွေ့ကြ မယ် ဗျာ။",
+      "description": "Closing remarks.",
+      "assets_needed": [],
+      "text_overlays": [
+        {
+          "text": "See You Next Lesson!",
+          "position": "center",
+          "animation": "fadeIn",
+          "color": "#e6f7ff",
+          "font_size": 64
+        }
+      ]
+    }
+  ],
+  "global_assets": []
+}
