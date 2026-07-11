@@ -1,0 +1,607 @@
+{
+  "title": "Lesson",
+  "audio_file": "audio.wav",
+  "audio_duration": 85,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 8.5,
+      "type": "intro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ N8N မှာ အခြေခံ အကျဆုံး ဖြစ် ပေမယ့် အရေးအပါဆုံး ဖြစ် တဲ့ manual trigger အကြောင်း ကို ဆွေးနွေးပေးသွား မှာ ပါ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "saturate": 1.15,
+        "contrast": 1.08
+      },
+      "icons": [
+        {
+          "name": "⚡",
+          "label": "Trigger",
+          "x": 20,
+          "y": 50,
+          "color": "linear-gradient(135deg,#f59e0b,#e04f4f)"
+        },
+        {
+          "name": "⚙️",
+          "label": "Manual",
+          "x": 50,
+          "y": 50,
+          "color": "linear-gradient(135deg,#3b6fe0,#8a4fe0)"
+        },
+        {
+          "name": "📚",
+          "label": "Lesson",
+          "x": 80,
+          "y": 50,
+          "color": "linear-gradient(135deg,#4CAF50,#28a745)"
+        }
+      ],
+      "kinetic": [
+        "N8N Master Club",
+        "Manual Trigger အကြောင်း"
+      ],
+      "bg": "linear-gradient(180deg, #1a1a1a, #2a2a2a)"
+    },
+    {
+      "start": 8.5,
+      "end": 15.8,
+      "type": "concept",
+      "caption": "ကျွန်တော် တို့ အလိုအလျောက် စနစ် တစ်ခု ကို တည်ဆောက် တော့ မယ် ဆိုရင် အဲ့ဒီ စနစ် ကို ဘယ် အချိန် မှာ စတင် မလဲ ဆိုတာ ကို သတ်မှတ်ပေးရ ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⏰",
+          "label": "Time",
+          "x": 25,
+          "y": 40,
+          "color": "#f0ad4e"
+        },
+        {
+          "name": "▶️",
+          "label": "Start",
+          "x": 50,
+          "y": 60,
+          "color": "#5cb85c"
+        },
+        {
+          "name": "⚙️",
+          "label": "System",
+          "x": 75,
+          "y": 40,
+          "color": "#0275d8"
+        }
+      ],
+      "kinetic": [
+        "စနစ် စတင်ပုံ သတ်မှတ်ခြင်း"
+      ],
+      "bg": "linear-gradient(180deg, #2a2a2a, #3a3a3a)"
+    },
+    {
+      "start": 15.8,
+      "end": 26,
+      "type": "screen_demo",
+      "caption": "Manual trigger ဆိုတာ က တော့ ကျွန်တော် တို့ ကိုယ်တိုင် N8N editor ထဲ မှာ execute workflow ဆိုတဲ့ ခလုတ် ကို နှိပ်လိုက်တဲ့ အခါ မှာ မှ စတင် အလုပ်လုပ် တဲ့ trigger အမျိုးအစား ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — My Workflow",
+      "ui": [
+        {
+          "kind": "node",
+          "label": "Webhook",
+          "x": 35,
+          "y": 50,
+          "w": 15,
+          "h": 10,
+          "fontSize": 18,
+          "color": "#3b6fe0"
+        },
+        {
+          "kind": "node",
+          "label": "Edit Fields",
+          "x": 60,
+          "y": 50,
+          "w": 15,
+          "h": 10,
+          "fontSize": 18,
+          "color": "#8a4fe0"
+        },
+        {
+          "kind": "connector",
+          "label": "",
+          "x": 49,
+          "y": 55,
+          "w": 12,
+          "h": 0.5,
+          "color": "#4CAF50"
+        },
+        {
+          "kind": "button",
+          "label": "Execute Workflow",
+          "x": 50,
+          "y": 90,
+          "w": 20,
+          "h": 5,
+          "fontSize": 16,
+          "color": "#f59e0b"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 50,
+          "y": 90,
+          "zoom": 1.2
+        },
+        {
+          "x": 50,
+          "y": 90,
+          "zoom": 1.6,
+          "click": true
+        },
+        {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "start": 26,
+      "end": 35,
+      "type": "concept",
+      "caption": "ဒါ က ဘာကြောင့် လိုအပ်တာ လဲ ဆိုတော့ လက်တွေ့ မှာ workflow တစ်ခု ကို တည်ဆောက် ပြီး တဲ့ အခါ သူ က မှန်ကန်စွာ အလုပ်လုပ် မလုပ် ကို စမ်းသပ် ဖို့ testing လိုအပ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🧪",
+          "label": "Test",
+          "x": 25,
+          "y": 50,
+          "color": "#f0ad4e"
+        },
+        {
+          "name": "🐛",
+          "label": "Debug",
+          "x": 50,
+          "y": 50,
+          "color": "#dc3545"
+        },
+        {
+          "name": "✅",
+          "label": "Check",
+          "x": 75,
+          "y": 50,
+          "color": "#28a745"
+        }
+      ],
+      "kinetic": [
+        "Workflow စမ်းသပ်ခြင်း",
+        "အမှားရှာဖွေခြင်း"
+      ],
+      "bg": "linear-gradient(180deg, #3a3a3a, #2a2a2a)"
+    },
+    {
+      "start": 35,
+      "end": 44.8,
+      "type": "concept",
+      "caption": "ကျွန်တော် တို့ အနေနဲ့ workflow တစ်ခုလုံး ကို တကယ် production ပတ်ဝန်းကျင် မှာ မတင်ခင် မှာ အမှားအယွင်း ရှိ မရှိ ဒီ manual trigger နဲ့ ပဲ အရင်ဆုံး စမ်းသပ် လေ့ ရှိကြ တာ ပါ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🚧",
+          "label": "Pre-prod",
+          "x": 25,
+          "y": 50,
+          "color": "#ffc107"
+        },
+        {
+          "name": "🚀",
+          "label": "Production",
+          "x": 50,
+          "y": 50,
+          "color": "#007bff"
+        },
+        {
+          "name": "🛡️",
+          "label": "Safety",
+          "x": 75,
+          "y": 50,
+          "color": "#6c757d"
+        }
+      ],
+      "kinetic": [
+        "Production မတင်ခင် စမ်းသပ်"
+      ],
+      "bg": "linear-gradient(180deg, #2a2a2a, #1a1a1a)"
+    },
+    {
+      "start": 44.8,
+      "end": 51,
+      "type": "concept",
+      "caption": "ဥပမာ အနေနဲ့ ပြောရ ရင် ကျွန်တော် တို့ ဟာ ဖောက်သည် တွေ ဆီ ကို email ပို့မယ့် စနစ် တစ်ခု ကို ရေးဆွဲထား တယ် ဆိုပါစို့။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "✉️",
+          "label": "Email",
+          "x": 25,
+          "y": 50,
+          "color": "#f59e0b"
+        },
+        {
+          "name": "👥",
+          "label": "Customers",
+          "x": 50,
+          "y": 50,
+          "color": "#3b6fe0"
+        },
+        {
+          "name": "⚙️",
+          "label": "System",
+          "x": 75,
+          "y": 50,
+          "color": "#8a4fe0"
+        }
+      ],
+      "kinetic": [
+        "ဖောက်သည်များသို့ Email ပို့စနစ်"
+      ],
+      "bg": "linear-gradient(180deg, #1a1a1a, #2a2a2a)"
+    },
+    {
+      "start": 51,
+      "end": 59.8,
+      "type": "screen_demo",
+      "caption": "အဲ့ဒီ email တွေ အလိုအလျောက် မပို့ခင် မှာ ကျွန်တော် တို့ ဟာ manual trigger ကို သုံး ပြီး workflow တစ်ခုလုံး ရဲ့ data စီစဉ်ပုံ ကို အရင်ဆုံး စစ်ဆေးရ ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — Email Workflow Test",
+      "ui": [
+        {
+          "kind": "node",
+          "label": "When clicking 'Execute workflow'",
+          "x": 30,
+          "y": 50,
+          "w": 20,
+          "h": 12,
+          "fontSize": 16,
+          "color": "#e04f4f"
+        },
+        {
+          "kind": "node",
+          "label": "Edit Fields",
+          "x": 65,
+          "y": 50,
+          "w": 20,
+          "h": 12,
+          "fontSize": 16,
+          "color": "#8a4fe0"
+        },
+        {
+          "kind": "connector",
+          "label": "",
+          "x": 48,
+          "y": 56,
+          "w": 17,
+          "h": 0.5,
+          "color": "#4CAF50"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 30,
+          "y": 50,
+          "zoom": 1.4
+        },
+        {
+          "x": 65,
+          "y": 50,
+          "zoom": 1.6,
+          "click": true
+        },
+        {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "start": 59.8,
+      "end": 66,
+      "type": "concept",
+      "caption": "အရေးကြီး တာ က N8N မှာ manual trigger ကို သုံးတဲ့ အခါ ကျွန်တော် တို့ ဟာ ကြိုက်သလောက် အကြိမ်ကြိမ် စမ်းသပ် နိုင် ပြီး",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🔄",
+          "label": "Repeat",
+          "x": 25,
+          "y": 50,
+          "color": "#0275d8"
+        },
+        {
+          "name": "🔁",
+          "label": "Loop",
+          "x": 50,
+          "y": 50,
+          "color": "#5bc0de"
+        },
+        {
+          "name": "✅",
+          "label": "Success",
+          "x": 75,
+          "y": 50,
+          "color": "#28a745"
+        }
+      ],
+      "kinetic": [
+        "အကြိမ်ကြိမ် စမ်းသပ်နိုင်"
+      ],
+      "bg": "linear-gradient(180deg, #2a2a2a, #3a3a3a)"
+    },
+    {
+      "start": 66,
+      "end": 68.8,
+      "type": "screen_demo",
+      "caption": "data တွေ ကို တစ်ဆင့်ချင်း စီ လိုက်ကြည့် နိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — Node Parameters",
+      "ui": [
+        {
+          "kind": "panel",
+          "label": "INPUT",
+          "x": 10,
+          "y": 10,
+          "w": 30,
+          "h": 80,
+          "fontSize": 20,
+          "color": "#2d2d2d"
+        },
+        {
+          "kind": "panel",
+          "label": "OUTPUT",
+          "x": 60,
+          "y": 10,
+          "w": 30,
+          "h": 80,
+          "fontSize": 20,
+          "color": "#2d2d2d"
+        },
+        {
+          "kind": "button",
+          "label": "Execute previous nodes",
+          "x": 25,
+          "y": 70,
+          "w": 20,
+          "h": 5,
+          "fontSize": 14,
+          "color": "#f59e0b"
+        },
+        {
+          "kind": "button",
+          "label": "Execute step",
+          "x": 75,
+          "y": 70,
+          "w": 15,
+          "h": 5,
+          "fontSize": 14,
+          "color": "#f59e0b"
+        },
+        {
+          "kind": "panel",
+          "label": "Parameters",
+          "x": 35,
+          "y": 10,
+          "w": 25,
+          "h": 80,
+          "fontSize": 20,
+          "color": "#2d2d2d"
+        },
+        {
+          "kind": "input",
+          "label": "Drag input fields here",
+          "x": 47,
+          "y": 40,
+          "w": 20,
+          "h": 15,
+          "fontSize": 14,
+          "color": "#3a3a3a"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 25,
+          "y": 70,
+          "zoom": 1.4
+        },
+        {
+          "x": 75,
+          "y": 70,
+          "zoom": 1.4
+        },
+        {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "start": 68.8,
+      "end": 74,
+      "type": "concept",
+      "caption": "ဒါ ဟာ automation engineer တစ်ယောက် အတွက် အမှား နည်း အောင် ပြင်ဆင်ရ တဲ့ အကောင်းဆုံး နည်းလမ်း ပဲ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "👨‍💻",
+          "label": "Engineer",
+          "x": 25,
+          "y": 50,
+          "color": "#6c757d"
+        },
+        {
+          "name": "🔧",
+          "label": "Fix",
+          "x": 50,
+          "y": 50,
+          "color": "#f0ad4e"
+        },
+        {
+          "name": "✨",
+          "label": "Polished",
+          "x": 75,
+          "y": 50,
+          "color": "#5bc0de"
+        }
+      ],
+      "kinetic": [
+        "အမှားနည်းအောင် ပြင်ဆင်ခြင်း"
+      ],
+      "bg": "linear-gradient(180deg, #3a3a3a, #2a2a2a)"
+    },
+    {
+      "start": 74,
+      "end": 78.8,
+      "type": "concept",
+      "caption": "ကဲ အခု ဆိုရင် manual trigger ရဲ့ သဘောသဘာဝ ကို နားလည်သွား ပြီ ဆိုတော့",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "✅",
+          "label": "Understood",
+          "x": 30,
+          "y": 50,
+          "color": "#28a745"
+        },
+        {
+          "name": "💡",
+          "label": "Idea",
+          "x": 70,
+          "y": 50,
+          "color": "#ffc107"
+        }
+      ],
+      "kinetic": [
+        "Manual Trigger နားလည်ပြီ"
+      ],
+      "bg": "linear-gradient(180deg, #2a2a2a, #1a1a1a)"
+    },
+    {
+      "start": 78.8,
+      "end": 85,
+      "type": "outro",
+      "caption": "နောက် သင်ခန်းစာ မှာ တော့ အချိန် နဲ့ အမျှ အလိုအလျောက် လည်ပတ်ပေးမယ့် schedule trigger အကြောင်း ကို ဆက်လက် လေ့လာကြည့်ရအောင်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "saturate": 1.15,
+        "contrast": 1.08
+      },
+      "icons": [
+        {
+          "name": "🗓️",
+          "label": "Schedule",
+          "x": 20,
+          "y": 50,
+          "color": "linear-gradient(135deg,#5bc0de,#0275d8)"
+        },
+        {
+          "name": "⏰",
+          "label": "Time",
+          "x": 50,
+          "y": 50,
+          "color": "linear-gradient(135deg,#f0ad4e,#ffc107)"
+        },
+        {
+          "name": "🚀",
+          "label": "Automation",
+          "x": 80,
+          "y": 50,
+          "color": "linear-gradient(135deg,#28a745,#5cb85c)"
+        }
+      ],
+      "kinetic": [
+        "နောက်သင်ခန်းစာ:",
+        "Schedule Trigger"
+      ],
+      "bg": "linear-gradient(180deg, #1a1a1a, #2a2a2a)"
+    }
+  ]
+}
