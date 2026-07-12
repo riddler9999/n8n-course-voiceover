@@ -1,0 +1,610 @@
+{
+  "title": "Lesson",
+  "audio_file": "audio.wav",
+  "audio_duration": 70.4,
+  "new_components": {
+    "n8n_homepage": {
+      "hint": "n8n.io home page with 'Get Started' button",
+      "mockup": "browser",
+      "mockup_title": "n8n - Workflow Automation",
+      "ui": [
+        {
+          "kind": "text",
+          "label": "n8n",
+          "x": 8,
+          "y": 5,
+          "fontSize": 24,
+          "color": "#fff"
+        },
+        {
+          "kind": "button",
+          "label": "Product",
+          "x": 20,
+          "y": 5,
+          "w": 8,
+          "h": 5,
+          "color": "transparent",
+          "fontSize": 16
+        },
+        {
+          "kind": "button",
+          "label": "Use cases",
+          "x": 30,
+          "y": 5,
+          "w": 10,
+          "h": 5,
+          "color": "transparent",
+          "fontSize": 16
+        },
+        {
+          "kind": "button",
+          "label": "Docs",
+          "x": 42,
+          "y": 5,
+          "w": 6,
+          "h": 5,
+          "color": "transparent",
+          "fontSize": 16
+        },
+        {
+          "kind": "button",
+          "label": "Community",
+          "x": 50,
+          "y": 5,
+          "w": 12,
+          "h": 5,
+          "color": "transparent",
+          "fontSize": 16
+        },
+        {
+          "kind": "button",
+          "label": "Enterprise",
+          "x": 64,
+          "y": 5,
+          "w": 10,
+          "h": 5,
+          "color": "transparent",
+          "fontSize": 16
+        },
+        {
+          "kind": "button",
+          "label": "Pricing",
+          "x": 76,
+          "y": 5,
+          "w": 8,
+          "h": 5,
+          "color": "transparent",
+          "fontSize": 16
+        },
+        {
+          "kind": "button",
+          "label": "Sign in",
+          "x": 86,
+          "y": 5,
+          "w": 8,
+          "h": 5,
+          "color": "transparent",
+          "fontSize": 16
+        },
+        {
+          "kind": "button",
+          "label": "Get Started",
+          "x": 92,
+          "y": 5,
+          "w": 10,
+          "h": 5,
+          "color": "#ff5a30",
+          "fontSize": 16,
+          "borderRadius": 5
+        },
+        {
+          "kind": "text",
+          "label": "AI agents and workflows you can see and control",
+          "x": 25,
+          "y": 30,
+          "w": 40,
+          "h": 15,
+          "fontSize": 48,
+          "color": "#fff",
+          "textAlign": "left"
+        },
+        {
+          "kind": "button",
+          "label": "Get started for free",
+          "x": 18,
+          "y": 50,
+          "w": 18,
+          "h": 8,
+          "color": "#ff5a30",
+          "fontSize": 18,
+          "borderRadius": 5
+        },
+        {
+          "kind": "button",
+          "label": "Talk to sales",
+          "x": 38,
+          "y": 50,
+          "w": 15,
+          "h": 8,
+          "color": "#333",
+          "fontSize": 18,
+          "borderRadius": 5,
+          "borderColor": "#666"
+        }
+      ]
+    },
+    "n8n_signup_form": {
+      "hint": "n8n.cloud register page with email input",
+      "mockup": "browser",
+      "mockup_title": "Register - n8n Cloud",
+      "ui": [
+        {
+          "kind": "text",
+          "label": "Already have an account? Log in",
+          "x": 85,
+          "y": 5,
+          "w": 15,
+          "h": 3,
+          "fontSize": 14,
+          "color": "#fff"
+        },
+        {
+          "kind": "text",
+          "label": "Start automating today",
+          "x": 50,
+          "y": 20,
+          "w": 40,
+          "h": 5,
+          "fontSize": 36,
+          "color": "#fff",
+          "textAlign": "center"
+        },
+        {
+          "kind": "text",
+          "label": "Company email",
+          "x": 35,
+          "y": 35,
+          "w": 20,
+          "h": 3,
+          "fontSize": 16,
+          "color": "#ccc",
+          "textAlign": "left"
+        },
+        {
+          "kind": "input",
+          "label": "",
+          "x": 50,
+          "y": 40,
+          "w": 30,
+          "h": 8,
+          "color": "#fff",
+          "bgColor": "#333",
+          "borderColor": "#666",
+          "borderRadius": 5,
+          "fontSize": 18
+        },
+        {
+          "kind": "button",
+          "label": "Submit",
+          "x": 50,
+          "y": 55,
+          "w": 15,
+          "h": 7,
+          "color": "#fff",
+          "bgColor": "#007bff",
+          "borderRadius": 5,
+          "fontSize": 18
+        },
+        {
+          "kind": "text",
+          "label": "By continuing, you agree to our terms and conditions. Privacy policy.",
+          "x": 50,
+          "y": 65,
+          "w": 40,
+          "h": 5,
+          "fontSize": 14,
+          "color": "#aaa",
+          "textAlign": "center"
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4.2,
+      "type": "intro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ ကျွန်တော် တို့ N8N ခရီးစဉ် ရဲ့ ပထမဆုံး ခြေလှမ်း ဖြစ် တဲ့",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "N8N ခရီးစဉ်",
+        "ပထမဆုံး ခြေလှမ်း"
+      ],
+      "bg": "linear-gradient(135deg, #1a1a2e, #16213e)"
+    },
+    {
+      "start": 4.2,
+      "end": 10.6,
+      "type": "concept",
+      "caption": "N8N Cloud account တစ်ခု ကို ဘယ်လို စတင် ဖန်တီး မလဲ ဆိုတာ ကို လက်တွေ့ လုပ်ဆောင်သွား မှာ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "saturate": 1.15,
+        "contrast": 1.08
+      },
+      "icons": [
+        {
+          "name": "☁️",
+          "label": "Cloud",
+          "x": 20,
+          "y": 50,
+          "color": "#87CEEB"
+        },
+        {
+          "name": "⚙️",
+          "label": "Account",
+          "x": 50,
+          "y": 50,
+          "color": "#A9A9A9"
+        },
+        {
+          "name": "✨",
+          "label": "Create",
+          "x": 80,
+          "y": 50,
+          "color": "#FFD700"
+        }
+      ],
+      "bg": "linear-gradient(45deg, #16213e, #0f3460)"
+    },
+    {
+      "start": 10.6,
+      "end": 13.5,
+      "type": "concept",
+      "caption": "အရင်ဆုံး ကျွန်တော် တို့ နားလည်ထားရ မှာ က",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.28,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "kinetic": [
+        "အခြေခံ အချက်များ",
+        "နားလည်ထားရ မှာ က"
+      ],
+      "bg": "linear-gradient(135deg, #0f3460, #1a1a2e)"
+    },
+    {
+      "start": 13.5,
+      "end": 19.8,
+      "type": "concept",
+      "caption": "N8N ဆိုတာ workflow တွေ ကို အဆင်ပြေပြေ စီမံ ခန့်ခွဲနိုင် တဲ့ အစွမ်း ထက်ဆုံး automation tool တစ်ခု ပါ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.32,
+        "bloom": 0.22,
+        "saturate": 1.12,
+        "contrast": 1.06
+      },
+      "icons": [
+        {
+          "name": "🔗",
+          "label": "Workflow",
+          "x": 20,
+          "y": 50,
+          "color": "#4CAF50"
+        },
+        {
+          "name": "🤖",
+          "label": "Automation",
+          "x": 50,
+          "y": 50,
+          "color": "#FFC107"
+        },
+        {
+          "name": "⚡",
+          "label": "Powerful",
+          "x": 80,
+          "y": 50,
+          "color": "#FF5722"
+        }
+      ],
+      "bg": "linear-gradient(45deg, #1a1a2e, #007bff)"
+    },
+    {
+      "start": 19.8,
+      "end": 22.5,
+      "type": "concept",
+      "caption": "ကိုယ်ပိုင် server မှာ install လုပ်စရာ မလို ဘဲ",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🗄️",
+          "label": "No Server",
+          "x": 35,
+          "y": 50,
+          "color": "#FF6347"
+        },
+        {
+          "name": "☁️",
+          "label": "Cloud",
+          "x": 65,
+          "y": 50,
+          "color": "#87CEEB"
+        }
+      ],
+      "bg": "linear-gradient(135deg, #007bff, #0f3460)"
+    },
+    {
+      "start": 22.5,
+      "end": 26.8,
+      "type": "concept",
+      "caption": "ချက်ချင်း အသုံးပြုချင် တယ် ဆိုရင် တော့ N8N Cloud က အကောင်းဆုံး ရွေးချယ်မှု ပါပဲ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "saturate": 1.15,
+        "contrast": 1.08
+      },
+      "kinetic": [
+        "N8N Cloud",
+        "အကောင်းဆုံး ရွေးချယ်မှု"
+      ],
+      "bg": "linear-gradient(45deg, #0f3460, #1a1a2e)"
+    },
+    {
+      "start": 26.8,
+      "end": 32.2,
+      "type": "screen_demo",
+      "caption": "ကျွန်တော် တို့ ရဲ့ browser မှာ N8N.cloud ကို သွား ပြီး တော့ sign up ခလုတ် ကို နှိပ်လိုက် ပါ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "component_ref": "n8n_homepage",
+      "cursor": [
+        {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        },
+        {
+          "x": 92,
+          "y": 5,
+          "zoom": 1.6,
+          "click": true
+        }
+      ]
+    },
+    {
+      "start": 32.2,
+      "end": 36.7,
+      "type": "screen_demo",
+      "caption": "ဒီ နေရာ မှာ အရေးကြီး တာ က ကိုယ့် ရဲ့ လုပ်ငန်းသုံး email နဲ့ register လုပ် ဖို့ ပါပဲ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.32,
+        "bloom": 0.22,
+        "saturate": 1.12,
+        "contrast": 1.06
+      },
+      "component_ref": "n8n_signup_form",
+      "cursor": [
+        {
+          "x": 50,
+          "y": 50,
+          "zoom": 1
+        },
+        {
+          "x": 50,
+          "y": 40,
+          "zoom": 1.8,
+          "click": true
+        }
+      ]
+    },
+    {
+      "start": 36.7,
+      "end": 41.8,
+      "type": "concept",
+      "caption": "account ဖွင့် ပြီး တာ နဲ့ N8N က ကျွန်တော် တို့ ကို workspace တစ်ခု အလို လျောက် ဆောက်ပေးသွား မှာ ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.28,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "icons": [
+        {
+          "name": "✅",
+          "label": "Account",
+          "x": 20,
+          "y": 50,
+          "color": "#4CAF50"
+        },
+        {
+          "name": "📦",
+          "label": "Workspace",
+          "x": 50,
+          "y": 50,
+          "color": "#FFC107"
+        },
+        {
+          "name": "🏗️",
+          "label": "Build",
+          "x": 80,
+          "y": 50,
+          "color": "#2196F3"
+        }
+      ],
+      "bg": "linear-gradient(135deg, #1a1a2e, #0f3460)"
+    },
+    {
+      "start": 41.8,
+      "end": 47.2,
+      "type": "concept",
+      "caption": "လက်တွေ့ မှာ တော့ N8N Cloud ဟာ developer တွေ အတွက် server ထိန်းသိမ်းစရာ မလို ဘဲ",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Developer များအတွက်",
+        "Server ကိစ္စ ကင်းဝေး"
+      ],
+      "bg": "linear-gradient(45deg, #0f3460, #007bff)"
+    },
+    {
+      "start": 47.2,
+      "end": 52,
+      "type": "concept",
+      "caption": "workflow တွေ ကို stable ဖြစ်အောင် အမြဲ run ပေးထားနိုင် တဲ့ အတွက် အချိန် အများကြီး သက်သာစေ ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "saturate": 1.15,
+        "contrast": 1.08
+      },
+      "icons": [
+        {
+          "name": "⚙️",
+          "label": "Stable Workflow",
+          "x": 35,
+          "y": 50,
+          "color": "#2196F3"
+        },
+        {
+          "name": "⏱️",
+          "label": "Time Saving",
+          "x": 65,
+          "y": 50,
+          "color": "#FF9800"
+        }
+      ],
+      "bg": "linear-gradient(135deg, #007bff, #1a1a2e)"
+    },
+    {
+      "start": 52,
+      "end": 56,
+      "type": "concept",
+      "caption": "account ဝင် ပြီး ပြီ ဆိုရင် တော့ ကျွန်တော် တို့ ရဲ့ dashboard ကို ရောက်သွား ပါ လိမ့် မယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Dashboard သို့",
+        "ကြိုဆိုပါ၏"
+      ],
+      "bg": "linear-gradient(45deg, #1a1a2e, #16213e)"
+    },
+    {
+      "start": 56,
+      "end": 59.9,
+      "type": "concept",
+      "caption": "အခု ဆိုရင် ကျွန်တော် တို့ automation တွေ စတင် ဖို့ အသင့် ဖြစ်နေ ပါ ပြီ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.32,
+        "bloom": 0.22,
+        "saturate": 1.12,
+        "contrast": 1.06
+      },
+      "icons": [
+        {
+          "name": "🤖",
+          "label": "Automation",
+          "x": 35,
+          "y": 50,
+          "color": "#FFC107"
+        },
+        {
+          "name": "🚀",
+          "label": "Ready",
+          "x": 65,
+          "y": 50,
+          "color": "#4CAF50"
+        }
+      ],
+      "bg": "linear-gradient(135deg, #16213e, #0f3460)"
+    },
+    {
+      "start": 59.9,
+      "end": 66.8,
+      "type": "concept",
+      "caption": "နောက် သင်ခန်းစာ မှာ တော့ ဒီ dashboard ထဲ က အရေးကြီး တဲ့ interface တွေ ကို ဘယ်လို အသုံးပြုရ မလဲ ဆိုတာ ကို ဆက်လက် လေ့လာသွားကြ မယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.28,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.03
+      },
+      "kinetic": [
+        "နောက်လာမည့် သင်ခန်းစာ",
+        "Dashboard လေ့လာခြင်း"
+      ],
+      "bg": "linear-gradient(45deg, #0f3460, #007bff)"
+    },
+    {
+      "start": 66.8,
+      "end": 70.4,
+      "type": "outro",
+      "caption": "အခု ပဲ account လေး ဖွင့် ပြီး အဆင်သင့် ဖြစ်အောင် ပြင်ထားလိုက်ရအောင် ဗျ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "အခုပဲ စတင်လိုက်ပါ",
+        "N8N Master Club"
+      ],
+      "bg": "linear-gradient(135deg, #007bff, #1a1a2e)"
+    }
+  ]
+}
