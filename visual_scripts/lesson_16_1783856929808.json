@@ -1,0 +1,1668 @@
+{
+  "title": "Lesson",
+  "audio_file": "audio.wav",
+  "audio_duration": 382.7,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 6.8,
+      "type": "intro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ N8N ရဲ့ အရေးကြီး တဲ့ trigger တစ်ခု ဖြစ် တဲ့ schedule trigger အကြောင်း ကို လေ့လာသွား မှာ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "saturate": 1.15,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "N8N Master Club",
+        "Schedule Trigger"
+      ],
+      "bg": "linear-gradient(135deg, #0f0f0f, #2a2a2a)"
+    },
+    {
+      "start": 6.8,
+      "end": 17.8,
+      "type": "concept",
+      "caption": "Automation engineer တစ်ယောက် အနေနဲ့ ကိုယ်တိုင် အချိန်ပေး ပြီး လုပ်နေစရာ မလို ဘဲ လုပ်ငန်းစဉ် တွေ ကို အလိုအလျောက် လည်ပတ်နေစေချင် တယ် ဆိုရင် schedule trigger ကို သေချာ နားလည်ထား ဖို့ လိုအပ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⚙️",
+          "label": "Automation",
+          "x": 30,
+          "y": 50,
+          "color": "#4CAF50"
+        },
+        {
+          "name": "⏰",
+          "label": "Scheduled",
+          "x": 70,
+          "y": 50,
+          "color": "#FFC107"
+        }
+      ]
+    },
+    {
+      "start": 17.8,
+      "end": 21.8,
+      "type": "concept",
+      "caption": "အရင်ဆုံး schedule trigger ဆိုတာ ဘာလဲ ဆိုတာ ကို ရှင်းပြ ပါ မယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Schedule Trigger",
+        "ဆိုတာ ဘာလဲ?"
+      ]
+    },
+    {
+      "start": 21.8,
+      "end": 27.8,
+      "type": "concept",
+      "caption": "ရိုးရိုးလေး ပြောရ ရင် schedule trigger ဆိုတာ အချိန် သတ်မှတ်ပေးထား တဲ့ နာရီ တစ်လုံး လို ပါ ပဲ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🕰️",
+          "label": "Clock",
+          "x": 50,
+          "y": 50,
+          "color": "#9C27B0"
+        }
+      ]
+    },
+    {
+      "start": 27.8,
+      "end": 32,
+      "type": "concept",
+      "caption": "ဥပမာ နေ့တိုင်း မနက် ၉ နာရီ ရောက် ရင် ဒီ အလုပ် ကို လုပ် ပါ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🗓️",
+          "label": "Everyday",
+          "x": 30,
+          "y": 50,
+          "color": "#2196F3"
+        },
+        {
+          "name": "🕘",
+          "label": "9 AM",
+          "x": 70,
+          "y": 50,
+          "color": "#FF5722"
+        }
+      ]
+    },
+    {
+      "start": 32,
+      "end": 37.7,
+      "type": "concept",
+      "caption": "တစ်ပတ် တစ်ခါ တနင်္လာ နေ့တိုင်း ဒီ report ကို ပို့ ပါ ဆိုပြီး ကြိုတင် သတ်မှတ်ပေးထားနိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "📅",
+          "label": "Weekly",
+          "x": 25,
+          "y": 50,
+          "color": "#00BCD4"
+        },
+        {
+          "name": "📊",
+          "label": "Report",
+          "x": 50,
+          "y": 50,
+          "color": "#E91E63"
+        },
+        {
+          "name": "✉️",
+          "label": "Send",
+          "x": 75,
+          "y": 50,
+          "color": "#FFEB3B"
+        }
+      ]
+    },
+    {
+      "start": 37.7,
+      "end": 43.8,
+      "type": "concept",
+      "caption": "Webhook trigger တွေ က တော့ အပြင် က နေ data တစ်ခုခု ဝင်လာ တဲ့ အချိန် မှာ အလုပ် စ လုပ် တာ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🔗",
+          "label": "Webhook",
+          "x": 30,
+          "y": 50,
+          "color": "#795548"
+        },
+        {
+          "name": "📩",
+          "label": "Data In",
+          "x": 70,
+          "y": 50,
+          "color": "#FF9800"
+        }
+      ]
+    },
+    {
+      "start": 43.8,
+      "end": 51.8,
+      "type": "concept",
+      "caption": "ဒါပေမဲ့ schedule trigger က တော့ data ဝင်လာ ဖို့ စောင့်နေစရာ မလို ဘဲ ကိုယ် သတ်မှတ်ထား တဲ့ အချိန် ရောက် တာ နဲ့ သူ့ ဘာသာ သူ အလုပ် စ လုပ်ပေး မှာ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⏰",
+          "label": "Time Reached",
+          "x": 30,
+          "y": 50,
+          "color": "#F44336"
+        },
+        {
+          "name": "▶️",
+          "label": "Auto-run",
+          "x": 70,
+          "y": 50,
+          "color": "#8BC34A"
+        }
+      ]
+    },
+    {
+      "start": 51.8,
+      "end": 55.7,
+      "type": "concept",
+      "caption": "လက်တွေ့ လုပ်ငန်း တွေ မှာ ဒီ feature က တကယ် အသုံးဝင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Practical Use",
+        "အသုံးဝင်"
+      ]
+    },
+    {
+      "start": 55.7,
+      "end": 59,
+      "type": "concept",
+      "caption": "ဥပမာ sales automation တစ်ခု ကို စဉ်းစားကြည့် ပါ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "💰",
+          "label": "Sales",
+          "x": 30,
+          "y": 50,
+          "color": "#FFEB3B"
+        },
+        {
+          "name": "⚙️",
+          "label": "Automation",
+          "x": 70,
+          "y": 50,
+          "color": "#4CAF50"
+        }
+      ]
+    },
+    {
+      "start": 59,
+      "end": 110,
+      "type": "concept",
+      "caption": "ကုမ္ပဏီ တစ်ခု မှာ နေ့တိုင်း ညနေ ၅ နာရီ ရောက် ရင် တစ်နေ့တာ ရောင်းဝါ report ကို CRM ထဲ က နေ ယူ ပြီး management team ဆီ email ဒါမှမဟုတ် slack က နေ ပို့ပေးရ တဲ့ အလုပ်မျိုး ရှိနိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🕔",
+          "label": "5 PM",
+          "x": 20,
+          "y": 50,
+          "color": "#E91E63"
+        },
+        {
+          "name": "🗄️",
+          "label": "CRM",
+          "x": 40,
+          "y": 50,
+          "color": "#2196F3"
+        },
+        {
+          "name": "📊",
+          "label": "Report",
+          "x": 60,
+          "y": 50,
+          "color": "#FFC107"
+        },
+        {
+          "name": "✉️",
+          "label": "Email/Slack",
+          "x": 80,
+          "y": 50,
+          "color": "#00BCD4"
+        }
+      ]
+    },
+    {
+      "start": 110,
+      "end": 114.4,
+      "type": "concept",
+      "caption": "အရင် က ဆိုရင် လူ တစ်ယောက် က နေ့တိုင်း အဲ့ဒီ အချိန် မှာ ထိုင် လုပ်ပေးရ မှာ ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🚶‍♂️",
+          "label": "Manual Work",
+          "x": 50,
+          "y": 50,
+          "color": "#9E9E9E"
+        }
+      ]
+    },
+    {
+      "start": 114.4,
+      "end": 121.7,
+      "type": "concept",
+      "caption": "ဒါပေမဲ့ schedule trigger ကို အသုံးပြု လိုက် ရင် အချိန် ရောက် တာ နဲ့ workflow က အလိုအလျောက် အလုပ် လုပ် ပြီး report ကို ပို့ပေးသွား မှာ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⏰",
+          "label": "Time",
+          "x": 25,
+          "y": 50,
+          "color": "#FF5722"
+        },
+        {
+          "name": "⚙️",
+          "label": "Workflow",
+          "x": 50,
+          "y": 50,
+          "color": "#4CAF50"
+        },
+        {
+          "name": "📊",
+          "label": "Report",
+          "x": 75,
+          "y": 50,
+          "color": "#E91E63"
+        }
+      ]
+    },
+    {
+      "start": 121.7,
+      "end": 126.5,
+      "type": "concept",
+      "caption": "အခု N8N ထဲ မှာ schedule trigger ကို ဘယ်လို အသုံးပြု လဲ ကြည့်ရအောင်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "N8N Demo",
+        "Schedule Trigger"
+      ]
+    },
+    {
+      "start": 126.5,
+      "end": 133,
+      "type": "screen_demo",
+      "caption": "N8N workflow editor ထဲ မှာ schedule trigger node ကို ထည့်လိုက် တာ နဲ့ setting option တွေ ကို တွေ့ရ ပါ လိမ့် မယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — My Workflow",
+      "ui": [
+        {
+          "kind": "node",
+          "label": "Schedule Trigger",
+          "x": 45,
+          "y": 45,
+          "w": 10,
+          "h": 10,
+          "fontSize": 18,
+          "color": "#6c6c6c"
+        },
+        {
+          "kind": "panel",
+          "label": "Parameters",
+          "x": 0,
+          "y": 0,
+          "w": 25,
+          "h": 100,
+          "color": "#333333"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 50,
+          "y": 50,
+          "zoom": 1.4,
+          "click": true
+        }
+      ]
+    },
+    {
+      "start": 133,
+      "end": 141,
+      "type": "screen_demo",
+      "caption": "အဓိက အသုံး များ တာ တွေ က တော့ minutes, hours, days, weeks တို့ ပဲ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — My Workflow",
+      "ui": [
+        {
+          "kind": "panel",
+          "label": "Parameters",
+          "x": 0,
+          "y": 0,
+          "w": 25,
+          "h": 100,
+          "color": "#333333"
+        },
+        {
+          "kind": "text",
+          "label": "Trigger Rules",
+          "x": 3,
+          "y": 12,
+          "w": 15,
+          "h": 4,
+          "fontSize": 16,
+          "color": "#ffffff"
+        },
+        {
+          "kind": "input",
+          "label": "Trigger Interval",
+          "x": 13,
+          "y": 17,
+          "w": 10,
+          "h": 5,
+          "fontSize": 14,
+          "color": "#444444"
+        },
+        {
+          "kind": "text",
+          "label": "Seconds",
+          "x": 13,
+          "y": 22,
+          "w": 10,
+          "h": 4,
+          "fontSize": 14,
+          "color": "#cccccc"
+        },
+        {
+          "kind": "text",
+          "label": "Minutes",
+          "x": 13,
+          "y": 26,
+          "w": 10,
+          "h": 4,
+          "fontSize": 14,
+          "color": "#cccccc"
+        },
+        {
+          "kind": "text",
+          "label": "Hours",
+          "x": 13,
+          "y": 30,
+          "w": 10,
+          "h": 4,
+          "fontSize": 14,
+          "color": "#cccccc"
+        },
+        {
+          "kind": "text",
+          "label": "Days",
+          "x": 13,
+          "y": 34,
+          "w": 10,
+          "h": 4,
+          "fontSize": 14,
+          "color": "#cccccc"
+        },
+        {
+          "kind": "text",
+          "label": "Weeks",
+          "x": 13,
+          "y": 38,
+          "w": 10,
+          "h": 4,
+          "fontSize": 14,
+          "color": "#cccccc"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 18,
+          "y": 19.5,
+          "zoom": 1.6
+        },
+        {
+          "x": 18,
+          "y": 36,
+          "zoom": 1.6
+        }
+      ]
+    },
+    {
+      "start": 141,
+      "end": 149.5,
+      "type": "screen_demo",
+      "caption": "ဥပမာ တစ်နာရီ တစ်ခါ run ချင် တာ လား၊ နေ့တိုင်း run ချင် တာ လား၊ တစ်ပတ် တစ်ခါ run ချင် တာ လား ဆိုတာ ကိုယ့် လိုအပ်ချက် အတိုင်း သတ်မှတ်နိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — My Workflow",
+      "ui": [
+        {
+          "kind": "panel",
+          "label": "Parameters",
+          "x": 0,
+          "y": 0,
+          "w": 25,
+          "h": 100,
+          "color": "#333333"
+        },
+        {
+          "kind": "text",
+          "label": "Trigger Rules",
+          "x": 3,
+          "y": 12,
+          "w": 15,
+          "h": 4,
+          "fontSize": 16,
+          "color": "#ffffff"
+        },
+        {
+          "kind": "input",
+          "label": "Trigger Interval",
+          "x": 13,
+          "y": 17,
+          "w": 10,
+          "h": 5,
+          "fontSize": 14,
+          "color": "#444444"
+        },
+        {
+          "kind": "input",
+          "label": "Days Between Triggers",
+          "x": 13,
+          "y": 27,
+          "w": 10,
+          "h": 5,
+          "fontSize": 14,
+          "color": "#444444"
+        },
+        {
+          "kind": "input",
+          "label": "Trigger at hour",
+          "x": 13,
+          "y": 37,
+          "w": 10,
+          "h": 5,
+          "fontSize": 14,
+          "color": "#444444"
+        },
+        {
+          "kind": "input",
+          "label": "Trigger at minute",
+          "x": 13,
+          "y": 47,
+          "w": 10,
+          "h": 5,
+          "fontSize": 14,
+          "color": "#444444"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 18,
+          "y": 29.5,
+          "zoom": 1.6
+        },
+        {
+          "x": 18,
+          "y": 39.5,
+          "zoom": 1.6
+        },
+        {
+          "x": 18,
+          "y": 49.5,
+          "zoom": 1.6
+        }
+      ]
+    },
+    {
+      "start": 149.5,
+      "end": 155.5,
+      "type": "concept",
+      "caption": "ဒါပေမဲ့ automation engineer တစ်ယောက် အနေနဲ့ သိထားသင့် တဲ့ အချက် တစ်ခု က တော့ cron expression ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "📜",
+          "label": "Cron Expression",
+          "x": 50,
+          "y": 50,
+          "color": "#8D6E63"
+        }
+      ]
+    },
+    {
+      "start": 155.5,
+      "end": 200.8,
+      "type": "concept",
+      "caption": "ပုံမှန် အသုံးပြုမှု တွေ အတွက် တော့ N8N ရဲ့ UI က နေ လွယ်လွယ်ကူကူ သတ်မှတ်နိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "N8N UI",
+        "Easy Setup"
+      ]
+    },
+    {
+      "start": 200.8,
+      "end": 203.7,
+      "type": "concept",
+      "caption": "ဒါပေမဲ့ လကုန် ရက်တိုင်း မှာ ပဲ run ချင် တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🗓️",
+          "label": "Month End",
+          "x": 50,
+          "y": 50,
+          "color": "#FFD700"
+        }
+      ]
+    },
+    {
+      "start": 203.7,
+      "end": 206.2,
+      "type": "concept",
+      "caption": "တနင်္လာ က နေ သောကြာ အထိ ပဲ run ချင် တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "📆",
+          "label": "Weekdays",
+          "x": 50,
+          "y": 50,
+          "color": "#8BC34A"
+        }
+      ]
+    },
+    {
+      "start": 206.2,
+      "end": 208.7,
+      "type": "concept",
+      "caption": "အားလပ်ရက် တွေ ကို ကျော် ပြီး run ချင် တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🏖️",
+          "label": "Skip Holidays",
+          "x": 50,
+          "y": 50,
+          "color": "#00BCD4"
+        }
+      ]
+    },
+    {
+      "start": 208.7,
+      "end": 214,
+      "type": "concept",
+      "caption": "လိုမျိုး ရှုပ်ထွေး တဲ့ schedule တွေ အတွက် ဆိုရင် cron expression ကို အသုံးပြုတတ် ဖို့ လိုလာ ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "📜",
+          "label": "Cron",
+          "x": 30,
+          "y": 50,
+          "color": "#8D6E63"
+        },
+        {
+          "name": "⚙️",
+          "label": "Complex",
+          "x": 70,
+          "y": 50,
+          "color": "#607D8B"
+        }
+      ]
+    },
+    {
+      "start": 214,
+      "end": 217.9,
+      "type": "concept",
+      "caption": "နောက်ထပ် သတိထားရမယ့် အပိုင်း က တော့ when setting ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "When Setting",
+        "အရေးကြီး"
+      ]
+    },
+    {
+      "start": 217.9,
+      "end": 221.9,
+      "type": "concept",
+      "caption": "N8N မှာ schedule trigger ကို အဓိက အားဖြင့် နှစ်မျိုး အသုံးပြုနိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "1️⃣",
+          "label": "Type 1",
+          "x": 35,
+          "y": 50,
+          "color": "#FF9800"
+        },
+        {
+          "name": "2️⃣",
+          "label": "Type 2",
+          "x": 65,
+          "y": 50,
+          "color": "#2196F3"
+        }
+      ]
+    },
+    {
+      "start": 221.9,
+      "end": 224.2,
+      "type": "concept",
+      "caption": "ပထမ တစ်ခု က every။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Every"
+      ]
+    },
+    {
+      "start": 224.2,
+      "end": 227.5,
+      "type": "concept",
+      "caption": "ဒါ က တော့ သတ်မှတ်ထား တဲ့ ကြား ကာလ တိုင်း မှာ အလုပ် လုပ်စေ တာ ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🔁",
+          "label": "Repeat",
+          "x": 50,
+          "y": 50,
+          "color": "#4CAF50"
+        }
+      ]
+    },
+    {
+      "start": 227.5,
+      "end": 230,
+      "type": "concept",
+      "caption": "ဥပမာ ၁၀ မိနစ် တစ်ခါ run ခိုင်း တာ မျိုး။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Every 10 Minutes"
+      ]
+    },
+    {
+      "start": 230,
+      "end": 233,
+      "type": "concept",
+      "caption": "ဒုတိယ တစ်ခု က တော့ specific time။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Specific Time"
+      ]
+    },
+    {
+      "start": 233,
+      "end": 235.6,
+      "type": "concept",
+      "caption": "ဒါ က တော့ အချိန် တိတိကျကျ သတ်မှတ်ပေး တာ ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🎯",
+          "label": "Exact Time",
+          "x": 50,
+          "y": 50,
+          "color": "#F44336"
+        }
+      ]
+    },
+    {
+      "start": 235.6,
+      "end": 240.2,
+      "type": "concept",
+      "caption": "ဥပမာ မနက် ၈ နာရီ ၃၀ မိနစ် မှာ run ခိုင်း ချင် ရင် ဒီ option ကို အသုံးပြု ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "8:30 AM"
+      ]
+    },
+    {
+      "start": 240.2,
+      "end": 245,
+      "type": "concept",
+      "caption": "AI automation တွေ မှာ လည်း schedule trigger က အရေးကြီး တဲ့ အခန်းကဏ္ဍ မှာ ပါဝင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🤖",
+          "label": "AI",
+          "x": 30,
+          "y": 50,
+          "color": "#9C27B0"
+        },
+        {
+          "name": "⚙️",
+          "label": "Automation",
+          "x": 70,
+          "y": 50,
+          "color": "#4CAF50"
+        }
+      ]
+    },
+    {
+      "start": 245,
+      "end": 257.7,
+      "type": "concept",
+      "caption": "ဥပမာ social media automation တစ်ခု မှာ နောက် တစ်ပတ် စာ content တွေ ကို ကြိုတင် ပြင်ဆင်ထား ပြီး သတ်မှတ်ထား တဲ့ အချိန် ရောက် တဲ့ အခါ AI က နေ Facebook, LinkedIn စ တဲ့ platform တွေ ပေါ် ကို အလိုအလျောက် post တင်ပေးနိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🤖",
+          "label": "AI",
+          "x": 20,
+          "y": 50,
+          "color": "#9C27B0"
+        },
+        {
+          "name": "📝",
+          "label": "Content",
+          "x": 40,
+          "y": 50,
+          "color": "#FFC107"
+        },
+        {
+          "name": "⏰",
+          "label": "Scheduled",
+          "x": 60,
+          "y": 50,
+          "color": "#FF5722"
+        },
+        {
+          "name": "📲",
+          "label": "Post",
+          "x": 80,
+          "y": 50,
+          "color": "#2196F3"
+        }
+      ]
+    },
+    {
+      "start": 257.7,
+      "end": 264.9,
+      "type": "concept",
+      "caption": "ဒီလို workflow တွေ ကြောင့် automation engineer တွေ က လူ မရှိ တဲ့ အချိန် မှာ တောင် လုပ်ငန်းစဉ် တွေ ကို ဆက်လက် လည်ပတ်နေအောင် ဖန်တီးနိုင် တာ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "👻",
+          "label": "Unattended",
+          "x": 30,
+          "y": 50,
+          "color": "#BDBDBD"
+        },
+        {
+          "name": "🔄",
+          "label": "Continuous",
+          "x": 70,
+          "y": 50,
+          "color": "#009688"
+        }
+      ]
+    },
+    {
+      "start": 264.9,
+      "end": 270,
+      "type": "concept",
+      "caption": "ဒါပေမဲ့ schedule trigger အသုံးပြု တဲ့ အခါ အရေးကြီးဆုံး သတိထားရမယ့် အချက် တစ်ခု ရှိ ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⚠️",
+          "label": "Important",
+          "x": 50,
+          "y": 50,
+          "color": "#FFC107"
+        }
+      ]
+    },
+    {
+      "start": 270,
+      "end": 272,
+      "type": "concept",
+      "caption": "အဲ့ဒါ က တော့ time zone ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Time Zone"
+      ]
+    },
+    {
+      "start": 272,
+      "end": 276.6,
+      "type": "concept",
+      "caption": "ဥပမာ ကိုယ် က မြန်မာ စံတော်ချိန် မနက် ၉ နာရီ မှာ run ချင် တယ် ဆိုပါစို့။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🇲🇲",
+          "label": "Myanmar",
+          "x": 30,
+          "y": 50,
+          "color": "#FF0000"
+        },
+        {
+          "name": "🕘",
+          "label": "9 AM",
+          "x": 70,
+          "y": 50,
+          "color": "#FF5722"
+        }
+      ]
+    },
+    {
+      "start": 276.6,
+      "end": 282,
+      "type": "concept",
+      "caption": "ဒါပေမဲ့ N8N server က UTC time နဲ့ run နေ ရင် အချိန် လွဲသွားနိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🌐",
+          "label": "UTC",
+          "x": 30,
+          "y": 50,
+          "color": "#2196F3"
+        },
+        {
+          "name": "❌",
+          "label": "Mismatch",
+          "x": 70,
+          "y": 50,
+          "color": "#F44336"
+        }
+      ]
+    },
+    {
+      "start": 282,
+      "end": 286.9,
+      "type": "screen_demo",
+      "caption": "ဒါကြောင့် workflow မစ ခင် time zone setting ကို အမြဲ စစ်ဆေးထား ဖို့ လို ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "mockup": "mac",
+      "mockup_title": "Workflow settings for My workflow 13",
+      "ui": [
+        {
+          "kind": "panel",
+          "label": "Workflow settings",
+          "x": 25,
+          "y": 15,
+          "w": 50,
+          "h": 70,
+          "color": "#2a2a2a"
+        },
+        {
+          "kind": "text",
+          "label": "Timezone",
+          "x": 28,
+          "y": 35,
+          "w": 10,
+          "h": 5,
+          "fontSize": 16,
+          "color": "#ffffff"
+        },
+        {
+          "kind": "input",
+          "label": "Default - Europe/Berlin",
+          "x": 40,
+          "y": 35,
+          "w": 25,
+          "h": 5,
+          "fontSize": 14,
+          "color": "#444444"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 52,
+          "y": 37.5,
+          "zoom": 1.6,
+          "click": true
+        },
+        {
+          "x": 52,
+          "y": 42.5,
+          "zoom": 1.6
+        }
+      ]
+    },
+    {
+      "start": 286.9,
+      "end": 289.5,
+      "type": "concept",
+      "caption": "နောက် တစ်ခု က တော့ error handling ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Error Handling"
+      ]
+    },
+    {
+      "start": 289.5,
+      "end": 292.8,
+      "type": "concept",
+      "caption": "Automation ဆိုတာ အလုပ် လုပ်နေရုံ နဲ့ မပြီး ပါ ဘူး။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⚙️",
+          "label": "Automation",
+          "x": 30,
+          "y": 50,
+          "color": "#4CAF50"
+        },
+        {
+          "name": "🚫",
+          "label": "Not Enough",
+          "x": 70,
+          "y": 50,
+          "color": "#F44336"
+        }
+      ]
+    },
+    {
+      "start": 292.8,
+      "end": 296.3,
+      "type": "concept",
+      "caption": "တစ်ခုခု error ဖြစ်သွား တဲ့ အခါ ကိုယ် သိနိုင် ဖို့ လည်း လို ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🔔",
+          "label": "Alert",
+          "x": 50,
+          "y": 50,
+          "color": "#FFC107"
+        }
+      ]
+    },
+    {
+      "start": 296.3,
+      "end": 307.8,
+      "type": "concept",
+      "caption": "ဥပမာ schedule trigger က run ဖြစ်သွား ပေမယ့် ချိတ်ထား တဲ့ API က error တက်သွား တယ် ဆိုရင် error trigger ဒါမှမဟုတ် notification system တွေ နဲ့ ချက်ချင်း အကြောင်းကြားနိုင်အောင် တည်ဆောက်ထားသင့် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⏰",
+          "label": "Trigger",
+          "x": 15,
+          "y": 50,
+          "color": "#FF5722"
+        },
+        {
+          "name": "🔗",
+          "label": "API",
+          "x": 35,
+          "y": 50,
+          "color": "#795548"
+        },
+        {
+          "name": "❌",
+          "label": "Error",
+          "x": 65,
+          "y": 50,
+          "color": "#F44336"
+        },
+        {
+          "name": "✉️",
+          "label": "Notify",
+          "x": 85,
+          "y": 50,
+          "color": "#00BCD4"
+        }
+      ]
+    },
+    {
+      "start": 307.8,
+      "end": 316.6,
+      "type": "concept",
+      "caption": "လက်တွေ့ အသုံးပြုမှု ဥပမာ တစ်ခု ပြောရ ရင် customer support automation တစ်ခု မှာ customer ticket တွေ ကို စောင့်ကြည့် ဖို့ schedule trigger ကို အသုံးပြုနိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🎧",
+          "label": "Support",
+          "x": 30,
+          "y": 50,
+          "color": "#9C27B0"
+        },
+        {
+          "name": "🎫",
+          "label": "Tickets",
+          "x": 70,
+          "y": 50,
+          "color": "#FFC107"
+        }
+      ]
+    },
+    {
+      "start": 316.6,
+      "end": 324.4,
+      "type": "concept",
+      "caption": "နေ့တိုင်း မနက် ၁၀ နာရီ မှာ workflow က database ကို စစ်ဆေး ပြီး ၃ ရက် ကျော်အောင် မဖြေရှင်းရသေး တဲ့ ticket တွေ ကို ရှာ ပါ မယ်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🕙",
+          "label": "10 AM",
+          "x": 20,
+          "y": 50,
+          "color": "#E91E63"
+        },
+        {
+          "name": "🗄️",
+          "label": "Database",
+          "x": 50,
+          "y": 50,
+          "color": "#2196F3"
+        },
+        {
+          "name": "🎫",
+          "label": "Old Tickets",
+          "x": 80,
+          "y": 50,
+          "color": "#F44336"
+        }
+      ]
+    },
+    {
+      "start": 324.4,
+      "end": 328,
+      "type": "concept",
+      "caption": "ပြီး ရင် သက်ဆိုင်ရာ support agency ကို reminder ပို့ပေး ပါ မယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🔔",
+          "label": "Reminder",
+          "x": 30,
+          "y": 50,
+          "color": "#FFC107"
+        },
+        {
+          "name": "✉️",
+          "label": "Send",
+          "x": 70,
+          "y": 50,
+          "color": "#00BCD4"
+        }
+      ]
+    },
+    {
+      "start": 328,
+      "end": 334.7,
+      "type": "concept",
+      "caption": "ဒီလို နည်း နဲ့ လူ တစ်ယောက် က အမြဲ လိုက် စောင့်ကြည့် နေစရာ မလို တော့ ဘဲ customer response time ကို ပို ကောင်းလာအောင် လုပ်နိုင် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⏱️",
+          "label": "Faster Response",
+          "x": 50,
+          "y": 50,
+          "color": "#4CAF50"
+        }
+      ]
+    },
+    {
+      "start": 334.7,
+      "end": 342.5,
+      "type": "outro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ schedule trigger ရဲ့ အခြေခံ အကြောင်းအရာ အသုံးပြုပုံ နဲ့ လက်တွေ့ အသုံးချနိုင် တဲ့ နေရာ တွေ ကို လေ့လာခဲ့ ပြီး ပါ ပြီ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Schedule Trigger",
+        "Summary"
+      ]
+    },
+    {
+      "start": 342.5,
+      "end": 346,
+      "type": "concept",
+      "caption": "နည်းပညာ တစ်ခု ကို နားလည် ဖို့ ဆိုတာ ဖတ်ရုံ နဲ့ မလုံလောက် ပါ ဘူး။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "📖",
+          "label": "Read",
+          "x": 30,
+          "y": 50,
+          "color": "#8D6E63"
+        },
+        {
+          "name": "❌",
+          "label": "Not Enough",
+          "x": 70,
+          "y": 50,
+          "color": "#F44336"
+        }
+      ]
+    },
+    {
+      "start": 346,
+      "end": 349.7,
+      "type": "concept",
+      "caption": "ကိုယ်တိုင် လက်တွေ့ ဆောက်ကြည့် မှ ပို ပြီး နားလည်လာ မှာ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "✋",
+          "label": "Hands-on",
+          "x": 30,
+          "y": 50,
+          "color": "#FFC107"
+        },
+        {
+          "name": "💡",
+          "label": "Understand",
+          "x": 70,
+          "y": 50,
+          "color": "#FFEB3B"
+        }
+      ]
+    },
+    {
+      "start": 349.7,
+      "end": 357.3,
+      "type": "concept",
+      "caption": "ဒါကြောင့် ဒီ သင်ခန်းစာ ပြီး တာ နဲ့ N8N ကို ဖွင့် ပြီး ကိုယ့် ဆီ ကို နေ့တိုင်း အချက်အလက် တစ်ခု ပို့ပေးမယ့် workflow လေး တစ်ခု ဆန်း ပြီး တည်ဆောက်ကြည့် ပါ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "🛠️",
+          "label": "Build",
+          "x": 30,
+          "y": 50,
+          "color": "#607D8B"
+        },
+        {
+          "name": "⚙️",
+          "label": "Workflow",
+          "x": 70,
+          "y": 50,
+          "color": "#4CAF50"
+        }
+      ]
+    },
+    {
+      "start": 357.3,
+      "end": 365.6,
+      "type": "concept",
+      "caption": "နောက် သင်ခန်းစာ မှာ တော့ automation တွေ ရဲ့ အရေးကြီးဆုံး trigger တစ်ခု ဖြစ် တဲ့ webhook trigger အကြောင်း ကို ဆက်လက် လေ့လာသွား မှာ ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "➡️",
+          "label": "Next",
+          "x": 30,
+          "y": 50,
+          "color": "#2196F3"
+        },
+        {
+          "name": "🔗",
+          "label": "Webhook",
+          "x": 70,
+          "y": 50,
+          "color": "#795548"
+        }
+      ]
+    },
+    {
+      "start": 365.6,
+      "end": 375.5,
+      "type": "concept",
+      "caption": "Webhook ဆိုတာ data တွေ ကို real-time ဝင်လာစေ ပြီး automation တွေ ကို ပို ပြီး powerful ဖြစ်စေ တဲ့ အခြေခံ နည်းပညာ တစ်ခု ဖြစ် ပါ တယ်။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "icons": [
+        {
+          "name": "⚡",
+          "label": "Real-time",
+          "x": 30,
+          "y": 50,
+          "color": "#FFEB3B"
+        },
+        {
+          "name": "💪",
+          "label": "Powerful",
+          "x": 70,
+          "y": 50,
+          "color": "#F44336"
+        }
+      ]
+    },
+    {
+      "start": 375.5,
+      "end": 378,
+      "type": "concept",
+      "caption": "ဒါကြောင့် နောက် သင်ခန်းစာ မှာ ဆက်လက် တွေ့ကြရအောင်။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "See you",
+        "next lesson!"
+      ]
+    },
+    {
+      "start": 378,
+      "end": 380.6,
+      "type": "outro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ အတွက် တော့ ဒီလောက် ပါ ပဲ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.35,
+        "bloom": 0.25,
+        "saturate": 1.15,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "That's all for today!"
+      ]
+    },
+    {
+      "start": 380.6,
+      "end": 382.7,
+      "type": "outro",
+      "caption": "လက်တွေ့ စမ်းသပ် ဖို့ မမေ့ ပါ နဲ့ ခင်ဗျာ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.4,
+        "bloom": 0.3,
+        "saturate": 1.2,
+        "contrast": 1.1
+      },
+      "icons": [
+        {
+          "name": "✅",
+          "label": "Practice",
+          "x": 50,
+          "y": 50,
+          "color": "#4CAF50"
+        }
+      ]
+    }
+  ]
+}
