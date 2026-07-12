@@ -54,6 +54,30 @@
   .asset-card .del{background:transparent;border:1px solid var(--line);color:var(--err);padding:6px 10px;border-radius:8px;font-size:13px}
   @media(max-width:760px){.asset-card .grid{grid-template-columns:1fr}}
   .scene-tag{display:inline-block;background:rgba(255,62,165,.12);color:var(--magenta);padding:2px 8px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:11px;margin-right:6px}
+
+  /* ===== Component Library (Tab 5) ===== */
+  .lib-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+  .lib-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .comp-card{background:var(--panel2);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  .comp-prev{position:relative;height:180px;background:linear-gradient(180deg,#070b14,#0b1220);border-bottom:1px solid var(--line);overflow:hidden}
+  .comp-prev .chrome{position:absolute;top:0;left:0;right:0;height:26px;background:#0a0f1a;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:6px;padding:0 10px;z-index:5}
+  .comp-prev .chrome i{width:9px;height:9px;border-radius:50%;display:inline-block}
+  .comp-prev .chrome .t{margin-left:8px;font-family:'Inter',sans-serif;font-size:10px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .comp-prev .stage{position:absolute;top:26px;left:0;right:0;bottom:0}
+  .el{position:absolute;box-sizing:border-box;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:8px;color:#e6edf7;text-align:center;overflow:hidden}
+  .el.node{background:linear-gradient(180deg,#2b3350,#1c2338);border:1px solid #4d6bce;border-radius:6px;font-weight:600}
+  .el.node .dot{position:absolute;top:-3px;right:-3px;width:7px;height:7px;border-radius:50%}
+  .el.button{border-radius:5px;font-weight:600}
+  .el.input{background:#0f1524;border:1px solid #2a3350;border-radius:5px;justify-content:flex-start;padding:0 6px;color:#9fb3d4}
+  .el.panel{background:rgba(20,26,42,.9);border:1px solid #263050;border-radius:6px}
+  .el.text{background:transparent;font-weight:500}
+  .comp-body{padding:14px;display:flex;flex-direction:column;gap:8px}
+  .comp-body .key{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--cyan);word-break:break-all}
+  .comp-body .hint{font-size:12.5px;color:var(--text);font-family:'Padauk','Inter',sans-serif;margin:0}
+  .comp-tags{display:flex;gap:6px;flex-wrap:wrap}
+  .comp-tags .tag{font-family:'JetBrains Mono',monospace;font-size:10px;padding:2px 8px;border-radius:999px;background:rgba(0,229,255,.1);color:var(--cyan)}
+  .comp-tags .tag.mk{background:rgba(255,62,165,.12);color:var(--magenta)}
+  .lib-empty{padding:40px;text-align:center;color:var(--muted);font-family:'Inter',sans-serif}
 </style>
 </head>
 <body>
@@ -69,6 +93,7 @@
     <div class="tab" data-tab="audio">2. Voiceover</div>
     <div class="tab" data-tab="visual">3. Visual Script</div>
     <div class="tab" data-tab="render">4. Final Render</div>
+    <div class="tab" data-tab="library">5. Component Library</div>
   </div>
 
   <!-- ============ TAB 1: SCRIPT ============ -->
@@ -207,6 +232,18 @@
   </div>
 </main>
 
+  <!-- ============ TAB 5: COMPONENT LIBRARY ============ -->
+  <div class="panel" id="panel-library">
+    <div class="lib-bar">
+      <button id="libRefreshBtn">Refresh Library</button>
+      <span class="pill" id="libCount">0 components</span>
+      <span class="audio-meta" id="libUpdated"></span>
+    </div>
+    <p class="hint" style="margin-bottom:14px">Pipeline က lesson ထုတ်တိုင်း အသစ်ဆောက်တဲ့ n8n UI components တွေကို ဒီမှာ သိမ်းထားတယ်။ တူတဲ့ screen ပါတဲ့ နောက် lesson တွေမှာ screenshot ထပ်မလို�တော့ဘဲ ဒီ component တွေကို ပြန်သုံးမယ် (component_ref)။</p>
+    <div class="lib-grid" id="libGrid"></div>
+    <div class="lib-empty" id="libEmpty" style="display:none">Component မရှိသေးပါ — Lesson တစ်ခု render လုပ်ရင် အလိုအလျောက် စတင်သိမ်းပါမယ်။</div>
+  </div>
+
 <script>
 const WEBHOOK = 'https://n8n.srv1695682.hstgr.cloud/webhook/n8n-course-voiceover';
 const $ = id => document.getElementById(id);
@@ -218,6 +255,7 @@ document.querySelectorAll('.tab').forEach(t => {
     document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
     t.classList.add('active');
     $(`panel-${t.dataset.tab}`).classList.add('active');
+    if (t.dataset.tab === 'library') loadLibrary();
   });
 });
 
@@ -425,6 +463,62 @@ $('renderBtn').addEventListener('click', async () => {
 });
 
 renderAssets();
+
+// ===== Component Library (Tab 5) =====
+const LIB_GIST_RAW = 'https://gist.githubusercontent.com/moehtetofficial/4942402e964634fc5fdd6488893276e7/raw/components-index.json';
+function elColor(el){
+  if(el.kind==='button') return el.color||'#3b6fe0';
+  return '';
+}
+function statusColor(s){return ({ok:'#3ecb7d',run:'#f5b83d',error:'#e0555e',idle:'#5a6785'})[s]||'#5a6785';}
+function renderMiniPreview(comp){
+  const title = comp.mockup_title || (comp.mockup==='browser'?'n8n':comp.mockup==='terminal'?'bash':'n8n — workflow');
+  const els = (comp.ui||[]).map(el=>{
+    const kind = el.kind||'text';
+    const style = `left:${el.x??10}%;top:${el.y??10}%;width:${el.w??20}%;height:${el.h??10}%;`
+      + (kind==='button' && el.color ? `background:${el.color};`:'');
+    if(kind==='flow'){
+      const x1=el.x??20,y1=el.y??50,x2=el.x2??60,y2=el.y2??50;
+      return `<svg style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible">
+        <line x1="${x1}%" y1="${y1}%" x2="${x2}%" y2="${y2}%" stroke="#4d6bce" stroke-width="2"/>
+        <circle cx="${(x1+x2)/2}%" cy="${(y1+y2)/2}%" r="3" fill="#7fa8ff"/></svg>`;
+    }
+    const dot = (kind==='node' && el.status) ? `<span class="dot" style="background:${statusColor(el.status)};box-shadow:0 0 6px ${statusColor(el.status)}"></span>`:'';
+    const label = (el.label||'').replace(/</g,'&lt;');
+    return `<div class="el ${kind}" style="${style}">${label}${dot}</div>`;
+  }).join('');
+  return `<div class="chrome"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="t">${title.replace(/</g,'&lt;')}</span></div><div class="stage">${els}</div>`;
+}
+async function loadLibrary(){
+  const grid=$('libGrid'), empty=$('libEmpty'), count=$('libCount'), upd=$('libUpdated');
+  grid.innerHTML='<div class="lib-empty">Loading…</div>'; empty.style.display='none';
+  try{
+    const r=await fetch(LIB_GIST_RAW+'?cb='+Date.now());
+    const lib=await r.json();
+    const comps=(lib&&lib.components)||{};
+    const keys=Object.keys(comps);
+    count.textContent=keys.length+' component'+(keys.length===1?'':'s');
+    upd.textContent=lib._meta&&lib._meta.updated?('updated '+new Date(lib._meta.updated).toLocaleString()):'';
+    if(!keys.length){grid.innerHTML='';empty.style.display='block';return;}
+    grid.innerHTML=keys.map(k=>{
+      const c=comps[k]||{};
+      return `<div class="comp-card">
+        <div class="comp-prev">${renderMiniPreview(c)}</div>
+        <div class="comp-body">
+          <div class="key">${k}</div>
+          <p class="hint">${(c.hint||'—').replace(/</g,'&lt;')}</p>
+          <div class="comp-tags">
+            ${c.mockup?`<span class="tag mk">${c.mockup}</span>`:''}
+            <span class="tag">${(c.ui||[]).length} elements</span>
+          </div>
+        </div></div>`;
+    }).join('');
+  }catch(e){
+    grid.innerHTML='';empty.style.display='block';empty.textContent='Library load error: '+e.message;
+  }
+}
+$('libRefreshBtn').addEventListener('click',loadLibrary);
+
 </script>
 </body>
 </html>
