@@ -1,0 +1,427 @@
+{
+  "title": "Lesson",
+  "audio_file": "audio.wav",
+  "audio_duration": 68,
+  "scenes": [
+    {
+      "start": 0,
+      "end": 5.5,
+      "type": "intro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ ကျွန်တော် တို့ ရဲ့ AI automation engineer ခရီးစဉ် မှာ အလွန် အရေးပါ တဲ့",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "AI Automation Engineer",
+        "ခရီးစဉ်",
+        "အရေးပါသော အခန်းကဏ္ဍ"
+      ],
+      "bg": "linear-gradient(135deg, #0f172a, #1e293b)"
+    },
+    {
+      "start": 5.5,
+      "end": 9,
+      "type": "concept",
+      "caption": "Q&A chain အကြောင်း ကို လက်တွေ့ကျကျ လေ့လာသွား မှာ ဖြစ် ပါ တယ် ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "icons": [
+        {
+          "name": "❓",
+          "label": "Q&A Chain",
+          "x": 30,
+          "y": 50,
+          "color": "linear-gradient(135deg,#3b6fe0,#8a4fe0)"
+        },
+        {
+          "name": "⚙️",
+          "label": "Practical Study",
+          "x": 70,
+          "y": 50,
+          "color": "linear-gradient(135deg,#f97316,#ef4444)"
+        }
+      ]
+    },
+    {
+      "start": 9,
+      "end": 15.8,
+      "type": "concept",
+      "caption": "အရင်ဆုံး ကျွန်တော် တို့ နားလည်ထားရ မှာ က Q&A chain ဆိုတာ ရိုးရိုး chatbot တစ်ခု ထက် ပို ပါ တယ် ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "kinetic": [
+        "Q&A Chain",
+        "Not just a Chatbot",
+        "ပိုမို အဆင့်မြင့်"
+      ],
+      "bg": "linear-gradient(45deg, #1e293b, #0f172a)"
+    },
+    {
+      "start": 15.8,
+      "end": 24,
+      "type": "concept",
+      "caption": "သူ က ကျွန်တော် တို့ ရဲ့ ကိုယ်ပိုင် data တွေ ဥပမာ PDF file တွေ ဒါမှမဟုတ် ကုမ္ပဏီ ရဲ့ knowledge base တွေ ကို AI ကို ဖတ်ခိုင်း ပြီး",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "icons": [
+        {
+          "name": "📄",
+          "label": "PDF Files",
+          "x": 20,
+          "y": 50,
+          "color": "#e11d48"
+        },
+        {
+          "name": "📚",
+          "label": "Knowledge Base",
+          "x": 50,
+          "y": 50,
+          "color": "#22c55e"
+        },
+        {
+          "name": "🤖",
+          "label": "AI Reads",
+          "x": 80,
+          "y": 50,
+          "color": "#3b82f6"
+        }
+      ]
+    },
+    {
+      "start": 24,
+      "end": 27.8,
+      "type": "concept",
+      "caption": "အဲ့ဒီ အချက်အလက် တွေ ပေါ် မူတည် ပြီး အဖြေ ထုတ်ပေးနိုင်အောင် လုပ်ဆောင်ပေး တဲ့ စနစ် တစ်ခု ပါ ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "icons": [
+        {
+          "name": "💡",
+          "label": "Based on Data",
+          "x": 30,
+          "y": 50,
+          "color": "#facc15"
+        },
+        {
+          "name": "💬",
+          "label": "Generates Answer",
+          "x": 70,
+          "y": 50,
+          "color": "#a855f7"
+        }
+      ]
+    },
+    {
+      "start": 27.8,
+      "end": 33.8,
+      "type": "concept",
+      "caption": "လက်တွေ့ မှာ ဘယ်လို အသုံးဝင် လဲ ဆိုရင် customer တစ်ယောက် က ကျွန်တော် တို့ ရဲ့ ဝန်ဆောင်မှု အကြောင်း မေးလိုက်တဲ့ အခါ",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "icons": [
+        {
+          "name": "👤",
+          "label": "Customer",
+          "x": 25,
+          "y": 50,
+          "color": "#f97316"
+        },
+        {
+          "name": "❓",
+          "label": "Asks about service",
+          "x": 75,
+          "y": 50,
+          "color": "#3b6fe0"
+        }
+      ]
+    },
+    {
+      "start": 33.8,
+      "end": 41.8,
+      "type": "concept",
+      "caption": "AI က အင်တာနက် ပေါ် က အချက်အလက် တွေ ကို ပဲ အားကိုး မနေဘဲ ကျွန်တော် တို့ ပေးထားတဲ့ document တွေ က အချက်အလက် အတိုင်း တိတိကျကျ ပြန်ဖြေပေးနိုင်တာ မျိုး ပါ ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "icons": [
+        {
+          "name": "🌐",
+          "label": "Internet (X)",
+          "x": 20,
+          "y": 40,
+          "color": "#ef4444"
+        },
+        {
+          "name": "📂",
+          "label": "Our Documents (✓)",
+          "x": 50,
+          "y": 60,
+          "color": "#22c55e"
+        },
+        {
+          "name": "✅",
+          "label": "Accurate Answer",
+          "x": 80,
+          "y": 40,
+          "color": "#3b82f6"
+        }
+      ]
+    },
+    {
+      "start": 41.8,
+      "end": 47.8,
+      "type": "screen_demo",
+      "caption": "N8N မှာ ဆိုရင် တော့ LangChain node တွေ ကို အသုံးပြု ပြီး retriever နဲ့ generator ကို ချိတ်ဆက်ပေးရတာ ပါ ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "mockup": "mac",
+      "mockup_title": "n8n — My Workflow",
+      "ui": [
+        {
+          "kind": "button",
+          "label": "Add first step...",
+          "x": 40,
+          "y": 48,
+          "w": 20,
+          "h": 8,
+          "fontSize": 18,
+          "color": "#334155"
+        },
+        {
+          "kind": "node",
+          "label": "LangChain Retriever",
+          "x": 15,
+          "y": 50,
+          "w": 20,
+          "h": 10,
+          "fontSize": 16,
+          "color": "#3b6fe0"
+        },
+        {
+          "kind": "node",
+          "label": "LangChain Generator",
+          "x": 45,
+          "y": 50,
+          "w": 20,
+          "h": 10,
+          "fontSize": 16,
+          "color": "#8a4fe0"
+        },
+        {
+          "kind": "node",
+          "label": "LangChain Q&A Chain",
+          "x": 75,
+          "y": 50,
+          "w": 20,
+          "h": 10,
+          "fontSize": 16,
+          "color": "#f97316"
+        },
+        {
+          "kind": "connector",
+          "label": "",
+          "x": 35,
+          "y": 55,
+          "w": 10,
+          "h": 0,
+          "color": "#64748b"
+        },
+        {
+          "kind": "connector",
+          "label": "",
+          "x": 65,
+          "y": 55,
+          "w": 10,
+          "h": 0,
+          "color": "#64748b"
+        }
+      ],
+      "cursor": [
+        {
+          "x": 50,
+          "y": 52,
+          "zoom": 1.2
+        },
+        {
+          "x": 50,
+          "y": 52,
+          "zoom": 1.6,
+          "click": true
+        },
+        {
+          "x": 25,
+          "y": 55,
+          "zoom": 1.4
+        },
+        {
+          "x": 55,
+          "y": 55,
+          "zoom": 1.4
+        },
+        {
+          "x": 85,
+          "y": 55,
+          "zoom": 1.4
+        },
+        {
+          "x": 50,
+          "y": 55,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "start": 47.8,
+      "end": 53.8,
+      "type": "concept",
+      "caption": "အရေးကြီး တာ က data ကို vector database ထဲ မှာ အရင် သိမ်းဆည်းထား ပြီး မေးခွန်း မေးတဲ့ အခါ",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "icons": [
+        {
+          "name": "📦",
+          "label": "Data",
+          "x": 20,
+          "y": 50,
+          "color": "#facc15"
+        },
+        {
+          "name": "🗄️",
+          "label": "Vector DB",
+          "x": 50,
+          "y": 50,
+          "color": "#3b82f6"
+        },
+        {
+          "name": "❓",
+          "label": "Question",
+          "x": 80,
+          "y": 50,
+          "color": "#ef4444"
+        }
+      ]
+    },
+    {
+      "start": 53.8,
+      "end": 57.8,
+      "type": "concept",
+      "caption": "အဲ့ဒီ ထဲ က မှ သက်ဆိုင်ရာ အချက်အလက် ကို ရှာထုတ်ပေး တဲ့ pattern ကို အသုံးပြု တာ ဖြစ် ပါ တယ် ။",
+      "caption_mode": "word",
+      "transition": "fade",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "icons": [
+        {
+          "name": "🔍",
+          "label": "Search",
+          "x": 30,
+          "y": 50,
+          "color": "#22c55e"
+        },
+        {
+          "name": "🎯",
+          "label": "Relevant Info",
+          "x": 70,
+          "y": 50,
+          "color": "#a855f7"
+        }
+      ]
+    },
+    {
+      "start": 57.8,
+      "end": 62.8,
+      "type": "concept",
+      "caption": "ဒါ ဟာ AI agent တွေ အတွက် အခြေခံ အကျဆုံး နဲ့ အသုံးဝင်ဆုံး နည်းပညာ တစ်ခု ပါ ။",
+      "caption_mode": "word",
+      "transition": "slide",
+      "grade": {
+        "vignette": 0.25,
+        "bloom": 0.18,
+        "saturate": 1.08,
+        "contrast": 1.02
+      },
+      "kinetic": [
+        "AI Agent များအတွက်",
+        "အခြေခံအကျဆုံး",
+        "အသုံးဝင်ဆုံး နည်းပညာ"
+      ],
+      "bg": "linear-gradient(135deg, #0f172a, #334155)"
+    },
+    {
+      "start": 62.8,
+      "end": 68,
+      "type": "outro",
+      "caption": "နောက် သင်ခန်းစာ မှာ တော့ ဒီ Q&A chain ကို vector database နဲ့ ဘယ်လို ချိတ်ဆက် မလဲ ဆိုတာ ကို လက်တွေ့ လုပ်ပြသွား ပါ မယ် ။",
+      "caption_mode": "word",
+      "transition": "wipe",
+      "grade": {
+        "vignette": 0.3,
+        "bloom": 0.2,
+        "saturate": 1.1,
+        "contrast": 1.05
+      },
+      "kinetic": [
+        "Next Lesson:",
+        "Q&A Chain + Vector DB",
+        "လက်တွေ့ ချိတ်ဆက်နည်း"
+      ],
+      "bg": "linear-gradient(45deg, #1e293b, #0f172a)"
+    }
+  ]
+}
