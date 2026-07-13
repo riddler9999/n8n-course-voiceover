@@ -1,0 +1,233 @@
+[
+  {
+    "new_components": {
+      "n8n_workflow_building_demo": {
+        "hint": "Demonstrates building a basic N8N workflow by adding and connecting nodes.",
+        "mockup": "browser",
+        "mockup_title": "My workflow 14 - n8n",
+        "ui": [
+          {
+            "type": "workflow_state",
+            "nodes": [],
+            "connections": [],
+            "description": "Start with an empty n8n workflow canvas."
+          },
+          {
+            "type": "add_node",
+            "node_type": "Webhook",
+            "id": "webhook_node_1",
+            "position": {
+              "x": 200,
+              "y": 300
+            },
+            "label": "Webhook",
+            "description": "Add a Webhook node to trigger the workflow."
+          },
+          {
+            "type": "add_node",
+            "node_type": "HTTP Request",
+            "id": "http_request_node_1",
+            "position": {
+              "x": 500,
+              "y": 300
+            },
+            "label": "HTTP Request",
+            "description": "Add an HTTP Request node to fetch data."
+          },
+          {
+            "type": "connect_nodes",
+            "source_node_id": "webhook_node_1",
+            "target_node_id": "http_request_node_1",
+            "description": "Connect Webhook to HTTP Request."
+          },
+          {
+            "type": "add_node",
+            "node_type": "Respond to Webhook",
+            "id": "respond_to_webhook_node_1",
+            "position": {
+              "x": 800,
+              "y": 300
+            },
+            "label": "Respond to Webhook",
+            "description": "Add a Respond to Webhook node to send back data."
+          },
+          {
+            "type": "connect_nodes",
+            "source_node_id": "http_request_node_1",
+            "target_node_id": "respond_to_webhook_node_1",
+            "description": "Connect HTTP Request to Respond to Webhook."
+          },
+          {
+            "type": "highlight_nodes",
+            "node_ids": [
+              "webhook_node_1",
+              "http_request_node_1",
+              "respond_to_webhook_node_1"
+            ],
+            "description": "Highlight the complete workflow."
+          }
+        ]
+      }
+    },
+    "scenes": [
+      {
+        "start": 0,
+        "end": 4.6,
+        "type": "text_reveal",
+        "content": {
+          "text": "အားလုံး ပဲ မင်္ဂလာ ပါ။ N8N Master Club ရဲ့ ပထမဆုံး သင်ခန်းစာ ကို ကြိုဆိုပါတယ်။",
+          "animation": "staggered_word_fade_in"
+        },
+        "background": {
+          "type": "animated_gradient",
+          "colors": [
+            "#1a1a1a",
+            "#333333"
+          ]
+        },
+        "camera": {
+          "zoom": 1
+        }
+      },
+      {
+        "start": 4.6,
+        "end": 10.9,
+        "type": "title_card",
+        "content": {
+          "title": "သင်တန်းဆရာ",
+          "subtitle": "Automation ခရီးလမ်း မှာ လမ်းပြပေးမယ့် သူ",
+          "animation": "card_slide_in_typewriter_text"
+        },
+        "background": {
+          "type": "clean_minimal"
+        },
+        "camera": {
+          "zoom": 1
+        }
+      },
+      {
+        "start": 10.9,
+        "end": 15.8,
+        "type": "kinetic_typography",
+        "content": {
+          "text": "ဘာကြောင့် automation ဆိုတာ ကို စိတ်ဝင်စားသင့် သလဲ။",
+          "animation": "question_reveal_with_icon"
+        },
+        "background": {
+          "type": "abstract_pattern"
+        },
+        "camera": {
+          "zoom": 0.9,
+          "pan": "center"
+        }
+      },
+      {
+        "start": 15.8,
+        "end": 22.7,
+        "type": "text_reveal",
+        "content": {
+          "text": "N8N က ဘာကြောင့် လက်ရှိ စျေးကွက် မှာ အင်အား အကြီးဆုံး tool ဖြစ်လာတာ လဲ",
+          "animation": "n8n_logo_reveal_with_highlight"
+        },
+        "background": {
+          "type": "dynamic_energetic"
+        },
+        "camera": {
+          "zoom": 1.1,
+          "pan": "center"
+        }
+      },
+      {
+        "start": 22.7,
+        "end": 31.9,
+        "type": "concept_animation",
+        "content": {
+          "description": "Abstract animation showing repetitive tasks being automated by machines.",
+          "key_phrase": "ငြီးငွေ့စရာ ကောင်းတဲ့ အလုပ် တွေ ကို စက် တွေ ကို တာဝန်ပေးလိုက်တာ ပါ။",
+          "animation_sequence": [
+            {
+              "action": "spawn_icons",
+              "icons": [
+                "email",
+                "data_entry",
+                "report"
+              ],
+              "loop": true
+            },
+            {
+              "action": "introduce_automation",
+              "icon": "gear_robot",
+              "effect": "transform_tasks_to_flow"
+            }
+          ]
+        },
+        "background": {
+          "type": "abstract_clean"
+        },
+        "camera": {
+          "zoom": 1
+        }
+      },
+      {
+        "start": 31.9,
+        "end": 43.9,
+        "type": "screen_demo",
+        "component_ref": "n8n_workflow_building_demo",
+        "animation": {
+          "type": "onda_engine_orchestrated",
+          "camera_movement": "follow_node_creation",
+          "text_overlays": [
+            {
+              "time": 38,
+              "text": "AI agent",
+              "target_node_id": "http_request_node_1"
+            },
+            {
+              "time": 40,
+              "text": "data processing",
+              "target_node_id": "respond_to_webhook_node_1"
+            }
+          ]
+        },
+        "camera": {
+          "zoom": 1,
+          "pan": "dynamic"
+        }
+      },
+      {
+        "start": 43.9,
+        "end": 52.8,
+        "type": "screen_demo",
+        "component_ref": "n8n_interface_overview",
+        "animation": {
+          "type": "camera_highlight_sections",
+          "sections": [
+            "sidebar",
+            "canvas",
+            "properties_panel"
+          ],
+          "text_overlay": "N8N ရဲ့ interface ကို စတင် ထိတွေ့"
+        },
+        "camera": {
+          "zoom": 1,
+          "pan": "dynamic_focus"
+        }
+      },
+      {
+        "start": 52.8,
+        "end": 56.5,
+        "type": "cta_screen",
+        "content": {
+          "text": "အားလုံး ပဲ အဆင်သင့် ဖြစ် ပြီ ဆိုရင် နောက် သင်ခန်းစာ မှာ ဆက်တွေ့ကြရအောင်။",
+          "animation": "engaging_text_with_next_button"
+        },
+        "background": {
+          "type": "n8n_brand_subtle"
+        },
+        "camera": {
+          "zoom": 1
+        }
+      }
+    ]
+  }
+]
