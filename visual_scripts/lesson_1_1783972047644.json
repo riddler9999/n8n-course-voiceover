@@ -1,0 +1,678 @@
+[
+  {
+    "start_time": "0.0s",
+    "end_time": "4.6s",
+    "scene_name": "Welcome to N8N Master Club",
+    "description": "Introduction and welcome to the N8N Master Club's first lesson, with animated title and branding.",
+    "components": [
+      {
+        "type": "remotion-bits.Background",
+        "props": {
+          "color": "#1A1A1A",
+          "gradient": {
+            "start": "#1A1A1A",
+            "end": "#000000"
+          }
+        }
+      },
+      {
+        "type": "remotion-bits.TextReveal",
+        "props": {
+          "text": "N8N Master Club",
+          "style": {
+            "fontSize": "80px",
+            "fontWeight": "bold",
+            "color": "#66CC33"
+          },
+          "animationType": "typewriter",
+          "delay": 0.5
+        }
+      },
+      {
+        "type": "remotion-bits.Fade",
+        "props": {
+          "children": {
+            "type": "div",
+            "props": {
+              "style": {
+                "fontSize": "40px",
+                "color": "#FFFFFF",
+                "marginTop": "20px"
+              },
+              "children": "ပထမဆုံး သင်ခန်းစာ"
+            }
+          },
+          "from": 0,
+          "to": 1,
+          "durationInFrames": 30,
+          "delay": 1.5
+        }
+      }
+    ],
+    "camera_animation": {
+      "type": "zoom",
+      "from": 1,
+      "to": 1.05,
+      "durationInFrames": 138
+    }
+  },
+  {
+    "start_time": "4.6s",
+    "end_time": "10.9s",
+    "scene_name": "Instructor Introduction",
+    "description": "Introduce the instructor as the guide for the automation journey with a professional profile card.",
+    "components": [
+      {
+        "type": "remotion-bits.Background",
+        "props": {
+          "color": "#1A1A1A",
+          "gradient": {
+            "start": "#1A1A1A",
+            "end": "#000000"
+          }
+        }
+      },
+      {
+        "type": "remotionui.Card",
+        "props": {
+          "style": {
+            "width": "600px",
+            "padding": "40px",
+            "backgroundColor": "#282828",
+            "borderRadius": "15px",
+            "boxShadow": "0px 10px 30px rgba(0,0,0,0.5)",
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "center"
+          },
+          "animation": {
+            "type": "slideIn",
+            "direction": "bottom",
+            "durationInFrames": 30
+          },
+          "children": [
+            {
+              "type": "img",
+              "props": {
+                "src": "https://via.placeholder.com/150/66CC33/FFFFFF?text=Instructor",
+                "alt": "Instructor Profile",
+                "style": {
+                  "borderRadius": "50%",
+                  "width": "150px",
+                  "height": "150px",
+                  "marginBottom": "20px",
+                  "objectFit": "cover"
+                }
+              }
+            },
+            {
+              "type": "remotion-bits.StaggeredFade",
+              "props": {
+                "text": "သင်တန်းဆရာ",
+                "style": {
+                  "fontSize": "48px",
+                  "fontWeight": "bold",
+                  "color": "#66CC33",
+                  "marginBottom": "10px"
+                },
+                "staggerAmount": 0.05,
+                "delay": 0.5
+              }
+            },
+            {
+              "type": "remotion-bits.StaggeredFade",
+              "props": {
+                "text": "automation ခရီးလမ်း မှာ လမ်းပြပေးမယ့် သူ",
+                "style": {
+                  "fontSize": "32px",
+                  "color": "#CCCCCC",
+                  "textAlign": "center"
+                },
+                "staggerAmount": 0.03,
+                "delay": 1
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "camera_animation": {
+      "type": "none"
+    }
+  },
+  {
+    "start_time": "10.9s",
+    "end_time": "15.6s",
+    "scene_name": "Why Automation?",
+    "description": "Pose the question: 'Why should we be interested in automation?' with an animated question mark and text reveal.",
+    "components": [
+      {
+        "type": "remotion-bits.Background",
+        "props": {
+          "color": "#1A1A1A",
+          "gradient": {
+            "start": "#1A1A1A",
+            "end": "#000000"
+          }
+        }
+      },
+      {
+        "type": "remotion-bits.AnimatedText",
+        "props": {
+          "text": "?",
+          "style": {
+            "fontSize": "200px",
+            "fontWeight": "bold",
+            "color": "#FFD700"
+          },
+          "animation": {
+            "type": "scale",
+            "from": 0,
+            "to": 1,
+            "durationInFrames": 20,
+            "easing": "spring"
+          }
+        }
+      },
+      {
+        "type": "remotion-bits.TextReveal",
+        "props": {
+          "text": "ဘာကြောင့် automation ဆိုတာ ကို စိတ်ဝင်စားသင့် သလဲ?",
+          "style": {
+            "fontSize": "50px",
+            "fontWeight": "bold",
+            "color": "#FFFFFF",
+            "marginTop": "40px",
+            "textAlign": "center"
+          },
+          "animationType": "stagger",
+          "delay": 0.8
+        }
+      }
+    ],
+    "camera_animation": {
+      "type": "zoom",
+      "from": 1.05,
+      "to": 0.95,
+      "durationInFrames": 141
+    }
+  },
+  {
+    "start_time": "15.6s",
+    "end_time": "22.7s",
+    "scene_name": "Why N8N is the Strongest Tool?",
+    "description": "Highlight N8N's prominence in the market with its logo and a question about its power.",
+    "components": [
+      {
+        "type": "remotion-bits.Background",
+        "props": {
+          "color": "#1A1A1A",
+          "gradient": {
+            "start": "#1A1A1A",
+            "end": "#000000"
+          }
+        }
+      },
+      {
+        "type": "img",
+        "props": {
+          "src": "https://n8n.io/img/logo.svg",
+          "alt": "N8N Logo",
+          "style": {
+            "width": "250px",
+            "height": "auto",
+            "marginBottom": "40px"
+          },
+          "animation": {
+            "type": "scale",
+            "from": 0.5,
+            "to": 1,
+            "durationInFrames": 20,
+            "easing": "easeOutBack"
+          }
+        }
+      },
+      {
+        "type": "remotion-bits.SlideAndFade",
+        "props": {
+          "text": "N8N က ဘာကြောင့် လက်ရှိ စျေးကွက် မှာ အင်အား အကြီးဆုံး tool ဖြစ်လာတာ လဲ?",
+          "style": {
+            "fontSize": "50px",
+            "fontWeight": "bold",
+            "color": "#FFFFFF",
+            "textAlign": "center"
+          },
+          "direction": "top",
+          "delay": 0.5
+        }
+      }
+    ],
+    "camera_animation": {
+      "type": "zoom",
+      "from": 0.95,
+      "to": 1.02,
+      "durationInFrames": 213
+    }
+  },
+  {
+    "start_time": "22.7s",
+    "end_time": "31.8s",
+    "scene_name": "What is Automation? - Visual Definition",
+    "description": "Visually define automation as delegating repetitive tasks to machines, using a split-screen animation.",
+    "components": [
+      {
+        "type": "remotion-bits.Background",
+        "props": {
+          "color": "#1A1A1A",
+          "gradient": {
+            "start": "#1A1A1A",
+            "end": "#000000"
+          }
+        }
+      },
+      {
+        "type": "div",
+        "props": {
+          "style": {
+            "display": "flex",
+            "width": "100%",
+            "height": "100%",
+            "position": "absolute"
+          },
+          "children": [
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "flex": 1,
+                  "backgroundColor": "#333333",
+                  "display": "flex",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "flexDirection": "column",
+                  "opacity": 0.8
+                },
+                "children": [
+                  {
+                    "type": "img",
+                    "props": {
+                      "src": "https://via.placeholder.com/200/CCCCCC/000000?text=Manual+Task",
+                      "alt": "Manual Task Illustration",
+                      "style": {
+                        "marginBottom": "20px",
+                        "filter": "grayscale(100%)"
+                      }
+                    }
+                  },
+                  {
+                    "type": "p",
+                    "props": {
+                      "style": {
+                        "fontSize": "30px",
+                        "color": "#CCCCCC",
+                        "textAlign": "center"
+                      },
+                      "children": "ငြီးငွေ့စရာ ကောင်းတဲ့ အလုပ် တွေ"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "flex": 1,
+                  "backgroundColor": "#007BFF",
+                  "display": "flex",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "children": [
+                  {
+                    "type": "img",
+                    "props": {
+                      "src": "https://via.placeholder.com/200/66CC33/FFFFFF?text=Automated+Robot",
+                      "alt": "Automated Robot Illustration",
+                      "style": {
+                        "marginBottom": "20px"
+                      }
+                    }
+                  },
+                  {
+                    "type": "p",
+                    "props": {
+                      "style": {
+                        "fontSize": "30px",
+                        "color": "#FFFFFF",
+                        "textAlign": "center"
+                      },
+                      "children": "စက် တွေ ကို တာဝန်ပေးလိုက်တာ ပါ။"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "animation": {
+          "type": "splitScreen",
+          "direction": "vertical",
+          "durationInFrames": 30
+        }
+      },
+      {
+        "type": "remotion-bits.TextReveal",
+        "props": {
+          "text": "automation ဆိုတာ ရိုးရိုးရှင်းရှင်း ပြောရ ရင်",
+          "style": {
+            "position": "absolute",
+            "top": "10%",
+            "fontSize": "40px",
+            "fontWeight": "bold",
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "width": "80%"
+          },
+          "animationType": "typewriter",
+          "delay": 0.5
+        }
+      }
+    ],
+    "camera_animation": {
+      "type": "pan",
+      "from": {
+        "x": -0.1,
+        "y": 0
+      },
+      "to": {
+        "x": 0.1,
+        "y": 0
+      },
+      "durationInFrames": 273
+    }
+  },
+  {
+    "start_time": "31.8s",
+    "end_time": "44.3s",
+    "scene_name": "N8N Workflow - The Core Concept",
+    "description": "Demonstrate N8N's ability to create workflows by connecting nodes for AI agents and data processing.",
+    "new_components": {
+      "n8n_workflow_concept": {
+        "hint": "N8N workflow showing nodes connecting and data flow for AI/data processing.",
+        "mockup": "browser",
+        "mockup_title": "N8N Workflow Canvas",
+        "ui": [
+          {
+            "type": "canvas",
+            "props": {
+              "backgroundColor": "#282828",
+              "grid": true
+            }
+          },
+          {
+            "type": "node",
+            "id": "webhook",
+            "props": {
+              "x": 100,
+              "y": 200,
+              "width": 150,
+              "height": 50,
+              "label": "Webhook",
+              "color": "#66CC33",
+              "animation": {
+                "type": "popIn",
+                "delay": 0.5
+              }
+            }
+          },
+          {
+            "type": "node",
+            "id": "function",
+            "props": {
+              "x": 350,
+              "y": 200,
+              "width": 150,
+              "height": 50,
+              "label": "Function (Data Processing)",
+              "color": "#007BFF",
+              "animation": {
+                "type": "popIn",
+                "delay": 1
+              }
+            }
+          },
+          {
+            "type": "node",
+            "id": "openai",
+            "props": {
+              "x": 600,
+              "y": 200,
+              "width": 150,
+              "height": 50,
+              "label": "OpenAI (AI Agent)",
+              "color": "#FFD700",
+              "animation": {
+                "type": "popIn",
+                "delay": 1.5
+              }
+            }
+          },
+          {
+            "type": "connection",
+            "from": "webhook",
+            "to": "function",
+            "props": {
+              "animation": {
+                "type": "draw",
+                "delay": 2
+              }
+            }
+          },
+          {
+            "type": "connection",
+            "from": "function",
+            "to": "openai",
+            "props": {
+              "animation": {
+                "type": "draw",
+                "delay": 2.5
+              }
+            }
+          },
+          {
+            "type": "data_flow",
+            "connection_id": "webhook-function",
+            "props": {
+              "color": "#FFFFFF",
+              "speed": 0.05,
+              "delay": 3
+            }
+          },
+          {
+            "type": "data_flow",
+            "connection_id": "function-openai",
+            "props": {
+              "color": "#FFFFFF",
+              "speed": 0.05,
+              "delay": 3.5
+            }
+          }
+        ]
+      }
+    },
+    "component_ref": "n8n_workflow_concept",
+    "components": [
+      {
+        "type": "remotion-bits.KineticTypography",
+        "props": {
+          "text": "node တွေ ကို ဆက်သွယ် ပြီး workflow တစ်ခု ကို တည်ဆောက်လိုက်ရုံ နဲ့",
+          "style": {
+            "position": "absolute",
+            "top": "10%",
+            "fontSize": "35px",
+            "fontWeight": "bold",
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "width": "80%"
+          },
+          "animationType": "slideIn",
+          "delay": 0.5
+        }
+      },
+      {
+        "type": "remotion-bits.KineticTypography",
+        "props": {
+          "text": "AI agent တွေ data processing တွေ ကို အလိုအလျောက် ဖြစ်လာအောင် ဖန်တီးနိုင် ပါ တယ်။",
+          "style": {
+            "position": "absolute",
+            "bottom": "10%",
+            "fontSize": "35px",
+            "fontWeight": "bold",
+            "color": "#66CC33",
+            "textAlign": "center",
+            "width": "80%"
+          },
+          "animationType": "slideIn",
+          "delay": 4
+        }
+      }
+    ],
+    "camera_animation": {
+      "type": "pan_zoom",
+      "keyframes": [
+        {
+          "frame": 0,
+          "x": 0,
+          "y": 0,
+          "zoom": 1
+        },
+        {
+          "frame": 90,
+          "x": 0,
+          "y": 0,
+          "zoom": 1.1
+        },
+        {
+          "frame": 180,
+          "x": 0.2,
+          "y": 0,
+          "zoom": 1.1
+        }
+      ],
+      "durationInFrames": 375
+    }
+  },
+  {
+    "start_time": "44.3s",
+    "end_time": "52.8s",
+    "scene_name": "N8N Interface Preview - Next Lesson Teaser",
+    "description": "Tease the next lesson by giving a quick, dynamic preview of the N8N interface.",
+    "component_ref": "n8n_workflow_concept",
+    "components": [
+      {
+        "type": "remotion-bits.Fade",
+        "props": {
+          "children": {
+            "type": "div",
+            "props": {
+              "style": {
+                "position": "absolute",
+                "top": "10%",
+                "fontSize": "40px",
+                "fontWeight": "bold",
+                "color": "#FFFFFF",
+                "textAlign": "center",
+                "width": "80%"
+              },
+              "children": "N8N ရဲ့ interface ကို စတင် ထိတွေ့ ပြီး ဘယ်လိုမျိုး အလုပ်လုပ် သလဲ ဆိုတာ ကို လက်တွေ့ စတင် လေ့လာကြ ပါ မယ်။"
+            }
+          },
+          "from": 0,
+          "to": 1,
+          "durationInFrames": 30,
+          "delay": 0.5
+        }
+      }
+    ],
+    "camera_animation": {
+      "type": "pan_zoom",
+      "keyframes": [
+        {
+          "frame": 0,
+          "x": 0.2,
+          "y": 0,
+          "zoom": 1.1
+        },
+        {
+          "frame": 60,
+          "x": -0.1,
+          "y": 0.1,
+          "zoom": 1.2
+        },
+        {
+          "frame": 120,
+          "x": 0.1,
+          "y": -0.1,
+          "zoom": 1.15
+        }
+      ],
+      "durationInFrames": 255
+    }
+  },
+  {
+    "start_time": "52.8s",
+    "end_time": "56.5s",
+    "scene_name": "Call to Action - Next Lesson",
+    "description": "Encourage viewers to prepare for the next lesson with a clear call to action.",
+    "components": [
+      {
+        "type": "remotion-bits.AnimatedGradient",
+        "props": {
+          "colors": [
+            "#1A1A1A",
+            "#000000",
+            "#66CC33"
+          ],
+          "speed": 0.005
+        }
+      },
+      {
+        "type": "remotion-bits.Typewriter",
+        "props": {
+          "text": "အားလုံး ပဲ အဆင်သင့် ဖြစ် ပြီ ဆိုရင်",
+          "style": {
+            "fontSize": "50px",
+            "fontWeight": "bold",
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "marginBottom": "20px"
+          },
+          "delay": 0.5
+        }
+      },
+      {
+        "type": "remotion-bits.SlideAndFade",
+        "props": {
+          "text": "နောက် သင်ခန်းစာ မှာ ဆက်တွေ့ကြရအောင်။",
+          "style": {
+            "fontSize": "60px",
+            "fontWeight": "bold",
+            "color": "#66CC33",
+            "textAlign": "center"
+          },
+          "direction": "bottom",
+          "delay": 1.5
+        }
+      }
+    ],
+    "camera_animation": {
+      "type": "zoom",
+      "from": 1.1,
+      "to": 0.9,
+      "durationInFrames": 111
+    }
+  }
+]
