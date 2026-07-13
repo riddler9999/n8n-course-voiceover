@@ -1,0 +1,257 @@
+{
+  "new_components": {
+    "n8n_interface_overview": {
+      "hint": "General N8N workflow canvas overview with sidebar and properties panel.",
+      "mockup": "browser",
+      "mockup_title": "n8n Workflow Interface",
+      "ui": [
+        {
+          "type": "sidebar",
+          "position": "left",
+          "width": "20%",
+          "items": [
+            "Nodes",
+            "Workflows",
+            "Credentials"
+          ]
+        },
+        {
+          "type": "canvas",
+          "position": "center",
+          "nodes": [
+            {
+              "id": "start",
+              "type": "Start",
+              "x": 100,
+              "y": 200
+            },
+            {
+              "id": "webhook",
+              "type": "Webhook",
+              "x": 300,
+              "y": 200
+            },
+            {
+              "id": "http_request",
+              "type": "HTTP Request",
+              "x": 550,
+              "y": 200
+            },
+            {
+              "id": "set",
+              "type": "Set",
+              "x": 800,
+              "y": 200
+            },
+            {
+              "id": "respond",
+              "type": "Respond to Webhook",
+              "x": 1050,
+              "y": 200
+            }
+          ],
+          "edges": [
+            {
+              "from": "start",
+              "to": "webhook"
+            },
+            {
+              "from": "webhook",
+              "to": "http_request"
+            },
+            {
+              "from": "http_request",
+              "to": "set"
+            },
+            {
+              "from": "set",
+              "to": "respond"
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "position": "right",
+          "width": "25%",
+          "title": "Properties",
+          "content": [
+            {
+              "type": "text",
+              "label": "Node Name",
+              "value": "Webhook"
+            },
+            {
+              "type": "select",
+              "label": "Method",
+              "options": [
+                "GET",
+                "POST"
+              ],
+              "value": "POST"
+            },
+            {
+              "type": "toggle",
+              "label": "Authentication",
+              "value": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "start_time": "0.0s",
+      "end_time": "1.4s",
+      "duration_in_frames": 42,
+      "component_ref": "remotion-bits/TextReveal",
+      "props": {
+        "text": "အားလုံး ပဲ မင်္ဂလာ ပါ။",
+        "type": "fade-in",
+        "font_size": "80px",
+        "color": "#FFFFFF",
+        "background_color": "#1A1A1A"
+      }
+    },
+    {
+      "start_time": "1.4s",
+      "end_time": "4.8s",
+      "duration_in_frames": 102,
+      "component_ref": "remotion-bits/TextReveal",
+      "props": {
+        "text": "N8N Master Club ရဲ့ ပထမဆုံး သင်ခန်းစာ ကို ကြိုဆိုပါတယ်။",
+        "type": "slide-up",
+        "font_size": "72px",
+        "color": "#4CAF50",
+        "background_color": "#1A1A1A",
+        "stagger": 0.05,
+        "logo_asset": "n8n_master_club_logo.svg",
+        "logo_position": "top"
+      }
+    },
+    {
+      "start_time": "4.8s",
+      "end_time": "11.0s",
+      "duration_in_frames": 186,
+      "component_ref": "remotion-bits/KineticTypography",
+      "props": {
+        "main_text": "ကျွန်တော် က တော့ ဒီ သင်တန်း မှာ သင်တန်းဆရာ အဖြစ် နဲ့ အတူ",
+        "highlight_text": "automation ခရီးလမ်း မှာ လမ်းပြပေးမယ့် သူ ပါ။",
+        "highlight_color": "#FFC107",
+        "font_size": "60px",
+        "color": "#E0E0E0",
+        "background_effect": "abstract_path_animation",
+        "animation_type": "word-by-word"
+      }
+    },
+    {
+      "start_time": "11.0s",
+      "end_time": "15.9s",
+      "duration_in_frames": 147,
+      "component_ref": "remotion-bits/QuestionReveal",
+      "props": {
+        "question": "ဘာကြောင့် automation ဆိုတာ ကို စိတ်ဝင်စားသင့်သလဲ?",
+        "font_size": "70px",
+        "color": "#2196F3",
+        "background_color": "#1A1A1A",
+        "icon": "question_mark_animated.svg",
+        "icon_size": "200px",
+        "animation_type": "scale-in"
+      }
+    },
+    {
+      "start_time": "15.9s",
+      "end_time": "22.8s",
+      "duration_in_frames": 207,
+      "component_ref": "remotion-bits/SpotlightText",
+      "props": {
+        "main_text": "ပြီးတော့ N8N က ဘာကြောင့် လက်ရှိ စျေးကွက် မှာ",
+        "spotlight_text": "အင်အား အကြီးဆုံး tool ဖြစ်လာတာ လဲ ဆိုတာ ကို အတူတူ လေ့လာသွား မှာ ပါ။",
+        "spotlight_color": "#4CAF50",
+        "font_size": "60px",
+        "color": "#E0E0E0",
+        "background_logo": "n8n_logo_subtle.svg",
+        "background_logo_opacity": 0.1,
+        "animation_type": "text-highlight"
+      }
+    },
+    {
+      "start_time": "22.8s",
+      "end_time": "31.9s",
+      "duration_in_frames": 273,
+      "component_ref": "remotion-bits/IconTextExplanation",
+      "props": {
+        "title": "Automation ဆိုတာ",
+        "description": "ကျွန်တော် တို့ နေ့စဉ် လုပ်နေရတဲ့ ငြီးငွေ့စရာ ကောင်းတဲ့ အလုပ် တွေ ကို ဆက် တွေ ကို တာဝန်ပေးလိုက်တာ ပါ။",
+        "title_font_size": "70px",
+        "description_font_size": "45px",
+        "icon_sequence": [
+          {
+            "icon": "human_doing_repetitive_task.svg",
+            "label": "Repetitive Tasks"
+          },
+          {
+            "icon": "arrow_right.svg",
+            "label": ""
+          },
+          {
+            "icon": "robot_taking_over.svg",
+            "label": "Automated by Machines"
+          }
+        ],
+        "icon_animation_type": "staggered_fade_slide",
+        "background_color": "#1A1A1A"
+      }
+    },
+    {
+      "start_time": "31.9s",
+      "end_time": "44.0s",
+      "duration_in_frames": 363,
+      "component_ref": "basic_n8n_workflow",
+      "props": {
+        "highlight_nodes": [
+          "webhook",
+          "http_request",
+          "set",
+          "respond"
+        ],
+        "camera_path": "zoom_in_on_nodes",
+        "camera_speed": "medium",
+        "node_animation_type": "pulse_on_highlight",
+        "mockup_title": "N8N Workflow Automation"
+      }
+    },
+    {
+      "start_time": "44.0s",
+      "end_time": "52.8s",
+      "duration_in_frames": 264,
+      "component_ref": "n8n_interface_overview",
+      "props": {
+        "highlight_areas": [
+          "canvas",
+          "sidebar",
+          "panel"
+        ],
+        "highlight_color": "#FFD700",
+        "camera_pan_speed": "slow",
+        "show_tooltip_on_hover": true,
+        "tooltip_text": "Explore N8N Interface"
+      }
+    },
+    {
+      "start_time": "52.8s",
+      "end_time": "56.6s",
+      "duration_in_frames": 114,
+      "component_ref": "remotion-bits/CallToActionText",
+      "props": {
+        "text": "အားလုံး ပဲ အဆင်သင့် ဖြစ် ပြီ ဆိုရင် နောက် သင်ခန်းစာ မှာ ဆက်တွေ့ကြရအောင်။",
+        "button_text": "Next Lesson",
+        "font_size": "65px",
+        "color": "#FFFFFF",
+        "button_color": "#4CAF50",
+        "button_text_color": "#FFFFFF",
+        "animation_type": "fade-in-slide-up"
+      }
+    }
+  ]
+}
