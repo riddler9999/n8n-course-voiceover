@@ -1,0 +1,4 @@
+{
+  "error": "json_parse_failed",
+  "raw": "[\n  {\n    \"scene_id\": \"intro_welcome\",\n    \"start_time\": \"0.0s\",\n    \"end_time\": \"4.9s\",\n    \"duration_frames\": 147,\n    \"components\": [\n      {\n        \"component_ref\": \"remotion-bits.Title\",\n        \"props\": {\n          \"text\": \"N8N Master Club\",\n          \"type\": \"main\",\n          \"animation\": \"reveal\",\n          \"delay\": 0,\n          \"duration\": 60\n        }\n      },\n      {\n        \"component_ref\": \"remotion-bits.Text\",\n        \"props\": {\n          \"text\": \"ပထမဆုံး သင်ခန်းစာ ကို ကြိုဆို ပါ "
+}
