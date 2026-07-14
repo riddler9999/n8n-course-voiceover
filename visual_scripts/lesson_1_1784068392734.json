@@ -1,0 +1,713 @@
+{
+  "new_components": {
+    "intro_ai_automation_journey": {
+      "hint": "N8N Master Club intro with AI Automation Engineer journey concept.",
+      "mockup": "none",
+      "mockup_title": "N8N Master Club",
+      "ui": [
+        {
+          "element": "text",
+          "text": "N8N Master Club",
+          "style": {
+            "fontSize": "6rem",
+            "fontWeight": "bold",
+            "color": "#4CAF50"
+          },
+          "animation": {
+            "type": "fade_in_up",
+            "duration": 0.8
+          }
+        },
+        {
+          "element": "text",
+          "text": "AI Automation Engineer Journey",
+          "style": {
+            "fontSize": "3rem",
+            "color": "#E0E0E0",
+            "marginTop": "1rem"
+          },
+          "animation": {
+            "type": "fade_in_up",
+            "delay": 0.4,
+            "duration": 0.8
+          }
+        },
+        {
+          "element": "group",
+          "style": {
+            "display": "flex",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "4rem",
+            "gap": "3rem"
+          },
+          "animation": {
+            "type": "fade_in_scale",
+            "delay": 1.5,
+            "duration": 1
+          },
+          "children": [
+            {
+              "element": "icon",
+              "name": "Api",
+              "size": "4rem",
+              "color": "#FFC107"
+            },
+            {
+              "element": "icon",
+              "name": "ArrowRight",
+              "size": "2rem",
+              "color": "#E0E0E0"
+            },
+            {
+              "element": "image",
+              "src": "/n8n-logo.svg",
+              "alt": "N8N Logo",
+              "style": {
+                "width": "6rem",
+                "height": "6rem"
+              }
+            },
+            {
+              "element": "icon",
+              "name": "ArrowRight",
+              "size": "2rem",
+              "color": "#E0E0E0"
+            },
+            {
+              "element": "icon",
+              "name": "Brain",
+              "size": "4rem",
+              "color": "#2196F3"
+            }
+          ]
+        },
+        {
+          "element": "group",
+          "style": {
+            "display": "flex",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginTop": "1rem",
+            "gap": "3rem"
+          },
+          "animation": {
+            "type": "fade_in_scale",
+            "delay": 1.8,
+            "duration": 1
+          },
+          "children": [
+            {
+              "element": "text",
+              "text": "APIs",
+              "style": {
+                "fontSize": "1.5rem",
+                "color": "#FFC107"
+              }
+            },
+            {
+              "element": "div",
+              "style": {
+                "width": "2rem"
+              }
+            },
+            {
+              "element": "text",
+              "text": "N8N",
+              "style": {
+                "fontSize": "1.5rem",
+                "color": "#4CAF50"
+              }
+            },
+            {
+              "element": "div",
+              "style": {
+                "width": "2rem"
+              }
+            },
+            {
+              "element": "text",
+              "text": "AI Models",
+              "style": {
+                "fontSize": "1.5rem",
+                "color": "#2196F3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "engineer_mindset_concept": {
+      "hint": "Visualizing the shift from tool user to automation engineer mindset.",
+      "mockup": "none",
+      "mockup_title": "Automation Engineer Mindset",
+      "ui": [
+        {
+          "element": "group",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "2rem"
+          },
+          "children": [
+            {
+              "element": "icon",
+              "name": "Tool",
+              "size": "6rem",
+              "color": "#FF5722",
+              "animation": {
+                "type": "fade_out_scale",
+                "delay": 2,
+                "duration": 1
+              }
+            },
+            {
+              "element": "text",
+              "text": "Tool User",
+              "style": {
+                "fontSize": "2.5rem",
+                "fontWeight": "bold",
+                "color": "#FF5722"
+              },
+              "animation": {
+                "type": "fade_out_up",
+                "delay": 2,
+                "duration": 1
+              }
+            }
+          ]
+        },
+        {
+          "element": "icon",
+          "name": "ArrowRight",
+          "size": "4rem",
+          "color": "#E0E0E0",
+          "style": {
+            "position": "absolute",
+            "left": "50%",
+            "top": "50%",
+            "transform": "translate(-50%, -50%)"
+          },
+          "animation": {
+            "type": "fade_in_scale",
+            "delay": 2.5,
+            "duration": 0.8
+          }
+        },
+        {
+          "element": "group",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "2rem"
+          },
+          "animation": {
+            "type": "fade_in_scale",
+            "delay": 3,
+            "duration": 1
+          },
+          "children": [
+            {
+              "element": "icon",
+              "name": "Brain",
+              "size": "8rem",
+              "color": "#1E88E5",
+              "style": {
+                "position": "absolute",
+                "left": "50%",
+                "top": "calc(50% - 4rem)",
+                "transform": "translate(-50%, -50%)"
+              },
+              "animation": {
+                "type": "spin_in",
+                "delay": 3.2,
+                "duration": 1
+              }
+            },
+            {
+              "element": "icon",
+              "name": "Workflow",
+              "size": "3rem",
+              "color": "#4CAF50",
+              "style": {
+                "position": "absolute",
+                "left": "calc(50% - 6rem)",
+                "top": "calc(50% - 1rem)"
+              },
+              "animation": {
+                "type": "fade_in_scale",
+                "delay": 3.5,
+                "duration": 0.8
+              }
+            },
+            {
+              "element": "icon",
+              "name": "Settings",
+              "size": "3rem",
+              "color": "#FFC107",
+              "style": {
+                "position": "absolute",
+                "left": "calc(50% + 4rem)",
+                "top": "calc(50% + 2rem)"
+              },
+              "animation": {
+                "type": "fade_in_scale",
+                "delay": 3.8,
+                "duration": 0.8
+              }
+            },
+            {
+              "element": "icon",
+              "name": "Lightbulb",
+              "size": "3rem",
+              "color": "#9C27B0",
+              "style": {
+                "position": "absolute",
+                "left": "calc(50% - 1rem)",
+                "top": "calc(50% + 5rem)"
+              },
+              "animation": {
+                "type": "fade_in_scale",
+                "delay": 4.1,
+                "duration": 0.8
+              }
+            },
+            {
+              "element": "text",
+              "text": "Automation Engineer Mindset",
+              "style": {
+                "fontSize": "3rem",
+                "fontWeight": "bold",
+                "color": "#1E88E5",
+                "position": "absolute",
+                "left": "50%",
+                "top": "calc(50% + 10rem)",
+                "transform": "translateX(-50%)"
+              },
+              "animation": {
+                "type": "fade_in_up",
+                "delay": 4.5,
+                "duration": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "id": "scene_01",
+      "start_time": "0.0s",
+      "end_time": "16.4s",
+      "component_ref": "intro_ai_automation_journey",
+      "camera": {
+        "type": "static"
+      }
+    },
+    {
+      "id": "scene_02",
+      "start_time": "16.4s",
+      "end_time": "24.9s",
+      "mockup": "none",
+      "mockup_title": "Automation vs. Manual",
+      "ui": [
+        {
+          "element": "group",
+          "style": {
+            "display": "flex",
+            "width": "100%",
+            "height": "100%",
+            "justifyContent": "space-around",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "element": "group",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "1.5rem",
+                "padding": "2rem",
+                "backgroundColor": "#2C2C2C",
+                "borderRadius": "15px",
+                "boxShadow": "0 8px 30px rgba(0,0,0,0.5)"
+              },
+              "animation": {
+                "type": "fade_in_left",
+                "duration": 1
+              },
+              "children": [
+                {
+                  "element": "icon",
+                  "name": "User",
+                  "size": "5rem",
+                  "color": "#FFD700"
+                },
+                {
+                  "element": "text",
+                  "text": "Manual, Repetitive Tasks",
+                  "style": {
+                    "fontSize": "2rem",
+                    "fontWeight": "bold",
+                    "color": "#FFD700"
+                  }
+                },
+                {
+                  "element": "icon",
+                  "name": "Repeat",
+                  "size": "3rem",
+                  "color": "#FFD700",
+                  "animation": {
+                    "type": "spin_loop",
+                    "duration": 2
+                  }
+                }
+              ]
+            },
+            {
+              "element": "icon",
+              "name": "ArrowRight",
+              "size": "4rem",
+              "color": "#4CAF50",
+              "animation": {
+                "type": "fade_in_scale",
+                "delay": 1,
+                "duration": 0.8
+              }
+            },
+            {
+              "element": "group",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "1.5rem",
+                "padding": "2rem",
+                "backgroundColor": "#2C2C2C",
+                "borderRadius": "15px",
+                "boxShadow": "0 8px 30px rgba(0,0,0,0.5)"
+              },
+              "animation": {
+                "type": "fade_in_right",
+                "delay": 1.5,
+                "duration": 1
+              },
+              "children": [
+                {
+                  "element": "icon",
+                  "name": "Cpu",
+                  "size": "5rem",
+                  "color": "#4CAF50"
+                },
+                {
+                  "element": "text",
+                  "text": "Automated by Machines",
+                  "style": {
+                    "fontSize": "2rem",
+                    "fontWeight": "bold",
+                    "color": "#4CAF50"
+                  }
+                },
+                {
+                  "element": "icon",
+                  "name": "Zap",
+                  "size": "3rem",
+                  "color": "#4CAF50",
+                  "animation": {
+                    "type": "pulse_loop",
+                    "duration": 1.5
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "type": "static"
+      }
+    },
+    {
+      "id": "scene_03",
+      "start_time": "24.9s",
+      "end_time": "38.4s",
+      "component_ref": "n8n_workflow_ai_email",
+      "camera": {
+        "type": "zoom_in",
+        "target": {
+          "x": "50%",
+          "y": "50%",
+          "width": "80%",
+          "height": "80%"
+        },
+        "duration": 1.5
+      },
+      "animation": [
+        {
+          "element": "node",
+          "node_id": "google_sheet_node",
+          "action": "highlight",
+          "delay": 2,
+          "duration": 1
+        },
+        {
+          "element": "node",
+          "node_id": "ai_node",
+          "action": "highlight",
+          "delay": 3.5,
+          "duration": 1
+        },
+        {
+          "element": "node",
+          "node_id": "email_node",
+          "action": "highlight",
+          "delay": 5,
+          "duration": 1
+        },
+        {
+          "element": "connection",
+          "from_node_id": "google_sheet_node",
+          "to_node_id": "ai_node",
+          "action": "flow_data",
+          "delay": 2.5,
+          "duration": 2
+        },
+        {
+          "element": "connection",
+          "from_node_id": "ai_node",
+          "to_node_id": "email_node",
+          "action": "flow_data",
+          "delay": 4,
+          "duration": 2
+        },
+        {
+          "element": "text",
+          "text": "Visual Workflows",
+          "position": {
+            "x": "20%",
+            "y": "10%"
+          },
+          "style": {
+            "fontSize": "2.5rem",
+            "fontWeight": "bold",
+            "color": "#FFFFFF"
+          },
+          "animation": {
+            "type": "fade_in_up",
+            "delay": 0.5,
+            "duration": 0.8
+          }
+        },
+        {
+          "element": "text",
+          "text": "Complex AI Agents",
+          "position": {
+            "x": "70%",
+            "y": "85%"
+          },
+          "style": {
+            "fontSize": "2.5rem",
+            "fontWeight": "bold",
+            "color": "#FFFFFF"
+          },
+          "animation": {
+            "type": "fade_in_up",
+            "delay": 6,
+            "duration": 0.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "scene_04",
+      "start_time": "38.4s",
+      "end_time": "46.7s",
+      "mockup": "none",
+      "mockup_title": "Course Content Overview",
+      "ui": [
+        {
+          "element": "group",
+          "style": {
+            "display": "flex",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "width": "100%",
+            "height": "100%",
+            "gap": "3rem"
+          },
+          "children": [
+            {
+              "element": "group",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "1rem"
+              },
+              "animation": {
+                "type": "fade_in_left",
+                "duration": 1
+              },
+              "children": [
+                {
+                  "element": "icon",
+                  "name": "Api",
+                  "size": "5rem",
+                  "color": "#FFC107"
+                },
+                {
+                  "element": "text",
+                  "text": "API Integration",
+                  "style": {
+                    "fontSize": "2rem",
+                    "fontWeight": "bold",
+                    "color": "#FFC107"
+                  }
+                }
+              ]
+            },
+            {
+              "element": "icon",
+              "name": "ArrowRight",
+              "size": "3rem",
+              "color": "#E0E0E0",
+              "animation": {
+                "type": "fade_in_scale",
+                "delay": 1,
+                "duration": 0.8
+              }
+            },
+            {
+              "element": "image",
+              "src": "/n8n-logo.svg",
+              "alt": "N8N Logo",
+              "style": {
+                "width": "6rem",
+                "height": "6rem"
+              },
+              "animation": {
+                "type": "fade_in_scale",
+                "delay": 1.5,
+                "duration": 1
+              }
+            },
+            {
+              "element": "icon",
+              "name": "ArrowRight",
+              "size": "3rem",
+              "color": "#E0E0E0",
+              "animation": {
+                "type": "fade_in_scale",
+                "delay": 2,
+                "duration": 0.8
+              }
+            },
+            {
+              "element": "group",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "1rem"
+              },
+              "animation": {
+                "type": "fade_in_right",
+                "delay": 2.5,
+                "duration": 1
+              },
+              "children": [
+                {
+                  "element": "icon",
+                  "name": "Brain",
+                  "size": "5rem",
+                  "color": "#2196F3"
+                },
+                {
+                  "element": "text",
+                  "text": "AI Model Integration",
+                  "style": {
+                    "fontSize": "2rem",
+                    "fontWeight": "bold",
+                    "color": "#2196F3"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "element": "text",
+          "text": "Step-by-step Learning",
+          "style": {
+            "fontSize": "3rem",
+            "fontWeight": "bold",
+            "color": "#4CAF50",
+            "position": "absolute",
+            "bottom": "15%",
+            "left": "50%",
+            "transform": "translateX(-50%)"
+          },
+          "animation": {
+            "type": "kinetic_typography",
+            "delay": 3.5,
+            "duration": 2,
+            "words_animation": "scale_in"
+          }
+        }
+      ],
+      "camera": {
+        "type": "static"
+      }
+    },
+    {
+      "id": "scene_05",
+      "start_time": "46.7s",
+      "end_time": "53.7s",
+      "component_ref": "engineer_mindset_concept",
+      "camera": {
+        "type": "static"
+      }
+    },
+    {
+      "id": "scene_06",
+      "start_time": "53.7s",
+      "end_time": "58.0s",
+      "component_ref": "n8n_interface_overview",
+      "camera": {
+        "type": "pan_left",
+        "duration": 1.5
+      },
+      "animation": [
+        {
+          "element": "ui_element",
+          "selector": "button[title='Add new workflow']",
+          "action": "highlight",
+          "delay": 0.5,
+          "duration": 1
+        },
+        {
+          "element": "text",
+          "text": "Build Your First Workflow!",
+          "position": {
+            "x": "50%",
+            "y": "85%"
+          },
+          "style": {
+            "fontSize": "3rem",
+            "fontWeight": "bold",
+            "color": "#4CAF50"
+          },
+          "animation": {
+            "type": "fade_in_up",
+            "delay": 1.5,
+            "duration": 1
+          }
+        }
+      ]
+    }
+  ]
+}
