@@ -1,0 +1,199 @@
+[
+  {
+    "start_frame": 0,
+    "duration_frames": 147,
+    "component": "remotion-bits",
+    "props": {
+      "type": "text_reveal",
+      "text": "N8N Master Club",
+      "animation": "stagger_fade_in",
+      "font_size": 120,
+      "color": "#4CAF50",
+      "position": "center",
+      "y_offset": -50
+    },
+    "overlay_text": {
+      "text": "Welcome to Lesson 1",
+      "animation": "fade_in_up",
+      "delay_frames": 45,
+      "font_size": 60,
+      "color": "#E0E0E0",
+      "position": "center",
+      "y_offset": 50
+    },
+    "background": {
+      "type": "gradient",
+      "colors": [
+        "#1A1A1A",
+        "#333333"
+      ]
+    }
+  },
+  {
+    "start_frame": 147,
+    "duration_frames": 123,
+    "component": "remotionui",
+    "props": {
+      "type": "card",
+      "title": "Your Instructor",
+      "description": "N8N Master Club",
+      "animation": "slide_in_right",
+      "background_color": "#282C34",
+      "text_color": "#FFFFFF"
+    },
+    "overlay_text": {
+      "text": "I will be your instructor for this course.",
+      "animation": "fade_in",
+      "delay_frames": 30,
+      "font_size": 48,
+      "color": "#FFFFFF",
+      "position": "bottom",
+      "y_offset": 100
+    }
+  },
+  {
+    "start_frame": 270,
+    "duration_frames": 300,
+    "new_components": {
+      "concept_explainer": {
+        "hint": "Visually explains interconnected concepts like Automation, N8N, and AI with animated text and connecting lines.",
+        "tsx": "import React from 'react';\nimport { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing } from 'remotion';\n\nexport default function ConceptExplainer({ scene, durF }: { scene: any; durF: number }) {\n  const frame = useCurrentFrame();\n\n  const conceptPositions: { [key: string]: { x: number; y: number } } = {}; // To store actual pixel positions after layout\n\n  const getConceptStyle = (concept: any, index: number) => {\n    const delay = concept.delay_frames || 0;\n    const appearProgress = spring({\n      frame: frame - delay,\n      fps: 30,\n      config: {\n        damping: 200,\n        stiffness: 100,\n        mass: 0.5,\n      },\n      durationInFrames: 30,\n    });\n\n    const scale = interpolate(appearProgress, [0, 1], [0.5, 1]);\n    const opacity = interpolate(appearProgress, [0, 1], [0, 1]);\n\n    let xOffset = 0;\n    let yOffset = 0;\n    switch (concept.position) {\n      case 'center': xOffset = 0; yOffset = 0; break;\n      case 'left': xOffset = -400; yOffset = 0; break;\n      case 'right': xOffset = 400; yOffset = 0; break;\n      case 'top': xOffset = 0; yOffset = -250; break;\n      case 'bottom': xOffset = 0; yOffset = 250; break;\n    }\n\n    // Store positions for connections (relative to center, then adjusted for screen size)\n    // Assuming 1920x1080 screen, center is (960, 540)\n    conceptPositions[concept.text] = { x: 960 + xOffset, y: 540 + yOffset };\n\n    return {\n      position: 'absolute' as const,\n      left: '50%',\n      top: '50%',\n      transform: `translate(-50%, -50%) translate(${xOffset}px, ${yOffset}px) scale(${scale})`,\n      opacity,\n      fontSize: 60,\n      fontWeight: 'bold' as const,\n      color: concept.color,\n      whiteSpace: 'nowrap' as const,\n      textAlign: 'center' as const,\n      padding: '20px 40px',\n      borderRadius: 10,\n      backgroundColor: 'rgba(0,0,0,0.5)',\n      boxShadow: `0 0 20px ${concept.color}50`,\n      zIndex: 2, // Concepts should be above lines\n    };\n  };\n\n  const getConnectionStyle = (connection: any) => {\n    const fromPos = conceptPositions[connection.from];\n    const toPos = conceptPositions[connection.to];\n\n    if (!fromPos || !toPos) return {};\n\n    const delay = connection.delay_frames || 0;\n    const drawProgress = spring({\n      frame: frame - delay,\n      fps: 30,\n      config: {\n        damping: 200,\n        stiffness: 100,\n        mass: 0.5,\n      },\n      durationInFrames: 30,\n    });\n\n    const x1 = fromPos.x;\n    const y1 = fromPos.y;\n    const x2 = toPos.x;\n    const y2 = toPos.y;\n\n    const pathD = `M ${x1} ${y1} L ${x2} ${y2}`;\n    const length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));\n    const strokeDashoffset = interpolate(drawProgress, [0, 1], [length, 0]);\n    const opacity = interpolate(drawProgress, [0, 1], [0, 1]);\n\n\n    return {\n      pathD,\n      length,\n      strokeDashoffset,\n      stroke: connection.color,\n      opacity,\n    };\n  };\n\n  const titleAppearProgress = spring({\n    frame: frame,\n    fps: 30,\n    config: {\n      damping: 200,\n      stiffness: 100,\n      mass: 0.5,\n    },\n    durationInFrames: 30,\n  });\n\n  const titleScale = interpolate(titleAppearProgress, [0, 1], [0.8, 1]);\n  const titleOpacity = interpolate(titleAppearProgress, [0, 1], [0, 1]);\n  const titleTranslateY = interpolate(titleAppearProgress, [0, 1], [-50, 0]);\n\n  return (\n    <AbsoluteFill style={{ backgroundColor: '#1A1A1A', justifyContent: 'center', alignItems: 'center' }}>\n      {scene.title && (\n        <div\n          style={{\n            position: 'absolute',\n            top: 100,\n            width: '100%',\n            fontSize: 72,\n            fontWeight: 'bold' as const,\n            color: scene.title_color,\n            opacity: titleOpacity,\n            transform: `translateY(${titleTranslateY}px) scale(${titleScale})`,\n            textAlign: 'center' as const,\n            zIndex: 10,\n          }}\n        >\n          {scene.title}\n        </div>\n      )}\n\n      <svg width=\"100%\" height=\"100%\" style={{ position: 'absolute', zIndex: 1 }}>\n        {scene.connections.map((connection: any, i: number) => {\n          const { pathD, length, strokeDashoffset, stroke, opacity } = getConnectionStyle(connection);\n          return (\n            <path\n              key={i}\n              d={pathD}\n              stroke={stroke}\n              strokeWidth=\"10\"\n              fill=\"none\"\n              strokeDasharray={length}\n              strokeDashoffset={strokeDashoffset}\n              strokeLinecap=\"round\"\n              style={{ opacity }}\n            />\n          );\n        })}\n      </svg>\n\n      {scene.concepts.map((concept: any, i: number) => (\n        <div key={i} style={getConceptStyle(concept, i)}>\n          {concept.text}\n        </div>\n      ))}\n    </AbsoluteFill>\n  );\n}\n"
+      }
+    },
+    "component_ref": "concept_explainer",
+    "props": {
+      "title": "What is Automation? Why N8N + AI?",
+      "title_color": "#FFFFFF",
+      "concepts": [
+        {
+          "text": "Automation",
+          "color": "#FFC107",
+          "position": "center"
+        },
+        {
+          "text": "N8N",
+          "color": "#4CAF50",
+          "position": "left",
+          "delay_frames": 30
+        },
+        {
+          "text": "AI Era",
+          "color": "#2196F3",
+          "position": "right",
+          "delay_frames": 60
+        }
+      ],
+      "connections": [
+        {
+          "from": "N8N",
+          "to": "Automation",
+          "color": "#4CAF50",
+          "delay_frames": 90
+        },
+        {
+          "from": "AI Era",
+          "to": "Automation",
+          "color": "#2196F3",
+          "delay_frames": 120
+        }
+      ]
+    }
+  },
+  {
+    "start_frame": 570,
+    "duration_frames": 285,
+    "new_components": {
+      "task_offloader": {
+        "hint": "Animates a human doing repetitive tasks, then offloading them to a generic software interface.",
+        "tsx": "import React from 'react';\nimport { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing } from 'remotion';\n\nexport default function TaskOffloader({ scene, durF }: { scene: any; durF: number }) {\n  const frame = useCurrentFrame();\n\n  const humanAppearProgress = spring({\n    frame: frame,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 30,\n  });\n  const humanScale = interpolate(humanAppearProgress, [0, 1], [0.5, 1]);\n  const humanOpacity = interpolate(humanAppearProgress, [0, 1], [0, 1]);\n  const humanTranslateX = interpolate(humanAppearProgress, [0, 1], [-200, -400]);\n\n  const taskAppearProgress = spring({\n    frame: frame - 30,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 30,\n  });\n  const taskOpacity = interpolate(taskAppearProgress, [0, 1], [0, 1]);\n  const taskTranslateY = interpolate(taskAppearProgress, [0, 1], [50, 0]);\n\n  const softwareAppearProgress = spring({\n    frame: frame - 90,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 30,\n  });\n  const softwareScale = interpolate(softwareAppearProgress, [0, 1], [0.5, 1]);\n  const softwareOpacity = interpolate(softwareAppearProgress, [0, 1], [0, 1]);\n  const softwareTranslateX = interpolate(softwareAppearProgress, [0, 1], [200, 400]);\n\n  const arrowDrawProgress = spring({\n    frame: frame - 120,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 45,\n  });\n\n  const arrowLength = 800; // Distance between human and software\n  const arrowOffset = interpolate(arrowDrawProgress, [0, 1], [arrowLength, 0]);\n\n  const textAppearProgress = spring({\n    frame: frame - 180,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 30,\n  });\n  const textScale = interpolate(textAppearProgress, [0, 1], [0.8, 1]);\n  const textOpacity = interpolate(textAppearProgress, [0, 1], [0, 1]);\n\n  return (\n    <AbsoluteFill style={{ backgroundColor: '#1A1A1A', justifyContent: 'center', alignItems: 'center' }}>\n      <div\n        style={{\n          position: 'absolute',\n          left: '50%',\n          top: '50%',\n          transform: `translate(-50%, -50%) translateX(${humanTranslateX}px) scale(${humanScale})`,\n          opacity: humanOpacity,\n          width: 200,\n          height: 200,\n          borderRadius: '50%',\n          backgroundColor: '#FFC107',\n          display: 'flex',\n          justifyContent: 'center',\n          alignItems: 'center',\n          boxShadow: '0 0 30px rgba(255,193,7,0.5)',\n          zIndex: 2,\n        }}\n      >\n        {/* Abstract human icon */}\n        <svg width=\"100\" height=\"100\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\" style={{ color: '#333' }}>\n          <circle cx=\"12\" cy=\"7\" r=\"4\"></circle>\n          <path d=\"M12 14s-2 2-4 2-4-2-4-2\"></path>\n          <path d=\"M12 14s2 2 4 2 4-2 4-2\"></path>\n          <path d=\"M16 17l-1 4\"></path>\n          <path d=\"M8 17l1 4\"></path>\n        </svg>\n      </div>\n      <div\n        style={{\n          position: 'absolute',\n          left: '50%',\n          top: '50%',\n          transform: `translate(-50%, -50%) translateX(${humanTranslateX}px) translateY(${150 + taskTranslateY}px)`,\n          opacity: taskOpacity,\n          fontSize: 40,\n          color: '#E0E0E0',\n          zIndex: 2,\n        }}\n      >\n        Tedious Tasks\n      </div>\n\n      <svg width=\"100%\" height=\"100%\" style={{ position: 'absolute', zIndex: 1 }}>\n        <line\n          x1=\"calc(50% - 300px)\" y1=\"50%\" x2=\"calc(50% + 300px)\" y2=\"50%\"\n          stroke=\"#4CAF50\" strokeWidth=\"10\" strokeDasharray={arrowLength} strokeDashoffset={arrowOffset}\n          markerEnd=\"url(#arrowhead)\"\n          style={{ opacity: interpolate(arrowDrawProgress, [0, 1], [0, 1]) }}\n        />\n        <defs>\n          <marker id=\"arrowhead\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"3.5\" orient=\"auto\">\n            <polygon points=\"0 0, 10 3.5, 0 7\" fill=\"#4CAF50\" />\n          </marker>\n        </defs>\n      </svg>\n\n      <div\n        style={{\n          position: 'absolute',\n          left: '50%',\n          top: '50%',\n          transform: `translate(-50%, -50%) translateX(${softwareTranslateX}px) scale(${softwareScale})`,\n          opacity: softwareOpacity,\n          width: 300,\n          height: 200,\n          borderRadius: 15,\n          backgroundColor: '#2196F3',\n          display: 'flex',\n          justifyContent: 'center',\n          alignItems: 'center',\n          boxShadow: '0 0 30px rgba(33,150,243,0.5)',\n          zIndex: 2,\n        }}\n      >\n        {/* Generic software icon */}\n        <svg width=\"120\" height=\"120\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\" style={{ color: '#FFF' }}>\n          <rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\" ry=\"2\"></rect>\n          <line x1=\"8\" y1=\"21\" x2=\"16\" y2=\"21\"></line>\n          <line x1=\"12\" y1=\"17\" x2=\"12\" y2=\"21\"></line>\n        </svg>\n      </div>\n\n      <div\n        style={{\n          position: 'absolute',\n          bottom: 100,\n          fontSize: 60,\n          color: '#FFFFFF',\n          opacity: textOpacity,\n          transform: `scale(${textScale})`,\n          textAlign: 'center',\n          width: '80%',\n          zIndex: 3,\n        }}\n      >\n        Offloading repetitive tasks to software.\n      </div>\n    </AbsoluteFill>\n  );\n}\n"
+      }
+    },
+    "component_ref": "task_offloader",
+    "props": {}
+  },
+  {
+    "start_frame": 855,
+    "duration_frames": 309,
+    "component_ref": "n8n_interface_overview",
+    "props": {
+      "highlight_area": {
+        "type": "rectangle",
+        "x": "20%",
+        "y": "30%",
+        "width": "60%",
+        "height": "40%",
+        "color": "#4CAF50",
+        "animation": "pulse",
+        "label": "Visual Workflow Builder"
+      },
+      "zoom_to_area": {
+        "x": "10%",
+        "y": "10%",
+        "width": "80%",
+        "height": "80%",
+        "delay_frames": 90,
+        "duration_frames": 60
+      }
+    },
+    "overlay_text": [
+      {
+        "text": "N8N: Visual Workflow Builder",
+        "animation": "fade_in_up",
+        "font_size": 64,
+        "color": "#FFFFFF",
+        "position": "top",
+        "delay_frames": 0
+      },
+      {
+        "text": "Build Complex AI Agents without coding!",
+        "animation": "fade_in_up",
+        "font_size": 48,
+        "color": "#E0E0E0",
+        "position": "bottom",
+        "delay_frames": 150
+      }
+    ]
+  },
+  {
+    "start_frame": 1164,
+    "duration_frames": 381,
+    "new_components": {
+      "n8n_email_ai_workflow_demo": {
+        "hint": "Demonstrates a step-by-step n8n workflow for email processing with AI, recording, and response, using onda-engine styled nodes.",
+        "tsx": "import React from 'react';\nimport { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing } from 'remotion';\n\nconst Node = ({ text, color, delay, x, y }: { text: string; color: string; delay: number; x: number; y: number }) => {\n  const frame = useCurrentFrame();\n  const appearProgress = spring({\n    frame: frame - delay,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 30,\n  });\n  const scale = interpolate(appearProgress, [0, 1], [0.5, 1]);\n  const opacity = interpolate(appearProgress, [0, 1], [0, 1]);\n\n  return (\n    <div\n      style={{\n        position: 'absolute',\n        left: x,\n        top: y,\n        transform: `translate(-50%, -50%) scale(${scale})`,\n        opacity,\n        backgroundColor: '#282C34',\n        border: `2px solid ${color}`,\n        borderRadius: 8,\n        padding: '15px 25px',\n        color: '#FFFFFF',\n        fontSize: 36,\n        fontWeight: 'bold',\n        boxShadow: `0 0 15px ${color}50`,\n        whiteSpace: 'nowrap',\n        zIndex: 2,\n      }}\n    >\n      {text}\n    </div>\n  );\n};\n\nconst Connection = ({ fromX, fromY, toX, toY, delay, color }: { fromX: number; fromY: number; toX: number; toY: number; delay: number; color: string }) => {\n  const frame = useCurrentFrame();\n  const drawProgress = spring({\n    frame: frame - delay,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 45,\n  });\n\n  const pathD = `M ${fromX} ${fromY} L ${toX} ${toY}`;\n  const length = Math.sqrt(Math.pow(toX - fromX, 2) + Math.pow(toY - fromY, 2));\n  const strokeDashoffset = interpolate(drawProgress, [0, 1], [length, 0]);\n  const opacity = interpolate(drawProgress, [0, 1], [0, 1]);\n\n  return (\n    <svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }}>\n      <defs>\n        <marker id=\"arrowhead_n8n\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"3.5\" orient=\"auto\">\n          <polygon points=\"0 0, 10 3.5, 0 7\" fill={color} />\n        </marker>\n      </defs>\n      <path\n        d={pathD}\n        stroke={color}\n        strokeWidth=\"8\"\n        fill=\"none\"\n        strokeDasharray={length}\n        strokeDashoffset={strokeDashoffset}\n        strokeLinecap=\"round\"\n        markerEnd=\"url(#arrowhead_n8n)\"\n        style={{ opacity }}\n      />\n    </svg>\n  );\n};\n\nexport default function N8nEmailAiWorkflowDemo({ scene, durF }: { scene: any; durF: number }) {\n  const nodes = [\n    { id: 'email', text: 'Email Received', color: '#FFC107', x: 400, y: 540, delay: 0, width: 250 }, // Estimated width\n    { id: 'ai', text: 'AI Process', color: '#2196F3', x: 800, y: 540, delay: 60, width: 200 },\n    { id: 'record', text: 'Record Data', color: '#4CAF50', x: 1200, y: 540, delay: 120, width: 220 },\n    { id: 'respond', text: 'Send Response', color: '#E91E63', x: 1600, y: 540, delay: 180, width: 260 },\n  ];\n\n  const connections = [\n    { from: 'email', to: 'ai', color: '#FFC107', delay: 90 },\n    { from: 'ai', to: 'record', color: '#2196F3', delay: 150 },\n    { from: 'record', to: 'respond', color: '#4CAF50', delay: 210 },\n  ];\n\n  return (\n    <AbsoluteFill style={{ backgroundColor: '#1A1A1A', justifyContent: 'center', alignItems: 'center' }}>\n      <div style={{ position: 'absolute', top: 100, fontSize: 72, fontWeight: 'bold', color: '#FFFFFF', zIndex: 3, opacity: spring({ frame: useCurrentFrame(), fps: 30, durationInFrames: 30 }) }}>\n        N8N Workflow Example\n      </div>\n      {nodes.map((node) => (\n        <Node key={node.id} text={node.text} color={node.color} delay={node.delay} x={node.x} y={node.y} />\n      ))}\n      {connections.map((conn, i) => {\n        const fromNode = nodes.find(n => n.id === conn.from);\n        const toNode = nodes.find(n => n.id === conn.to);\n        if (!fromNode || !toNode) return null;\n        return (\n          <Connection\n            key={i}\n            fromX={fromNode.x + fromNode.width / 2 - 25} // Connect from right edge of source node (minus padding)\n            fromY={fromNode.y}\n            toX={toNode.x - toNode.width / 2 + 25} // Connect to left edge of target node (minus padding)\n            toY={toNode.y}\n            delay={conn.delay}\n            color={conn.color}\n          />\n        );\n      })}\n    </AbsoluteFill>\n  );\n}\n"
+      }
+    },
+    "component_ref": "n8n_email_ai_workflow_demo",
+    "props": {}
+  },
+  {
+    "start_frame": 1545,
+    "duration_frames": 375,
+    "new_components": {
+      "engineer_mindset_explainer": {
+        "hint": "Visually explains the course philosophy of moving from individual tools to designing integrated automation systems with an engineer's mindset.",
+        "tsx": "import React from 'react';\nimport { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, Easing } from 'remotion';\n\nconst ToolIcon = ({ delay, x, y, icon, label, color }: { delay: number; x: number; y: number; icon: string; label: string; color: string }) => {\n  const frame = useCurrentFrame();\n  const appearProgress = spring({\n    frame: frame - delay,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 30,\n  });\n  const scale = interpolate(appearProgress, [0, 1], [0.5, 1]);\n  const opacity = interpolate(appearProgress, [0, 1], [0, 1]);\n\n  return (\n    <div\n      style={{\n        position: 'absolute',\n        left: x,\n        top: y,\n        transform: `translate(-50%, -50%) scale(${scale})`,\n        opacity,\n        display: 'flex',\n        flexDirection: 'column',\n        alignItems: 'center',\n        color: '#FFFFFF',\n        fontSize: 30,\n        zIndex: 2,\n      }}\n    >\n      <div\n        style={{\n          width: 100,\n          height: 100,\n          borderRadius: '50%',\n          backgroundColor: color,\n          display: 'flex',\n          justifyContent: 'center',\n          alignItems: 'center',\n          marginBottom: 10,\n          boxShadow: `0 0 15px ${color}50`,\n        }}\n      >\n        <svg width=\"60\" height=\"60\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth=\"2\" strokeLinecap=\"round\" strokeLinejoin=\"round\" style={{ color: '#FFF' }}>\n          {icon === 'tool' && <path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.77 3.77z\"></path>}\n          {icon === 'gear' && <path d=\"M12 2c-.74 0-1.4.49-1.72 1.25L9.1 5.37c-.6.3-1.2.53-1.8.69L5.3 6.6c-.8.2-1.4.8-1.6 1.6L3.4 9.1c-.2.8-.1 1.6.3 2.3l1.5 2.1c-.1.2-.2.4-.3.6L3.4 15.3c-.4.7-.5 1.5-.3 2.3l.4 1.7c.2.8.8 1.4 1.6 1.6l1.7.4c.6.2 1.2.4 1.8.6l2 2c.7.4 1.5.5 2.3.3l1.7-.4c.8-.2 1.4-.8 1.6-1.6l.4-1.7c.2-.8.1-1.6-.3-2.3l-1.5-2.1c.1-.2.2-.4.3-.6l1.5-2.1c.4-.7.5-1.5.3-2.3l-.4-1.7c-.2-.8-.8-1.4-1.6-1.6l-1.7-.4c-.6-.2-1.2-.4-1.8-.6L14.7 3.25c-.3-.7-1-1.25-1.7-1.25z\"></path>}\n          {icon === 'gear' && <circle cx=\"12\" cy=\"12\" r=\"3\"></circle>}\n          {icon === 'system' && <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"></rect>}\n          {icon === 'system' && <line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"></line>}\n          {icon === 'system' && <line x1=\"3\" y1=\"15\" x2=\"21\" y2=\"15\"></line>}\n          {icon === 'system' && <line x1=\"9\" y1=\"3\" x2=\"9\" y2=\"21\"></line>}\n          {icon === 'system' && <line x1=\"15\" y1=\"3\" x2=\"15\" y2=\"21\"></line>}\n        </svg>\n      </div>\n      {label}\n    </div>\n  );\n};\n\nexport default function EngineerMindsetExplainer({ scene, durF }: { scene: any; durF: number }) {\n  const frame = useCurrentFrame();\n\n  const titleAppearProgress = spring({\n    frame: frame,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 30,\n  });\n  const titleScale = interpolate(titleAppearProgress, [0, 1], [0.8, 1]);\n  const titleOpacity = interpolate(titleAppearProgress, [0, 1], [0, 1]);\n\n  const arrowDrawProgress = spring({\n    frame: frame - 100,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 45,\n  });\n  const arrowLength = 500;\n  const arrowOffset = interpolate(arrowDrawProgress, [0, 1], [arrowLength, 0]);\n  const arrowOpacity = interpolate(arrowDrawProgress, [0, 1], [0, 1]);\n\n  const mindsetTextAppearProgress = spring({\n    frame: frame - 200,\n    fps: 30,\n    config: { damping: 200, stiffness: 100, mass: 0.5 },\n    durationInFrames: 45,\n  });\n  const mindsetTextScale = interpolate(mindsetTextAppearProgress, [0, 1], [0.8, 1]);\n  const mindsetTextOpacity = interpolate(mindsetTextAppearProgress, [0, 1], [0, 1]);\n\n  return (\n    <AbsoluteFill style={{ backgroundColor: '#1A1A1A', justifyContent: 'center', alignItems: 'center' }}>\n      <div\n        style={{\n          position: 'absolute',\n          top: 100,\n          fontSize: 72,\n          fontWeight: 'bold',\n          color: '#FFFFFF',\n          opacity: titleOpacity,\n          transform: `scale(${titleScale})`,\n          textAlign: 'center',\n          zIndex: 3,\n        }}\n      >\n        Course Philosophy\n      </div>\n\n      <ToolIcon delay={30} x={450} y={400} icon=\"tool\" label=\"Individual Tools\" color=\"#FFC107\" />\n      <ToolIcon delay={60} x={650} y={400} icon=\"gear\" label=\"Isolated Components\" color=\"#2196F3\" />\n\n      <svg width=\"100%\" height=\"100%\" style={{ position: 'absolute', top: 0, left: 0, zIndex: 1 }}>\n        <defs>\n          <marker id=\"arrowhead_philosophy\" markerWidth=\"10\" markerHeight=\"7\" refX=\"0\" refY=\"3.5\" orient=\"auto\">\n            <polygon points=\"0 0, 10 3.5, 0 7\" fill=\"#4CAF50\" />\n          </marker>\n        </defs>\n        <path\n          d=\"M 700 450 L 1200 450\"\n          stroke=\"#4CAF50\"\n          strokeWidth=\"8\"\n          fill=\"none\"\n          strokeDasharray={arrowLength}\n          strokeDashoffset={arrowOffset}\n          strokeLinecap=\"round\"\n          markerEnd=\"url(#arrowhead_philosophy)\"\n          style={{ opacity: arrowOpacity }}\n        />\n      </svg>\n\n      <ToolIcon delay={150} x={1450} y={400} icon=\"system\" label=\"Integrated Systems\" color=\"#4CAF50\" />\n\n      <div\n        style={{\n          position: 'absolute',\n          bottom: 150,\n          fontSize: 60,\n          fontWeight: 'bold',\n          color: '#E0E0E0',\n          opacity: mindsetTextOpacity,\n          transform: `scale(${mindsetTextScale})`,\n          textAlign: 'center',\n          width: '80%',\n          zIndex: 3,\n        }}\n      >\n        Focus on Engineer's Mindset: Design Automation Systems\n      </div>\n    </AbsoluteFill>\n  );\n}\n"
+      }
+    },
+    "component_ref": "engineer_mindset_explainer",
+    "props": {}
+  },
+  {
+    "start_frame": 1920,
+    "duration_frames": 120,
+    "component_ref": "n8n_interface_overview",
+    "props": {
+      "zoom_level": 0.8,
+      "pan_x": 0,
+      "pan_y": 0,
+      "animation": "fade_in"
+    },
+    "overlay_text": {
+      "text": "Next Lesson: N8N Interface Details",
+      "animation": "fade_in_up",
+      "font_size": 72,
+      "color": "#FFFFFF",
+      "position": "center"
+    }
+  }
+]
