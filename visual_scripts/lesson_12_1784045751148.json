@@ -1,0 +1,803 @@
+{
+  "duration_in_frames": 3380,
+  "fps": 30,
+  "new_components": {
+    "google_sheet_with_data": {
+      "hint": "A Google Sheet interface showing rows of customer data, including name, email, and signup date. New rows should be highlighted.",
+      "mockup": "browser",
+      "mockup_title": "Google Sheets - Customer Signups",
+      "ui": [
+        {
+          "type": "header",
+          "text": "Customer Signups"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "ID",
+            "Name",
+            "Email",
+            "Signup Date"
+          ],
+          "rows": [
+            [
+              "1",
+              "Aung Aung",
+              "aung@example.com",
+              "2023-10-26"
+            ],
+            [
+              "2",
+              "Mya Mya",
+              "mya@example.com",
+              "2023-10-27"
+            ],
+            [
+              "3",
+              "Ko Ko",
+              "ko@example.com",
+              "2023-10-28"
+            ]
+          ]
+        }
+      ]
+    },
+    "email_client_mockup": {
+      "hint": "A generic email client showing an incoming email with a personalized welcome message.",
+      "mockup": "browser",
+      "mockup_title": "Inbox - Welcome to N8N Master Club",
+      "ui": [
+        {
+          "type": "panel",
+          "title": "Inbox",
+          "content": [
+            {
+              "type": "list_item",
+              "text": "N8N Master Club - Welcome!",
+              "sender": "N8N Master Club",
+              "subject": "Your journey starts now!"
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Welcome to N8N Master Club!",
+          "content": [
+            {
+              "type": "text",
+              "text": "Hi [Customer Name],"
+            },
+            {
+              "type": "paragraph",
+              "text": "Welcome to N8N Master Club! We're thrilled to have you join our community of automation enthusiasts. Get ready to master N8N and transform your workflows."
+            },
+            {
+              "type": "button",
+              "text": "Explore Courses"
+            }
+          ]
+        }
+      ]
+    },
+    "n8n_workflow_google_sheet_email": {
+      "hint": "An N8N workflow showing a Google Sheets node connected to a Gmail/Outlook node, with data flow indicated.",
+      "mockup": "browser",
+      "mockup_title": "N8N Workflow: Google Sheets to Email",
+      "ui": [
+        {
+          "type": "node",
+          "name": "Google Sheets Trigger",
+          "icon": "google-sheets",
+          "x": 100,
+          "y": 200,
+          "status": "active"
+        },
+        {
+          "type": "node",
+          "name": "Gmail Send Email",
+          "icon": "gmail",
+          "x": 400,
+          "y": 200,
+          "status": "inactive"
+        },
+        {
+          "type": "connection",
+          "from": "Google Sheets Trigger",
+          "to": "Gmail Send Email",
+          "animated": true
+        }
+      ]
+    },
+    "data_cleaning_concept": {
+      "hint": "A visual representation comparing messy, unorganized data with clean, structured data.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "card",
+          "title": "Messy Data",
+          "content": [
+            {
+              "type": "text",
+              "text": "Name: John Doe, email: Jd@example.com, Phone: 1234567890"
+            },
+            {
+              "type": "text",
+              "text": "name: jane smith, email: jane.smith@example.com"
+            },
+            {
+              "type": "text",
+              "text": "EMAIL: BOB@TEST.COM, NAME: BOB"
+            }
+          ],
+          "style": {
+            "background": "#f8d7da",
+            "borderColor": "#dc3545"
+          }
+        },
+        {
+          "type": "icon",
+          "name": "arrow-right",
+          "size": "large"
+        },
+        {
+          "type": "card",
+          "title": "Clean Data",
+          "content": [
+            {
+              "type": "text",
+              "text": "Name: John Doe, Email: jd@example.com"
+            },
+            {
+              "type": "text",
+              "text": "Name: Jane Smith, Email: jane.smith@example.com"
+            },
+            {
+              "type": "text",
+              "text": "Name: Bob, Email: bob@test.com"
+            }
+          ],
+          "style": {
+            "background": "#d4edda",
+            "borderColor": "#28a745"
+          }
+        }
+      ]
+    },
+    "polling_vs_webhook_comparison": {
+      "hint": "A comparison table or animated diagram explaining polling vs. webhook for N8N triggers.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "card",
+          "title": "Polling",
+          "content": [
+            {
+              "type": "text",
+              "text": "N8N checks Google Sheets every X minutes."
+            },
+            {
+              "type": "icon",
+              "name": "clock",
+              "size": "medium"
+            },
+            {
+              "type": "text",
+              "text": "Pros: Simple setup."
+            },
+            {
+              "type": "text",
+              "text": "Cons: Delayed response, resource intensive."
+            }
+          ],
+          "style": {
+            "background": "#e0f7fa",
+            "borderColor": "#00bcd4"
+          }
+        },
+        {
+          "type": "icon",
+          "name": "arrow-right",
+          "size": "large"
+        },
+        {
+          "type": "card",
+          "title": "Webhook",
+          "content": [
+            {
+              "type": "text",
+              "text": "Google Sheets sends data to N8N instantly on change."
+            },
+            {
+              "type": "icon",
+              "name": "zap",
+              "size": "medium"
+            },
+            {
+              "type": "text",
+              "text": "Pros: Real-time, efficient."
+            },
+            {
+              "type": "text",
+              "text": "Cons: Requires external setup (e.g., Apps Script)."
+            }
+          ],
+          "style": {
+            "background": "#fff3e0",
+            "borderColor": "#ff9800"
+          }
+        }
+      ]
+    },
+    "n8n_workflow_ai_email": {
+      "hint": "An N8N workflow showing Google Sheets, an AI node (e.g., OpenAI), and an email node for personalized emails.",
+      "mockup": "browser",
+      "mockup_title": "N8N Workflow: Google Sheets + AI + Personalized Email",
+      "ui": [
+        {
+          "type": "node",
+          "name": "Google Sheets Trigger",
+          "icon": "google-sheets",
+          "x": 100,
+          "y": 200,
+          "status": "active"
+        },
+        {
+          "type": "node",
+          "name": "AI Text Generator",
+          "icon": "openai",
+          "x": 400,
+          "y": 200,
+          "status": "inactive"
+        },
+        {
+          "type": "node",
+          "name": "Gmail Send Email",
+          "icon": "gmail",
+          "x": 700,
+          "y": 200,
+          "status": "inactive"
+        },
+        {
+          "type": "connection",
+          "from": "Google Sheets Trigger",
+          "to": "AI Text Generator",
+          "animated": true
+        },
+        {
+          "type": "connection",
+          "from": "AI Text Generator",
+          "to": "Gmail Send Email",
+          "animated": true
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "start_time": "0.0s",
+      "end_time": "9.0s",
+      "narration": "ဒီနေ့ သင်ခန်းစာ မှာတော့ ကျွန်တော်တို့ လုပ်ငန်းခွင် မှာ အသုံးအများဆုံး ဖြစ်တဲ့ Google Sheets နဲ့ email automation ကို ဘယ်လို ချိတ်ဆက် မလဲ ဆိုတာ ကို လေ့လာသွား မှာ ပါ။",
+      "components": [
+        {
+          "type": "text_reveal",
+          "text": "Google Sheets + Email Automation",
+          "font_size": "80px",
+          "font_weight": "bold",
+          "color": "#4285F4",
+          "animation": "stagger_words",
+          "stagger_delay": 0.05
+        },
+        {
+          "type": "text_reveal",
+          "text": "N8N Master Club",
+          "font_size": "40px",
+          "color": "#34A853",
+          "position": {
+            "y": 100
+          },
+          "animation": "fade_in_up"
+        }
+      ],
+      "motion": {
+        "camera": "zoom_in_out",
+        "background": "gradient_blur"
+      }
+    },
+    {
+      "start_time": "9.0s",
+      "end_time": "20.4s",
+      "narration": "Automation engineer တစ်ယောက် အနေနဲ့ ပြောရ ရင် Google Sheet ဆိုတာ ရိုးရိုး data သိမ်းတဲ့ နေရာ တစ်ခု တွေ မဟုတ် ဘဲ နဲ့ အလုပ် ဖြစ်စဉ် တွေ ကို စတင်ပေးမယ့် trigger point တစ်ခု လို့ မြင် ဖို့ လို ပါ တယ်။",
+      "components": [
+        {
+          "type": "text_reveal",
+          "text": "Google Sheets: Not just data storage.",
+          "font_size": "60px",
+          "color": "#FBBC05",
+          "animation": "typewriter",
+          "position": {
+            "y": -150
+          }
+        },
+        {
+          "type": "icon",
+          "name": "google-sheets",
+          "size": "150px",
+          "color": "#34A853",
+          "position": {
+            "x": -200,
+            "y": 50
+          },
+          "animation": "pop_in"
+        },
+        {
+          "type": "icon",
+          "name": "arrow-right",
+          "size": "100px",
+          "color": "#EA4335",
+          "position": {
+            "y": 50
+          },
+          "animation": "bounce_in"
+        },
+        {
+          "type": "text_reveal",
+          "text": "A Trigger Point!",
+          "font_size": "70px",
+          "font_weight": "bold",
+          "color": "#4285F4",
+          "position": {
+            "x": 250,
+            "y": 50
+          },
+          "animation": "scale_up_bounce"
+        }
+      ],
+      "motion": {
+        "camera": "pan_right",
+        "background": "subtle_grid_animation"
+      }
+    },
+    {
+      "start_time": "20.4s",
+      "end_time": "26.3s",
+      "narration": "အရင်ဆုံး ကျွန်တော်တို့ နားလည်ထားရ မှာ က ဘာကြောင့် Google Sheets ကို email နဲ့ ချိတ်ရတာ လဲ ဆိုတာ ပါ။",
+      "components": [
+        {
+          "type": "text_reveal",
+          "text": "Why connect Google Sheets to Email?",
+          "font_size": "70px",
+          "font_weight": "bold",
+          "color": "#EA4335",
+          "animation": "slide_in_from_left"
+        },
+        {
+          "type": "icon",
+          "name": "question-mark-circle",
+          "size": "100px",
+          "color": "#FBBC05",
+          "position": {
+            "x": 400
+          },
+          "animation": "pulse"
+        }
+      ],
+      "motion": {
+        "camera": "static",
+        "background": "clean_gradient"
+      }
+    },
+    {
+      "start_time": "26.3s",
+      "end_time": "37.7s",
+      "narration": "လက်တွေ့ မှာ ဆိုရင် form ဖြည့်ထားတဲ့ customer စာရင်း တွေ၊ inventory ပစ္စည်း ပြတ်လပ်တဲ့ အလတ် တွေ၊ ဒါမှမဟုတ် sales report တွေ ကို သတ်မှတ်ထားတဲ့ အချိန် မှာ အလိုအလျောက် email ပို့ ဖို့ လိုအပ် ပါ တယ်။",
+      "components": [
+        {
+          "type": "card",
+          "title": "Customer Signups",
+          "icon": "user-plus",
+          "description": "Send welcome emails to new customers.",
+          "position": {
+            "x": -400,
+            "y": -100
+          },
+          "animation": "slide_in_from_left"
+        },
+        {
+          "type": "card",
+          "title": "Inventory Alerts",
+          "icon": "box",
+          "description": "Notify when stock is low.",
+          "position": {
+            "x": 0,
+            "y": -100
+          },
+          "animation": "slide_in_from_top",
+          "delay": 0.3
+        },
+        {
+          "type": "card",
+          "title": "Sales Reports",
+          "icon": "chart-bar",
+          "description": "Automate daily/weekly sales summaries.",
+          "position": {
+            "x": 400,
+            "y": -100
+          },
+          "animation": "slide_in_from_right",
+          "delay": 0.6
+        },
+        {
+          "type": "text_reveal",
+          "text": "Automated Email Sending",
+          "font_size": "50px",
+          "color": "#4285F4",
+          "position": {
+            "y": 200
+          },
+          "animation": "fade_in_up",
+          "delay": 1
+        }
+      ],
+      "motion": {
+        "camera": "zoom_out",
+        "background": "particles_effect"
+      }
+    },
+    {
+      "start_time": "37.7s",
+      "end_time": "43.6s",
+      "narration": "ဒါ ကို လူ ကိုယ်တိုင် ထိုင် လုပ်နေ ရင် အချိန်ကုန်ရုံ တွေ မက ဘဲ လူ မှားနိုင် တဲ့ အခွင့်အရေး လည်း ရှိ ပါ တယ်။",
+      "components": [
+        {
+          "type": "icon",
+          "name": "person",
+          "size": "150px",
+          "color": "#EA4335",
+          "position": {
+            "x": -250,
+            "y": -50
+          },
+          "animation": "shake_error"
+        },
+        {
+          "type": "text_reveal",
+          "text": "Manual Work = Time Consuming + Error Prone",
+          "font_size": "60px",
+          "color": "#EA4335",
+          "animation": "slide_in_from_right"
+        },
+        {
+          "type": "icon",
+          "name": "clock",
+          "size": "80px",
+          "color": "#FBBC05",
+          "position": {
+            "x": -100,
+            "y": 100
+          },
+          "animation": "spin_slow"
+        },
+        {
+          "type": "icon",
+          "name": "exclamation-triangle",
+          "size": "80px",
+          "color": "#EA4335",
+          "position": {
+            "x": 100,
+            "y": 100
+          },
+          "animation": "pulse"
+        }
+      ],
+      "motion": {
+        "camera": "dolly_zoom",
+        "background": "dark_overlay"
+      }
+    },
+    {
+      "start_time": "43.6s",
+      "end_time": "49.0s",
+      "narration": "ဒီ နေရာ မှာ N8N ရဲ့ Google Sheets node က အဓိက အခန်းကဏ္ဍ က နေ ပါဝင် ပါ တယ်။",
+      "components": [
+        {
+          "component_ref": "n8n_workflow_google_sheet_email"
+        },
+        {
+          "type": "highlight_node",
+          "node_name": "Google Sheets Trigger",
+          "color": "#4285F4",
+          "animation": "pulse_border"
+        },
+        {
+          "type": "text_reveal",
+          "text": "N8N's Google Sheets Node: The Key Player",
+          "font_size": "50px",
+          "color": "#34A853",
+          "position": {
+            "y": -250
+          },
+          "animation": "fade_in_down"
+        }
+      ],
+      "motion": {
+        "camera": "pan_to_center",
+        "background": "n8n_canvas_grid"
+      }
+    },
+    {
+      "start_time": "49.0s",
+      "end_time": "55.0s",
+      "narration": "ဘယ်လို အလုပ် လုပ် လဲ ဆိုတော့ N8N က နေ Google Sheets ထဲ က row အသစ် တွေ ကို စောင့်ကြည့် နေ တာ ပါ။",
+      "components": [
+        {
+          "component_ref": "n8n_workflow_google_sheet_email"
+        },
+        {
+          "type": "highlight_node",
+          "node_name": "Google Sheets Trigger",
+          "color": "#FBBC05",
+          "animation": "pulse_border"
+        },
+        {
+          "type": "text_reveal",
+          "text": "N8N watches for new rows in Google Sheets.",
+          "font_size": "50px",
+          "color": "#4285F4",
+          "position": {
+            "y": -250
+          },
+          "animation": "fade_in_down"
+        },
+        {
+          "type": "icon",
+          "name": "eye",
+          "size": "80px",
+          "color": "#FBBC05",
+          "position": {
+            "x": 100,
+            "y": 100
+          },
+          "animation": "blink"
+        }
+      ],
+      "motion": {
+        "camera": "focus_on_node",
+        "target_node": "Google Sheets Trigger",
+        "background": "n8n_canvas_grid"
+      }
+    },
+    {
+      "start_time": "55.0s",
+      "end_time": "62.9s",
+      "narration": "ဥပမာ အနေနဲ့ ပြောရ ရင် customer တစ်ယောက် က သင့် website မှာ စာရင်းသွင်း လိုက် တဲ့ အခါ Google Sheets ထဲ မှာ row အသစ် တစ်ခု တိုးလာ ပါ မယ်။",
+      "components": [
+        {
+          "component_ref": "n8n_homepage"
+        },
+        {
+          "type": "cursor_click",
+          "target_element": "Get Started button",
+          "delay": 0.5
+        },
+        {
+          "component_ref": "n8n_signup_page",
+          "delay": 1.5
+        },
+        {
+          "type": "type_text",
+          "target_element": "email input",
+          "text": "new_customer@example.com",
+          "delay": 2
+        },
+        {
+          "type": "cursor_click",
+          "target_element": "Sign Up button",
+          "delay": 3
+        },
+        {
+          "component_ref": "google_sheet_with_data",
+          "delay": 4
+        },
+        {
+          "type": "highlight_row",
+          "row_index": 3,
+          "color": "#34A853",
+          "animation": "fade_in_out",
+          "delay": 4.5
+        }
+      ],
+      "motion": {
+        "camera": "sequence_pan_zoom",
+        "sequence": [
+          {
+            "target": "n8n_homepage",
+            "zoom": 1.2
+          },
+          {
+            "target": "n8n_signup_page",
+            "zoom": 1
+          },
+          {
+            "target": "google_sheet_with_data",
+            "zoom": 1.1
+          }
+        ],
+        "background": "browser_chrome"
+      }
+    },
+    {
+      "start_time": "62.9s",
+      "end_time": "69.0s",
+      "narration": "ဒီ အချိန် မှာ N8N က ချက်ချင်း သိလိုက် ပြီး တော့ Gmail node သို့မဟုတ် Outlook node ကို အချက်ပြ လိုက် ပါ တယ်။",
+      "components": [
+        {
+          "component_ref": "n8n_workflow_google_sheet_email"
+        },
+        {
+          "type": "highlight_node",
+          "node_name": "Google Sheets Trigger",
+          "color": "#FBBC05",
+          "animation": "pulse_border"
+        },
+        {
+          "type": "data_flow_animation",
+          "from_node": "Google Sheets Trigger",
+          "to_node": "Gmail Send Email",
+          "color": "#4285F4",
+          "animation": "flow_pulse"
+        },
+        {
+          "type": "highlight_node",
+          "node_name": "Gmail Send Email",
+          "color": "#EA4335",
+          "animation": "pulse_border",
+          "delay": 1
+        }
+      ],
+      "motion": {
+        "camera": "pan_to_node",
+        "target_node": "Gmail Send Email",
+        "background": "n8n_canvas_grid"
+      }
+    },
+    {
+      "start_time": "69.0s",
+      "end_time": "74.8s",
+      "narration": "အဲ့ဒီ နောက် မှာ တော့ သင် ကြိုတင် ရေးဆွဲထား တဲ့ email template အတိုင်း အလိုအလျောက် ပို့ပေးသွား မှာ ဖြစ် ပါ တယ်။",
+      "components": [
+        {
+          "component_ref": "email_client_mockup"
+        },
+        {
+          "type": "text_reveal",
+          "text": "Automated Email Sent!",
+          "font_size": "60px",
+          "color": "#34A853",
+          "position": {
+            "y": -250
+          },
+          "animation": "fade_in_down"
+        },
+        {
+          "type": "highlight_element",
+          "element_type": "list_item",
+          "element_text": "N8N Master Club - Welcome!",
+          "color": "#FBBC05",
+          "animation": "pulse_border",
+          "delay": 1
+        }
+      ],
+      "motion": {
+        "camera": "zoom_in",
+        "background": "clean_gradient"
+      }
+    },
+    {
+      "start_time": "74.8s",
+      "end_time": "83.9s",
+      "narration": "Automation engineer တစ်ယောက် အနေနဲ့ ဒီ workflow ကို တည်ဆောက် တဲ့ အခါ polling စနစ် ကို သုံး မလား၊ ဒါမှမဟုတ် webhook သုံး မလား ဆိုတာ ကို ရွေးချယ် တတ် ဖို့ အရေးကြီး ပါ တယ်။",
+      "components": [
+        {
+          "component_ref": "polling_vs_webhook_comparison"
+        },
+        {
+          "type": "text_reveal",
+          "text": "Polling vs. Webhook: Choose Wisely!",
+          "font_size": "60px",
+          "color": "#4285F4",
+          "position": {
+            "y": -250
+          },
+          "animation": "fade_in_up"
+        }
+      ],
+      "motion": {
+        "camera": "pan_left_right",
+        "background": "abstract_lines"
+      }
+    },
+    {
+      "start_time": "83.9s",
+      "end_time": "93.5s",
+      "narration": "အရေးကြီးဆုံး အချက် က တော့ Sheets ထဲ က data တွေ ကို စနစ်တကျ clean ဖြစ် အောင် လုပ်ထား ဖို့ ပါ ပဲ။ ဒေတာ မှန်မှန် ကာ email ပို့ တဲ့ အခါ မှာ လည်း အမှားအယွင်း မရှိ မှာ ပါ။",
+      "components": [
+        {
+          "component_ref": "data_cleaning_concept"
+        },
+        {
+          "type": "text_reveal",
+          "text": "Clean Data = Accurate Emails",
+          "font_size": "70px",
+          "font_weight": "bold",
+          "color": "#34A853",
+          "animation": "slide_in_from_top"
+        }
+      ],
+      "motion": {
+        "camera": "zoom_in_out",
+        "background": "subtle_geometric_pattern"
+      }
+    },
+    {
+      "start_time": "93.5s",
+      "end_time": "104.9s",
+      "narration": "နောက် သင်ခန်းစာ မှာ တော့ ဒီ ထက် ပို ပြီး ရှုပ်ထွေး တဲ့ data တွေ ကို Google Sheet က နေ ယူ ပြီး AI နဲ့ ပေါင်းစပ် ကာ personalized ဖြစ် တဲ့ email တွေ ဘယ်လို ဖန်တီး မလဲ ဆိုတာ ကို လက်တွေ့ လုပ်ပြ သွား ပါ မယ်။",
+      "components": [
+        {
+          "component_ref": "n8n_workflow_ai_email"
+        },
+        {
+          "type": "text_reveal",
+          "text": "Next Lesson: Google Sheets + AI + Personalized Emails!",
+          "font_size": "50px",
+          "color": "#FBBC05",
+          "position": {
+            "y": -250
+          },
+          "animation": "fade_in_down"
+        },
+        {
+          "type": "highlight_node",
+          "node_name": "AI Text Generator",
+          "color": "#EA4335",
+          "animation": "pulse_border",
+          "delay": 1
+        }
+      ],
+      "motion": {
+        "camera": "pan_right",
+        "background": "futuristic_grid_animation"
+      }
+    },
+    {
+      "start_time": "104.9s",
+      "end_time": "112.7s",
+      "narration": "ဒါကြောင့် ဒီနေ့ သင်ခန်းစာ မှာ Google Sheet နဲ့ email ချိတ်ဆက် ပုံ ကို သေချာ နားလည် အောင် တစ်ခေါက် လောက် ပြန်ကြည့် ပေးထား ဖို့ တိုက်တွန်းချင် ပါ တယ်။",
+      "components": [
+        {
+          "type": "text_reveal",
+          "text": "Master Google Sheets & Email Automation!",
+          "font_size": "70px",
+          "font_weight": "bold",
+          "color": "#4285F4",
+          "animation": "stagger_words"
+        },
+        {
+          "type": "icon",
+          "name": "check-circle",
+          "size": "100px",
+          "color": "#34A853",
+          "position": {
+            "y": 100
+          },
+          "animation": "pop_in",
+          "delay": 0.5
+        }
+      ],
+      "motion": {
+        "camera": "zoom_out",
+        "background": "subtle_waves"
+      }
+    }
+  ]
+}
