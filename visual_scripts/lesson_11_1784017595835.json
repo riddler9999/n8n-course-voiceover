@@ -1,0 +1,276 @@
+{
+  "title": "n8n နှင့် Google Cloud Platform ချိတ်ဆက်ခြင်း: Credentials တည်ဆောက်နည်း",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 9.5,
+      "type": "intro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာတော့ n8n နဲ့ Google Cloud Platform ကို ချိတ်ဆက် ဖို့ အတွက် အရေးကြီးဆုံး အဆင့် ဖြစ် တဲ့ credentials တည်ဆောက်နည်း ကို လက်တွေ့ ပြသပေးသွား မှာ ပါ။",
+      "kinetic": [
+        "n8n နှင့် Google Cloud Platform",
+        "ချိတ်ဆက်ခြင်း",
+        "Credentials တည်ဆောက်နည်း"
+      ],
+      "bg": "#0b1018",
+      "camera": {
+        "move": "zoomIn",
+        "from": 1,
+        "to": 1.1
+      }
+    },
+    {
+      "start": 9.5,
+      "end": 24,
+      "type": "concept",
+      "caption": "ကျွန်တော်တို့ automation engineer တွေ အနေနဲ့ Google Sheets, Gmail, ဒါမှမဟုတ် Google Drive လို ဝန်ဆောင်မှု တွေ ကို n8n က နေ တစ်ဆင့် အလိုအလျောက် ခိုင်းစေ တဲ့ အခါ Google ဘက် က ဒါ ဟာ ယုံကြည်ရ တဲ့ app ဖြစ် ပါ တယ် လို့ အတည်ပြုပေး ဖို့ လိုအပ် ပါ တယ်။",
+      "kinetic": [
+        "Automation Engineer",
+        "Google Sheets, Gmail, Drive",
+        "n8n မှ အလိုအလျောက် ခိုင်းစေခြင်း",
+        "Google မှ အတည်ပြုပေးရန် လိုအပ်သည်"
+      ],
+      "icons": [
+        {
+          "name": "n8n_logo",
+          "x": 10,
+          "y": 20,
+          "w": 10,
+          "h": 10
+        },
+        {
+          "name": "google_sheets",
+          "x": 30,
+          "y": 20,
+          "w": 8,
+          "h": 8
+        },
+        {
+          "name": "gmail",
+          "x": 45,
+          "y": 20,
+          "w": 8,
+          "h": 8
+        },
+        {
+          "name": "google_drive",
+          "x": 60,
+          "y": 20,
+          "w": 8,
+          "h": 8
+        },
+        {
+          "name": "lock",
+          "x": 80,
+          "y": 20,
+          "w": 8,
+          "h": 8
+        }
+      ],
+      "bg": "#0b1018",
+      "camera": {
+        "move": "panRight",
+        "from": 1,
+        "to": 1.05
+      }
+    },
+    {
+      "start": 24,
+      "end": 28,
+      "type": "concept",
+      "caption": "ဒါ ကို ကျွန်တော်တို့ က API credentials လို့ ခေါ် တာ ပါ။",
+      "kinetic": [
+        "API Credentials"
+      ],
+      "bg": "#0b1018",
+      "camera": {
+        "move": "zoomIn",
+        "from": 1,
+        "to": 1.2
+      }
+    },
+    {
+      "start": 28,
+      "end": 34.8,
+      "type": "concept",
+      "caption": "ဒီ နေရာ မှာ အဓိက အချက် က Google Cloud Console ထဲ မှာ OAuth 2.0 client ID ဖန်တီး ဖို့ ပါ။",
+      "kinetic": [
+        "Google Cloud Console",
+        "OAuth 2.0 client ID ဖန်တီးခြင်း"
+      ],
+      "icons": [
+        {
+          "name": "google_cloud",
+          "x": 15,
+          "y": 30,
+          "w": 10,
+          "h": 10
+        }
+      ],
+      "bg": "#0b1018",
+      "camera": {
+        "move": "zoomOut",
+        "from": 1.1,
+        "to": 1
+      }
+    },
+    {
+      "start": 34.8,
+      "end": 46.5,
+      "type": "concept",
+      "caption": "အရင်ဆုံး Google Cloud Console ထဲ သွား မယ်။ APIs & Services ထဲ က credentials ကို ရွေး မယ်။ ပြီး ရင် OAuth client ID ကို create လုပ် ပြီး တော့ client ID နဲ့ client secret ကို ရယူ ရ ပါ မယ်။",
+      "component_ref": "step_flow_diagram",
+      "bg": "#0b1018",
+      "camera": {
+        "move": "zoomOut",
+        "from": 1.1,
+        "to": 1
+      },
+      "heading": "Google Cloud Console ၌ Credentials တည်ဆောက်ခြင်း",
+      "steps": [
+        {
+          "title": "Google Cloud Console သို့ သွားပါ",
+          "desc": "console.cloud.google.com"
+        },
+        {
+          "title": "APIs & Services",
+          "desc": "Credentials ကို ရွေးပါ"
+        },
+        {
+          "title": "OAuth Client ID ဖန်တီးပါ",
+          "desc": "Web application အမျိုးအစားကို ရွေးချယ်ပါ"
+        },
+        {
+          "title": "Client ID နှင့် Client Secret ရယူပါ",
+          "desc": "လုံခြုံစွာ သိမ်းဆည်းထားပါ"
+        }
+      ]
+    },
+    {
+      "start": 46.5,
+      "end": 51.5,
+      "type": "concept",
+      "caption": "ဒီ နှစ်ခု က n8n နဲ့ Google ကြား မှာ လုံခြုံ တဲ့ တံခါးပေါက် တစ်ခု လိုမျိုး ပေါ့။",
+      "kinetic": [
+        "Client ID",
+        "Client Secret",
+        "n8n <-> Google",
+        "လုံခြုံသော တံခါးပေါက်"
+      ],
+      "icons": [
+        {
+          "name": "n8n_logo",
+          "x": 10,
+          "y": 40,
+          "w": 10,
+          "h": 10
+        },
+        {
+          "name": "google_logo",
+          "x": 80,
+          "y": 40,
+          "w": 10,
+          "h": 10
+        },
+        {
+          "name": "lock_and_arrow",
+          "x": 45,
+          "y": 40,
+          "w": 10,
+          "h": 10
+        }
+      ],
+      "bg": "#0b1018",
+      "camera": {
+        "move": "panLeft",
+        "from": 1,
+        "to": 1.05
+      }
+    },
+    {
+      "start": 51.5,
+      "end": 58,
+      "type": "screen_demo",
+      "caption": "လက်တွေ့ မှာ တော့ ဒီ credentials တွေ ကို n8n ရဲ့ credentials menu ထဲ မှာ သွား ထည့် လိုက် တာ နဲ့ အလုပ် က ပြီး ပါ ပြီ။",
+      "component_ref": "n8n_credentials_menu",
+      "bg": "#0b1018",
+      "camera": {
+        "move": "zoomIn",
+        "from": 1,
+        "to": 1.1
+      }
+    },
+    {
+      "start": 58,
+      "end": 64.8,
+      "type": "concept",
+      "caption": "ဒါ မှ သာ ကျွန်တော်တို့ ရဲ့ workflow တွေ က Google ရဲ့ data တွေ ကို လုံခြုံ စိတ်ချ စွာ နဲ့ အချိန် နဲ့ တပြေးညီ ဆွဲယူ နိုင် မှာ ဖြစ် ပါ တယ်။",
+      "kinetic": [
+        "Workflow များ",
+        "Google Data",
+        "လုံခြုံ စိတ်ချစွာ",
+        "အချိန်နှင့် တပြေးညီ ဆွဲယူနိုင်"
+      ],
+      "icons": [
+        {
+          "name": "workflow_icon",
+          "x": 10,
+          "y": 30,
+          "w": 10,
+          "h": 10
+        },
+        {
+          "name": "google_data_icon",
+          "x": 80,
+          "y": 30,
+          "w": 10,
+          "h": 10
+        },
+        {
+          "name": "shield_icon",
+          "x": 45,
+          "y": 30,
+          "w": 10,
+          "h": 10
+        },
+        {
+          "name": "clock_icon",
+          "x": 45,
+          "y": 60,
+          "w": 10,
+          "h": 10
+        }
+      ],
+      "bg": "#0b1018",
+      "camera": {
+        "move": "panUp",
+        "from": 1,
+        "to": 1.05
+      }
+    },
+    {
+      "start": 64.8,
+      "end": 71.5,
+      "type": "outro",
+      "caption": "နောက် သင်ခန်းစာ မှာ တော့ ဒီ credentials တွေ ကို သုံး ပြီး Google Sheets ကို ဘယ်လို စတင် ချိတ်ဆက် မလဲ ဆိုတာ ဆက်လက် လေ့လာ ကြည့် ရအောင်။",
+      "kinetic": [
+        "နောက် သင်ခန်းစာ",
+        "Google Sheets ချိတ်ဆက်နည်း"
+      ],
+      "icons": [
+        {
+          "name": "google_sheets",
+          "x": 45,
+          "y": 40,
+          "w": 10,
+          "h": 10
+        }
+      ],
+      "bg": "#0b1018",
+      "camera": {
+        "move": "zoomOut",
+        "from": 1.05,
+        "to": 1
+      }
+    }
+  ]
+}
