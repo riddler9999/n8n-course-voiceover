@@ -1,0 +1,421 @@
+{
+  "title": "n8n and Google Cloud Platform Integration: Credentials Setup",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 9.9,
+      "type": "intro",
+      "caption": "ဒီနေ့ သင်ခန်းစာ မှာ တော့ n8n နဲ့ Google Cloud Platform ကို ချိတ်ဆက် ဖို့ အရေးကြီးဆုံး အဆင့် ဖြစ် တဲ့ credentials တည်ဆောက်ခြင်း အကြောင်း ကို လက်တွေ့ လုပ်ပြပေးသွား မှာ ပါ။",
+      "kinetic": [
+        "n8n နဲ့ Google Cloud Platform",
+        "Credentials တည်ဆောက်ခြင်း"
+      ],
+      "icons": [
+        "n8n",
+        "google_cloud"
+      ],
+      "camera": {
+        "move": "zoomIn",
+        "from": 1,
+        "to": 1.1
+      },
+      "bg": "#0b1018"
+    },
+    {
+      "start": 9.9,
+      "end": 21.5,
+      "type": "concept",
+      "caption": "ကျွန်တော် တို့ automation engineer တစ်ယောက် အနေနဲ့ Google Sheets, Gmail, ဒါမှမဟုတ် Google Drive တို့ ကို n8n ထဲ က နေ လှမ်းသုံး တော့ မယ် ဆိုရင် ဘေးကင်း လုံခြုံ တဲ့ နည်းလမ်း နဲ့ ချိတ်ဆက် ဖို့ လို ပါ တယ်။",
+      "component_ref": "n8n_google_secure_connect",
+      "bg": "#0b1018"
+    },
+    {
+      "start": 21.5,
+      "end": 25.2,
+      "type": "concept",
+      "caption": "အဓိက က တော့ OAuth 2 authentication ကို အသုံးပြု တာ ပါ။",
+      "kinetic": [
+        "OAuth 2 Authentication"
+      ],
+      "icons": [
+        "lock",
+        "key"
+      ],
+      "camera": {
+        "move": "zoomIn",
+        "from": 1,
+        "to": 1.1
+      },
+      "bg": "#0b1018"
+    },
+    {
+      "start": 25.2,
+      "end": 30.1,
+      "type": "screen_demo",
+      "caption": "အရင်ဆုံး Google Cloud Console ထဲ ကို သွား ပြီး project အသစ် တစ်ခု ဆောက် ပါ မယ်။",
+      "mockup": "browser",
+      "mockup_title": "Google Cloud Console",
+      "ui": [
+        {
+          "kind": "button",
+          "label": "Select a project",
+          "x": 10,
+          "y": 5,
+          "w": 20,
+          "h": 5
+        },
+        {
+          "kind": "button",
+          "label": "New Project",
+          "x": 50,
+          "y": 50,
+          "w": 20,
+          "h": 5
+        },
+        {
+          "kind": "input",
+          "label": "Project name",
+          "x": 50,
+          "y": 40,
+          "w": 40,
+          "h": 5
+        },
+        {
+          "kind": "button",
+          "label": "Create",
+          "x": 80,
+          "y": 80,
+          "w": 10,
+          "h": 5
+        }
+      ],
+      "cursor": [
+        {
+          "x": 10,
+          "y": 5,
+          "click": true,
+          "zoom": 1.2
+        },
+        {
+          "x": 50,
+          "y": 50,
+          "click": true,
+          "zoom": 1.2
+        },
+        {
+          "x": 50,
+          "y": 40,
+          "type": "N8N Master Club Project",
+          "zoom": 1.2
+        },
+        {
+          "x": 80,
+          "y": 80,
+          "click": true,
+          "zoom": 1.2
+        }
+      ],
+      "camera": {
+        "move": "pan",
+        "from": 1,
+        "to": 1.1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "bg": "#0b1018"
+    },
+    {
+      "start": 30.1,
+      "end": 38.9,
+      "type": "screen_demo",
+      "caption": "ပြီး ရင် API and Services ထဲ က OAuth consent screen ကို ပြင်ဆင် ပြီး credentials ထဲ မှာ OAuth client ID ကို ဖန်တီးရ ပါ မယ်။",
+      "mockup": "browser",
+      "mockup_title": "Google Cloud Console",
+      "ui": [
+        {
+          "kind": "button",
+          "label": "APIs & Services",
+          "x": 5,
+          "y": 20,
+          "w": 15,
+          "h": 4
+        },
+        {
+          "kind": "button",
+          "label": "OAuth consent screen",
+          "x": 25,
+          "y": 15,
+          "w": 25,
+          "h": 4
+        },
+        {
+          "kind": "button",
+          "label": "External",
+          "x": 30,
+          "y": 30,
+          "w": 15,
+          "h": 4
+        },
+        {
+          "kind": "button",
+          "label": "Create",
+          "x": 80,
+          "y": 90,
+          "w": 10,
+          "h": 5
+        },
+        {
+          "kind": "input",
+          "label": "App name",
+          "x": 50,
+          "y": 20,
+          "w": 40,
+          "h": 5
+        },
+        {
+          "kind": "input",
+          "label": "User support email",
+          "x": 50,
+          "y": 30,
+          "w": 40,
+          "h": 5
+        },
+        {
+          "kind": "input",
+          "label": "Developer contact information",
+          "x": 50,
+          "y": 60,
+          "w": 40,
+          "h": 5
+        },
+        {
+          "kind": "button",
+          "label": "Save and Continue",
+          "x": 80,
+          "y": 90,
+          "w": 15,
+          "h": 5
+        },
+        {
+          "kind": "button",
+          "label": "Credentials",
+          "x": 5,
+          "y": 25,
+          "w": 15,
+          "h": 4
+        },
+        {
+          "kind": "button",
+          "label": "Create Credentials",
+          "x": 80,
+          "y": 5,
+          "w": 15,
+          "h": 5
+        },
+        {
+          "kind": "button",
+          "label": "OAuth client ID",
+          "x": 80,
+          "y": 20,
+          "w": 15,
+          "h": 4
+        },
+        {
+          "kind": "button",
+          "label": "Web application",
+          "x": 30,
+          "y": 20,
+          "w": 20,
+          "h": 4
+        },
+        {
+          "kind": "input",
+          "label": "Name",
+          "x": 50,
+          "y": 30,
+          "w": 40,
+          "h": 5
+        },
+        {
+          "kind": "input",
+          "label": "Authorized redirect URIs",
+          "x": 50,
+          "y": 50,
+          "w": 40,
+          "h": 5
+        },
+        {
+          "kind": "button",
+          "label": "Create",
+          "x": 80,
+          "y": 90,
+          "w": 10,
+          "h": 5
+        }
+      ],
+      "cursor": [
+        {
+          "x": 5,
+          "y": 20,
+          "click": true,
+          "zoom": 1.1
+        },
+        {
+          "x": 25,
+          "y": 15,
+          "click": true,
+          "zoom": 1.1
+        },
+        {
+          "x": 30,
+          "y": 30,
+          "click": true,
+          "zoom": 1.1
+        },
+        {
+          "x": 80,
+          "y": 90,
+          "click": true,
+          "zoom": 1.1
+        },
+        {
+          "x": 50,
+          "y": 20,
+          "type": "N8N Master Club App",
+          "zoom": 1.1
+        },
+        {
+          "x": 50,
+          "y": 30,
+          "type": "support@n8nmasterclub.com",
+          "zoom": 1.1
+        },
+        {
+          "x": 50,
+          "y": 60,
+          "type": "dev@n8nmasterclub.com",
+          "zoom": 1.1
+        },
+        {
+          "x": 80,
+          "y": 90,
+          "click": true,
+          "zoom": 1.1
+        },
+        {
+          "x": 5,
+          "y": 25,
+          "click": true,
+          "zoom": 1.1
+        },
+        {
+          "x": 80,
+          "y": 5,
+          "click": true,
+          "zoom": 1.1
+        },
+        {
+          "x": 80,
+          "y": 20,
+          "click": true,
+          "zoom": 1.1
+        },
+        {
+          "x": 30,
+          "y": 20,
+          "click": true,
+          "zoom": 1.1
+        },
+        {
+          "x": 50,
+          "y": 30,
+          "type": "N8N Master Club Web Client",
+          "zoom": 1.1
+        },
+        {
+          "x": 50,
+          "y": 50,
+          "type": "https://app.n8n.cloud/oauth/callback",
+          "zoom": 1.1
+        },
+        {
+          "x": 80,
+          "y": 90,
+          "click": true,
+          "zoom": 1.1
+        }
+      ],
+      "camera": {
+        "move": "pan",
+        "from": 1,
+        "to": 1.1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "bg": "#0b1018"
+    },
+    {
+      "start": 38.9,
+      "end": 44.1,
+      "type": "concept",
+      "caption": "ဒီ နေရာ မှာ client ID နဲ့ client secret ဆိုတဲ့ သော့ချ နှစ်ခု ကို ရလာ ပါ လိမ့် မယ်။",
+      "kinetic": [
+        "Client ID",
+        "Client Secret"
+      ],
+      "icons": [
+        "key",
+        "key"
+      ],
+      "camera": {
+        "move": "zoomIn",
+        "from": 1,
+        "to": 1.1
+      },
+      "bg": "#0b1018"
+    },
+    {
+      "start": 44.1,
+      "end": 53.3,
+      "type": "screen_demo",
+      "caption": "ဒီ သော့ တွေ ကို n8n ရဲ့ credential dashboard ထဲ မှာ သွား ထည့်လိုက် တာ နဲ့ Google ရဲ့ ဝန်ဆောင်မှု တွေ ကို ကျွန်တော် တို့ ရဲ့ workflow တွေ ထဲ မှာ လွတ်လပ်စွာ အသုံးပြုနိုင် ပြီ ပေါ့။",
+      "component_ref": "n8n_credentials_menu",
+      "bg": "#0b1018"
+    },
+    {
+      "start": 53.3,
+      "end": 61.3,
+      "type": "outro",
+      "caption": "နောက် သင်ခန်းစာ မှာ တော့ ဒီ credentials ကို သုံး ပြီး Google Sheets ထဲ ကို data တွေ ဘယ်လို အလိုအလျောက် သွင်း မလဲ ဆိုတာ ကို လက်တွေ့ လုပ်ပြပေး ပါ မယ်။",
+      "kinetic": [
+        "Next Lesson:",
+        "Google Sheets Automation"
+      ],
+      "icons": [
+        "n8n",
+        "sheet"
+      ],
+      "camera": {
+        "move": "zoomOut",
+        "from": 1.1,
+        "to": 1
+      },
+      "bg": "#0b1018"
+    },
+    {
+      "start": 61.3,
+      "end": 62,
+      "type": "outro",
+      "caption": "ဆက်ကြည့်ပေးကြပါဦး ခင်ဗျာ။",
+      "kinetic": [
+        "ဆက်ကြည့်ပေးကြပါဦး ခင်ဗျာ။"
+      ],
+      "camera": {
+        "move": "zoomOut",
+        "from": 1.05,
+        "to": 1
+      },
+      "bg": "#0b1018"
+    }
+  ]
+}
