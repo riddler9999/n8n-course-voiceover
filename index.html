@@ -77,6 +77,15 @@
   .comp-tags{display:flex;gap:6px;flex-wrap:wrap}
   .comp-tags .tag{font-family:'JetBrains Mono',monospace;font-size:10px;padding:2px 8px;border-radius:999px;background:rgba(0,229,255,.1);color:var(--cyan)}
   .comp-tags .tag.mk{background:rgba(255,62,165,.12);color:var(--magenta)}
+  .comp-tags .tag.tsx{background:rgba(129,140,248,.14);color:#a5b4fc}
+  .comp-prev.is-code{height:180px;padding:0}
+  .comp-code{margin:0;height:100%;overflow:auto;padding:12px 14px;font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.5;color:#c7d2e5;background:linear-gradient(180deg,#080d17,#0a1120);white-space:pre;tab-size:2}
+  .comp-code::-webkit-scrollbar{width:6px;height:6px}
+  .comp-code::-webkit-scrollbar-thumb{background:#1e293b;border-radius:3px}
+  .comp-code .tk-kw{color:#c084fc}
+  .comp-code .tk-str{color:#7fd88f}
+  .comp-code .tk-com{color:#5a6785;font-style:italic}
+  .comp-code .tk-fn{color:#6cc4ff}
   .lib-empty{padding:40px;text-align:center;color:var(--muted);font-family:'Inter',sans-serif}
 </style>
 </head>
@@ -465,7 +474,31 @@ $('renderBtn').addEventListener('click', async () => {
 renderAssets();
 
 // ===== Component Library (Tab 5) =====
-const LIB_GIST_RAW = 'https://gist.githubusercontent.com/moehtetofficial/4942402e964634fc5fdd6488893276e7/raw/components-index.json';
+// Production component registry (repo, not legacy Gist). tsx components live beside it.
+const LIB_REGISTRY_RAW = 'https://raw.githubusercontent.com/moehtetofficial/n8n-remotion-library/main/src/components/generated/registry.json';
+const LIB_TSX_BASE     = 'https://raw.githubusercontent.com/moehtetofficial/n8n-remotion-library/main/src/components/generated/';
+// simple, dependency-free TSX/JS syntax highlighter -> HTML string
+function highlightTsx(code){
+  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  let h = esc(code);
+  // order matters: comments & strings first so keywords inside them aren't recolored
+  h = h.replace(/(\/\/[^\n]*)/g, '<span class="tk-com">$1</span>');
+  h = h.replace(/(`[^`]*`|"[^"]*"|'[^']*')/g, '<span class="tk-str">$1</span>');
+  h = h.replace(/\b(import|from|export|default|const|let|var|return|function|if|else|for|of|in|new|await|async|interface|type|extends|as)\b/g, '<span class="tk-kw">$1</span>');
+  h = h.replace(/\b(React|useState|useEffect|useMemo|AbsoluteFill|useCurrentFrame|useVideoConfig|interpolate|spring|Sequence)\b/g, '<span class="tk-fn">$1</span>');
+  return h;
+}
+async function fetchTsxSnippet(file, maxLines){
+  try{
+    const r = await fetch(LIB_TSX_BASE + file + '?cb=' + Date.now());
+    if(!r.ok) return null;
+    const txt = await r.text();
+    const lines = txt.split('\n');
+    const shown = lines.slice(0, maxLines||18).join('\n');
+    const more  = lines.length > (maxLines||18) ? '\n… (' + (lines.length-(maxLines||18)) + ' more lines)' : '';
+    return highlightTsx(shown) + '<span class="tk-com">' + more + '</span>';
+  }catch(e){ return null; }
+}
 function elColor(el){
   if(el.kind==='button') return el.color||'#3b6fe0';
   return '';
@@ -493,7 +526,7 @@ async function loadLibrary(){
   const grid=$('libGrid'), empty=$('libEmpty'), count=$('libCount'), upd=$('libUpdated');
   grid.innerHTML='<div class="lib-empty">Loading…</div>'; empty.style.display='none';
   try{
-    const r=await fetch(LIB_GIST_RAW+'?cb='+Date.now());
+    const r=await fetch(LIB_REGISTRY_RAW+'?cb='+Date.now());
     const lib=await r.json();
     const comps=(lib&&lib.components)||{};
     const keys=Object.keys(comps);
@@ -502,17 +535,31 @@ async function loadLibrary(){
     if(!keys.length){grid.innerHTML='';empty.style.display='block';return;}
     grid.innerHTML=keys.map(k=>{
       const c=comps[k]||{};
+      const isTsx = c.type==='tsx';
+      // tsx: show a code snippet (filled async below). json: recreate ui[] mini-preview.
+      const prev = isTsx
+        ? `<pre class="comp-code" id="code-${k}"><span class="tk-com">// loading ${c.file||'component.tsx'} …</span></pre>`
+        : renderMiniPreview(c);
+      const rightTag = isTsx
+        ? `<span class="tag tsx">TSX</span>`
+        : `<span class="tag">${(c.ui||[]).length} elements</span>`;
       return `<div class="comp-card">
-        <div class="comp-prev">${renderMiniPreview(c)}</div>
+        <div class="comp-prev${isTsx?' is-code':''}">${prev}</div>
         <div class="comp-body">
           <div class="key">${k}</div>
           <p class="hint">${(c.hint||'—').replace(/</g,'&lt;')}</p>
           <div class="comp-tags">
             ${c.mockup?`<span class="tag mk">${c.mockup}</span>`:''}
-            <span class="tag">${(c.ui||[]).length} elements</span>
+            ${rightTag}
           </div>
         </div></div>`;
     }).join('');
+    // async-fill tsx code previews (parallel)
+    keys.filter(k=>comps[k].type==='tsx' && comps[k].file).forEach(async k=>{
+      const el=$('code-'+k); if(!el) return;
+      const snip=await fetchTsxSnippet(comps[k].file, 18);
+      el.innerHTML = snip || '<span class="tk-com">// source unavailable — '+(comps[k].file)+'</span>';
+    });
   }catch(e){
     grid.innerHTML='';empty.style.display='block';empty.textContent='Library load error: '+e.message;
   }
