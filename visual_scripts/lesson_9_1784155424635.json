@@ -1,0 +1,479 @@
+[
+  {
+    "scene_id": "s1_lesson_intro",
+    "start_time": 0,
+    "end_time": 1,
+    "component_ref": "lesson_title_card",
+    "props": {
+      "title": "N8N ကို Local မှာ Install လုပ်ခြင်း",
+      "subtitle": "ကိုယ်ပိုင် Automation Environment တည်ဆောက်ခြင်း",
+      "eyebrow": "N8N Master Club ခရီးစဉ်",
+      "is_burmese": true,
+      "accent": "#6366F1"
+    },
+    "animation": [
+      {
+        "type": "fade_in",
+        "duration": 0.5
+      },
+      {
+        "type": "scale_in",
+        "duration": 0.5
+      }
+    ]
+  },
+  {
+    "scene_id": "s2_why_local_n8n",
+    "start_time": 1,
+    "end_time": 3,
+    "component_ref": "lesson_bullet_list",
+    "props": {
+      "heading": "N8N ကို Local မှာ ဘာကြောင့် သုံးသင့်တာလဲ?",
+      "items": [
+        {
+          "text": "လုံခြုံရေးနှင့် အမြန်နှုန်း",
+          "sub": "Data များနှင့် Workflow များ ကိုယ့်စက်ထဲမှာသာ ရှိ"
+        },
+        {
+          "text": "စမ်းသပ်မှုများ လွတ်လပ်စွာ ပြုလုပ်နိုင်ခြင်း",
+          "sub": "Cloud မတိုင်မီ စမ်းသပ်ရန် အကောင်းဆုံး"
+        },
+        {
+          "text": "Node.js ပေါ် အခြေခံ၍ တပ်ဆင်ရ လွယ်ကူခြင်း"
+        }
+      ],
+      "marker": "dot",
+      "is_burmese": true
+    },
+    "animation": [
+      {
+        "type": "stagger_slide_in",
+        "direction": "left",
+        "duration": 1.5,
+        "delay": 0.2
+      }
+    ]
+  },
+  {
+    "scene_id": "s3_npm_concept",
+    "start_time": 3,
+    "end_time": 4,
+    "component_ref": "lesson_concept_callout",
+    "props": {
+      "text": "NPM (Node Package Manager)",
+      "label": "Node.js Package များကို စီမံခန့်ခွဲရန်",
+      "variant": "definition",
+      "is_burmese": true
+    },
+    "animation": [
+      {
+        "type": "pop_in",
+        "duration": 0.5
+      }
+    ]
+  },
+  {
+    "scene_id": "s4_nodejs_prerequisite",
+    "start_time": 4,
+    "end_time": 7,
+    "new_components": {
+      "nodejs_download_page": {
+        "hint": "Node.js download page, highlighting LTS version.",
+        "mockup": "browser",
+        "mockup_title": "Download Node.js®",
+        "ui": [
+          {
+            "type": "browser_chrome",
+            "url": "https://nodejs.org/en/download",
+            "theme": "dark"
+          },
+          {
+            "type": "text",
+            "text": "Download Node.js®",
+            "x": "center",
+            "y": 100,
+            "font_size": 48,
+            "font_weight": "bold",
+            "color": "white"
+          },
+          {
+            "type": "text",
+            "text": "Get Node.js®",
+            "x": 100,
+            "y": 180,
+            "font_size": 24,
+            "color": "rgba(255,255,255,0.7)"
+          },
+          {
+            "type": "button",
+            "label": "v24.18.0 LTS",
+            "x": 280,
+            "y": 170,
+            "width": 200,
+            "height": 50,
+            "background": "#6DAF4F",
+            "color": "white",
+            "border_radius": 8
+          },
+          {
+            "type": "text",
+            "text": "for",
+            "x": 500,
+            "y": 180,
+            "font_size": 24,
+            "color": "rgba(255,255,255,0.7)"
+          },
+          {
+            "type": "icon_button",
+            "icon": "windows",
+            "label": "Windows",
+            "x": 550,
+            "y": 170,
+            "width": 150,
+            "height": 50,
+            "background": "rgba(255,255,255,0.1)",
+            "color": "white",
+            "border_radius": 8
+          },
+          {
+            "type": "text",
+            "text": "using",
+            "x": 720,
+            "y": 180,
+            "font_size": 24,
+            "color": "rgba(255,255,255,0.7)"
+          },
+          {
+            "type": "icon_button",
+            "icon": "package",
+            "label": "Chocolatey",
+            "x": 790,
+            "y": 170,
+            "width": 180,
+            "height": 50,
+            "background": "rgba(255,255,255,0.1)",
+            "color": "white",
+            "border_radius": 8
+          },
+          {
+            "type": "text",
+            "text": "with",
+            "x": 990,
+            "y": 180,
+            "font_size": 24,
+            "color": "rgba(255,255,255,0.7)"
+          },
+          {
+            "type": "icon_button",
+            "icon": "npm",
+            "label": "npm",
+            "x": 1050,
+            "y": 170,
+            "width": 120,
+            "height": 50,
+            "background": "rgba(255,255,255,0.1)",
+            "color": "white",
+            "border_radius": 8
+          },
+          {
+            "type": "info_banner",
+            "text": "Info Want new features sooner? Get the latest Node.js version instead and try the latest improvements!",
+            "y": 250,
+            "background": "#6DAF4F",
+            "width": "90%",
+            "x": "center"
+          },
+          {
+            "type": "info_banner",
+            "text": "Info Installation methods that involve community software are supported by the teams maintaining that software.",
+            "y": 300,
+            "background": "#007ACC",
+            "width": "90%",
+            "x": "center"
+          },
+          {
+            "type": "code_block",
+            "code": "# Download and install Chocolatey:\npowershell -c \"irm https://community.chocolatey.org/install.ps1|iex\"\n\n# Download and install Node.js:\nchoco install nodejs --version=\"24.18.0\"\n\n# Verify the Node.js version:\nnode -v # Should print \"v24.18.0\"\n\n# Verify npm version:\nnpm -v # Should print \"11.16.0\".",
+            "x": 50,
+            "y": 350,
+            "width": 1180,
+            "height": 350,
+            "language": "powershell",
+            "line_numbers": true,
+            "theme": "dark"
+          },
+          {
+            "type": "button",
+            "label": "Copy to clipboard",
+            "x": 1000,
+            "y": 720,
+            "icon": "clipboard",
+            "background": "rgba(255,255,255,0.1)",
+            "color": "white",
+            "border_radius": 8
+          },
+          {
+            "type": "text",
+            "text": "Or get a prebuilt Node.js® for",
+            "x": 50,
+            "y": 790,
+            "font_size": 24,
+            "color": "rgba(255,255,255,0.7)"
+          },
+          {
+            "type": "icon_button",
+            "icon": "windows",
+            "label": "Windows",
+            "x": 400,
+            "y": 780,
+            "width": 150,
+            "height": 50,
+            "background": "rgba(255,255,255,0.1)",
+            "color": "white",
+            "border_radius": 8
+          },
+          {
+            "type": "text",
+            "text": "running a",
+            "x": 570,
+            "y": 795,
+            "font_size": 24,
+            "color": "rgba(255,255,255,0.7)"
+          },
+          {
+            "type": "icon_button",
+            "icon": "processor",
+            "label": "x64",
+            "x": 680,
+            "y": 780,
+            "width": 100,
+            "height": 50,
+            "background": "rgba(255,255,255,0.1)",
+            "color": "white",
+            "border_radius": 8
+          },
+          {
+            "type": "text",
+            "text": "architecture.",
+            "x": 800,
+            "y": 795,
+            "font_size": 24,
+            "color": "rgba(255,255,255,0.7)"
+          }
+        ]
+      }
+    },
+    "component_ref": "nodejs_download_page",
+    "animation": [
+      {
+        "type": "camera_zoom_to",
+        "target": {
+          "x": 280,
+          "y": 170,
+          "width": 200,
+          "height": 50
+        },
+        "duration": 1.5,
+        "delay": 0.5
+      },
+      {
+        "type": "cursor_click",
+        "target": {
+          "x": 280,
+          "y": 170,
+          "width": 200,
+          "height": 50
+        },
+        "duration": 0.5,
+        "delay": 2
+      }
+    ]
+  },
+  {
+    "scene_id": "s5_install_n8n_command",
+    "start_time": 7,
+    "end_time": 9,
+    "new_components": {
+      "terminal_install_n8n": {
+        "hint": "Terminal showing npm install n8n -g command.",
+        "mockup": "terminal",
+        "mockup_title": "Terminal",
+        "ui": [
+          {
+            "type": "terminal_prompt",
+            "text": "npm install n8n -g",
+            "animated_typing": true,
+            "typing_delay": 0.05,
+            "duration": 1.5
+          },
+          {
+            "type": "terminal_output",
+            "text": "added 200 packages in 5s\n\n14 packages are looking for funding\n  run `npm fund` for details\n",
+            "y": 60,
+            "animated_typing": true,
+            "typing_delay": 0.01,
+            "duration": 1.5,
+            "delay": 1.5
+          }
+        ]
+      }
+    },
+    "component_ref": "terminal_install_n8n",
+    "animation": [
+      {
+        "type": "fade_in",
+        "duration": 0.5
+      }
+    ]
+  },
+  {
+    "scene_id": "s6_global_install_explanation",
+    "start_time": 9,
+    "end_time": 10.5,
+    "component_ref": "lesson_concept_callout",
+    "props": {
+      "text": "-g (Global)",
+      "label": "ဘယ်နေရာကနေမဆို N8N ကို ခေါ်သုံးနိုင်ရန်",
+      "variant": "info",
+      "is_burmese": true
+    },
+    "animation": [
+      {
+        "type": "pop_in",
+        "duration": 0.5
+      }
+    ]
+  },
+  {
+    "scene_id": "s7_launch_n8n",
+    "start_time": 10.5,
+    "end_time": 12.5,
+    "new_components": {
+      "terminal_launch_n8n": {
+        "hint": "Terminal showing n8n command and output.",
+        "mockup": "terminal",
+        "mockup_title": "Terminal",
+        "ui": [
+          {
+            "type": "terminal_prompt",
+            "text": "n8n",
+            "animated_typing": true,
+            "typing_delay": 0.05,
+            "duration": 0.5
+          },
+          {
+            "type": "terminal_output",
+            "text": "n8n ready on http://localhost:5678",
+            "y": 60,
+            "animated_typing": true,
+            "typing_delay": 0.01,
+            "duration": 1,
+            "delay": 0.5
+          }
+        ]
+      }
+    },
+    "component_ref": "terminal_launch_n8n",
+    "animation": [
+      {
+        "type": "fade_in",
+        "duration": 0.5
+      }
+    ]
+  },
+  {
+    "scene_id": "s8_n8n_localhost_browser",
+    "start_time": 12.5,
+    "end_time": 14,
+    "component_ref": "n8n_homepage",
+    "props": {},
+    "animation": [
+      {
+        "type": "transition_from_terminal",
+        "duration": 0.5
+      },
+      {
+        "type": "highlight_url_bar",
+        "url": "http://localhost:5678",
+        "duration": 1,
+        "delay": 0.5
+      }
+    ]
+  },
+  {
+    "scene_id": "s9_success_confirmation",
+    "start_time": 14,
+    "end_time": 16,
+    "component_ref": "lesson_concept_callout",
+    "props": {
+      "text": "N8N Local Environment အောင်မြင်စွာ တည်ဆောက်ပြီးပါပြီ!",
+      "label": "Automation Journey စတင်ရန် အဆင်သင့်",
+      "variant": "info",
+      "is_burmese": true
+    },
+    "animation": [
+      {
+        "type": "pop_in",
+        "duration": 0.5
+      }
+    ]
+  },
+  {
+    "scene_id": "s10_when_to_use_local_env",
+    "start_time": 16,
+    "end_time": 20,
+    "component_ref": "lesson_bullet_list",
+    "props": {
+      "heading": "Local Environment ကို ဘယ်အချိန်မှာ သုံးမလဲ?",
+      "items": [
+        {
+          "text": "Workflow အသစ်များ စမ်းသပ်ခြင်း",
+          "sub": "စိတ်ကြိုက် ပြင်ဆင် စမ်းသပ်နိုင်"
+        },
+        {
+          "text": "API Key ချိတ်ဆက်မှုများ စမ်းသပ်ခြင်း",
+          "sub": "လုံခြုံစွာ စမ်းသပ်နိုင်"
+        },
+        {
+          "text": "Production မတိုင်မီ ပြင်ဆင်ခြင်း",
+          "sub": "အဆင်ပြေမှ Server ပေါ် Deploy"
+        }
+      ],
+      "marker": "check",
+      "is_burmese": true
+    },
+    "animation": [
+      {
+        "type": "stagger_slide_in",
+        "direction": "left",
+        "duration": 2,
+        "delay": 0.2
+      }
+    ]
+  },
+  {
+    "scene_id": "s11_next_lesson_tease",
+    "start_time": 20,
+    "end_time": 23,
+    "component_ref": "lesson_title_card",
+    "props": {
+      "title": "N8N Interface ကို လေ့လာခြင်း",
+      "subtitle": "Node များ၊ Workflow တည်ဆောက်ပုံများ",
+      "eyebrow": "နောက်ထပ် သင်ခန်းစာ",
+      "is_burmese": true,
+      "accent": "#6366F1",
+      "align": "center"
+    },
+    "animation": [
+      {
+        "type": "fade_in",
+        "duration": 0.5
+      },
+      {
+        "type": "scale_in",
+        "duration": 0.5,
+        "delay": 0.2
+      }
+    ]
+  }
+]
