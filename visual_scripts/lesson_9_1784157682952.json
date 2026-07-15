@@ -1,0 +1,744 @@
+{
+  "new_components": {
+    "nodejs_download_page": {
+      "hint": "Node.js.org download page with LTS version highlighted, dark theme.",
+      "mockup": "browser",
+      "mockup_title": "Download Node.js®",
+      "ui": [
+        {
+          "type": "div",
+          "class": "flex items-center justify-between p-4 bg-gray-900 text-white",
+          "children": [
+            {
+              "type": "div",
+              "class": "flex items-center space-x-4",
+              "children": [
+                {
+                  "type": "img",
+                  "src": "https://nodejs.org/static/images/logo.svg",
+                  "class": "h-6"
+                },
+                {
+                  "type": "span",
+                  "text": "Learn",
+                  "class": "text-sm text-gray-400 hover:text-white cursor-pointer"
+                },
+                {
+                  "type": "span",
+                  "text": "About",
+                  "class": "text-sm text-gray-400 hover:text-white cursor-pointer"
+                },
+                {
+                  "type": "span",
+                  "text": "Download",
+                  "class": "text-sm text-green-400 font-bold border-b-2 border-green-400 pb-1"
+                },
+                {
+                  "type": "span",
+                  "text": "Blog",
+                  "class": "text-sm text-gray-400 hover:text-white cursor-pointer"
+                },
+                {
+                  "type": "span",
+                  "text": "Docs",
+                  "class": "text-sm text-gray-400 hover:text-white cursor-pointer"
+                },
+                {
+                  "type": "span",
+                  "text": "Contribute",
+                  "class": "text-sm text-gray-400 hover:text-white cursor-pointer"
+                },
+                {
+                  "type": "span",
+                  "text": "Courses",
+                  "class": "text-sm text-gray-400 hover:text-white cursor-pointer"
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "class": "flex items-center space-x-4",
+              "children": [
+                {
+                  "type": "div",
+                  "class": "flex items-center bg-gray-700 rounded-md px-3 py-1 space-x-2 text-gray-400",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "Search",
+                      "class": "h-4 w-4"
+                    },
+                    {
+                      "type": "span",
+                      "text": "Start typing...",
+                      "class": "text-sm"
+                    },
+                    {
+                      "type": "span",
+                      "text": "⌘K",
+                      "class": "text-gray-500 text-xs px-1 py-0.5 border border-gray-600 rounded"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "name": "Laptop",
+                  "class": "text-gray-400 hover:text-white cursor-pointer"
+                },
+                {
+                  "type": "icon",
+                  "name": "Sun",
+                  "class": "text-gray-400 hover:text-white cursor-pointer"
+                },
+                {
+                  "type": "icon",
+                  "name": "Github",
+                  "class": "text-gray-400 hover:text-white cursor-pointer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "div",
+          "class": "p-8 bg-gray-800 text-white min-h-[calc(100vh-64px)]",
+          "children": [
+            {
+              "type": "h1",
+              "text": "Download Node.js®",
+              "class": "text-3xl font-bold mb-6"
+            },
+            {
+              "type": "div",
+              "class": "flex flex-wrap items-center space-x-2 mb-4",
+              "children": [
+                {
+                  "type": "span",
+                  "text": "Get Node.js®",
+                  "class": "text-lg"
+                },
+                {
+                  "type": "div",
+                  "class": "flex items-center bg-gray-700 rounded-md p-2 space-x-2",
+                  "children": [
+                    {
+                      "type": "span",
+                      "text": "v24.18.0",
+                      "class": "font-semibold"
+                    },
+                    {
+                      "type": "span",
+                      "text": "LTS",
+                      "class": "bg-green-500 text-white text-xs px-2 py-0.5 rounded-full",
+                      "id": "lts-badge"
+                    },
+                    {
+                      "type": "icon",
+                      "name": "ChevronDown",
+                      "class": "text-gray-400"
+                    }
+                  ]
+                },
+                {
+                  "type": "span",
+                  "text": "for",
+                  "class": "text-lg"
+                },
+                {
+                  "type": "div",
+                  "class": "flex items-center bg-gray-700 rounded-md p-2 space-x-2",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "Windows",
+                      "class": "text-blue-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "Windows",
+                      "class": "font-semibold"
+                    },
+                    {
+                      "type": "icon",
+                      "name": "ChevronDown",
+                      "class": "text-gray-400"
+                    }
+                  ]
+                },
+                {
+                  "type": "span",
+                  "text": "using",
+                  "class": "text-lg"
+                },
+                {
+                  "type": "div",
+                  "class": "flex items-center bg-gray-700 rounded-md p-2 space-x-2",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "Package",
+                      "class": "text-purple-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "Chocolatey",
+                      "class": "font-semibold"
+                    },
+                    {
+                      "type": "icon",
+                      "name": "ChevronDown",
+                      "class": "text-gray-400"
+                    }
+                  ]
+                },
+                {
+                  "type": "span",
+                  "text": "with",
+                  "class": "text-lg"
+                },
+                {
+                  "type": "div",
+                  "class": "flex items-center bg-gray-700 rounded-md p-2 space-x-2",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "Npm",
+                      "class": "text-red-500"
+                    },
+                    {
+                      "type": "span",
+                      "text": "npm",
+                      "class": "font-semibold"
+                    },
+                    {
+                      "type": "icon",
+                      "name": "ChevronDown",
+                      "class": "text-gray-400"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "class": "bg-green-600 text-white p-3 rounded-md mb-3",
+              "children": [
+                {
+                  "type": "span",
+                  "text": "Info",
+                  "class": "font-bold mr-2"
+                },
+                {
+                  "type": "span",
+                  "text": "Want new features sooner? Get the ",
+                  "class": "text-sm"
+                },
+                {
+                  "type": "a",
+                  "text": "latest Node.js version",
+                  "href": "#",
+                  "class": "underline text-sm"
+                },
+                {
+                  "type": "span",
+                  "text": " instead and try the latest improvements!",
+                  "class": "text-sm"
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "class": "bg-blue-600 text-white p-3 rounded-md mb-6",
+              "children": [
+                {
+                  "type": "span",
+                  "text": "Info",
+                  "class": "font-bold mr-2"
+                },
+                {
+                  "type": "span",
+                  "text": "Installation methods that involve community software are supported by the teams maintaining that software.",
+                  "class": "text-sm"
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "class": "bg-gray-900 p-4 rounded-md font-mono text-sm",
+              "children": [
+                {
+                  "type": "div",
+                  "class": "text-gray-500 mb-2",
+                  "text": "PowerShell"
+                },
+                {
+                  "type": "pre",
+                  "class": "text-gray-200",
+                  "children": [
+                    {
+                      "type": "span",
+                      "text": "1 # Download and install Chocolatey:\n",
+                      "class": "text-gray-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "2 powershell -c \"irm https://community.chocolatey.org/install.ps1|iex\"\n",
+                      "class": "text-green-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "3 \n",
+                      "class": "text-gray-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "4 # Download and install Node.js:\n",
+                      "class": "text-gray-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "5 choco install nodejs --version=\"24.18.0\"\n",
+                      "class": "text-green-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "6 \n",
+                      "class": "text-gray-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "7 # Verify the Node.js version:\n",
+                      "class": "text-gray-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "8 node -v # Should print \"v24.18.0\"\n",
+                      "class": "text-yellow-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "9 \n",
+                      "class": "text-gray-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "10 # Verify npm version:\n",
+                      "class": "text-gray-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "11 npm -v # Should print \"11.6.0\"\n",
+                      "class": "text-yellow-400"
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "class": "flex justify-end mt-4",
+                  "children": [
+                    {
+                      "type": "button",
+                      "class": "flex items-center space-x-1 text-gray-400 hover:text-white",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "name": "Clipboard",
+                          "class": "h-4 w-4"
+                        },
+                        {
+                          "type": "span",
+                          "text": "Copy to clipboard"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "class": "mt-8 text-lg flex flex-wrap items-center space-x-2",
+              "children": [
+                {
+                  "type": "span",
+                  "text": "Or get a prebuilt Node.js® for"
+                },
+                {
+                  "type": "div",
+                  "class": "flex items-center bg-gray-700 rounded-md p-2 space-x-2",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "Windows",
+                      "class": "text-blue-400"
+                    },
+                    {
+                      "type": "span",
+                      "text": "Windows",
+                      "class": "font-semibold"
+                    },
+                    {
+                      "type": "icon",
+                      "name": "ChevronDown",
+                      "class": "text-gray-400"
+                    }
+                  ]
+                },
+                {
+                  "type": "span",
+                  "text": "running a"
+                },
+                {
+                  "type": "div",
+                  "class": "flex items-center bg-gray-700 rounded-md p-2 space-x-2",
+                  "children": [
+                    {
+                      "type": "span",
+                      "text": "x64",
+                      "class": "font-semibold"
+                    },
+                    {
+                      "type": "icon",
+                      "name": "ChevronDown",
+                      "class": "text-gray-400"
+                    }
+                  ]
+                },
+                {
+                  "type": "span",
+                  "text": "architecture."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "terminal_window": {
+      "hint": "A simple terminal window with a blinking cursor and command input.",
+      "mockup": "terminal",
+      "mockup_title": "Terminal",
+      "ui": [
+        {
+          "type": "div",
+          "class": "bg-gray-900 rounded-lg shadow-lg overflow-hidden w-full h-full flex flex-col",
+          "children": [
+            {
+              "type": "div",
+              "class": "flex items-center justify-between p-2 bg-gray-700",
+              "children": [
+                {
+                  "type": "div",
+                  "class": "flex space-x-1.5",
+                  "children": [
+                    {
+                      "type": "div",
+                      "class": "w-3 h-3 bg-red-500 rounded-full"
+                    },
+                    {
+                      "type": "div",
+                      "class": "w-3 h-3 bg-yellow-500 rounded-full"
+                    },
+                    {
+                      "type": "div",
+                      "class": "w-3 h-3 bg-green-500 rounded-full"
+                    }
+                  ]
+                },
+                {
+                  "type": "span",
+                  "class": "text-sm text-gray-200 font-mono",
+                  "text": "Terminal"
+                },
+                {
+                  "type": "div",
+                  "class": "w-10"
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "class": "flex-1 p-4 font-mono text-white text-sm overflow-auto",
+              "children": [
+                {
+                  "type": "div",
+                  "text_ref": "output_content",
+                  "class": "whitespace-pre-wrap text-gray-300"
+                },
+                {
+                  "type": "div",
+                  "class": "flex items-center mt-2",
+                  "children": [
+                    {
+                      "type": "span",
+                      "text": "$",
+                      "class": "text-green-400 mr-2"
+                    },
+                    {
+                      "type": "span",
+                      "text_ref": "current_command",
+                      "class": "flex-1"
+                    },
+                    {
+                      "type": "span",
+                      "text": "",
+                      "class": "inline-block bg-white w-2 h-4 animate-blink"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 12.8,
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "အခန်း (၁): စတင်ခြင်း",
+        "title": "N8N ကို Local Install လုပ်ခြင်း",
+        "subtitle": "N8N Master Club ခရီးစဉ်",
+        "is_burmese": true,
+        "accent": "#6366F1",
+        "align": "center"
+      }
+    },
+    {
+      "start": 12.8,
+      "end": 22.8,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "ဘာကြောင့် Local N8N အရေးကြီးတာလဲ?",
+        "items": [
+          "Workflow များကို စမ်းသပ်ရန်",
+          "Automation များကို တည်ဆောက်ရန်",
+          "လုံခြုံစိတ်ချစွာ လေ့လာရန်"
+        ],
+        "is_burmese": true,
+        "marker": "check",
+        "accent": "#6366F1"
+      }
+    },
+    {
+      "start": 22.8,
+      "end": 32.8,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Local N8N ၏ အားသာချက်များ",
+        "items": [
+          "လုံခြုံရေး (Security)",
+          "အမြန်နှုန်း (Speed)"
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#6366F1"
+      }
+    },
+    {
+      "start": 32.8,
+      "end": 42.8,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Local Testing ၏ အကျိုးကျေးဇူးများ",
+        "items": [
+          "အချက်အလက်များ ကိုယ်ပိုင်စက်တွင် ရှိခြင်း",
+          "Cloud မတိုင်မီ စိတ်ကြိုက်စမ်းသပ်နိုင်ခြင်း"
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#6366F1"
+      }
+    },
+    {
+      "start": 42.8,
+      "end": 49.3,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Node.js ပေါ်တွင် အခြေခံထားသည်",
+        "label": "အရေးကြီး",
+        "variant": "info",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 49.3,
+      "end": 56.8,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "NPM (Node Package Manager) ဖြင့် တပ်ဆင်မည်",
+        "label": "နည်းလမ်း",
+        "variant": "definition",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 56.8,
+      "end": 61.8,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Node.js နောက်ဆုံး Version လိုအပ်သည်",
+        "label": "သတိပေးချက်",
+        "variant": "warning",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 61.8,
+      "end": 69.8,
+      "component_ref": "nodejs_download_page",
+      "props": {
+        "focus_element_id": "lts-badge",
+        "camera_zoom_target": {
+          "x": 0.5,
+          "y": 0.3,
+          "scale": 1.5
+        }
+      }
+    },
+    {
+      "start": 69.8,
+      "end": 76.8,
+      "component_ref": "terminal_window",
+      "props": {
+        "current_command": "",
+        "output_content": ""
+      }
+    },
+    {
+      "start": 76.8,
+      "end": 81.8,
+      "component_ref": "terminal_window",
+      "props": {
+        "type_text": "npm install n8n -g",
+        "current_command": "npm install n8n -g",
+        "output_content": ""
+      }
+    },
+    {
+      "start": 81.8,
+      "end": 89.5,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "-g: Global အဖြစ် တပ်ဆင်ခြင်း",
+        "label": "ရှင်းလင်းချက်",
+        "variant": "definition",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 89.5,
+      "end": 96,
+      "component_ref": "terminal_window",
+      "props": {
+        "current_command": "$ npm install n8n -g",
+        "type_output": [
+          "added 1234 packages in 15s",
+          "...",
+          "Done. N8N installed globally."
+        ],
+        "output_content": "added 1234 packages in 15s\n...\nDone. N8N installed globally."
+      }
+    },
+    {
+      "start": 96,
+      "end": 100.8,
+      "component_ref": "terminal_window",
+      "props": {
+        "current_command": "n8n",
+        "type_text": "n8n",
+        "output_content": "$ npm install n8n -g\nadded 1234 packages in 15s\n...\nDone. N8N installed globally."
+      }
+    },
+    {
+      "start": 100.8,
+      "end": 110.8,
+      "component_ref": "n8n_interface_overview",
+      "props": {
+        "workflow_title": "My Local Workflow",
+        "url_bar": "http://localhost:5678"
+      }
+    },
+    {
+      "start": 110.8,
+      "end": 118,
+      "component_ref": "lesson_title_card",
+      "props": {
+        "title": "ဂုဏ်ယူပါတယ်!",
+        "subtitle": "Local N8N Environment အောင်မြင်စွာ တည်ဆောက်ပြီးပါပြီ။",
+        "is_burmese": true,
+        "accent": "#10B981",
+        "align": "center"
+      }
+    },
+    {
+      "start": 118,
+      "end": 132,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Local Environment ကို ဘယ်အချိန်မှာ သုံးမလဲ?",
+        "items": [
+          "Workflow အသစ်များ စမ်းသပ်ခြင်း",
+          "API Key ချိတ်ဆက်မှုများ စမ်းသပ်ခြင်း"
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#6366F1"
+      }
+    },
+    {
+      "start": 132,
+      "end": 142,
+      "component_ref": "step_flow_diagram",
+      "props": {
+        "heading": "Workflow Deployment Process",
+        "steps": [
+          {
+            "title": "Local Test",
+            "desc": "ကိုယ်ပိုင်စက်တွင် စမ်းသပ်ခြင်း"
+          },
+          {
+            "title": "Deploy to Server",
+            "desc": "Server ပေါ်သို့ တင်ခြင်း"
+          },
+          {
+            "title": "Production",
+            "desc": "အသုံးပြုရန် အသင့်ဖြစ်ခြင်း"
+          }
+        ],
+        "is_burmese": true,
+        "accent": "#6366F1"
+      }
+    },
+    {
+      "start": 142,
+      "end": 154.8,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "နောက်လာမည့် သင်ခန်းစာ",
+        "items": [
+          "N8N Interface ကို လေ့လာခြင်း",
+          "Nodes များကို သိရှိခြင်း",
+          "ပထမဆုံး Workflow တည်ဆောက်ခြင်း"
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#6366F1"
+      }
+    },
+    {
+      "start": 154.8,
+      "end": 157.5,
+      "component_ref": "lesson_title_card",
+      "props": {
+        "title": "နောက် သင်ခန်းစာ တွင် တွေ့ကြမယ်!",
+        "is_burmese": true,
+        "accent": "#6366F1",
+        "align": "center"
+      }
+    }
+  ]
+}
