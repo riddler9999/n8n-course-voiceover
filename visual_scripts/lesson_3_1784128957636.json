@@ -1,0 +1,517 @@
+{
+  "new_components": {
+    "n8n_version_split_intro": {
+      "hint": "Visually introduces n8n Cloud and Self-Hosted versions side-by-side, with optional focus animation.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "div",
+          "props": {
+            "className": "flex h-full w-full bg-gray-900"
+          },
+          "children": [
+            {
+              "type": "div",
+              "props": {
+                "className": "flex-1 flex flex-col items-center justify-center p-8 transition-all duration-500",
+                "style": {
+                  "opacity": "scene.focus_on === 'self-hosted' ? 0.4 : 1",
+                  "transform": "scene.focus_on === 'self-hosted' ? 'scale(0.95)' : 'scale(1)'",
+                  "backgroundColor": "scene.focus_on === 'cloud' ? 'rgba(51, 102, 255, 0.1)' : 'transparent'",
+                  "border": "scene.focus_on === 'cloud' ? '2px solid #3366FF' : '2px solid transparent'",
+                  "borderRadius": "8px"
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "props": {
+                    "name": "cloud",
+                    "size": 96,
+                    "color": "#3366FF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "value": "n8n Cloud",
+                    "className": "text-5xl font-bold mt-4 text-white"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "value": "Cloud အခြေပြု Automation",
+                    "className": "text-2xl text-gray-400 mt-2",
+                    "style": {
+                      "fontFamily": "Padauk"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "w-px bg-gray-700"
+              }
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "flex-1 flex flex-col items-center justify-center p-8 transition-all duration-500",
+                "style": {
+                  "opacity": "scene.focus_on === 'cloud' ? 0.4 : 1",
+                  "transform": "scene.focus_on === 'cloud' ? 'scale(0.95)' : 'scale(1)'",
+                  "backgroundColor": "scene.focus_on === 'self-hosted' ? 'rgba(51, 102, 255, 0.1)' : 'transparent'",
+                  "border": "scene.focus_on === 'self-hosted' ? '2px solid #3366FF' : '2px solid transparent'",
+                  "borderRadius": "8px"
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "props": {
+                    "name": "server",
+                    "size": 96,
+                    "color": "#3366FF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "value": "n8n Self-Hosted",
+                    "className": "text-5xl font-bold mt-4 text-white"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "value": "ကိုယ်ပိုင် ထိန်းချုပ်မှု",
+                    "className": "text-2xl text-gray-400 mt-2",
+                    "style": {
+                      "fontFamily": "Padauk"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "n8n_decision_matrix": {
+      "hint": "Compares n8n Cloud vs. Self-Hosted based on key factors like business size and workflow volume.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "div",
+          "props": {
+            "className": "flex flex-col items-center justify-center h-full w-full p-16 bg-gray-900"
+          },
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "value": "မည်သည့် n8n Version က သင့်အတွက် အကောင်းဆုံးလဲ?",
+                "className": "text-6xl font-extrabold text-white mb-12 text-center",
+                "style": {
+                  "fontFamily": "Padauk"
+                }
+              }
+            },
+            {
+              "type": "div",
+              "props": {
+                "className": "grid grid-cols-3 gap-x-4 w-full max-w-4xl bg-gray-800 rounded-lg shadow-xl overflow-hidden"
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 font-bold text-xl text-gray-300 bg-gray-700"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "အချက်အလက်",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 font-bold text-xl text-center text-blue-400 bg-gray-700"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "n8n Cloud"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 font-bold text-xl text-center text-green-400 bg-gray-700"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "n8n Self-Hosted"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg bg-gray-700 text-gray-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "လုပ်ငန်းအရွယ်အစား",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg bg-gray-700 text-center text-blue-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "အသေး/အလတ်",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg bg-gray-700 text-center text-green-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "အကြီး/လုပ်ငန်းသုံး",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg text-gray-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "Workflow ပမာဏ",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg text-center text-blue-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "နည်း/အလတ်",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg text-center text-green-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "များ/ရှုပ်ထွေး",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg bg-gray-700 text-gray-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "နည်းပညာကျွမ်းကျင်မှု",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg bg-gray-700 text-center text-blue-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "နည်းပါး",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg bg-gray-700 text-center text-green-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "မြင့်မား",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg text-gray-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "Data လုံခြုံရေး လိုအပ်ချက်",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg text-center text-blue-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "ပုံမှန်",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "className": "p-4 text-lg text-center text-green-200"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "props": {
+                        "value": "မြင့်မား/တင်းကြပ်",
+                        "style": {
+                          "fontFamily": "Padauk"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "start": "0.0s",
+      "end": "8.5s",
+      "type": "screen_demo",
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "N8N Master Club",
+        "title": "n8n ၏ စျေးနှုန်းပုံစံများ",
+        "subtitle": "သင့် Project အတွက် မှန်ကန်သော Version ရွေးချယ်ခြင်း",
+        "is_burmese": true,
+        "accent": "#3366FF"
+      }
+    },
+    {
+      "start": "8.5s",
+      "end": "16.5s",
+      "type": "screen_demo",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "မှန်ကန်သော n8n Version ရွေးချယ်ခြင်း",
+        "label": "အရေးကြီးသော ဆုံးဖြတ်ချက်",
+        "variant": "info",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": "16.5s",
+      "end": "19.8s",
+      "type": "screen_demo",
+      "component_ref": "n8n_version_split_intro",
+      "props": {
+        "focus_on": "none"
+      }
+    },
+    {
+      "start": "19.8s",
+      "end": "24.5s",
+      "type": "screen_demo",
+      "component_ref": "n8n_version_split_intro",
+      "props": {
+        "focus_on": "cloud"
+      }
+    },
+    {
+      "start": "24.5s",
+      "end": "32.5s",
+      "type": "screen_demo",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "n8n Cloud ၏ အားသာချက်များ",
+        "items": [
+          "Managed Service",
+          "Hosting & Update စိတ်ပူစရာ မလို",
+          "Workflow ချက်ချင်း စတင်တည်ဆောက်နိုင်"
+        ],
+        "marker": "check",
+        "is_burmese": true,
+        "accent": "#3366FF"
+      }
+    },
+    {
+      "start": "32.5s",
+      "end": "36.8s",
+      "type": "screen_demo",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "လစဉ်ကြေး ပေးဆောင်ရခြင်း",
+        "label": "ကုန်ကျစရိတ်",
+        "variant": "warning",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": "36.8s",
+      "end": "39.8s",
+      "type": "screen_demo",
+      "component_ref": "n8n_version_split_intro",
+      "props": {
+        "focus_on": "self-hosted"
+      }
+    },
+    {
+      "start": "39.8s",
+      "end": "43.0s",
+      "type": "screen_demo",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "ကိုယ်ပိုင် Server ပေါ်တွင် Host လုပ်ခြင်း",
+        "label": "ထိန်းချုပ်မှု အပြည့်အဝ",
+        "variant": "info",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": "43.0s",
+      "end": "51.5s",
+      "type": "screen_demo",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "n8n Self-Hosted ၏ အားသာချက်များ",
+        "items": [
+          "ကုန်ကျစရိတ် အသက်သာဆုံး",
+          "Data Privacy အကောင်းဆုံး",
+          "နည်းပညာပိုင်း ကျွမ်းကျင်သူများအတွက်"
+        ],
+        "marker": "check",
+        "is_burmese": true,
+        "accent": "#3366FF"
+      }
+    },
+    {
+      "start": "51.5s",
+      "end": "59.0s",
+      "type": "screen_demo",
+      "component_ref": "n8n_decision_matrix",
+      "props": {}
+    },
+    {
+      "start": "59.0s",
+      "end": "66.0s",
+      "type": "screen_demo",
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "နောက်ထပ် သင်ခန်းစာ",
+        "title": "ပထမဆုံး Workflow တည်ဆောက်ခြင်း",
+        "subtitle": "လက်တွေ့ အသုံးချ လေ့လာခြင်း",
+        "is_burmese": true,
+        "accent": "#3366FF"
+      }
+    }
+  ]
+}
