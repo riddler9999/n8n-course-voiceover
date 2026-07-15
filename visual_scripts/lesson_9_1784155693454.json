@@ -1,0 +1,4 @@
+{
+  "error": "json_parse_failed",
+  "raw": "{\n  \"project_name\": \"N8N Master Club\",\n  \"course_title\": \"N8N Local Installation Guide\",\n  \"course_id\": \"N8N-001-L02\",\n  \"language\": \"Burmese\",\n  \"scenes\": [\n    {\n      \"id\": \"scene_01\",\n      \"start_time\": \"0.0s\",\n      \"end_time\": \"12.9s\",\n      \"component_ref\": \"lesson_title_card\",\n      \"props\": {\n        \"eyebrow\": \"N8N Master Club\",\n        \"title\": \"N8N ကို Local မှာ တပ်ဆင်ခြင်း\",\n        \"subtitle\": \"သင့်ကွန်ပျူတာတွင် N8N ကို ထည့်သွင်းခြင်း\",\n        \"is_burmese\": true,\n        \"accent\""
+}
