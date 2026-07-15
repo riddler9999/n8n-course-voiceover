@@ -340,14 +340,14 @@ $('genScriptBtn').addEventListener('click', async () => {
     });
     $('scriptText').value = data.script || '';
     $('scriptMeta').textContent = `${(data.script||'').length} characters · lesson ${data.lesson_id}`;
-    renderAssets(data.assets);
+    renderLessonAssets(data.assets);
     setStatus($('scriptStatus'), 'success', 'Script generated successfully');
   } catch(e){ setStatus($('scriptStatus'), 'error', e.message); }
   finally { btn.disabled = false; }
 });
 
 // Render the auto/manual asset breakdown returned with the script
-function renderAssets(assets){
+function renderLessonAssets(assets){
   const box=$('assetBox');
   box.style.display='block';
   // If backend returned nothing usable, say so instead of hiding silently.
