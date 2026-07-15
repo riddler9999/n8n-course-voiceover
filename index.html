@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>n8n Course Voiceover Studio</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -346,8 +349,15 @@ $('genScriptBtn').addEventListener('click', async () => {
 // Render the auto/manual asset breakdown returned with the script
 function renderAssets(assets){
   const box=$('assetBox');
-  if(!assets || (!assets.auto && !assets.manual)){ box.style.display='none'; return; }
   box.style.display='block';
+  // If backend returned nothing usable, say so instead of hiding silently.
+  if(!assets){
+    $('assetSummary').innerHTML='<span class="chip">asset data မပါ — backend ကို ပြန်စစ်ပါ</span>';
+    $('autoList').innerHTML=''; $('manualList').innerHTML='';
+    $('autoN').textContent='0'; $('manualN').textContent='0';
+    $('autoEmpty').style.display='block'; $('manualEmpty').style.display='block';
+    return;
+  }
   const esc = s => String(s==null?'':s).replace(/</g,'&lt;');
   const s = assets.summary || {};
   $('assetSummary').innerHTML =
