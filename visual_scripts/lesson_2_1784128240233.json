@@ -1,0 +1,134 @@
+{
+  "new_components": {},
+  "scenes": [
+    {
+      "start": "0.0s",
+      "end": "8.9s",
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "N8N Master Club",
+        "title": "N8N ဆိုတာ ဘာလဲ?",
+        "subtitle": "ဘာကြောင့် automation လောက မှာ သူ က နံပါတ် တစ် ဖြစ်လာရတာ လဲ",
+        "is_burmese": true,
+        "accent": "#6C63FF",
+        "align": "center"
+      }
+    },
+    {
+      "start": "8.9s",
+      "end": "14.5s",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "N8N ဆိုတာ workflow automation tool တစ်ခု ပါ။",
+        "label": "Definition",
+        "variant": "definition",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": "14.5s",
+      "end": "29.9s",
+      "component_ref": "basic_n8n_workflow",
+      "props": {
+        "workflow_title": "Visual Automation",
+        "nodes": [
+          {
+            "label": "Gmail Trigger",
+            "icon": "mail",
+            "trigger": true,
+            "color": "#EA4335"
+          },
+          {
+            "label": "Create spreadsheet",
+            "icon": "sheet",
+            "color": "#34A853"
+          }
+        ],
+        "camera_pan": "nodes_overview"
+      }
+    },
+    {
+      "start": "29.9s",
+      "end": "34.5s",
+      "component_ref": "n8n_workflow_execution",
+      "props": {
+        "workflow_title": "Email to Google Sheet",
+        "nodes": [
+          {
+            "label": "Gmail Trigger",
+            "icon": "mail",
+            "trigger": true,
+            "color": "#EA4335"
+          },
+          {
+            "label": "Create spreadsheet",
+            "icon": "sheet",
+            "color": "#34A853"
+          }
+        ],
+        "item_label": "1 new email"
+      }
+    },
+    {
+      "start": "34.5s",
+      "end": "41.9s",
+      "component_ref": "n8n_workflow_execution",
+      "props": {
+        "workflow_title": "AI Customer Support",
+        "nodes": [
+          {
+            "label": "Webhook",
+            "icon": "bolt",
+            "trigger": true,
+            "color": "#6C63FF"
+          },
+          {
+            "label": "AI Chatbot",
+            "icon": "brain",
+            "color": "#4285F4"
+          },
+          {
+            "label": "Send Email",
+            "icon": "mail",
+            "color": "#EA4335"
+          }
+        ],
+        "item_label": "1 customer query"
+      }
+    },
+    {
+      "start": "41.9s",
+      "end": "49.0s",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "N8N ရဲ့ အားသာချက်များ",
+        "items": [
+          {
+            "text": "Self-hosting လုပ်နိုင်ခြင်း",
+            "sub": "Data လုံခြုံရေး စိတ်ချရ"
+          },
+          {
+            "text": "ကုန်ကျစရိတ် သက်သာခြင်း",
+            "sub": "Cloud service များထက် ချွေတာနိုင်"
+          }
+        ],
+        "is_burmese": true,
+        "marker": "check",
+        "accent": "#6C63FF"
+      }
+    },
+    {
+      "start": "49.0s",
+      "end": "57.0s",
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "နောက်လာမည့် သင်ခန်းစာ",
+        "title": "N8N Workflow မျက်နှာပြင် စတင်လေ့လာခြင်း",
+        "subtitle": "လက်တွေ့ အသုံးချနည်းများ",
+        "is_burmese": true,
+        "accent": "#6C63FF",
+        "align": "center"
+      }
+    }
+  ]
+}
