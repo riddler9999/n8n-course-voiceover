@@ -1,0 +1,656 @@
+[
+  {
+    "new_components": {
+      "n8n_master_club_intro": {
+        "hint": "N8N Master Club title screen with logo and course name.",
+        "mockup": "none",
+        "ui": [
+          {
+            "type": "text",
+            "value": "N8N Master Club",
+            "style": {
+              "fontSize": "8vw",
+              "fontWeight": "bold",
+              "color": "#6640EE"
+            },
+            "animation": {
+              "type": "fadeScale",
+              "duration": 0.8
+            }
+          },
+          {
+            "type": "text",
+            "value": "ပထမဆုံး သင်ခန်းစာ",
+            "style": {
+              "fontSize": "4vw",
+              "color": "#FFFFFF",
+              "marginTop": "2vw"
+            },
+            "animation": {
+              "type": "slideInFromBottom",
+              "delay": 0.3,
+              "duration": 0.7
+            }
+          }
+        ]
+      },
+      "ai_automation_concept": {
+        "hint": "Visualizing manual tasks transformed by AI into automated, efficient processes.",
+        "mockup": "none",
+        "ui": [
+          {
+            "type": "icon",
+            "name": "person_typing",
+            "size": "6vw",
+            "color": "#FFD700",
+            "position": {
+              "left": "15%",
+              "top": "30%"
+            },
+            "animation": {
+              "type": "shake",
+              "duration": 0.5,
+              "repeat": "infinite"
+            }
+          },
+          {
+            "type": "text",
+            "value": "Manual Tasks",
+            "style": {
+              "fontSize": "2.5vw",
+              "color": "#FFD700"
+            },
+            "position": {
+              "left": "15%",
+              "top": "45%"
+            }
+          },
+          {
+            "type": "icon",
+            "name": "data_entry",
+            "size": "6vw",
+            "color": "#FFD700",
+            "position": {
+              "left": "15%",
+              "top": "55%"
+            },
+            "animation": {
+              "type": "shake",
+              "duration": 0.5,
+              "repeat": "infinite",
+              "delay": 0.2
+            }
+          },
+          {
+            "type": "arrow",
+            "from": {
+              "left": "25%",
+              "top": "50%"
+            },
+            "to": {
+              "left": "40%",
+              "top": "50%"
+            },
+            "color": "#FFFFFF",
+            "animation": {
+              "type": "draw",
+              "duration": 0.8,
+              "delay": 0.5
+            }
+          },
+          {
+            "type": "icon",
+            "name": "ai_brain",
+            "size": "8vw",
+            "color": "#6640EE",
+            "position": {
+              "left": "50%",
+              "top": "50%",
+              "transform": "translate(-50%, -50%)"
+            },
+            "animation": {
+              "type": "pulse",
+              "duration": 1.5,
+              "repeat": "infinite",
+              "delay": 1
+            }
+          },
+          {
+            "type": "text",
+            "value": "AI",
+            "style": {
+              "fontSize": "3vw",
+              "fontWeight": "bold",
+              "color": "#6640EE"
+            },
+            "position": {
+              "left": "50%",
+              "top": "65%",
+              "transform": "translateX(-50%)"
+            }
+          },
+          {
+            "type": "arrow",
+            "from": {
+              "left": "60%",
+              "top": "50%"
+            },
+            "to": {
+              "left": "75%",
+              "top": "50%"
+            },
+            "color": "#FFFFFF",
+            "animation": {
+              "type": "draw",
+              "duration": 0.8,
+              "delay": 2
+            }
+          },
+          {
+            "type": "icon",
+            "name": "robot_arm",
+            "size": "6vw",
+            "color": "#00C853",
+            "position": {
+              "left": "85%",
+              "top": "30%"
+            },
+            "animation": {
+              "type": "fadeIn",
+              "duration": 0.7,
+              "delay": 2.5
+            }
+          },
+          {
+            "type": "text",
+            "value": "Automated & Efficient",
+            "style": {
+              "fontSize": "2.5vw",
+              "color": "#00C853"
+            },
+            "position": {
+              "left": "85%",
+              "top": "45%"
+            }
+          },
+          {
+            "type": "icon",
+            "name": "speed_lines",
+            "size": "6vw",
+            "color": "#00C853",
+            "position": {
+              "left": "85%",
+              "top": "55%"
+            },
+            "animation": {
+              "type": "fadeIn",
+              "duration": 0.7,
+              "delay": 2.7
+            }
+          }
+        ]
+      },
+      "n8n_empty_canvas_workflow": {
+        "hint": "An empty N8N workflow canvas, ready to add the first step, based on the provided screenshot.",
+        "mockup": "browser",
+        "mockup_title": "My workflow 14 - n8n",
+        "ui": [
+          {
+            "type": "div",
+            "style": {
+              "width": "100%",
+              "height": "100%",
+              "backgroundColor": "#202020",
+              "backgroundImage": "url(https://i.imgur.com/your-n8n-canvas-background-pattern.png)",
+              "backgroundSize": "20px 20px"
+            }
+          },
+          {
+            "type": "div",
+            "style": {
+              "position": "absolute",
+              "left": "50%",
+              "top": "50%",
+              "transform": "translate(-50%, -50%)",
+              "border": "1px dashed #444",
+              "borderRadius": "8px",
+              "padding": "20px 40px",
+              "display": "flex",
+              "flexDirection": "column",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "cursor": "pointer"
+            },
+            "animation": {
+              "type": "fadeIn",
+              "duration": 0.5
+            },
+            "ui": [
+              {
+                "type": "icon",
+                "name": "plus",
+                "size": "3vw",
+                "color": "#888"
+              },
+              {
+                "type": "text",
+                "value": "Add first step...",
+                "style": {
+                  "fontSize": "1.5vw",
+                  "color": "#888",
+                  "marginTop": "10px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "scenes": [
+      {
+        "start": "0.0s",
+        "end": "4.4s",
+        "component_ref": "n8n_master_club_intro",
+        "camera": {
+          "type": "zoom",
+          "from": 1.1,
+          "to": 1,
+          "duration": "4.4s"
+        }
+      },
+      {
+        "start": "4.4s",
+        "end": "8.6s",
+        "ui": [
+          {
+            "type": "text",
+            "value": "သင်တန်းဆရာ",
+            "style": {
+              "fontSize": "4vw",
+              "fontWeight": "bold",
+              "color": "#FFFFFF",
+              "opacity": 0
+            },
+            "animation": {
+              "type": "slideInFromBottom",
+              "distance": "5%",
+              "duration": 0.8,
+              "delay": 0.2,
+              "fadeDuration": 0.5
+            }
+          },
+          {
+            "type": "text",
+            "value": "N8N Master Club",
+            "style": {
+              "fontSize": "2.5vw",
+              "color": "#AAAAAA",
+              "marginTop": "1vw",
+              "opacity": 0
+            },
+            "animation": {
+              "type": "slideInFromBottom",
+              "distance": "5%",
+              "duration": 0.8,
+              "delay": 0.5,
+              "fadeDuration": 0.5
+            }
+          }
+        ],
+        "camera": {
+          "type": "static"
+        }
+      },
+      {
+        "start": "8.6s",
+        "end": "12.8s",
+        "ui": [
+          {
+            "type": "text",
+            "value": "Automation ဆိုတာ ဘာလဲ?",
+            "style": {
+              "fontSize": "6vw",
+              "fontWeight": "bold",
+              "color": "#6640EE"
+            },
+            "animation": {
+              "type": "kineticTypography",
+              "effect": "wordByWord",
+              "duration": 2,
+              "stagger": 0.1
+            }
+          }
+        ],
+        "camera": {
+          "type": "zoom",
+          "from": 1,
+          "to": 1.05,
+          "duration": "4.2s"
+        }
+      },
+      {
+        "start": "12.8s",
+        "end": "19.2s",
+        "ui": [
+          {
+            "type": "icon",
+            "name": "n8n_logo",
+            "size": "8vw",
+            "color": "#6640EE",
+            "position": {
+              "left": "50%",
+              "top": "30%",
+              "transform": "translateX(-50%)"
+            },
+            "animation": {
+              "type": "scaleIn",
+              "duration": 0.8,
+              "delay": 0.2
+            }
+          },
+          {
+            "type": "text",
+            "value": "Why N8N?",
+            "style": {
+              "fontSize": "4vw",
+              "fontWeight": "bold",
+              "color": "#FFFFFF",
+              "marginTop": "2vw"
+            },
+            "position": {
+              "left": "50%",
+              "top": "50%",
+              "transform": "translateX(-50%)"
+            },
+            "animation": {
+              "type": "fadeIn",
+              "duration": 0.7,
+              "delay": 0.7
+            }
+          },
+          {
+            "type": "list",
+            "items": [
+              "Visual Workflow",
+              "No-Code/Low-Code",
+              "Powerful Integrations"
+            ],
+            "style": {
+              "fontSize": "2.5vw",
+              "color": "#AAAAAA",
+              "marginTop": "1vw",
+              "textAlign": "center"
+            },
+            "position": {
+              "left": "50%",
+              "top": "65%",
+              "transform": "translateX(-50%)"
+            },
+            "animation": {
+              "type": "slideInFromBottom",
+              "duration": 0.6,
+              "stagger": 0.2,
+              "delay": 1.2
+            }
+          }
+        ],
+        "camera": {
+          "type": "pan",
+          "direction": "up",
+          "distance": "5%",
+          "duration": "6.4s"
+        }
+      },
+      {
+        "start": "19.2s",
+        "end": "27.6s",
+        "component_ref": "email_client_mockup",
+        "motion": [
+          {
+            "target": "cursor",
+            "action": "type",
+            "at": "20.0s",
+            "duration": 2,
+            "speed": "fast"
+          },
+          {
+            "target": "email_inbox",
+            "action": "receive_new_email",
+            "at": "21.5s",
+            "count": 3
+          },
+          {
+            "target": "cursor",
+            "action": "type",
+            "at": "23.0s",
+            "duration": 2,
+            "speed": "fast"
+          }
+        ],
+        "camera": {
+          "type": "zoom",
+          "from": 1,
+          "to": 1.1,
+          "duration": "8.4s",
+          "focus": {
+            "x": "50%",
+            "y": "50%"
+          }
+        }
+      },
+      {
+        "start": "27.6s",
+        "end": "30.2s",
+        "component_ref": "google_sheet_with_data",
+        "motion": [
+          {
+            "target": "cursor",
+            "action": "enter_data",
+            "at": "28.0s",
+            "rows": 3,
+            "duration": 2
+          }
+        ],
+        "camera": {
+          "type": "pan",
+          "direction": "right",
+          "distance": "10%",
+          "duration": "2.6s"
+        }
+      },
+      {
+        "start": "30.2s",
+        "end": "37.6s",
+        "component_ref": "ai_automation_concept",
+        "camera": {
+          "type": "static"
+        }
+      },
+      {
+        "start": "37.6s",
+        "end": "47.2s",
+        "component_ref": "n8n_empty_canvas_workflow",
+        "motion": [
+          {
+            "target": "div[style*='Add first step']",
+            "action": "click",
+            "at": "38.5s"
+          },
+          {
+            "target": "node_search_bar",
+            "action": "type",
+            "value": "Google Sheets",
+            "at": "39.0s",
+            "duration": 1
+          },
+          {
+            "target": "node_google_sheets",
+            "action": "drag_and_drop",
+            "to": {
+              "x": "30%",
+              "y": "50%"
+            },
+            "at": "40.0s",
+            "duration": 1.5
+          },
+          {
+            "target": "node_search_bar",
+            "action": "type",
+            "value": "Gmail",
+            "at": "42.0s",
+            "duration": 1
+          },
+          {
+            "target": "node_gmail",
+            "action": "drag_and_drop",
+            "to": {
+              "x": "70%",
+              "y": "50%"
+            },
+            "at": "43.0s",
+            "duration": 1.5
+          },
+          {
+            "target": "connection",
+            "from_node": "node_google_sheets",
+            "to_node": "node_gmail",
+            "at": "44.5s",
+            "duration": 1,
+            "animation": "data_flow"
+          }
+        ],
+        "camera": {
+          "type": "zoom",
+          "from": 1,
+          "to": 1.2,
+          "duration": "9.6s",
+          "focus": {
+            "x": "50%",
+            "y": "50%"
+          }
+        }
+      },
+      {
+        "start": "47.2s",
+        "end": "52.2s",
+        "ui": [
+          {
+            "type": "text",
+            "value": "Automation အခြေခံ သဘောတရားများ",
+            "style": {
+              "fontSize": "5vw",
+              "fontWeight": "bold",
+              "color": "#6640EE"
+            },
+            "animation": {
+              "type": "fadeIn",
+              "duration": 1,
+              "delay": 0.5
+            }
+          },
+          {
+            "type": "text",
+            "value": "Basic Concepts",
+            "style": {
+              "fontSize": "3vw",
+              "color": "#FFFFFF",
+              "marginTop": "1vw"
+            },
+            "animation": {
+              "type": "slideInFromBottom",
+              "duration": 0.8,
+              "delay": 1
+            }
+          }
+        ],
+        "camera": {
+          "type": "static"
+        }
+      },
+      {
+        "start": "52.2s",
+        "end": "59.2s",
+        "component_ref": "n8n_workflow_ai_email",
+        "motion": [
+          {
+            "target": "node_google_sheets",
+            "action": "highlight",
+            "at": "53.0s",
+            "duration": 1
+          },
+          {
+            "target": "node_openai",
+            "action": "highlight",
+            "at": "54.5s",
+            "duration": 1.5
+          },
+          {
+            "target": "node_email",
+            "action": "highlight",
+            "at": "56.0s",
+            "duration": 1
+          },
+          {
+            "target": "connection_all",
+            "action": "data_flow",
+            "at": "53.0s",
+            "duration": 4
+          }
+        ],
+        "camera": {
+          "type": "pan",
+          "direction": "right",
+          "distance": "20%",
+          "duration": "7.0s",
+          "focus": {
+            "x": "50%",
+            "y": "50%"
+          }
+        }
+      },
+      {
+        "start": "59.2s",
+        "end": "62.0s",
+        "ui": [
+          {
+            "type": "text",
+            "value": "နောက် သင်ခန်းစာ ကို ဆက်သွားကြမယ်",
+            "style": {
+              "fontSize": "4vw",
+              "fontWeight": "bold",
+              "color": "#6640EE"
+            },
+            "animation": {
+              "type": "fadeIn",
+              "duration": 0.7
+            }
+          },
+          {
+            "type": "button",
+            "text": "Next Lesson",
+            "style": {
+              "backgroundColor": "#6640EE",
+              "color": "#FFFFFF",
+              "padding": "1.5vw 3vw",
+              "borderRadius": "10px",
+              "fontSize": "2.5vw",
+              "marginTop": "2vw",
+              "cursor": "pointer"
+            },
+            "animation": {
+              "type": "bounceIn",
+              "duration": 0.8,
+              "delay": 0.5
+            }
+          }
+        ],
+        "camera": {
+          "type": "zoom",
+          "from": 1,
+          "to": 0.9,
+          "duration": "2.8s"
+        }
+      }
+    ]
+  }
+]
