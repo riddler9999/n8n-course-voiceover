@@ -163,8 +163,8 @@
     </div>
 
     <!-- Asset & component breakdown (auto-filled after script generation) -->
-    <div id="assetBox" style="margin-top:20px;display:none">
-      <label style="display:block;margin-bottom:8px">Assets &amp; Components for this lesson</label>
+    <div id="assetBox" style="margin-top:24px;padding-top:20px;border-top:2px solid rgba(0,229,255,.25);display:none">
+      <label style="display:block;margin-bottom:8px;font-size:15px;color:#00e5ff;font-weight:700">📦 ဒီ Lesson အတွက် Assets &amp; Components</label>
       <div id="assetSummary" class="asset-summary"></div>
       <div class="asset-cols">
         <div class="asset-col">
@@ -390,6 +390,8 @@ function renderAssets(assets){
       <div class="where">➜ ${esc(m.upload_to||'Tab 3 — Visual Script → Screenshots')}</div>
     </div>`).join('');
   $('manualEmpty').style.display = manual.length?'none':'block';
+  // bring the panel into view so the user sees it right after script generation
+  try{ box.scrollIntoView({behavior:'smooth', block:'start'}); }catch(e){}
 }
 
 // ============ TAB 2: AUDIO ============
