@@ -1,0 +1,1136 @@
+{
+  "new_components": {
+    "n8n_hosting_options": {
+      "hint": "Compares self-hosted (server icon) vs N8N Cloud (cloud icon), highlighting N8N Cloud. Configurable labels and highlight state.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "div",
+          "props": {
+            "style": {
+              "display": "flex",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "gap": "40px",
+              "width": "100%",
+              "height": "100%"
+            }
+          },
+          "children": [
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "backgroundColor": "#222",
+                  "borderRadius": "16px",
+                  "padding": "40px",
+                  "textAlign": "center",
+                  "width": "400px",
+                  "border": "2px solid #444",
+                  "boxShadow": "0 10px 30px rgba(0,0,0,0.3)",
+                  "opacity": "0.7",
+                  "transition": "all 0.5s ease-in-out"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0.7,
+                    "to": "var(--self_hosted_opacity, 0.7)"
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "props": {
+                    "name": "server",
+                    "size": 80,
+                    "color": "#999"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "32px",
+                      "fontWeight": "700",
+                      "marginTop": "20px",
+                      "color": "#EEE",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "var(--self_hosted_label)"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "20px",
+                      "color": "#BBB",
+                      "marginTop": "10px",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "var(--self_hosted_desc)"
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "backgroundColor": "#222",
+                  "borderRadius": "16px",
+                  "padding": "40px",
+                  "textAlign": "center",
+                  "width": "400px",
+                  "border": "2px solid var(--cloud_border_color, #444)",
+                  "boxShadow": "0 10px 30px var(--cloud_shadow_color, rgba(0,0,0,0.3))",
+                  "opacity": "var(--cloud_opacity, 0.7)",
+                  "transition": "all 0.5s ease-in-out"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0.7,
+                    "to": "var(--cloud_opacity, 0.7)"
+                  },
+                  "borderColor": {
+                    "from": "#444",
+                    "to": "var(--cloud_border_color, #444)"
+                  },
+                  "boxShadow": {
+                    "from": "0 10px 30px rgba(0,0,0,0.3)",
+                    "to": "var(--cloud_shadow_color, rgba(0,0,0,0.3))"
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "props": {
+                    "name": "cloud",
+                    "size": 80,
+                    "color": "#007bff"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "32px",
+                      "fontWeight": "700",
+                      "marginTop": "20px",
+                      "color": "#EEE",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "var(--cloud_label)"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "20px",
+                      "color": "#BBB",
+                      "marginTop": "10px",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "var(--cloud_desc)"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "24px",
+                      "fontWeight": "600",
+                      "color": "#00C853",
+                      "marginTop": "20px",
+                      "opacity": 0,
+                      "fontFamily": "Padauk, sans-serif"
+                    },
+                    "animate": {
+                      "opacity": {
+                        "from": 0,
+                        "to": "var(--beginner_text_opacity, 0)"
+                      }
+                    }
+                  },
+                  "text": "var(--beginner_text)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "n8n_cloud_focus_diagram": {
+      "hint": "Diagram showing N8N team handling server infrastructure (bottom) and user focusing on workflows/AI agents (top).",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "div",
+          "props": {
+            "style": {
+              "display": "flex",
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "gap": "60px",
+              "width": "100%",
+              "height": "100%",
+              "padding": "40px"
+            }
+          },
+          "children": [
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "backgroundColor": "#222",
+                  "borderRadius": "16px",
+                  "padding": "40px",
+                  "textAlign": "center",
+                  "width": "80%",
+                  "maxWidth": "900px",
+                  "border": "2px solid #00C853",
+                  "boxShadow": "0 10px 30px rgba(0,200,83,0.3)",
+                  "transform": "translateY(-20px)",
+                  "opacity": 0,
+                  "transition": "all 0.5s ease-out"
+                },
+                "animate": {
+                  "transform": {
+                    "from": "translateY(-50px)",
+                    "to": "translateY(-20px)"
+                  },
+                  "opacity": {
+                    "from": 0,
+                    "to": 1
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "props": {
+                    "name": "user",
+                    "size": 60,
+                    "color": "#00C853"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "32px",
+                      "fontWeight": "700",
+                      "marginTop": "20px",
+                      "color": "#EEE",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "var(--user_focus)"
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "width": "4px",
+                  "height": "80px",
+                  "backgroundColor": "#555",
+                  "borderRadius": "2px",
+                  "transform": "scaleY(0)",
+                  "transition": "transform 0.5s ease-out 0.3s"
+                },
+                "animate": {
+                  "transform": {
+                    "from": "scaleY(0)",
+                    "to": "scaleY(1)"
+                  }
+                }
+              }
+            },
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "backgroundColor": "#222",
+                  "borderRadius": "16px",
+                  "padding": "40px",
+                  "textAlign": "center",
+                  "width": "80%",
+                  "maxWidth": "900px",
+                  "border": "2px solid #007bff",
+                  "boxShadow": "0 10px 30px rgba(0,123,255,0.3)",
+                  "transform": "translateY(20px)",
+                  "opacity": 0,
+                  "transition": "all 0.5s ease-out 0.6s"
+                },
+                "animate": {
+                  "transform": {
+                    "from": "translateY(50px)",
+                    "to": "translateY(20px)"
+                  },
+                  "opacity": {
+                    "from": 0,
+                    "to": 1
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "props": {
+                    "name": "n8n_logo",
+                    "size": 60,
+                    "color": "#007bff"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "32px",
+                      "fontWeight": "700",
+                      "marginTop": "20px",
+                      "color": "#EEE",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "var(--n8n_team_focus)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "n8n_cloud_landing_page": {
+      "hint": "n8n.cloud landing page with 'Start Free Trial' button, with cursor interaction.",
+      "mockup": "browser",
+      "mockup_title": "n8n.cloud",
+      "ui": [
+        {
+          "type": "div",
+          "props": {
+            "style": {
+              "display": "flex",
+              "flexDirection": "column",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "height": "100%",
+              "backgroundColor": "#1a1a1a",
+              "padding": "40px",
+              "gap": "30px"
+            }
+          },
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "style": {
+                  "fontSize": "64px",
+                  "fontWeight": "800",
+                  "color": "#FFF",
+                  "textAlign": "center",
+                  "lineHeight": "1.2",
+                  "opacity": 0,
+                  "transform": "translateY(-20px)"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.5
+                  },
+                  "transform": {
+                    "from": "translateY(-20px)",
+                    "to": "translateY(0px)",
+                    "duration": 0.5
+                  }
+                }
+              },
+              "text": "Automate anything. Connect everything."
+            },
+            {
+              "type": "text",
+              "props": {
+                "style": {
+                  "fontSize": "24px",
+                  "color": "#BBB",
+                  "textAlign": "center",
+                  "maxWidth": "800px",
+                  "opacity": 0,
+                  "transform": "translateY(20px)"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.5,
+                    "delay": 0.3
+                  },
+                  "transform": {
+                    "from": "translateY(20px)",
+                    "to": "translateY(0px)",
+                    "duration": 0.5,
+                    "delay": 0.3
+                  }
+                }
+              },
+              "text": "Build powerful workflows with our visual editor. No code, low code, or custom code."
+            },
+            {
+              "type": "button",
+              "props": {
+                "style": {
+                  "backgroundColor": "#007bff",
+                  "color": "#FFF",
+                  "padding": "18px 40px",
+                  "borderRadius": "10px",
+                  "fontSize": "26px",
+                  "fontWeight": "600",
+                  "border": "none",
+                  "cursor": "pointer",
+                  "marginTop": "40px",
+                  "boxShadow": "0 8px 20px rgba(0,123,255,0.4)",
+                  "opacity": 0,
+                  "transform": "scale(0.9)"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.5,
+                    "delay": 0.6
+                  },
+                  "transform": {
+                    "from": "scale(0.9)",
+                    "to": "scale(1)",
+                    "duration": 0.5,
+                    "delay": 0.6
+                  }
+                },
+                "id": "start-free-trial-button"
+              },
+              "text": "Start Free Trial"
+            }
+          ]
+        },
+        {
+          "type": "cursor",
+          "props": {
+            "target": "#start-free-trial-button",
+            "action": "click",
+            "delay": 1.5,
+            "duration": 0.8
+          }
+        }
+      ]
+    },
+    "n8n_subdomain_setup": {
+      "hint": "N8N setup wizard step for defining instance subdomain, with typing animation.",
+      "mockup": "browser",
+      "mockup_title": "N8N Cloud Setup - Instance Name",
+      "ui": [
+        {
+          "type": "div",
+          "props": {
+            "style": {
+              "display": "flex",
+              "flexDirection": "column",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "height": "100%",
+              "backgroundColor": "#1a1a1a",
+              "padding": "40px",
+              "gap": "30px"
+            }
+          },
+          "children": [
+            {
+              "type": "icon",
+              "props": {
+                "name": "n8n_logo",
+                "size": 80,
+                "color": "#007bff",
+                "style": {
+                  "opacity": 0,
+                  "transform": "scale(0.8)"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.4
+                  },
+                  "transform": {
+                    "from": "scale(0.8)",
+                    "to": "scale(1)",
+                    "duration": 0.4
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "props": {
+                "style": {
+                  "fontSize": "48px",
+                  "fontWeight": "700",
+                  "color": "#FFF",
+                  "textAlign": "center",
+                  "opacity": 0,
+                  "transform": "translateY(-20px)",
+                  "fontFamily": "Padauk, sans-serif"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.5,
+                    "delay": 0.2
+                  },
+                  "transform": {
+                    "from": "translateY(-20px)",
+                    "to": "translateY(0px)",
+                    "duration": 0.5,
+                    "delay": 0.2
+                  }
+                }
+              },
+              "text": "Your N8N Instance Name"
+            },
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "alignItems": "center",
+                  "backgroundColor": "#333",
+                  "borderRadius": "10px",
+                  "padding": "15px 25px",
+                  "width": "600px",
+                  "border": "2px solid #007bff",
+                  "boxShadow": "0 0 15px rgba(0,123,255,0.5)",
+                  "opacity": 0,
+                  "transform": "scale(0.9)"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.5,
+                    "delay": 0.5
+                  },
+                  "transform": {
+                    "from": "scale(0.9)",
+                    "to": "scale(1)",
+                    "duration": 0.5,
+                    "delay": 0.5
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "input",
+                  "props": {
+                    "style": {
+                      "flexGrow": 1,
+                      "backgroundColor": "transparent",
+                      "border": "none",
+                      "outline": "none",
+                      "color": "#FFF",
+                      "fontSize": "24px",
+                      "padding": "0",
+                      "fontFamily": "monospace"
+                    },
+                    "value": "var(--subdomain_input)",
+                    "typing_speed": "var(--typing_speed, 100)"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "color": "#AAA",
+                      "fontSize": "24px",
+                      "marginLeft": "5px",
+                      "fontFamily": "monospace"
+                    }
+                  },
+                  "text": ".n8n.cloud"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "props": {
+                "style": {
+                  "fontSize": "20px",
+                  "color": "#BBB",
+                  "textAlign": "center",
+                  "maxWidth": "700px",
+                  "marginTop": "20px",
+                  "opacity": 0,
+                  "transform": "translateY(20px)",
+                  "fontFamily": "Padauk, sans-serif"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.5,
+                    "delay": 1.5
+                  },
+                  "transform": {
+                    "from": "translateY(20px)",
+                    "to": "translateY(0px)",
+                    "duration": 0.5,
+                    "delay": 1.5
+                  }
+                }
+              },
+              "text": "var(--explanation)"
+            },
+            {
+              "type": "button",
+              "props": {
+                "style": {
+                  "backgroundColor": "#00C853",
+                  "color": "#FFF",
+                  "padding": "15px 35px",
+                  "borderRadius": "8px",
+                  "fontSize": "24px",
+                  "fontWeight": "600",
+                  "border": "none",
+                  "cursor": "pointer",
+                  "marginTop": "30px",
+                  "boxShadow": "0 6px 15px rgba(0,200,83,0.4)",
+                  "opacity": 0,
+                  "transform": "scale(0.9)"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.5,
+                    "delay": 2
+                  },
+                  "transform": {
+                    "from": "scale(0.9)",
+                    "to": "scale(1)",
+                    "duration": 0.5,
+                    "delay": 2
+                  }
+                }
+              },
+              "text": "Continue"
+            }
+          ]
+        }
+      ]
+    },
+    "n8n_cloud_uptime_advantage": {
+      "hint": "Compares self-hosted (server issues) vs N8N Cloud (high uptime, user focuses on logic).",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "div",
+          "props": {
+            "style": {
+              "display": "flex",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "gap": "60px",
+              "width": "100%",
+              "height": "100%",
+              "padding": "40px"
+            }
+          },
+          "children": [
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "backgroundColor": "#222",
+                  "borderRadius": "16px",
+                  "padding": "40px",
+                  "textAlign": "center",
+                  "width": "450px",
+                  "border": "2px solid #D32F2F",
+                  "boxShadow": "0 10px 30px rgba(211,47,47,0.3)",
+                  "opacity": 0,
+                  "transform": "translateX(-50px)"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.5
+                  },
+                  "transform": {
+                    "from": "translateX(-50px)",
+                    "to": "translateX(0px)",
+                    "duration": 0.5
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "props": {
+                    "name": "server_broken",
+                    "size": 80,
+                    "color": "#D32F2F"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "32px",
+                      "fontWeight": "700",
+                      "marginTop": "20px",
+                      "color": "#EEE",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "Self-Hosted"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "20px",
+                      "color": "#BBB",
+                      "marginTop": "10px",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "var(--self_hosted_issue)"
+                },
+                {
+                  "type": "icon",
+                  "props": {
+                    "name": "sad_face",
+                    "size": 40,
+                    "color": "#D32F2F",
+                    "style": {
+                      "marginTop": "20px"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "props": {
+                "style": {
+                  "backgroundColor": "#222",
+                  "borderRadius": "16px",
+                  "padding": "40px",
+                  "textAlign": "center",
+                  "width": "450px",
+                  "border": "2px solid #00C853",
+                  "boxShadow": "0 10px 30px rgba(0,200,83,0.3)",
+                  "opacity": 0,
+                  "transform": "translateX(50px)"
+                },
+                "animate": {
+                  "opacity": {
+                    "from": 0,
+                    "to": 1,
+                    "duration": 0.5,
+                    "delay": 0.3
+                  },
+                  "transform": {
+                    "from": "translateX(50px)",
+                    "to": "translateX(0px)",
+                    "duration": 0.5,
+                    "delay": 0.3
+                  }
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "props": {
+                    "name": "cloud_check",
+                    "size": 80,
+                    "color": "#00C853"
+                  }
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "32px",
+                      "fontWeight": "700",
+                      "marginTop": "20px",
+                      "color": "#EEE",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "N8N Cloud"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "style": {
+                      "fontSize": "20px",
+                      "color": "#BBB",
+                      "marginTop": "10px",
+                      "fontFamily": "Padauk, sans-serif"
+                    }
+                  },
+                  "text": "var(--cloud_advantage)"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "backgroundColor": "#00C853",
+                      "color": "#FFF",
+                      "padding": "8px 15px",
+                      "borderRadius": "8px",
+                      "fontSize": "18px",
+                      "fontWeight": "600",
+                      "marginTop": "20px",
+                      "display": "inline-block",
+                      "opacity": 0,
+                      "transform": "scale(0.8)"
+                    },
+                    "animate": {
+                      "opacity": {
+                        "from": 0,
+                        "to": 1,
+                        "duration": 0.4,
+                        "delay": 0.6
+                      },
+                      "transform": {
+                        "from": "scale(0.8)",
+                        "to": "scale(1)",
+                        "duration": 0.4,
+                        "delay": 0.6
+                      }
+                    }
+                  },
+                  "text": "99.9% Uptime"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "id": "intro_title",
+      "start": 0,
+      "end": 15.7,
+      "component_ref": "lesson_title_card",
+      "props": {
+        "title": "N8N Cloud Account တည်ဆောက်ခြင်း",
+        "subtitle": "N8N Master Club",
+        "eyebrow": "အခန်း (၁) - စတင်ခြင်း",
+        "is_burmese": true,
+        "accent": "#007bff"
+      }
+    },
+    {
+      "id": "hosting_options_intro",
+      "start": 15.7,
+      "end": 27.5,
+      "component_ref": "n8n_hosting_options",
+      "props": {
+        "self_hosted_label": "Self-Hosted",
+        "self_hosted_desc": "ကိုယ်ပိုင် Server တွင် တပ်ဆင်ခြင်း",
+        "cloud_label": "N8N Cloud",
+        "cloud_desc": "N8N မှ စီမံခန့်ခွဲသော Platform",
+        "cloud_opacity": 0.7,
+        "self_hosted_opacity": 0.7,
+        "cloud_border_color": "#444",
+        "cloud_shadow_color": "rgba(0,0,0,0.3)"
+      }
+    },
+    {
+      "id": "hosting_options_focus_cloud",
+      "start": 27.5,
+      "end": 37.5,
+      "component_ref": "n8n_hosting_options",
+      "props": {
+        "self_hosted_label": "Self-Hosted",
+        "self_hosted_desc": "ကိုယ်ပိုင် Server တွင် တပ်ဆင်ခြင်း",
+        "cloud_label": "N8N Cloud",
+        "cloud_desc": "N8N မှ စီမံခန့်ခွဲသော Platform",
+        "cloud_opacity": 1,
+        "self_hosted_opacity": 0.5,
+        "cloud_border_color": "#007bff",
+        "cloud_shadow_color": "0 10px 30px rgba(0,123,255,0.5)",
+        "beginner_text": "စတင်လေ့လာသူများအတွက် အကောင်းဆုံး",
+        "beginner_text_opacity": 1
+      }
+    },
+    {
+      "id": "what_is_n8n_cloud_definition",
+      "start": 37.5,
+      "end": 50.8,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "N8N Cloud ဆိုတာ N8N အဖွဲ့ က ကျွန်တော် တို့ အတွက် server တွေ ကို အသင့် ပြင်ဆင်ပေးထား ပြီးသား ဝန်ဆောင်မှု တစ်ခု ပါ။",
+        "label": "N8N Cloud",
+        "variant": "definition",
+        "is_burmese": true
+      }
+    },
+    {
+      "id": "cloud_focus_diagram",
+      "start": 50.8,
+      "end": 61.8,
+      "component_ref": "n8n_cloud_focus_diagram",
+      "props": {
+        "n8n_team_focus": "Server ထိန်းသိမ်းခြင်း, နည်းပညာပိုင်းဆိုင်ရာ ခေါင်းကိုက်စရာများ",
+        "user_focus": "Workflow များ တည်ဆောက်ခြင်း, AI Agent များ ချိတ်ဆက်ခြင်း",
+        "is_burmese": true
+      }
+    },
+    {
+      "id": "who_is_it_for",
+      "start": 61.8,
+      "end": 71.5,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "N8N Cloud ကို အသုံးပြုသူများ",
+        "items": [
+          "Agency များ",
+          "Freelancer များ",
+          "ကိုယ်ပိုင် Business Automation လုပ်ချင်သူများ"
+        ],
+        "is_burmese": true,
+        "marker": "check",
+        "accent": "#007bff"
+      }
+    },
+    {
+      "id": "n8n_cloud_website_visit",
+      "start": 71.5,
+      "end": 80.2,
+      "component_ref": "n8n_cloud_landing_page",
+      "props": {}
+    },
+    {
+      "id": "free_trial_callout",
+      "start": 80.2,
+      "end": 88.8,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "N8N Cloud ဟာ အခမဲ့ trial ကာလ ပေးထားတာ မို့ ကျွန်တော် တို့ စမ်းသပ်မှု တွေ လုပ် ဖို့ အတွက် အကောင်းဆုံး အခွင့်အရေး ပါ ပဲ။",
+        "label": "Free Trial",
+        "variant": "info",
+        "is_burmese": true
+      }
+    },
+    {
+      "id": "email_selection_bullet_list",
+      "start": 88.8,
+      "end": 110.7,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Email ရွေးချယ်ခြင်း",
+        "items": [
+          {
+            "text": "Professional Email အသုံးပြုပါ",
+            "sub": "Business အတွက် အမြဲ သုံးပါ"
+          },
+          {
+            "text": "လုံခြုံရေးအတွက် ပိုကောင်းသည်",
+            "sub": "API Key နှင့် Webhook များအတွက်"
+          },
+          {
+            "text": "စနစ်တကျ ရှိစေသည်",
+            "sub": "ကိုယ်ပိုင် Domain နှင့် Email"
+          }
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#007bff"
+      }
+    },
+    {
+      "id": "subdomain_setup_demo",
+      "start": 110.7,
+      "end": 139.8,
+      "component_ref": "n8n_subdomain_setup",
+      "props": {
+        "subdomain_input": "mycompany",
+        "typing_speed": 100,
+        "explanation": "ဒီနာမည်ဟာ Workflow တွေကို အပြင်ကနေ Access လုပ်တဲ့အခါ သုံးမယ့် လိပ်စာဖြစ်တဲ့အတွက် မှတ်မိလွယ်ပြီး professional ဆန်တဲ့ နာမည်မျိုးကို ရွေးချယ်ဖို့ အကြံပြုလိုပါတယ်။",
+        "is_burmese": true
+      }
+    },
+    {
+      "id": "dashboard_overview_tour",
+      "start": 139.8,
+      "end": 152.4,
+      "component_ref": "n8n_interface_tour",
+      "props": {
+        "workflow_title": "My First Automation",
+        "tour": [
+          "header",
+          "sidebar",
+          "canvas"
+        ]
+      }
+    },
+    {
+      "id": "real_world_use_cases",
+      "start": 152.4,
+      "end": 171.3,
+      "component_ref": "n8n_workflow_execution",
+      "props": {
+        "workflow_title": "Sales Lead Automation",
+        "nodes": [
+          {
+            "label": "Webhook",
+            "icon": "bolt",
+            "trigger": true,
+            "color": "#4CAF50"
+          },
+          {
+            "label": "Google Sheets",
+            "icon": "sheet",
+            "color": "#FFC107"
+          },
+          {
+            "label": "OpenAI",
+            "icon": "brain",
+            "color": "#673AB7"
+          },
+          {
+            "label": "Gmail",
+            "icon": "mail",
+            "color": "#F44336"
+          }
+        ],
+        "item_label": "1 Lead",
+        "execution_path": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "highlight_path_segment": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "id": "uptime_advantage_scene",
+      "start": 171.3,
+      "end": 186.8,
+      "component_ref": "n8n_cloud_uptime_advantage",
+      "props": {
+        "self_hosted_issue": "Server ပြတ်တောက်မှုများ၊ ကိုယ်တိုင် တာဝန်ယူရခြင်း",
+        "cloud_advantage": "Workflow Logic ပိုင်းကိုသာ အပြည့်အဝ အာရုံစိုက်နိုင်ခြင်း",
+        "is_burmese": true
+      }
+    },
+    {
+      "id": "security_credentials_demo",
+      "start": 186.8,
+      "end": 216.8,
+      "component_ref": "n8n_credentials_menu",
+      "props": {
+        "action": "show_credentials_list_and_create_new",
+        "credential_type": "Google OAuth",
+        "explanation_text": "API Secret တွေ၊ Password တွေ ကို လုံခြုံအောင် သိမ်းဆည်းပေးထား တဲ့ vault တစ်ခု လိုမျိုး ပါ ပဲ။",
+        "is_burmese": true
+      }
+    },
+    {
+      "id": "cloud_vs_self_hosted_advanced",
+      "start": 216.8,
+      "end": 241.5,
+      "component_ref": "n8n_hosting_options",
+      "props": {
+        "self_hosted_label": "Self-Hosted",
+        "self_hosted_desc": "Automation ပမာဏ များပြားလာသောအခါ / Data ကြီးမားသောအခါ",
+        "cloud_label": "N8N Cloud",
+        "cloud_desc": "စတင်လေ့လာသူများအတွက် အကောင်းဆုံး",
+        "cloud_opacity": 0.7,
+        "self_hosted_opacity": 1,
+        "cloud_border_color": "#444",
+        "cloud_shadow_color": "rgba(0,0,0,0.3)",
+        "self_hosted_border_color": "#00C853",
+        "self_hosted_shadow_color": "0 10px 30px rgba(0,200,83,0.5)"
+      }
+    },
+    {
+      "id": "ease_of_transition",
+      "start": 241.5,
+      "end": 246.8,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Cloud မှာ လုပ်တတ်သွား ပြီ ဆိုရင် self-hosted ကို ပြောင်း ဖို့ က အရမ်း လွယ်ကူသွား ပါ ပြီ။",
+        "label": "လွယ်ကူသော ပြောင်းရွှေ့မှု",
+        "variant": "tip",
+        "is_burmese": true
+      }
+    },
+    {
+      "id": "call_to_action_explore",
+      "start": 246.8,
+      "end": 261.5,
+      "component_ref": "n8n_interface_tour",
+      "props": {
+        "workflow_title": "Your First Workflow",
+        "tour": [
+          "canvas",
+          "addnode",
+          "sidebar"
+        ]
+      }
+    },
+    {
+      "id": "summary_bullet_list",
+      "start": 261.5,
+      "end": 270.8,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "သင်ခန်းစာ အနှစ်ချုပ်",
+        "items": [
+          "N8N Cloud Account တည်ဆောက်နည်း",
+          "Cloud နှင့် Self-Hosted နှိုင်းယှဉ်ချက်",
+          "လုံခြုံရေးနှင့် Credentials အရေးပါပုံ"
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#007bff"
+      }
+    },
+    {
+      "id": "next_steps_title",
+      "start": 270.8,
+      "end": 289,
+      "component_ref": "lesson_title_card",
+      "props": {
+        "title": "ပထမဆုံး Workflow တည်ဆောက်ခြင်း",
+        "subtitle": "Nodes များအကြောင်း နက်နက်နဲနဲ လေ့လာခြင်း",
+        "eyebrow": "နောက်တစ်ခန်း",
+        "is_burmese": true,
+        "accent": "#007bff"
+      }
+    }
+  ]
+}
