@@ -1,0 +1,287 @@
+{
+  "new_components": {
+    "email_verification_screen": {
+      "hint": "Simulates an email inbox with an n8n verification email, showing an email client with an n8n verification email.",
+      "mockup": "browser",
+      "mockup_title": "Inbox - Email",
+      "ui": [
+        {
+          "type": "header",
+          "text": "Inbox",
+          "icon": "mail"
+        },
+        {
+          "type": "list_item",
+          "title": "n8n Account Verification",
+          "subtitle": "noreply@n8n.io",
+          "active": true
+        },
+        {
+          "type": "text_block",
+          "text": "Hello, please verify your n8n account by clicking the link below."
+        },
+        {
+          "type": "button",
+          "text": "Verify Email Address",
+          "color": "#007bff"
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "start": "0.0s",
+      "end": "7.5s",
+      "component_ref": "lesson_title_card",
+      "props": {
+        "title": "n8n Cloud Account Setup",
+        "subtitle": "n8n ကို စတင် အသုံးပြုရန်",
+        "eyebrow": "Lesson 1",
+        "is_burmese": true,
+        "accent": "#007bff",
+        "align": "center"
+      }
+    },
+    {
+      "start": "7.5s",
+      "end": "18.2s",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Beginner's Focus",
+        "items": [
+          {
+            "text": "Server setup (VPS, Docker) can be complex.",
+            "sub": "Avoid initial distractions."
+          },
+          {
+            "text": "Prioritize Workflow building & automation logic.",
+            "sub": "Understand core n8n concepts first."
+          }
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#007bff"
+      }
+    },
+    {
+      "start": "18.2s",
+      "end": "22.2s",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "n8n Cloud",
+        "label": "Recommended for beginners",
+        "variant": "info",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": "22.2s",
+      "end": "31.0s",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "What is n8n Cloud?",
+        "items": [
+          {
+            "text": "No server setup required.",
+            "sub": "Fully managed by n8n."
+          },
+          {
+            "text": "Directly use n8n platform.",
+            "sub": "Focus solely on your automation."
+          }
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#007bff"
+      }
+    },
+    {
+      "start": "31.0s",
+      "end": "41.3s",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Traditional Self-Hosting Challenges",
+        "items": [
+          "Buy VPS & setup server",
+          "Docker setup & configuration",
+          "Regular updates & maintenance",
+          "Troubleshooting errors yourself"
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#dc3545"
+      }
+    },
+    {
+      "start": "41.3s",
+      "end": "51.0s",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Where to Focus as a Beginner",
+        "items": [
+          "How to build workflows effectively.",
+          "How to design automation logic."
+        ],
+        "is_burmese": true,
+        "marker": "check",
+        "accent": "#28a745"
+      }
+    },
+    {
+      "start": "51.0s",
+      "end": "56.0s",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "n8n Cloud",
+        "label": "Beginner-Friendly Starting Point",
+        "variant": "tip",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": "56.0s",
+      "end": "60.5s",
+      "component_ref": "n8n_homepage",
+      "props": {
+        "actions": [
+          {
+            "type": "navigate",
+            "url": "https://n8n.io/cloud"
+          }
+        ]
+      }
+    },
+    {
+      "start": "60.5s",
+      "end": "66.8s",
+      "component_ref": "n8n_homepage",
+      "props": {
+        "actions": [
+          {
+            "type": "highlight_button",
+            "label": "Start Free Trial"
+          },
+          {
+            "type": "click_button",
+            "label": "Start Free Trial"
+          }
+        ]
+      }
+    },
+    {
+      "start": "66.8s",
+      "end": "72.0s",
+      "component_ref": "n8n_signup_page",
+      "props": {
+        "actions": [
+          {
+            "type": "type_email",
+            "value": "your.email@example.com",
+            "delay": 50
+          },
+          {
+            "type": "type_password",
+            "value": "SecurePassword123!",
+            "delay": 50
+          }
+        ]
+      }
+    },
+    {
+      "start": "72.0s",
+      "end": "82.0s",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Permanent Email",
+        "label": "Your workflows, credentials, and connections are linked.",
+        "variant": "warning",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": "82.0s",
+      "end": "87.8s",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Avoid Temporary Emails",
+        "label": "Register with your main, long-term email address.",
+        "variant": "info",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": "87.8s",
+      "end": "92.5s",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Strong Password",
+        "label": "Ensure account security and protect your automations.",
+        "variant": "tip",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": "92.5s",
+      "end": "98.5s",
+      "component_ref": "email_verification_screen",
+      "props": {
+        "actions": [
+          {
+            "type": "show_email",
+            "sender": "n8n",
+            "subject": "Account Verification"
+          }
+        ]
+      }
+    },
+    {
+      "start": "98.5s",
+      "end": "102.5s",
+      "component_ref": "email_verification_screen",
+      "props": {
+        "actions": [
+          {
+            "type": "click_button",
+            "label": "Verify Email Address"
+          }
+        ]
+      }
+    },
+    {
+      "start": "102.5s",
+      "end": "107.8s",
+      "component_ref": "n8n_interface_overview",
+      "props": {
+        "workflow_title": "My First Workflow",
+        "highlight_area": "canvas"
+      }
+    },
+    {
+      "start": "107.8s",
+      "end": "112.8s",
+      "component_ref": "n8n_interface_overview",
+      "props": {
+        "workflow_title": "My First Workflow",
+        "highlight_area": "none",
+        "overlay_text": "n8n Cloud Environment Ready!",
+        "overlay_position": "center",
+        "overlay_duration": 2
+      }
+    },
+    {
+      "start": "112.8s",
+      "end": "121.5s",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "What's Next?",
+        "items": [
+          "Explore the n8n Cloud Dashboard Interface.",
+          "Start building your first workflow."
+        ],
+        "is_burmese": true,
+        "marker": "dot",
+        "accent": "#007bff"
+      }
+    }
+  ]
+}
