@@ -1,0 +1,566 @@
+{
+  "project_title": "N8N Cloud Account Creation & Setup",
+  "scenes": [
+    {
+      "start": 0,
+      "end": 12.5,
+      "type": "concept_explanation",
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "Lesson 1",
+        "title": "N8N Cloud Account ဖန်တီးခြင်း",
+        "subtitle": "စတင်အသုံးပြုရန် ပြင်ဆင်ခြင်း",
+        "is_burmese": true,
+        "accent": "#6C63FF"
+      }
+    },
+    {
+      "start": 12.5,
+      "end": 31,
+      "type": "concept_explanation",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "N8N Cloud ဆိုတာ ကိုယ်ပိုင် server ဒါမှမဟုတ် VPS တစ်ခု setup လုပ်စရာ မလိုဘဲ N8N workflow automation တွေ ကို တိုက်ရိုက် စတင် အသုံးပြုနိုင်တဲ့ hosted platform တစ်ခု ဖြစ်ပါတယ်။",
+        "label": "N8N Cloud",
+        "variant": "definition",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 31,
+      "end": 38,
+      "type": "concept_explanation",
+      "new_components": {
+        "workflow_vs_infra_focus": {
+          "hint": "Visually contrasts infrastructure management with workflow building focus.",
+          "ui": [
+            {
+              "type": "container",
+              "style": {
+                "display": "flex",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "gap": "80px",
+                "height": "100%",
+                "width": "100%"
+              },
+              "children": [
+                {
+                  "type": "container",
+                  "style": {
+                    "opacity": 0.3,
+                    "filter": "grayscale(100%)",
+                    "transition": "opacity 0.5s, filter 0.5s",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "alignItems": "center",
+                    "gap": "20px"
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "server",
+                      "size": 120,
+                      "color": "#999"
+                    },
+                    {
+                      "type": "text",
+                      "text": "Infrastructure Management",
+                      "style": {
+                        "fontSize": "32px",
+                        "fontWeight": "600",
+                        "color": "#999",
+                        "fontFamily": "Padauk"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "name": "arrowRight",
+                  "size": 80,
+                  "color": "#6C63FF"
+                },
+                {
+                  "type": "container",
+                  "style": {
+                    "opacity": 1,
+                    "filter": "grayscale(0%)",
+                    "transition": "opacity 0.5s, filter 0.5s",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "alignItems": "center",
+                    "gap": "20px",
+                    "transform": "scale(1.1)"
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "workflow",
+                      "size": 120,
+                      "color": "#6C63FF"
+                    },
+                    {
+                      "type": "text",
+                      "text": "Workflow Building",
+                      "style": {
+                        "fontSize": "36px",
+                        "fontWeight": "700",
+                        "color": "#6C63FF",
+                        "fontFamily": "Padauk"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "component_ref": "workflow_vs_infra_focus",
+      "props": {}
+    },
+    {
+      "start": 38,
+      "end": 54,
+      "type": "concept_explanation",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Automation Project တွင် အရေးကြီးဆုံး",
+        "items": [
+          {
+            "text": "Workflow Logic Design",
+            "icon": "lightbulb"
+          },
+          {
+            "text": "Business Problem ဖြေရှင်းခြင်း",
+            "icon": "puzzle"
+          }
+        ],
+        "is_burmese": true,
+        "accent": "#6C63FF",
+        "marker": "dot"
+      }
+    },
+    {
+      "start": 54,
+      "end": 68.8,
+      "type": "concept_explanation",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Self-Hosted ၏ အခက်အခဲများ",
+        "items": [
+          {
+            "text": "Server Setup & Environment Configure",
+            "icon": "server",
+            "color": "#FF6B6B"
+          },
+          {
+            "text": "Update များနှင့် စောင့်ကြည့်ခြင်း",
+            "icon": "refresh",
+            "color": "#FF6B6B"
+          },
+          {
+            "text": "Infrastructure ပိုင်း Error ဖြေရှင်းခြင်း",
+            "icon": "bug",
+            "color": "#FF6B6B"
+          },
+          {
+            "text": "Automation တည်ဆောက်ချိန်ထက် Maintenance တွင် အချိန်ကုန်ခြင်း",
+            "icon": "hourglass",
+            "color": "#FF6B6B"
+          }
+        ],
+        "is_burmese": true,
+        "accent": "#FF6B6B",
+        "marker": "dot"
+      }
+    },
+    {
+      "start": 68.8,
+      "end": 83,
+      "type": "concept_explanation",
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Beginner များအတွက် N8N Cloud",
+        "items": [
+          {
+            "text": "Server Management ကို စဉ်းစားရန် မလို",
+            "icon": "checkCircle",
+            "color": "#4CAF50"
+          },
+          {
+            "text": "Workflow တည်ဆောက်ခြင်းကို အာရုံစိုက်နိုင်",
+            "icon": "workflow",
+            "color": "#4CAF50"
+          },
+          {
+            "text": "Node ချိတ်ဆက်မှုများကို လေ့လာနိုင်",
+            "icon": "link",
+            "color": "#4CAF50"
+          }
+        ],
+        "is_burmese": true,
+        "accent": "#4CAF50",
+        "marker": "dot"
+      }
+    },
+    {
+      "start": 83,
+      "end": 98.8,
+      "type": "concept_explanation",
+      "new_components": {
+        "comparison_card": {
+          "hint": "A two-column comparison card for concepts.",
+          "ui": [
+            {
+              "type": "container",
+              "style": {
+                "display": "flex",
+                "justifyContent": "space-around",
+                "alignItems": "center",
+                "height": "100%",
+                "width": "100%",
+                "padding": "40px"
+              },
+              "children": [
+                {
+                  "type": "card",
+                  "style": {
+                    "width": "45%",
+                    "padding": "30px",
+                    "backgroundColor": "#2A2A3A",
+                    "borderRadius": "15px",
+                    "boxShadow": "0 10px 30px rgba(0,0,0,0.3)",
+                    "borderLeft": "5px solid #FFC107",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "gap": "20px"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "{{heading1}}",
+                      "style": {
+                        "fontSize": "36px",
+                        "fontWeight": "700",
+                        "color": "#FFC107",
+                        "fontFamily": "Padauk",
+                        "marginBottom": "15px"
+                      }
+                    },
+                    {
+                      "type": "list",
+                      "items": "{{items1}}",
+                      "itemStyle": {
+                        "fontSize": "24px",
+                        "color": "#E0E0E0",
+                        "fontFamily": "Padauk",
+                        "marginBottom": "10px",
+                        "display": "flex",
+                        "alignItems": "center",
+                        "gap": "15px"
+                      },
+                      "markerStyle": {
+                        "color": "#FFC107",
+                        "fontSize": "28px"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "card",
+                  "style": {
+                    "width": "45%",
+                    "padding": "30px",
+                    "backgroundColor": "#2A2A3A",
+                    "borderRadius": "15px",
+                    "boxShadow": "0 10px 30px rgba(0,0,0,0.3)",
+                    "borderLeft": "5px solid #6C63FF",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "gap": "20px"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "{{heading2}}",
+                      "style": {
+                        "fontSize": "36px",
+                        "fontWeight": "700",
+                        "color": "#6C63FF",
+                        "fontFamily": "Padauk",
+                        "marginBottom": "15px"
+                      }
+                    },
+                    {
+                      "type": "list",
+                      "items": "{{items2}}",
+                      "itemStyle": {
+                        "fontSize": "24px",
+                        "color": "#E0E0E0",
+                        "fontFamily": "Padauk",
+                        "marginBottom": "10px",
+                        "display": "flex",
+                        "alignItems": "center",
+                        "gap": "15px"
+                      },
+                      "markerStyle": {
+                        "color": "#6C63FF",
+                        "fontSize": "28px"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "component_ref": "comparison_card",
+      "props": {
+        "heading1": "Production Projects",
+        "items1": [
+          {
+            "text": "Self-Hosted N8N"
+          },
+          {
+            "text": "Full Control"
+          },
+          {
+            "text": "Infrastructure Management"
+          }
+        ],
+        "heading2": "Beginner Learning",
+        "items2": [
+          {
+            "text": "N8N Cloud Environment"
+          },
+          {
+            "text": "Easy Start"
+          },
+          {
+            "text": "Core Concepts Focus"
+          }
+        ],
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 98.8,
+      "end": 104.2,
+      "type": "screen_demo",
+      "component_ref": "n8n_homepage",
+      "props": {
+        "url": "https://n8n.io",
+        "browser_animation": "open_and_navigate"
+      }
+    },
+    {
+      "start": 104.2,
+      "end": 118,
+      "type": "screen_demo",
+      "component_ref": "n8n_homepage",
+      "props": {
+        "click_element": "get_started_button"
+      }
+    },
+    {
+      "start": 118,
+      "end": 132,
+      "type": "screen_demo",
+      "component_ref": "n8n_signup_page",
+      "props": {
+        "type_email": "your.email@example.com",
+        "highlight_field": "email_input"
+      }
+    },
+    {
+      "start": 132,
+      "end": 144.8,
+      "type": "concept_explanation",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "စမ်းသပ်ရန် temporary email များ အသုံးပြုခြင်းကို ရှောင်ပါ။ workflow, credential, project setting များအတွက် ကိုယ်ပိုင် email ကို သေချာ manage လုပ်ပါ။",
+        "label": "အရေးကြီး အကြံပြုချက်",
+        "variant": "warning",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 144.8,
+      "end": 158,
+      "type": "concept_explanation",
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "လုံခြုံသော password တစ်ခု အသုံးပြုပါ။ API credential များနှင့် external service connection များအတွက် account security သည် အရေးကြီးပါသည်။",
+        "label": "Password Security",
+        "variant": "tip",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 158,
+      "end": 168,
+      "type": "concept_explanation",
+      "new_components": {
+        "email_verification_flow": {
+          "hint": "Animated flow for email verification process.",
+          "ui": [
+            {
+              "type": "container",
+              "style": {
+                "display": "flex",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "gap": "60px",
+                "height": "100%",
+                "width": "100%",
+                "padding": "40px"
+              },
+              "children": [
+                {
+                  "type": "card",
+                  "style": {
+                    "padding": "30px",
+                    "backgroundColor": "#2A2A3A",
+                    "borderRadius": "15px",
+                    "boxShadow": "0 10px 30px rgba(0,0,0,0.3)",
+                    "borderLeft": "5px solid #6C63FF",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "gap": "20px",
+                    "alignItems": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "mail",
+                      "size": 80,
+                      "color": "#6C63FF"
+                    },
+                    {
+                      "type": "text",
+                      "text": "N8N မှ Email ပို့ခြင်း",
+                      "style": {
+                        "fontSize": "28px",
+                        "fontWeight": "600",
+                        "color": "#E0E0E0",
+                        "fontFamily": "Padauk"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "name": "arrowRight",
+                  "size": 60,
+                  "color": "#6C63FF"
+                },
+                {
+                  "type": "card",
+                  "style": {
+                    "padding": "30px",
+                    "backgroundColor": "#2A2A3A",
+                    "borderRadius": "15px",
+                    "boxShadow": "0 10px 30px rgba(0,0,0,0.3)",
+                    "borderLeft": "5px solid #4CAF50",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "gap": "20px",
+                    "alignItems": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "link",
+                      "size": 80,
+                      "color": "#4CAF50"
+                    },
+                    {
+                      "type": "text",
+                      "text": "Verification Link နှိပ်ပါ",
+                      "style": {
+                        "fontSize": "28px",
+                        "fontWeight": "600",
+                        "color": "#E0E0E0",
+                        "fontFamily": "Padauk"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "name": "arrowRight",
+                  "size": 60,
+                  "color": "#6C63FF"
+                },
+                {
+                  "type": "card",
+                  "style": {
+                    "padding": "30px",
+                    "backgroundColor": "#2A2A3A",
+                    "borderRadius": "15px",
+                    "boxShadow": "0 10px 30px rgba(0,0,0,0.3)",
+                    "borderLeft": "5px solid #6C63FF",
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "gap": "20px",
+                    "alignItems": "center"
+                  },
+                  "children": [
+                    {
+                      "type": "icon",
+                      "name": "checkCircle",
+                      "size": 80,
+                      "color": "#6C63FF"
+                    },
+                    {
+                      "type": "text",
+                      "text": "Account Verification",
+                      "style": {
+                        "fontSize": "28px",
+                        "fontWeight": "600",
+                        "color": "#E0E0E0",
+                        "fontFamily": "Padauk"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "component_ref": "email_verification_flow",
+      "props": {
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 168,
+      "end": 173,
+      "type": "screen_demo",
+      "component_ref": "n8n_interface_overview",
+      "props": {
+        "workflow_title": "My First Cloud Workflow",
+        "highlight_area": "canvas",
+        "zoom_level": 0.8
+      }
+    },
+    {
+      "start": 173,
+      "end": 180,
+      "type": "concept_explanation",
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "Next Up",
+        "title": "N8N Cloud Dashboard",
+        "subtitle": "Workflow စတင်တည်ဆောက်ခြင်း",
+        "is_burmese": true,
+        "accent": "#6C63FF",
+        "align": "left"
+      }
+    }
+  ]
+}
