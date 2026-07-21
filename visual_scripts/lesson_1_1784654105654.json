@@ -1,0 +1,579 @@
+{
+  "new_components": {
+    "n8n_intelligent_automation_hub": {
+      "hint": "N8N as a central hub connecting various services like APIs, databases, and AI models.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "div",
+          "style": {
+            "position": "absolute",
+            "top": "50%",
+            "left": "50%",
+            "transform": "translate(-50%, -50%)",
+            "width": "100%",
+            "height": "100%",
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "justifyContent": "center"
+          },
+          "children": [
+            {
+              "type": "div",
+              "style": {
+                "position": "relative",
+                "width": "200px",
+                "height": "200px",
+                "backgroundColor": "#4CAF50",
+                "borderRadius": "50%",
+                "display": "flex",
+                "alignItems": "center",
+                "justifyContent": "center",
+                "color": "white",
+                "fontSize": "48px",
+                "fontWeight": "bold",
+                "fontFamily": "Padauk",
+                "boxShadow": "0 0 30px rgba(76, 175, 80, 0.6)",
+                "zIndex": 10,
+                "animation": {
+                  "type": "scaleIn",
+                  "delay": 0.5,
+                  "duration": 0.8
+                }
+              },
+              "text": "N8N"
+            },
+            {
+              "type": "div",
+              "style": {
+                "position": "absolute",
+                "top": "calc(50% - 180px)",
+                "left": "50%",
+                "transform": "translateX(-50%)",
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "10px",
+                "opacity": 0,
+                "animation": {
+                  "type": "slideInFromTop",
+                  "delay": 1.2,
+                  "duration": 0.6
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "name": "code",
+                  "size": "50px",
+                  "color": "#607D8B"
+                },
+                {
+                  "type": "text",
+                  "text": "APIs",
+                  "style": {
+                    "fontSize": "22px",
+                    "fontWeight": "medium",
+                    "fontFamily": "Padauk",
+                    "color": "#607D8B"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "style": {
+                "position": "absolute",
+                "top": "calc(50% + 100px)",
+                "left": "calc(50% - 200px)",
+                "transform": "translate(-50%, -50%)",
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "10px",
+                "opacity": 0,
+                "animation": {
+                  "type": "slideInFromLeft",
+                  "delay": 1.4,
+                  "duration": 0.6
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "name": "db",
+                  "size": "50px",
+                  "color": "#FFC107"
+                },
+                {
+                  "type": "text",
+                  "text": "Databases",
+                  "style": {
+                    "fontSize": "22px",
+                    "fontWeight": "medium",
+                    "fontFamily": "Padauk",
+                    "color": "#FFC107"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "style": {
+                "position": "absolute",
+                "top": "calc(50% + 100px)",
+                "left": "calc(50% + 200px)",
+                "transform": "translate(50%, -50%)",
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "10px",
+                "opacity": 0,
+                "animation": {
+                  "type": "slideInFromRight",
+                  "delay": 1.6,
+                  "duration": 0.6
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "name": "brain",
+                  "size": "50px",
+                  "color": "#9C27B0"
+                },
+                {
+                  "type": "text",
+                  "text": "AI Models",
+                  "style": {
+                    "fontSize": "22px",
+                    "fontWeight": "medium",
+                    "fontFamily": "Padauk",
+                    "color": "#9C27B0"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "style": {
+                "position": "absolute",
+                "top": "calc(50% + 200px)",
+                "left": "50%",
+                "transform": "translateX(-50%)",
+                "padding": "15px 30px",
+                "backgroundColor": "#2196F3",
+                "borderRadius": "8px",
+                "color": "white",
+                "fontSize": "28px",
+                "fontWeight": "bold",
+                "fontFamily": "Padauk",
+                "boxShadow": "0 0 20px rgba(33, 150, 243, 0.5)",
+                "opacity": 0,
+                "animation": {
+                  "type": "scaleIn",
+                  "delay": 2.5,
+                  "duration": 0.8
+                }
+              },
+              "text": "Intelligent Automation System"
+            }
+          ]
+        }
+      ]
+    },
+    "n8n_node_concept": {
+      "hint": "Diagram explaining N8N's node-based workflow concept.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "div",
+          "style": {
+            "position": "absolute",
+            "top": "50%",
+            "left": "50%",
+            "transform": "translate(-50%, -50%)",
+            "display": "flex",
+            "alignItems": "center",
+            "gap": "80px"
+          },
+          "children": [
+            {
+              "type": "div",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "15px",
+                "padding": "20px 30px",
+                "backgroundColor": "#f0f0f0",
+                "borderRadius": "12px",
+                "boxShadow": "0 8px 20px rgba(0,0,0,0.1)",
+                "opacity": 0,
+                "animation": {
+                  "type": "scaleIn",
+                  "delay": 0.5,
+                  "duration": 0.6
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "name": "gear",
+                  "size": "60px",
+                  "color": "#673AB7"
+                },
+                {
+                  "type": "text",
+                  "text": "Task 1",
+                  "style": {
+                    "fontSize": "28px",
+                    "fontWeight": "bold",
+                    "fontFamily": "Padauk",
+                    "color": "#673AB7"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "style": {
+                "width": "60px",
+                "height": "4px",
+                "backgroundColor": "#9E9E9E",
+                "borderRadius": "2px",
+                "opacity": 0,
+                "animation": {
+                  "type": "fadeIn",
+                  "delay": 1.1,
+                  "duration": 0.4
+                }
+              }
+            },
+            {
+              "type": "div",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "15px",
+                "padding": "20px 30px",
+                "backgroundColor": "#f0f0f0",
+                "borderRadius": "12px",
+                "boxShadow": "0 8px 20px rgba(0,0,0,0.1)",
+                "opacity": 0,
+                "animation": {
+                  "type": "scaleIn",
+                  "delay": 1.5,
+                  "duration": 0.6
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "name": "code",
+                  "size": "60px",
+                  "color": "#009688"
+                },
+                {
+                  "type": "text",
+                  "text": "Task 2",
+                  "style": {
+                    "fontSize": "28px",
+                    "fontWeight": "bold",
+                    "fontFamily": "Padauk",
+                    "color": "#009688"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "div",
+              "style": {
+                "width": "60px",
+                "height": "4px",
+                "backgroundColor": "#9E9E9E",
+                "borderRadius": "2px",
+                "opacity": 0,
+                "animation": {
+                  "type": "fadeIn",
+                  "delay": 2.1,
+                  "duration": 0.4
+                }
+              }
+            },
+            {
+              "type": "div",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "15px",
+                "padding": "20px 30px",
+                "backgroundColor": "#f0f0f0",
+                "borderRadius": "12px",
+                "boxShadow": "0 8px 20px rgba(0,0,0,0.1)",
+                "opacity": 0,
+                "animation": {
+                  "type": "scaleIn",
+                  "delay": 2.5,
+                  "duration": 0.6
+                }
+              },
+              "children": [
+                {
+                  "type": "icon",
+                  "name": "mail",
+                  "size": "60px",
+                  "color": "#E91E63"
+                },
+                {
+                  "type": "text",
+                  "text": "Task 3",
+                  "style": {
+                    "fontSize": "28px",
+                    "fontWeight": "bold",
+                    "fontFamily": "Padauk",
+                    "color": "#E91E63"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "changed_era_text": {
+      "hint": "Animated text scene for 'The era has changed' concept.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "div",
+          "style": {
+            "position": "absolute",
+            "top": "50%",
+            "left": "50%",
+            "transform": "translate(-50%, -50%)",
+            "textAlign": "center",
+            "width": "80%"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": "N8N အသုံးပြုနည်း မသိဘဲ workflow ဘယ်လို ဆောက်ရ မလဲ။",
+              "style": {
+                "fontSize": "48px",
+                "fontWeight": "bold",
+                "color": "#FFC107",
+                "fontFamily": "Padauk",
+                "opacity": 0,
+                "animation": {
+                  "type": "fadeIn",
+                  "delay": 0.5,
+                  "duration": 1,
+                  "out": {
+                    "type": "fadeOut",
+                    "delay": 2.5,
+                    "duration": 0.8
+                  }
+                }
+              }
+            },
+            {
+              "type": "text",
+              "text": "ခေတ် က ပြောင်းသွား ပါ ပြီ။",
+              "style": {
+                "fontSize": "64px",
+                "fontWeight": "extrabold",
+                "color": "#4CAF50",
+                "fontFamily": "Padauk",
+                "marginTop": "40px",
+                "opacity": 0,
+                "animation": {
+                  "type": "fadeIn",
+                  "delay": 3.5,
+                  "duration": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 4.6,
+      "component_ref": "lesson_title_card",
+      "title": "N8N Master Club",
+      "subtitle": "Lesson 1: Automation Architect Role & Concepts",
+      "eyebrow": "Welcome",
+      "is_burmese": true
+    },
+    {
+      "start": 4.6,
+      "end": 12.8,
+      "component_ref": "lesson_bullet_list",
+      "heading": "ဒီ lesson မှာ သင်ယူမယ့် အကြောင်းအရာများ",
+      "items": [
+        "Automation Architect ရဲ့ အလုပ် ပုံစံ",
+        "Automation သဘောတရား"
+      ],
+      "is_burmese": true
+    },
+    {
+      "start": 12.8,
+      "end": 26.9,
+      "component_ref": "lesson_concept_callout",
+      "text": "လူ ကိုယ်တိုင် ထပ်ခါ ထပ်ခါ လုပ်နေရတဲ့ အလုပ် တွေ ကို system တစ်ခု က အလိုအလျောက် လုပ်ပေးနိုင်အောင် တည်ဆောက်တာ",
+      "label": "Automation",
+      "variant": "definition",
+      "is_burmese": true
+    },
+    {
+      "start": 26.9,
+      "end": 37.7,
+      "component_ref": "lesson_bullet_list",
+      "heading": "Automation ဖြင့် အစားထိုးနိုင်သော လုပ်ငန်းများ",
+      "items": [
+        "Email တစ်စောင်ချင်း စီ လိုက်ပို့နေရတာ",
+        "Customer data တွေ ကိုယ်တိုင် စုနေရတာ",
+        "Order information တွေ ကိုယ်တိုင် ရိုက်ထည့်နေရတာ"
+      ],
+      "is_burmese": true
+    },
+    {
+      "start": 37.7,
+      "end": 51.2,
+      "component_ref": "n8n_intelligent_automation_hub",
+      "is_burmese": true
+    },
+    {
+      "start": 51.2,
+      "end": 62.3,
+      "component_ref": "step_flow_diagram",
+      "heading": "Automation Architect ရဲ့ အလုပ် ပုံစံ",
+      "steps": [
+        {
+          "title": "Business Problem ကို နားလည်ခြင်း",
+          "desc": "လက်ရှိ လုပ်ငန်း လိုအပ်ချက်များ ကို ခွဲခြမ်းစိတ်ဖြာခြင်း"
+        },
+        {
+          "title": "System Design",
+          "desc": "ပြဿနာ ကို ဖြေရှင်းရန် automation system တစ်ခု ပုံစံ ထုတ်ခြင်း"
+        },
+        {
+          "title": "Implement & Optimize",
+          "desc": "N8N ဖြင့် တည်ဆောက်ပြီး စွမ်းဆောင်ရည် မြှင့်တင်ခြင်း"
+        }
+      ],
+      "is_burmese": true
+    },
+    {
+      "start": 62.3,
+      "end": 78.7,
+      "component_ref": "n8n_workflow_execution",
+      "workflow_title": "Customer Order Processing",
+      "item_label": "1 order",
+      "nodes": [
+        {
+          "label": "Webhook Trigger",
+          "icon": "bolt",
+          "trigger": true,
+          "color": "#6A5ACD"
+        },
+        {
+          "label": "AI Agent (Reply)",
+          "icon": "brain",
+          "color": "#FFD700"
+        },
+        {
+          "label": "Database (Save Order)",
+          "icon": "db",
+          "color": "#4682B4"
+        },
+        {
+          "label": "Stock Check (API)",
+          "icon": "code",
+          "color": "#DAA520"
+        },
+        {
+          "label": "Email Report",
+          "icon": "mail",
+          "color": "#FF6347"
+        }
+      ],
+      "is_burmese": true
+    },
+    {
+      "start": 78.7,
+      "end": 90.5,
+      "component_ref": "n8n_node_concept",
+      "is_burmese": true
+    },
+    {
+      "start": 90.5,
+      "end": 112.2,
+      "component_ref": "lesson_bullet_list",
+      "heading": "ဒီသင်တန်းမှာ သင်ယူရမည့် အဓိက အကြောင်းအရာများ",
+      "items": [
+        "Automation system design (professional level)",
+        "API ချိတ်ဆက်နည်း",
+        "Database နှင့် data flow စီမံခန့်ခွဲနည်း",
+        "AI agent များကို business process တွင် အသုံးချနည်း"
+      ],
+      "is_burmese": true
+    },
+    {
+      "start": 112.2,
+      "end": 120.3,
+      "component_ref": "lesson_concept_callout",
+      "text": "Tool တစ်ခု ကို သင်ယူတာ ထက် automation architect တစ်ယောက် လို စဉ်းစား တဲ့ ပုံစံ ကို အဓိက ထားသွား မှာ ပါ ။",
+      "label": "Architect Mindset",
+      "variant": "info",
+      "is_burmese": true
+    },
+    {
+      "start": 120.3,
+      "end": 127.5,
+      "component_ref": "changed_era_text",
+      "is_burmese": true
+    },
+    {
+      "start": 127.5,
+      "end": 137.9,
+      "component_ref": "lesson_bullet_list",
+      "heading": "Automation ၏ အနာဂတ်",
+      "items": [
+        "ကိုယ်တိုင် အောက်ခြေသိမ်း အစ အဆုံး လုပ်ရတဲ့ ခေတ် က ကုန်သွား ပါ ပြီ။",
+        "Workflow ဆောက်တာ ကို AI agent တွေ ကို လက်တို လက်တောင်း ခိုင်း လို့ ရနေ ပါ ပြီ။"
+      ],
+      "is_burmese": true
+    },
+    {
+      "start": 137.9,
+      "end": 143,
+      "component_ref": "lesson_concept_callout",
+      "text": "အရေးကြီး တာ က ခိုင်းတတ် ဖို့ ပါ ။ ခိုင်း ဖို့ အတွက် ကိုယ်တိုင် နားလည် ထား မှာ ဖြစ် မှာ ပါ ။",
+      "label": "AI Agent ကို ခိုင်းတတ်ခြင်း",
+      "variant": "tip",
+      "is_burmese": true
+    },
+    {
+      "start": 143,
+      "end": 156,
+      "component_ref": "n8n_interface_tour",
+      "workflow_title": "My First Workflow",
+      "tour": [
+        "overview",
+        "sidebar",
+        "canvas",
+        "header",
+        "addnode"
+      ],
+      "is_burmese": true
+    }
+  ]
+}
