@@ -1,0 +1,864 @@
+{
+  "new_components": {
+    "instructor_intro_card": {
+      "hint": "Simple full-screen text for instructor introduction.",
+      "ui": [
+        {
+          "type": "text",
+          "text": "ဒီသင်တန်းမှာ သင်ကြားပြသပေးသွားမယ့် သင်တန်းဆရာ ပဲ ဖြစ်ပါတယ်။",
+          "font_size": 64,
+          "font_family": "Padauk",
+          "color": "#FFFFFF",
+          "x": "center",
+          "y": "center",
+          "width": "80%",
+          "duration_ms": 2000,
+          "animation": {
+            "type": "fade_in_out",
+            "delay_ms": 0,
+            "duration_in_ms": 500,
+            "duration_out_ms": 500
+          }
+        }
+      ]
+    },
+    "automation_concept_scene": {
+      "hint": "Visualizing 'time value' and 'efficiency' for automation.",
+      "ui": [
+        {
+          "type": "icon",
+          "name": "clock",
+          "color": "#FFD700",
+          "size": 180,
+          "x": "25%",
+          "y": "center",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 200,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "icon",
+          "name": "gear",
+          "color": "#00BFFF",
+          "size": 180,
+          "x": "75%",
+          "y": "center",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 400,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "အချိန်ကို တန်ဖိုးထားသူတွေ အတွက်",
+          "font_size": 48,
+          "font_family": "Padauk",
+          "color": "#FFFFFF",
+          "x": "25%",
+          "y": "75%",
+          "text_align": "center",
+          "width": "40%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 700,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "လုပ်ငန်းစဉ် တွေ ကို ပိုမြန်၊ ပိုမှန်အောင်",
+          "font_size": 48,
+          "font_family": "Padauk",
+          "color": "#FFFFFF",
+          "x": "75%",
+          "y": "75%",
+          "text_align": "center",
+          "width": "40%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 900,
+            "duration_ms": 500
+          }
+        }
+      ]
+    },
+    "manual_tasks_problem_scene": {
+      "hint": "Visualizing repetitive Excel/Email tasks.",
+      "ui": [
+        {
+          "type": "mockup",
+          "variant": "browser",
+          "mockup_title": "Excel Spreadsheet",
+          "x": "center",
+          "y": "center",
+          "width": "80%",
+          "height": "80%",
+          "animation": {
+            "type": "slide_in",
+            "direction": "left",
+            "delay_ms": 0,
+            "duration_ms": 500
+          },
+          "ui": [
+            {
+              "type": "shape",
+              "shape": "rect",
+              "fill": "#E0E0E0",
+              "width": "90%",
+              "height": "60%",
+              "x": "center",
+              "y": "center"
+            },
+            {
+              "type": "shape",
+              "shape": "rect",
+              "fill": "#C0C0C0",
+              "width": "80%",
+              "height": 40,
+              "x": "center",
+              "y": "20%",
+              "animation": {
+                "type": "draw_path",
+                "delay_ms": 500,
+                "duration_ms": 300
+              }
+            },
+            {
+              "type": "shape",
+              "shape": "rect",
+              "fill": "#C0C0C0",
+              "width": "80%",
+              "height": 40,
+              "x": "center",
+              "y": "30%",
+              "animation": {
+                "type": "draw_path",
+                "delay_ms": 700,
+                "duration_ms": 300
+              }
+            },
+            {
+              "type": "shape",
+              "shape": "rect",
+              "fill": "#C0C0C0",
+              "width": "80%",
+              "height": 40,
+              "x": "center",
+              "y": "40%",
+              "animation": {
+                "type": "draw_path",
+                "delay_ms": 900,
+                "duration_ms": 300
+              }
+            },
+            {
+              "type": "text",
+              "text": "Copying data...",
+              "font_size": 36,
+              "color": "#333",
+              "x": "center",
+              "y": "70%",
+              "animation": {
+                "type": "fade_in",
+                "delay_ms": 1200,
+                "duration_ms": 500
+              }
+            }
+          ]
+        },
+        {
+          "type": "icon",
+          "name": "mail",
+          "color": "#FF6347",
+          "size": 120,
+          "x": "80%",
+          "y": "20%",
+          "animation": {
+            "type": "pop_in_out",
+            "delay_ms": 2000,
+            "duration_ms": 500,
+            "repeat": 2
+          }
+        },
+        {
+          "type": "text",
+          "text": "Email တွေ ကို အခါခါ ပြန်ပို့နေရတာ",
+          "font_size": 36,
+          "font_family": "Padauk",
+          "color": "#FFFFFF",
+          "x": "80%",
+          "y": "35%",
+          "text_align": "center",
+          "width": "20%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 2500,
+            "duration_ms": 500
+          }
+        }
+      ]
+    },
+    "code_vs_nocode_scene": {
+      "hint": "Split screen comparing complex code editor with simple N8N canvas.",
+      "ui": [
+        {
+          "type": "shape",
+          "shape": "rect",
+          "fill": "#333333",
+          "width": "48%",
+          "height": "80%",
+          "x": "1%",
+          "y": "center",
+          "border_radius": 10,
+          "animation": {
+            "type": "slide_in",
+            "direction": "left",
+            "delay_ms": 0,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "Old Way: Complex Coding",
+          "font_size": 36,
+          "color": "#FFFFFF",
+          "x": "25%",
+          "y": "15%",
+          "text_align": "center",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 500,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "function processData(data) {\n  // ... hundreds of lines of code ...\n  return transformedData;\n}",
+          "font_size": 24,
+          "color": "#00FF00",
+          "x": "25%",
+          "y": "40%",
+          "text_align": "left",
+          "width": "40%",
+          "animation": {
+            "type": "typewriter",
+            "delay_ms": 800,
+            "duration_ms": 1500
+          }
+        },
+        {
+          "type": "shape",
+          "shape": "rect",
+          "fill": "#1A1A1A",
+          "width": "48%",
+          "height": "80%",
+          "x": "51%",
+          "y": "center",
+          "border_radius": 10,
+          "animation": {
+            "type": "slide_in",
+            "direction": "right",
+            "delay_ms": 200,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "New Way: No-code / Low-code",
+          "font_size": 36,
+          "color": "#FFFFFF",
+          "x": "75%",
+          "y": "15%",
+          "text_align": "center",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 700,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "icon",
+          "name": "n8n_logo",
+          "color": "#FF6200",
+          "size": 150,
+          "x": "75%",
+          "y": "40%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 1000,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "Visual Workflow Builder",
+          "font_size": 28,
+          "color": "#FFFFFF",
+          "x": "75%",
+          "y": "60%",
+          "text_align": "center",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 1300,
+            "duration_ms": 500
+          }
+        }
+      ]
+    },
+    "why_n8n_question_scene": {
+      "hint": "Question mark with logos of Zapier, Make, N8N.",
+      "ui": [
+        {
+          "type": "text",
+          "text": "ဘာကြောင့် N8N ကိုပဲ ရွေးရတာလဲ?",
+          "font_size": 72,
+          "font_family": "Padauk",
+          "color": "#FFFFFF",
+          "x": "center",
+          "y": "20%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 0,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "icon",
+          "name": "zapier_logo",
+          "color": "#FF4A00",
+          "size": 150,
+          "x": "20%",
+          "y": "60%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 500,
+            "duration_ms": 400
+          }
+        },
+        {
+          "type": "icon",
+          "name": "make_logo",
+          "color": "#3F88C5",
+          "size": 150,
+          "x": "50%",
+          "y": "60%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 700,
+            "duration_ms": 400
+          }
+        },
+        {
+          "type": "icon",
+          "name": "n8n_logo",
+          "color": "#FF6200",
+          "size": 150,
+          "x": "80%",
+          "y": "60%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 900,
+            "duration_ms": 400
+          }
+        },
+        {
+          "type": "shape",
+          "shape": "circle",
+          "fill": "transparent",
+          "stroke": "#FFD700",
+          "stroke_width": 8,
+          "radius": 100,
+          "x": "80%",
+          "y": "60%",
+          "animation": {
+            "type": "draw_path",
+            "delay_ms": 1500,
+            "duration_ms": 500
+          }
+        }
+      ]
+    },
+    "self_hosting_diagram": {
+      "hint": "Diagram showing a server with N8N and a lock icon for security.",
+      "ui": [
+        {
+          "type": "icon",
+          "name": "server",
+          "color": "#A9A9A9",
+          "size": 200,
+          "x": "center",
+          "y": "30%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 0,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "icon",
+          "name": "n8n_logo",
+          "color": "#FF6200",
+          "size": 100,
+          "x": "center",
+          "y": "30%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 300,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "Your Private Server",
+          "font_size": 36,
+          "color": "#FFFFFF",
+          "x": "center",
+          "y": "50%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 600,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "icon",
+          "name": "lock",
+          "color": "#00FF00",
+          "size": 150,
+          "x": "center",
+          "y": "75%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 1000,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "100% Data Security",
+          "font_size": 48,
+          "color": "#00FF00",
+          "x": "center",
+          "y": "85%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 1300,
+            "duration_ms": 500
+          }
+        }
+      ]
+    },
+    "n8n_install_options_scene": {
+      "hint": "Diagram showing local vs. cloud N8N installation options.",
+      "ui": [
+        {
+          "type": "icon",
+          "name": "laptop",
+          "color": "#FFFFFF",
+          "size": 150,
+          "x": "25%",
+          "y": "30%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 0,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "Local Computer",
+          "font_size": 48,
+          "font_family": "Padauk",
+          "color": "#FFFFFF",
+          "x": "25%",
+          "y": "50%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 300,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "icon",
+          "name": "cloud",
+          "color": "#ADD8E6",
+          "size": 150,
+          "x": "75%",
+          "y": "30%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 200,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "Cloud Server",
+          "font_size": 48,
+          "font_family": "Padauk",
+          "color": "#FFFFFF",
+          "x": "75%",
+          "y": "50%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 500,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "N8N ကို ဘယ်မှာ Install လုပ်မလဲ?",
+          "font_size": 64,
+          "font_family": "Padauk",
+          "color": "#FFD700",
+          "x": "center",
+          "y": "80%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 800,
+            "duration_ms": 500
+          }
+        }
+      ]
+    },
+    "reclaim_time_scene": {
+      "hint": "Illustrating the benefit of automation: reclaiming valuable life time.",
+      "ui": [
+        {
+          "type": "icon",
+          "name": "person_working",
+          "color": "#FFFFFF",
+          "size": 150,
+          "x": "25%",
+          "y": "30%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 0,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "Manual Work",
+          "font_size": 48,
+          "color": "#FFFFFF",
+          "x": "25%",
+          "y": "50%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 300,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "icon",
+          "name": "arrow_right",
+          "color": "#FFD700",
+          "size": 100,
+          "x": "center",
+          "y": "35%",
+          "animation": {
+            "type": "draw_path",
+            "delay_ms": 800,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "icon",
+          "name": "automation",
+          "color": "#00BFFF",
+          "size": 100,
+          "x": "center",
+          "y": "45%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 1000,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "icon",
+          "name": "person_relaxing",
+          "color": "#FFFFFF",
+          "size": 150,
+          "x": "75%",
+          "y": "30%",
+          "animation": {
+            "type": "scale_in",
+            "delay_ms": 1500,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "Reclaim Your Time",
+          "font_size": 48,
+          "color": "#00FF00",
+          "x": "75%",
+          "y": "50%",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 1800,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "Automation: ကိုယ့်ရဲ့ တန်ဖိုးရှိတဲ့ ဘဝ အချိန် တွေ ကို ပြန်လည် ပိုင်ဆိုင်စေမယ့် နည်းလမ်း",
+          "font_size": 52,
+          "font_family": "Padauk",
+          "color": "#FFFFFF",
+          "x": "center",
+          "y": "80%",
+          "width": "80%",
+          "text_align": "center",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 2200,
+            "duration_ms": 500
+          }
+        }
+      ]
+    },
+    "outro_card": {
+      "hint": "Simple closing message card.",
+      "ui": [
+        {
+          "type": "text",
+          "text": "အားလုံး ပဲ စိတ်အား ထက်သန်စွာ နဲ့ ဆက်လက် လေ့လာသွားကြရအောင် ပါ။",
+          "font_size": 64,
+          "font_family": "Padauk",
+          "color": "#FFFFFF",
+          "x": "center",
+          "y": "center",
+          "width": "80%",
+          "text_align": "center",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 0,
+            "duration_ms": 500
+          }
+        },
+        {
+          "type": "text",
+          "text": "နောက် သင်ခန်းစာ မှာ ပြန်တွေ့ကြပါမယ်။",
+          "font_size": 48,
+          "font_family": "Padauk",
+          "color": "#FFD700",
+          "x": "center",
+          "y": "70%",
+          "width": "80%",
+          "text_align": "center",
+          "animation": {
+            "type": "fade_in",
+            "delay_ms": 800,
+            "duration_ms": 500
+          }
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 8.5,
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "ပထမဆုံး သင်ခန်းစာ",
+        "title": "N8N Master Club",
+        "subtitle": "AI Automation Engineer Master Class",
+        "is_burmese": true,
+        "accent": "#FF6200"
+      }
+    },
+    {
+      "start": 8.5,
+      "end": 13,
+      "component_ref": "instructor_intro_card",
+      "props": {}
+    },
+    {
+      "start": 13,
+      "end": 28.5,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "ဒီနေ့ ဘာတွေ ဆွေးနွေးသွားမလဲ",
+        "items": [
+          "Automation ဆိုတာ ဘာလဲ?",
+          "ဘာကြောင့် နည်းပညာ လောက မှာ ခေတ်စားလာတာလဲ?",
+          "ဘာကြောင့် N8N ကို ပဲ ရွေးချယ်သင့်တာလဲ?"
+        ],
+        "marker": "number",
+        "is_burmese": true,
+        "accent": "#00BFFF"
+      }
+    },
+    {
+      "start": 28.5,
+      "end": 43.5,
+      "component_ref": "automation_concept_scene",
+      "props": {}
+    },
+    {
+      "start": 43.5,
+      "end": 63.5,
+      "component_ref": "manual_tasks_problem_scene",
+      "props": {}
+    },
+    {
+      "start": 63.5,
+      "end": 72.5,
+      "component_ref": "step_flow_diagram",
+      "props": {
+        "heading": "Automation Engineer ရဲ့ တာဝန်",
+        "steps": [
+          {
+            "title": "Routine တွေ ကို ဖော်ထုတ်ခြင်း",
+            "desc": "Manual, ထပ်ခါတလဲလဲ လုပ်ရတဲ့ အလုပ်များ"
+          },
+          {
+            "title": "နည်းပညာ သုံးပြီး ပြောင်းလဲခြင်း",
+            "desc": "အလိုအလျောက် အလုပ်လုပ်သွားအောင် တည်ဆောက်ခြင်း"
+          }
+        ],
+        "is_burmese": true,
+        "accent": "#FFD700"
+      }
+    },
+    {
+      "start": 72.5,
+      "end": 80.5,
+      "component_ref": "code_vs_nocode_scene",
+      "props": {}
+    },
+    {
+      "start": 80.5,
+      "end": 89.5,
+      "component_ref": "why_n8n_question_scene",
+      "props": {}
+    },
+    {
+      "start": 89.5,
+      "end": 102.5,
+      "component_ref": "self_hosting_diagram",
+      "props": {}
+    },
+    {
+      "start": 102.5,
+      "end": 113.5,
+      "component_ref": "n8n_code_editor",
+      "props": {
+        "node_name": "Code Node (JavaScript)",
+        "code": "const items = $input.json;\n\nfor (const item of items) {\n  item.customField = item.data.value * 2;\n}\n\nreturn items;",
+        "input_json": "[ { \"data\": { \"value\": 10 } } ]",
+        "output_json": "[ { \"data\": { \"value\": 10 }, \"customField\": 20 } ]",
+        "font_size": 24,
+        "line_numbers": true,
+        "cps": 50
+      }
+    },
+    {
+      "start": 113.5,
+      "end": 122.5,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "ဒါဟာ enterprise level automation တွေ အတွက် အသက်ပါပဲ။",
+        "label": "အရေးကြီးတဲ့ အချက်",
+        "variant": "tip",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 122.5,
+      "end": 149.5,
+      "component_ref": "n8n_workflow_execution",
+      "props": {
+        "workflow_title": "Customer Onboarding Automation",
+        "item_label": "New Customer",
+        "nodes": [
+          {
+            "label": "Webhook",
+            "icon": "bolt",
+            "trigger": true,
+            "color": "#6A5ACD"
+          },
+          {
+            "label": "CRM (HubSpot)",
+            "icon": "sheet",
+            "color": "#4682B4"
+          },
+          {
+            "label": "Email (Gmail)",
+            "icon": "mail",
+            "color": "#FFD700"
+          },
+          {
+            "label": "AI (OpenAI)",
+            "icon": "brain",
+            "color": "#FF6347"
+          },
+          {
+            "label": "Notify Sales (Slack)",
+            "icon": "globe",
+            "color": "#3CB371"
+          }
+        ]
+      }
+    },
+    {
+      "start": 149.5,
+      "end": 159.5,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "နားလည် ဖို့ ထက် ကိုယ်တိုင် လက်တွေ့ လိုက် လုပ် ဖို့ ပို အရေးကြီး ပါ တယ်။",
+        "label": "လက်တွေ့ လုပ်ဆောင်ခြင်း",
+        "variant": "info",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 159.5,
+      "end": 164.5,
+      "component_ref": "n8n_install_options_scene",
+      "props": {}
+    },
+    {
+      "start": 164.5,
+      "end": 173.5,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Error တက် မှာ ကို လုံးဝ မကြောက် ပါ နဲ့။ Automation Engineer တစ်ယောက် ရဲ့ နည်းစနစ် ဘဝ ဟာ error တွေ ကို ရှင်းရင်း နဲ့ ပဲ ကျွမ်းကျင် လာရတာ ဖြစ်ပါတယ်။",
+        "label": "အရေးကြီးတဲ့ အကြံပြုချက်",
+        "variant": "tip",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 173.5,
+      "end": 182.5,
+      "component_ref": "reclaim_time_scene",
+      "props": {}
+    },
+    {
+      "start": 182.5,
+      "end": 188.5,
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "နောက် သင်ခန်းစာ",
+        "title": "N8N ကို ဘယ်လို Install လုပ်မလဲ",
+        "subtitle": "လက်တွေ့ ပြသခြင်း",
+        "is_burmese": true,
+        "accent": "#FF6200"
+      }
+    },
+    {
+      "start": 188.5,
+      "end": 194,
+      "component_ref": "outro_card",
+      "props": {}
+    }
+  ]
+}
