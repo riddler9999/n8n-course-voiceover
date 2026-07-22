@@ -1,0 +1,512 @@
+{
+  "new_components": {
+    "repetitive_tasks_visual": {
+      "hint": "Visual representation of common manual, repetitive tasks like copy-pasting data and sending emails, showing a decrease in human potential.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "text",
+          "text": "Manual, Repetitive Tasks",
+          "font_size": 64,
+          "color": "#E0E0E0",
+          "y": 100,
+          "x": "center",
+          "animation": "fadeInUp"
+        },
+        {
+          "type": "text",
+          "text": "Excel Data Copy-Paste",
+          "font_size": 36,
+          "color": "#A0A0A0",
+          "y": 250,
+          "x": "center",
+          "delay": 0.5,
+          "animation": "fadeIn"
+        },
+        {
+          "type": "icon",
+          "name": "sheet",
+          "size": 80,
+          "color": "#21A366",
+          "x": 300,
+          "y": 350,
+          "delay": 0.8,
+          "animation": "scaleIn"
+        },
+        {
+          "type": "icon",
+          "name": "arrowRight",
+          "size": 60,
+          "color": "#A0A0A0",
+          "x": 450,
+          "y": 360,
+          "delay": 1,
+          "animation": "slideInRight"
+        },
+        {
+          "type": "icon",
+          "name": "sheet",
+          "size": 80,
+          "color": "#21A366",
+          "x": 600,
+          "y": 350,
+          "delay": 1.2,
+          "animation": "scaleIn"
+        },
+        {
+          "type": "text",
+          "text": "Email Repetitions",
+          "font_size": 36,
+          "color": "#A0A0A0",
+          "y": 550,
+          "x": "center",
+          "delay": 1.5,
+          "animation": "fadeIn"
+        },
+        {
+          "type": "icon",
+          "name": "mail",
+          "size": 80,
+          "color": "#D44638",
+          "x": 300,
+          "y": 650,
+          "delay": 1.8,
+          "animation": "scaleIn"
+        },
+        {
+          "type": "icon",
+          "name": "arrowRight",
+          "size": 60,
+          "color": "#A0A0A0",
+          "x": 450,
+          "y": 660,
+          "delay": 2,
+          "animation": "slideInRight"
+        },
+        {
+          "type": "icon",
+          "name": "mail",
+          "size": 80,
+          "color": "#D44638",
+          "x": 600,
+          "y": 650,
+          "delay": 2.2,
+          "animation": "scaleIn"
+        },
+        {
+          "type": "text",
+          "text": "လူသားများ၏ စွမ်းဆောင်ရည်နှင့် တီထွင်ဖန်တီးနိုင်စွမ်း လျော့ကျခြင်း",
+          "font_size": 48,
+          "color": "#FF6B6B",
+          "y": 850,
+          "x": "center",
+          "delay": 3,
+          "animation": "shake",
+          "is_burmese": true
+        }
+      ]
+    },
+    "code_vs_nocode": {
+      "hint": "Visual transition from complex code blocks to simpler, connected visual blocks, representing the evolution to no-code/low-code.",
+      "mockup": "none",
+      "ui": [
+        {
+          "type": "text",
+          "text": "အရင်က: Coding များစွာ",
+          "font_size": 48,
+          "color": "#E0E0E0",
+          "x": 250,
+          "y": 150,
+          "align": "center",
+          "is_burmese": true,
+          "animation": "fadeInUp"
+        },
+        {
+          "type": "code_block",
+          "code": "function processData(data) {\n  // 100s of lines of code\n  if (data.type === 'user') {\n    sendEmail(data.email);\n  } else {\n    updateDB(data);\n  }\n}",
+          "language": "javascript",
+          "x": 100,
+          "y": 250,
+          "width": 400,
+          "height": 400,
+          "font_size": 20,
+          "line_numbers": true,
+          "delay": 0.5,
+          "animation": "typewriter"
+        },
+        {
+          "type": "icon",
+          "name": "arrowRight",
+          "size": 100,
+          "color": "#6C63FF",
+          "x": 580,
+          "y": 450,
+          "animation": "pulse",
+          "delay": 2
+        },
+        {
+          "type": "text",
+          "text": "အခု: No-code/Low-code",
+          "font_size": 48,
+          "color": "#E0E0E0",
+          "x": 950,
+          "y": 150,
+          "align": "center",
+          "delay": 2.5,
+          "is_burmese": true,
+          "animation": "fadeInUp"
+        },
+        {
+          "type": "n8n_node",
+          "label": "Webhook",
+          "icon": "bolt",
+          "color": "#6C63FF",
+          "x": 750,
+          "y": 300,
+          "delay": 3,
+          "animation": "scaleIn"
+        },
+        {
+          "type": "n8n_node",
+          "label": "If",
+          "icon": "gear",
+          "color": "#FFC107",
+          "x": 950,
+          "y": 400,
+          "delay": 3.5,
+          "animation": "scaleIn"
+        },
+        {
+          "type": "n8n_node",
+          "label": "Send Email",
+          "icon": "mail",
+          "color": "#2196F3",
+          "x": 800,
+          "y": 550,
+          "delay": 4,
+          "animation": "scaleIn"
+        },
+        {
+          "type": "n8n_node",
+          "label": "Update DB",
+          "icon": "db",
+          "color": "#4CAF50",
+          "x": 1100,
+          "y": 550,
+          "delay": 4.5,
+          "animation": "scaleIn"
+        },
+        {
+          "type": "line",
+          "from": [
+            800,
+            330
+          ],
+          "to": [
+            960,
+            400
+          ],
+          "color": "#A0A0A0",
+          "delay": 3.8,
+          "animation": "draw"
+        },
+        {
+          "type": "line",
+          "from": [
+            980,
+            430
+          ],
+          "to": [
+            830,
+            550
+          ],
+          "color": "#A0A0A0",
+          "delay": 4.3,
+          "animation": "draw"
+        },
+        {
+          "type": "line",
+          "from": [
+            1000,
+            430
+          ],
+          "to": [
+            1130,
+            550
+          ],
+          "color": "#A0A0A0",
+          "delay": 4.8,
+          "animation": "draw"
+        }
+      ]
+    }
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "end": 13.2,
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "Lesson 1",
+        "title": "n8n Master Club AI Automation Engineer Masterclass",
+        "subtitle": "Introduction to Automation & n8n",
+        "is_burmese": true,
+        "accent": "#6C63FF",
+        "align": "center"
+      }
+    },
+    {
+      "start": 13.2,
+      "end": 28.2,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "ဒီနေ့ သင်ခန်းစာ",
+        "items": [
+          "Automation ဆိုတာ ဘာလဲ။",
+          "ဘာကြောင့် နည်းပညာ လောက မှာ ခေတ်စားလာတာလဲ။",
+          "ဘာကြောင့် n8n ကို ရွေးချယ်သင့်တာလဲ။"
+        ],
+        "marker": "number",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 28.2,
+      "end": 33.5,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Automation ဆိုတာ ပျင်းတဲ့ သူတွေ အတွက် မဟုတ်ပါဘူး။",
+        "label": "အထင်အမြင် လွဲမှားခြင်း",
+        "variant": "warning",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 33.5,
+      "end": 43.7,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Automation သည်...",
+        "items": [
+          {
+            "text": "အချိန်ကို တန်ဖိုးထားသူများ",
+            "sub": "လုပ်ငန်းစဉ်များကို ပိုမြန်၊ ပိုမှန်အောင် တည်ဆောက်လိုသူများ"
+          }
+        ],
+        "marker": "check",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 43.7,
+      "end": 63.8,
+      "component_ref": "repetitive_tasks_visual",
+      "props": {}
+    },
+    {
+      "start": 63.8,
+      "end": 72.8,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Routine များကို နည်းပညာဖြင့် အလိုအလျောက် ပြောင်းလဲပေးခြင်း",
+        "label": "Automation Engineer ၏ တာဝန်",
+        "variant": "definition",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 72.8,
+      "end": 80.3,
+      "component_ref": "code_vs_nocode",
+      "props": {}
+    },
+    {
+      "start": 80.3,
+      "end": 89.2,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "ဘာကြောင့် n8n ကိုပဲ ရွေးချယ်သင့်တာလဲ။",
+        "items": [
+          "Zapier, Make လို tools တွေ အများကြီး ရှိရက်နဲ့ ဘာကြောင့် n8n ကိုပဲ ရွေးရတာလဲ။"
+        ],
+        "marker": "dot",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 89.2,
+      "end": 95.8,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "အဓိက အချက်များ (Engineer အမြင်)",
+        "items": [
+          {
+            "text": "1. Self-hosting",
+            "sub": "(ကိုယ်ပိုင် server ပေါ်တွင် တင်သုံးနိုင်ခြင်း)"
+          }
+        ],
+        "marker": "number",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 95.8,
+      "end": 102.5,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Data လုံခြုံရေးပိုင်းတွင် ရာနှုန်းပြည့် စိတ်ချရသည်။",
+        "label": "Self-hosting ၏ အားသာချက်",
+        "variant": "info",
+        "is_burmese": true,
+        "icon": "lock"
+      }
+    },
+    {
+      "start": 102.5,
+      "end": 105.8,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "အဓိက အချက်များ (Engineer အမြင်)",
+        "items": [
+          {
+            "text": "2. High Flexibility",
+            "sub": "(စိတ်ကြိုက် ပြောင်းလဲနိုင်ခြင်း)"
+          }
+        ],
+        "marker": "number",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 105.8,
+      "end": 118.8,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "High Flexibility ၏ အားသာချက်များ",
+        "items": [
+          "JavaScript ဖြင့် Custom Logic များ ရေးနိုင်ခြင်း",
+          "API Data Format များကို စိတ်ကြိုက် ပြောင်းလဲနိုင်ခြင်း"
+        ],
+        "marker": "dot",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 118.8,
+      "end": 122.8,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Enterprise Level Automation များအတွက် အသက်",
+        "label": "အရေးကြီးသော အချက်",
+        "variant": "tip",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 122.8,
+      "end": 144.8,
+      "component_ref": "n8n_workflow_execution",
+      "props": {
+        "workflow_title": "Customer Onboarding & Sales Notification",
+        "nodes": [
+          {
+            "label": "Website Form (Webhook)",
+            "icon": "globe",
+            "trigger": true,
+            "color": "#6C63FF"
+          },
+          {
+            "label": "CRM (Update Contact)",
+            "icon": "db",
+            "color": "#4CAF50"
+          },
+          {
+            "label": "Email (Thank You)",
+            "icon": "mail",
+            "color": "#2196F3"
+          },
+          {
+            "label": "AI (Personalized Rec.)",
+            "icon": "brain",
+            "color": "#FFC107"
+          },
+          {
+            "label": "Email (Recommendation)",
+            "icon": "mail",
+            "color": "#2196F3"
+          },
+          {
+            "label": "Slack/Telegram (Notify Sales)",
+            "icon": "bolt",
+            "color": "#FF5722"
+          }
+        ],
+        "item_label": "1 customer"
+      }
+    },
+    {
+      "start": 144.8,
+      "end": 149.8,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Workflow တစ်ခုတည်းဖြင့် Complete Process တည်ဆောက်နိုင်ခြင်း",
+        "label": "n8n ၏ စွမ်းအား",
+        "variant": "info",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 149.8,
+      "end": 164.8,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "လက်တွေ့ လိုက်လုပ်ရန်",
+        "items": [
+          "Video ကြည့်ရုံဖြင့် မပြီးပါ",
+          "ကိုယ်တိုင် လက်တွေ့ လိုက်လုပ်ပါ",
+          "n8n ကို Install လုပ်ပြီး စမ်းသပ်ပါ"
+        ],
+        "marker": "check",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 164.8,
+      "end": 173.8,
+      "component_ref": "lesson_concept_callout",
+      "props": {
+        "text": "Error တက်မှာကို လုံးဝ မကြောက်ပါနဲ့။ Error ရှင်းရင်း ကျွမ်းကျင်လာမည်။",
+        "label": "အမှားများကို လက်ခံပါ",
+        "variant": "tip",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 173.8,
+      "end": 182.2,
+      "component_ref": "lesson_bullet_list",
+      "props": {
+        "heading": "Automation: သင့်ရဲ့ စွမ်းအား",
+        "items": [
+          "အလုပ်ကို ပိုမို ထိရောက်စေခြင်း",
+          "တန်ဖိုးရှိသော ဘဝအချိန်များကို ပြန်လည် ပိုင်ဆိုင်စေခြင်း"
+        ],
+        "marker": "dot",
+        "is_burmese": true
+      }
+    },
+    {
+      "start": 182.2,
+      "end": 194,
+      "component_ref": "lesson_title_card",
+      "props": {
+        "eyebrow": "Lesson 2 Preview",
+        "title": "Next Lesson: Installing n8n",
+        "subtitle": "n8n ကို စတင် install လုပ်နည်း",
+        "is_burmese": true,
+        "accent": "#6C63FF",
+        "align": "left"
+      }
+    }
+  ]
+}
